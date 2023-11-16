@@ -1,0 +1,896 @@
+{
+    "common": {
+        "config_flow": {
+            "abort": {
+                "single_instance_allowed": "Al konfigurearre. Der is ien konfiguraasje mooglik."
+            },
+            "data": {
+                "host": "Host",
+                "name": "Namme",
+                "password": "Wachtwurd",
+                "pin": "Pinkoade",
+                "username": "Brûkersnamme"
+            },
+            "error": {
+                "cannot_connect": "Kin gjin ferbining meitsje",
+                "unknown": "Net ferwachte flater"
+            }
+        },
+        "time": {
+            "friday": "Freed",
+            "monday": "Moandei",
+            "saturday": "Sneon",
+            "sunday": "Snein",
+            "thursday": "Tongersdei",
+            "tuesday": "Tiisdei",
+            "wednesday": "Woansdei"
+        }
+    },
+    "component": {
+        "airly": {
+            "entity": {
+                "sensor": {
+                    "humidity": {
+                        "name": "Fochtichheid"
+                    }
+                }
+            }
+        },
+        "airq": {
+            "entity": {
+                "sensor": {
+                    "humidity": {
+                        "name": "Fochtichheid"
+                    }
+                }
+            }
+        },
+        "broadlink": {
+            "entity": {
+                "sensor": {
+                    "humidity": {
+                        "name": "Fochtichheid"
+                    }
+                }
+            }
+        },
+        "buienradar": {
+            "entity": {
+                "sensor": {
+                    "humidity": {
+                        "name": "Fochtichheid"
+                    }
+                }
+            }
+        },
+        "climate": {
+            "entity_component": {
+                "_": {
+                    "state_attributes": {
+                        "max_humidity": {
+                            "name": "Max doelfochtichheid"
+                        },
+                        "min_humidity": {
+                            "name": "Min doelfochtichheid"
+                        }
+                    }
+                }
+            }
+        },
+        "ebusd": {
+            "state": {
+                "day": "Dei"
+            }
+        },
+        "fritz": {
+            "entity": {
+                "binary_sensor": {
+                    "is_connected": {
+                        "name": "Ferbining"
+                    }
+                }
+            }
+        },
+        "fritzbox": {
+            "entity": {
+                "sensor": {
+                    "humidity": {
+                        "name": "Fochtichheid"
+                    }
+                }
+            }
+        },
+        "group": {
+            "entity_component": {
+                "_": {
+                    "state": {
+                        "ok": "OK"
+                    }
+                }
+            }
+        },
+        "growatt_server": {
+            "entity": {
+                "sensor": {
+                    "tlx_temperature_1": {
+                        "name": "Temperatuer 1"
+                    },
+                    "tlx_temperature_2": {
+                        "name": "Temperatuer 2"
+                    },
+                    "tlx_temperature_3": {
+                        "name": "Temperatuer 3"
+                    },
+                    "tlx_temperature_4": {
+                        "name": "Temperatuer 4"
+                    },
+                    "tlx_temperature_5": {
+                        "name": "Temperatuer 5"
+                    },
+                    "tlx_voltage_input_1": {
+                        "name": "Input 1 voltage"
+                    },
+                    "tlx_voltage_input_2": {
+                        "name": "Input 2 voltage"
+                    },
+                    "tlx_voltage_input_3": {
+                        "name": "Input 3 voltage"
+                    },
+                    "tlx_voltage_input_4": {
+                        "name": "Input 4 voltage"
+                    },
+                    "tlx_wattage_input_1": {
+                        "name": "Input 1 Wattage"
+                    },
+                    "tlx_wattage_input_2": {
+                        "name": "Input 2 Wattage"
+                    },
+                    "tlx_wattage_input_3": {
+                        "name": "Input 3 Wattage"
+                    },
+                    "tlx_wattage_input_4": {
+                        "name": "Input 4 Wattage"
+                    },
+                    "total_energy_today": {
+                        "name": "Enerzjy hjoed"
+                    }
+                }
+            }
+        },
+        "homeassistant_hardware": {
+            "silabs_multiprotocol_hardware": {
+                "options": {
+                    "step": {
+                        "change_channel": {
+                            "data": {
+                                "channel": "Kanaal"
+                            },
+                            "title": "Werkonfigurearje IEEE 802.15.4 radio multyprotokol-stipe"
+                        },
+                        "notify_unknown_multipan_user": {
+                            "description": "Home Assistant kin automatysk de kanalen foar otbr en zha feroarje. Ast in oare yntegraasje konfigurearre hast dy't de radio brûkt, bygelyks Zigbee2MQTT dan is it nedich om it kanaal te werkonfigurearjen yn dizze yntegraasje neidat dizze ynstruksje foltôge is.",
+                            "title": "Mooglik is in hânmjittige konfiguraasje nedich."
+                        },
+                        "reconfigure_addon": {
+                            "title": "Werkonfigurearje IEEE 802.15.4 radio multyprotokol-stipe"
+                        }
+                    }
+                }
+            }
+        },
+        "homeassistant_sky_connect": {
+            "options": {
+                "step": {
+                    "change_channel": {
+                        "data": {
+                            "channel": "Kanaal"
+                        },
+                        "title": "Werkonfigurearje IEEE 802.15.4 radio multyprotokol-stipe"
+                    },
+                    "notify_unknown_multipan_user": {
+                        "description": "Home Assistant kin automatysk de kanalen foar otbr en zha feroarje. Ast in oare yntegraasje konfigurearre hast dy't de radio brûkt, bygelyks Zigbee2MQTT dan is it nedich om it kanaal te werkonfigurearjen yn dizze yntegraasje neidat dizze ynstruksje foltôge is.",
+                        "title": "Mooglik is in hânmjittige konfiguraasje nedich."
+                    }
+                }
+            }
+        },
+        "homeassistant_yellow": {
+            "options": {
+                "step": {
+                    "change_channel": {
+                        "data": {
+                            "channel": "Kanaal"
+                        },
+                        "title": "Werkonfigurearje IEEE 802.15.4 radio multyprotokol-stipe"
+                    },
+                    "notify_unknown_multipan_user": {
+                        "description": "Home Assistant kin automatysk de kanalen foar otbr en zha feroarje. Ast in oare yntegraasje konfigurearre hast dy't de radio brûkt, bygelyks Zigbee2MQTT dan is it nedich om it kanaal te werkonfigurearjen yn dizze yntegraasje neidat dizze ynstruksje foltôge is.",
+                        "title": "Mooglik is in hânmjittige konfiguraasje nedich."
+                    }
+                }
+            }
+        },
+        "hue": {
+            "config": {
+                "abort": {
+                    "all_configured": "Alle Philips Hue bridges binne al konfigurearre",
+                    "cannot_connect": "Kin gjin ferbining meitsje",
+                    "discover_timeout": "Kin Heu bridges net ûntdekke",
+                    "no_bridges": "Gjin Philips Hue bridges ûntdutsen",
+                    "unknown": "Net ferwachte flater"
+                },
+                "error": {
+                    "linking": "Net ferwachte flater",
+                    "register_failed": "Registrearje mislearre, besykje it nochris"
+                },
+                "step": {
+                    "init": {
+                        "data": {
+                            "host": "Host"
+                        }
+                    }
+                }
+            }
+        },
+        "humidifier": {
+            "entity_component": {
+                "_": {
+                    "state_attributes": {
+                        "humidity": {
+                            "name": "Doelfochtichheid"
+                        },
+                        "max_humidity": {
+                            "name": "Max doelfochtichheid"
+                        },
+                        "min_humidity": {
+                            "name": "Min doelfochtichheid"
+                        }
+                    }
+                }
+            }
+        },
+        "input_datetime": {
+            "entity_component": {
+                "_": {
+                    "state_attributes": {
+                        "day": {
+                            "name": "Dei"
+                        }
+                    }
+                }
+            }
+        },
+        "ios": {
+            "entity": {
+                "sensor": {
+                    "battery_state": {
+                        "name": "Batterij status"
+                    }
+                }
+            }
+        },
+        "lacrosse_view": {
+            "entity": {
+                "sensor": {
+                    "barometric_pressure": {
+                        "name": "Barometryske druk"
+                    },
+                    "feels_like": {
+                        "name": "Fielt as"
+                    },
+                    "flex": {
+                        "name": "Flex"
+                    },
+                    "heat_index": {
+                        "name": "Hjitte yndeks"
+                    },
+                    "wet_dry": {
+                        "name": "Wiet\/drûch"
+                    },
+                    "wind_chill": {
+                        "name": "Gefoelstemperatuer"
+                    },
+                    "wind_heading": {
+                        "name": "Wynrjochting"
+                    }
+                }
+            }
+        },
+        "lifx": {
+            "entity": {
+                "binary_sensor": {
+                    "clean_cycle": {
+                        "name": "Skjinmeitsje syklus"
+                    }
+                },
+                "select": {
+                    "infrared_brightness": {
+                        "name": "Ynfraread helderheid"
+                    },
+                    "theme": {
+                        "name": "Tema"
+                    }
+                },
+                "sensor": {
+                    "rssi": {
+                        "name": "RSSI"
+                    }
+                }
+            }
+        },
+        "local_calendar": {
+            "title": "Lokale kalinder"
+        },
+        "luftdaten": {
+            "entity": {
+                "sensor": {
+                    "humidity": {
+                        "name": "Fochtichheid"
+                    }
+                }
+            }
+        },
+        "meater": {
+            "entity": {
+                "sensor": {
+                    "ambient": {
+                        "name": "Omjouwingstemperatuer"
+                    },
+                    "cook_name": {
+                        "name": "Kôkje"
+                    },
+                    "cook_peak_temp": {
+                        "name": "Piektemperatuer"
+                    },
+                    "cook_state": {
+                        "name": "Kokstatus"
+                    },
+                    "cook_target_temp": {
+                        "name": "Doeltemperatuer"
+                    },
+                    "cook_time_elapsed": {
+                        "name": "Tiid ferstrutsen"
+                    },
+                    "cook_time_remaining": {
+                        "name": "Resterjende tiid"
+                    },
+                    "internal": {
+                        "name": "Ynterne temperatuer"
+                    }
+                }
+            }
+        },
+        "melnor": {
+            "entity": {
+                "number": {
+                    "frequency_duration_minutes": {
+                        "name": "Skuema djoer"
+                    },
+                    "frequency_interval_hours": {
+                        "name": "Scanynterfal"
+                    },
+                    "manual_minutes": {
+                        "name": "Hantmjittige djoer"
+                    }
+                },
+                "sensor": {
+                    "manual_cycle_end": {
+                        "name": "Hânmjittich sykklusein"
+                    },
+                    "next_cycle": {
+                        "name": "Folgjende syklus"
+                    },
+                    "rssi": {
+                        "name": "RSSI"
+                    }
+                },
+                "switch": {
+                    "frequency": {
+                        "name": "Skema"
+                    }
+                }
+            }
+        },
+        "mystrom": {
+            "config": {
+                "step": {
+                    "user": {
+                        "data": {
+                            "host": "Host",
+                            "name": "Namme"
+                        }
+                    }
+                }
+            },
+            "issues": {
+                "deprecated_yaml": {
+                    "description": "Konfigurearje myStrom mei Yaml is ferwiderje.\n\nDyn besteande YAML konfiguraasje is ymporteare yn de UI automatysk.\n\nFerwiderje de MyStrom YAML konfiguraasje ut dyn configuration.yaml bestân en werstart Home Assistant om dit probleem te ferhelpen.",
+                    "title": "De myStrom YAML konfiguraasje is ferwidere"
+                }
+            }
+        },
+        "nam": {
+            "entity": {
+                "sensor": {
+                    "bme280_humidity": {
+                        "name": "BME280 fochtichheid"
+                    },
+                    "dht22_humidity": {
+                        "name": "DHT22 fochtichheid"
+                    },
+                    "heca_humidity": {
+                        "name": "HECA fochtichheid"
+                    },
+                    "pmsx003_pm25": {
+                        "name": "PMSx003 PM2.5"
+                    },
+                    "sds011_pm10": {
+                        "name": "SDS011 PM10"
+                    },
+                    "sds011_pm25": {
+                        "name": "SDS011 PM2.5"
+                    },
+                    "sht3x_humidity": {
+                        "name": "SHT3X fochtichheid"
+                    },
+                    "sht3x_temperature": {
+                        "name": "SHT3X temperatuer"
+                    },
+                    "sps30_pm10": {
+                        "name": "SPS30 PM10"
+                    },
+                    "sps30_pm1": {
+                        "name": "SPS30 PM1"
+                    },
+                    "sps30_pm25": {
+                        "name": "SPS30 PM2.5"
+                    },
+                    "sps30_pm4": {
+                        "name": "SPS30 PM4"
+                    }
+                }
+            }
+        },
+        "nest": {
+            "config": {
+                "error": {
+                    "unknown": "Net ferwachte flater"
+                },
+                "step": {
+                    "link": {
+                        "data": {
+                            "code": "Pinkoade"
+                        }
+                    }
+                }
+            },
+            "entity": {
+                "sensor": {
+                    "humidity": {
+                        "name": "Fochtichheid"
+                    }
+                }
+            }
+        },
+        "notion": {
+            "entity": {
+                "binary_sensor": {
+                    "hinged_window": {
+                        "name": "Flaprút"
+                    },
+                    "safe": {
+                        "name": "Feilich"
+                    },
+                    "sliding_door_window": {
+                        "name": "Skodoar\/rút"
+                    },
+                    "smoke_carbon_monoxide_detector": {
+                        "name": "Reek\/koalmonoksidemelder"
+                    }
+                },
+                "sensor": {
+                    "mold_risk": {
+                        "name": "Skimmelrisiko"
+                    }
+                }
+            }
+        },
+        "number": {
+            "entity_component": {
+                "humidity": {
+                    "name": "Fochtichheid"
+                }
+            }
+        },
+        "onewire": {
+            "entity": {
+                "sensor": {
+                    "humidity": {
+                        "name": "Fochtichheid"
+                    },
+                    "humidity_hih3600": {
+                        "name": "HIH3600 fochtichheid"
+                    },
+                    "humidity_hih4000": {
+                        "name": "HIH4000 fochtichheid"
+                    },
+                    "humidity_hih5030": {
+                        "name": "HIH5030 fochtichheid"
+                    },
+                    "humidity_htm1735": {
+                        "name": "HTM1735 fochtichheid"
+                    },
+                    "humidity_raw": {
+                        "name": "Rûge fochtichheid"
+                    }
+                }
+            }
+        },
+        "openuv": {
+            "entity": {
+                "binary_sensor": {
+                    "protection_window": {
+                        "name": "Beskerming finster"
+                    }
+                },
+                "sensor": {
+                    "current_ozone_level": {
+                        "name": "Hjoeddeistich Ozonnivo"
+                    },
+                    "current_uv_index": {
+                        "name": "Hjoeddeistich UV-yndeks"
+                    },
+                    "current_uv_level": {
+                        "name": "Hjoeddeistich UV-nivo"
+                    },
+                    "max_uv_index": {
+                        "name": "Max UV-yndeks"
+                    },
+                    "skin_type_1_safe_exposure_time": {
+                        "name": "Hûdtype 1 feilige bleatstellingstiid"
+                    },
+                    "skin_type_2_safe_exposure_time": {
+                        "name": "Hûdtype 2 feilige bleatstellingstiid"
+                    },
+                    "skin_type_3_safe_exposure_time": {
+                        "name": "Hûdtype 3 feilige bleatstellingstiid"
+                    },
+                    "skin_type_4_safe_exposure_time": {
+                        "name": "Hûdtype 4 feilige bleatstellingstiid"
+                    },
+                    "skin_type_5_safe_exposure_time": {
+                        "name": "Hûdtype 5 feilige bleatstellingstiid"
+                    },
+                    "skin_type_6_safe_exposure_time": {
+                        "name": "Hûdtype 6 feilige bleatstellingstiid"
+                    }
+                }
+            }
+        },
+        "opower": {
+            "config": {
+                "step": {
+                    "reauth_confirm": {
+                        "data": {
+                            "password": "Wachtwurd",
+                            "username": "Brûkersnamme"
+                        }
+                    },
+                    "user": {
+                        "data": {
+                            "password": "Wachtwurd",
+                            "username": "Brûkersnamme"
+                        }
+                    }
+                }
+            }
+        },
+        "p1_monitor": {
+            "entity": {
+                "sensor": {
+                    "consumption_day": {
+                        "name": "Ferbrûk per dei"
+                    },
+                    "consumption_total": {
+                        "name": "Totaal ferbrûk"
+                    },
+                    "current_phase_l1": {
+                        "name": "Hjoeddeistige faze L1"
+                    },
+                    "current_phase_l2": {
+                        "name": "Hjoeddeistige faze L2"
+                    },
+                    "current_phase_l3": {
+                        "name": "Hjoeddeistige faze L3"
+                    },
+                    "energy_consumption_high": {
+                        "name": "Enerzjyferbrûk - Heechtaryf"
+                    },
+                    "energy_consumption_low": {
+                        "name": "Enerzjyferbrûk - Leechtaryf"
+                    },
+                    "energy_consumption_price_high": {
+                        "name": "Priis enerzjyferbrûk - Heech"
+                    },
+                    "energy_consumption_price_low": {
+                        "name": "Priis enerzjyferbrûk - Leech"
+                    },
+                    "energy_production_high": {
+                        "name": "Enerzjyproduksje - Heech taryf"
+                    },
+                    "energy_production_low": {
+                        "name": "Enerzjyproduksje - Leech taryf"
+                    },
+                    "energy_production_price_high": {
+                        "name": "Priis enerzjyproduksje - Heech"
+                    },
+                    "energy_production_price_low": {
+                        "name": "Priis enerzjyproduksje - Leech"
+                    },
+                    "energy_tariff_period": {
+                        "name": "Tryfperioade enerzjy"
+                    },
+                    "gas_consumption": {
+                        "name": "Gasferbrûk"
+                    },
+                    "gas_consumption_price": {
+                        "name": "Priis gasferbrûk"
+                    },
+                    "power_consumed_phase_l1": {
+                        "name": "Stroom ferbrûkt faze L1"
+                    },
+                    "power_consumed_phase_l2": {
+                        "name": "Stroom ferbrûkt faze L2"
+                    },
+                    "power_consumed_phase_l3": {
+                        "name": "Stroom ferbrûkt faze L3"
+                    },
+                    "power_consumption": {
+                        "name": "Stroomferbrûk"
+                    },
+                    "power_produced_phase_l1": {
+                        "name": "Stroom produsearre faze L1"
+                    },
+                    "power_produced_phase_l2": {
+                        "name": "Stroom produsearre faze L2"
+                    },
+                    "power_produced_phase_l3": {
+                        "name": "Stroom produsearre faze L3"
+                    },
+                    "power_production": {
+                        "name": "Stroomproduksje"
+                    },
+                    "pulse_count": {
+                        "name": "Tal ympulzen"
+                    },
+                    "voltage_phase_l1": {
+                        "name": "Spanning faze L1"
+                    },
+                    "voltage_phase_l2": {
+                        "name": "Spanning faze L2"
+                    },
+                    "voltage_phase_l3": {
+                        "name": "Spanning faze L3"
+                    }
+                }
+            }
+        },
+        "purpleair": {
+            "options": {
+                "step": {
+                    "init": {
+                        "menu_options": {
+                            "settings": "Ynstellings"
+                        }
+                    },
+                    "settings": {
+                        "title": "Ynstellings"
+                    }
+                }
+            }
+        },
+        "roborock": {
+            "issues": {
+                "service_deprecation_start_pause": {
+                    "description": "Roborock stofsûger stipe foar de vacuum.start_pause service is ferâldere en sil ferwidere wurde yn Home Assistant 2024.2; Pas automatisearringen of skripts oan dy ’t dizze service brûke en gebrûk vacuum.pause of vacuum.start yn stee dêrfan.",
+                    "title": "Roborock stofsûger stipe foar vacuum.start_pause wurdt ferwidere"
+                }
+            }
+        },
+        "scrape": {
+            "selector": {
+                "device_class": {
+                    "options": {
+                        "humidity": "Fochtichheid"
+                    }
+                }
+            }
+        },
+        "season": {
+            "platform": {
+                "sensor": {
+                    "state": {
+                        "season__season__": {
+                            "summer": "Simmer"
+                        }
+                    }
+                }
+            }
+        },
+        "sensibo": {
+            "entity": {
+                "sensor": {
+                    "smart_type": {
+                        "state": {
+                            "humidity": "Fochtichheid"
+                        }
+                    }
+                }
+            },
+            "platform": {
+                "sensor": {
+                    "state": {
+                        "sensibo__smart_type": {
+                            "humidity": "Fochtichheid"
+                        }
+                    }
+                }
+            }
+        },
+        "sensor": {
+            "entity_component": {
+                "humidity": {
+                    "name": "Fochtichheid"
+                }
+            }
+        },
+        "switchbot": {
+            "entity": {
+                "sensor": {
+                    "humidity": {
+                        "name": "Fochtichheid"
+                    }
+                }
+            }
+        },
+        "trafikverket_ferry": {
+            "selector": {
+                "weekday": {
+                    "options": {
+                        "fri": "Freed",
+                        "mon": "Moandei",
+                        "sat": "Sneon",
+                        "sun": "Snein",
+                        "thu": "Tongersdei",
+                        "tue": "Tiisdei",
+                        "wed": "Woansdei"
+                    }
+                }
+            }
+        },
+        "trafikverket_train": {
+            "config": {
+                "step": {
+                    "user": {
+                        "data": {
+                            "weekday": "Dagen"
+                        }
+                    }
+                }
+            }
+        },
+        "tuya": {
+            "entity": {
+                "select": {
+                    "humidifier_spray_mode": {
+                        "state": {
+                            "humidity": "Fochtichheid"
+                        }
+                    }
+                }
+            },
+            "platform": {
+                "select": {
+                    "state": {
+                        "tuya__humidifier_spray_mode": {
+                            "humidity": "Fochtichheid"
+                        }
+                    }
+                }
+            }
+        },
+        "venstar": {
+            "entity": {
+                "sensor": {
+                    "schedule_part": {
+                        "state": {
+                            "day": "Dei"
+                        }
+                    }
+                }
+            }
+        },
+        "verisure": {
+            "entity": {
+                "sensor": {
+                    "humidity": {
+                        "name": "Fochtichheid"
+                    }
+                }
+            }
+        },
+        "weather": {
+            "entity_component": {
+                "_": {
+                    "state_attributes": {
+                        "humidity": {
+                            "name": "Fochtichheid"
+                        }
+                    }
+                }
+            }
+        },
+        "workday": {
+            "selector": {
+                "days": {
+                    "options": {
+                        "fri": "Freed",
+                        "holiday": "Fakânsjes",
+                        "mon": "Moandei",
+                        "sat": "Sneon",
+                        "sun": "Snein",
+                        "thu": "Tongersdei",
+                        "tue": "Tiisdei",
+                        "wed": "Woansdei"
+                    }
+                }
+            }
+        },
+        "xiaomi_aqara": {
+            "config": {
+                "step": {
+                    "user": {
+                        "data": {
+                            "mac": "MAC-adres (opsjoneel)"
+                        }
+                    }
+                }
+            }
+        },
+        "zha": {
+            "device_automation": {
+                "trigger_subtype": {
+                    "turn_on": "Ynskeakelje"
+                }
+            }
+        },
+        "zodiac": {
+            "config": {
+                "abort": {
+                    "single_instance_allowed": "Al konfigurearre. Der is ien konfiguraasje mooglik."
+                }
+            },
+            "issues": {
+                "deprecated_yaml": {
+                    "title": "De Zodiac YAML konfiguraasje wurdt ferwidere"
+                }
+            }
+        },
+        "zone": {
+            "config": {
+                "error": {
+                    "name_exists": "Namme bestiet al"
+                },
+                "step": {
+                    "init": {
+                        "data": {
+                            "icon": "Ikoan",
+                            "name": "Namme"
+                        }
+                    }
+                },
+                "title": "Sône"
+            }
+        }
+    }
+}

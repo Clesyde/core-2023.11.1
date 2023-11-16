@@ -1,0 +1,236 @@
+{
+    "common": {
+        "config_flow": {
+            "abort": {
+                "already_configured_account": "Mae'r cyfrif eisoes wedi'i ffurfweddu"
+            }
+        },
+        "state": {
+            "active": "gweithredol",
+            "closed": "Ar gau",
+            "connected": "Cysylltiedig",
+            "disconnected": "Wedi datgysylltu",
+            "home": "Gartref",
+            "idle": "Segur",
+            "locked": "Wedi cloi",
+            "not_home": "Diim gartref",
+            "off": "I ffwrdd",
+            "on": "Ar",
+            "open": "Agor",
+            "paused": "Wedi rhewi",
+            "standby": "Gorffwys",
+            "unlocked": "Datgloi"
+        }
+    },
+    "component": {
+        "alarm_control_panel": {
+            "title": "Panel rheoli larwm"
+        },
+        "automation": {
+            "title": "Awtomeiddio"
+        },
+        "binary_sensor": {
+            "title": "Synhwyrydd deuaidd"
+        },
+        "calendar": {
+            "title": "Calendr"
+        },
+        "camera": {
+            "title": "Camera"
+        },
+        "climate": {
+            "title": "Hinsawdd"
+        },
+        "configurator": {
+            "title": "Ffurfweddwr"
+        },
+        "conversation": {
+            "title": "Sgwrs"
+        },
+        "cover": {
+            "title": "Clawr"
+        },
+        "deconz": {
+            "config": {
+                "abort": {
+                    "already_configured": "Pont eisoes wedi'i ffurfweddu",
+                    "no_bridges": "Dim pontydd deCONZ wedi eu darganfod"
+                },
+                "error": {
+                    "no_key": "Methu cael allwedd API"
+                },
+                "step": {
+                    "link": {
+                        "description": "Datgloi eich porth deCONZ i gofrestru gyda Cynorthwydd Cartref.\n\n1. Ewch i osodiadau system deCONZ \n2. Bwyso botwm \"Datgloi porth\"",
+                        "title": "Cysylltu â deCONZ"
+                    }
+                }
+            }
+        },
+        "device_tracker": {
+            "title": "Traciwr dyfais"
+        },
+        "fan": {
+            "title": "Ffan"
+        },
+        "group": {
+            "title": "Grŵp"
+        },
+        "homekit_controller": {
+            "config": {
+                "abort": {
+                    "ignored_model": "Mae cymorth HomeKit ar gyfer y model hwn wedi'i rwystro gan fod integreiddiad cynhenid mwy cyflawn ar gael.",
+                    "invalid_config_entry": "Mae'r ddyfais yn dangos bod eisoes wedi paru ond mae cofnod ffurwedd groes amdano yn Home Assistant sydd angen ei diddymu",
+                    "no_devices": "Ni ellir ddod o hyd i ddyfeisiau heb eu paru"
+                },
+                "error": {
+                    "authentication_error": "Cod HomeKit anghywir. Gwiriwch a cheisiwch eto.",
+                    "unable_to_pair": "Methu paru, plís ceisiwch eto",
+                    "unknown_error": "Dyfeis wedi adrodd gwall anhysbys. Methodd paru."
+                },
+                "step": {
+                    "pair": {
+                        "data": {
+                            "pairing_code": "Cod Paru"
+                        },
+                        "description": "Mae HomeKit Device yn cyfathrebu â {name} ( {category} ) dros y rhwydwaith ardal leol gan ddefnyddio cysylltiad wedi'i amgryptio diogel heb Reolwr HomeKit neu iCloud ar wahân. Rhowch eich cod paru HomeKit (yn y fformat XXX-XX-XXX) i ddefnyddio'r affeithiwr hwn. Mae'r cod hwn i'w gael fel arfer ar y ddyfais ei hun neu yn y pecyn.",
+                        "title": "Paru gyda ategolyn HomeKit"
+                    },
+                    "user": {
+                        "data": {
+                            "device": "Dyfais"
+                        },
+                        "description": "Dewiswch y ddyfais rydych eisiau paru efo",
+                        "title": "Paru gyda ategolyn HomeKit"
+                    }
+                }
+            },
+            "title": "Ategolyn HomeKit"
+        },
+        "hue": {
+            "config": {
+                "abort": {
+                    "all_configured": "Mae holl bontydd Philips Hue eisoes wedi eu ffurfweddu",
+                    "already_configured": "Pont eisoes wedi'i ffurfweddu",
+                    "cannot_connect": "Methu cysylltu i'r bont",
+                    "discover_timeout": "Methu darganfod pontydd Hue",
+                    "no_bridges": "Dim pontydd Philips Hue wedi'i ddarganfod",
+                    "unknown": "Digwyddodd gwall anhysbys"
+                },
+                "error": {
+                    "linking": "Digwyddodd gwall cysylltu anhysbys.",
+                    "register_failed": "Wedi methu â chofrestru, plís ceisiwch eto"
+                },
+                "step": {
+                    "init": {
+                        "data": {
+                            "host": "Gwesteiwr"
+                        },
+                        "title": "Dewiswch bont Hue"
+                    },
+                    "link": {
+                        "description": "Pwyswch y botwm ar y bont i gofrestru Philips Hue gyda Cynorthwydd Cartref.\n\n![Lleoliad botwm ar bont](\/static\/images\/config_philips_hue.jpg)",
+                        "title": "Hwb cyswllt"
+                    }
+                }
+            }
+        },
+        "image_processing": {
+            "title": "Prosesu delwedd"
+        },
+        "input_boolean": {
+            "title": "Mewnbynnu boolean"
+        },
+        "input_datetime": {
+            "title": "Mewnbynnu dyddiad\/amser"
+        },
+        "input_number": {
+            "title": "Mewnbynnu rhif"
+        },
+        "input_select": {
+            "title": "Mewnbynnu dewis"
+        },
+        "input_text": {
+            "title": "Mewnbynnu testun"
+        },
+        "light": {
+            "title": "Golau"
+        },
+        "lock": {
+            "title": "Clo"
+        },
+        "mailbox": {
+            "title": "Blwch post"
+        },
+        "media_player": {
+            "title": "Chwaraewr cyfryngau"
+        },
+        "notify": {
+            "title": "Hysbysu"
+        },
+        "notion": {
+            "config": {
+                "step": {
+                    "user": {
+                        "data": {
+                            "password": "Cyfrinair",
+                            "username": "Enw Defnyddiwr \/ Cyfeiriad E-bost"
+                        },
+                        "title": "Llenwch eich gwybodaeth"
+                    }
+                }
+            }
+        },
+        "person": {
+            "title": "Person"
+        },
+        "plant": {
+            "title": "Planhigion"
+        },
+        "proximity": {
+            "title": "Agosrwydd"
+        },
+        "remote": {
+            "title": "Symudol"
+        },
+        "scene": {
+            "title": "Golygfa"
+        },
+        "script": {
+            "title": "Sgript"
+        },
+        "sensor": {
+            "title": "Synhwyrydd"
+        },
+        "sun": {
+            "title": "Haul"
+        },
+        "switch": {
+            "title": "Newid"
+        },
+        "system_health": {
+            "title": "Iechyd System"
+        },
+        "zone": {
+            "config": {
+                "error": {
+                    "name_exists": "Enw eisoes yn bodoli"
+                },
+                "step": {
+                    "init": {
+                        "data": {
+                            "icon": "Eicon",
+                            "latitude": "Lledred",
+                            "longitude": "Hydred",
+                            "name": "Enw",
+                            "passive": "Goddefol",
+                            "radius": "Radiws"
+                        },
+                        "title": "Ddiffinio paramedrau parth"
+                    }
+                },
+                "title": "Parth"
+            }
+        }
+    }
+}

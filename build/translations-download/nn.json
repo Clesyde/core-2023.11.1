@@ -1,0 +1,801 @@
+{
+    "common": {
+        "config_flow": {
+            "abort": {
+                "already_configured_account": "Kontoen er allerede konfigurert"
+            }
+        },
+        "state": {
+            "active": "aktiv",
+            "closed": "Lukka",
+            "connected": "Tilkopla",
+            "disconnected": "Fråkopla",
+            "home": "Heime",
+            "idle": "Inaktiv",
+            "locked": "Låst",
+            "not_home": "Borte",
+            "off": "Av",
+            "on": "På",
+            "open": "Open",
+            "paused": "Pausa",
+            "standby": "Avventer",
+            "unlocked": "Ulåst"
+        },
+        "time": {
+            "sunday": "Søndag",
+            "thursday": "Torsdag",
+            "tuesday": "Tirsdag",
+            "wednesday": "Onsdag"
+        }
+    },
+    "component": {
+        "adguard": {
+            "config": {
+                "step": {
+                    "user": {
+                        "data": {
+                            "username": "Brukarnamn"
+                        }
+                    }
+                }
+            }
+        },
+        "alarm_control_panel": {
+            "title": "Alarmkontrollpanel"
+        },
+        "auth": {
+            "mfa_setup": {
+                "totp": {
+                    "error": {
+                        "invalid_code": "Ugyldig kode, prøv igjen. Dersom du heile tida får denne feilen, må du sørge for at klokka på Home Assistant-systemet ditt er nøyaktig."
+                    },
+                    "step": {
+                        "init": {
+                            "description": "For å aktivere to-faktor-autentisering ved hjelp av tid-baserte eingangspassord, skann QR-koden med autentiseringsappen din. Dersom du ikkje har ein, vil vi råde deg til å bruke anten [Google Authenticator] (https:\/\/support.google.com\/accounts\/answer\/1066447) eller [Authy] (https:\/\/authy.com\/). \n\n {qr_code} \n \nNår du har skanna koda, skriv du inn den sekssifra koda frå appen din for å stadfeste oppsettet. Dersom du har problemer med å skanne QR-koda, gjer du eit manuelt oppsett med kode ** ` {code} ` **.",
+                            "title": "Konfigurer to-faktor-autentisering ved hjelp av TOTP"
+                        }
+                    },
+                    "title": "TOTP"
+                }
+            }
+        },
+        "automation": {
+            "title": "Automasjonar"
+        },
+        "axis": {
+            "config": {
+                "step": {
+                    "user": {
+                        "data": {
+                            "host": "Vert",
+                            "password": "Passord",
+                            "port": "Port",
+                            "username": "Brukarnamn"
+                        }
+                    }
+                }
+            }
+        },
+        "binary_sensor": {
+            "device_class": {
+                "occupancy": "Bruk"
+            },
+            "entity_component": {
+                "gas": {
+                    "state": {
+                        "on": "Oppdaga"
+                    }
+                },
+                "light": {
+                    "name": "Lys",
+                    "state": {
+                        "off": "Ingen lys"
+                    }
+                },
+                "occupancy": {
+                    "name": "Bruk",
+                    "state": {
+                        "off": "Klarert",
+                        "on": "Oppdaga"
+                    }
+                },
+                "presence": {
+                    "state": {
+                        "off": "Borte",
+                        "on": "Heime"
+                    }
+                }
+            },
+            "title": "Binærsensor"
+        },
+        "calendar": {
+            "title": "Kalendar"
+        },
+        "camera": {
+            "title": "Kamera"
+        },
+        "cast": {
+            "config": {
+                "abort": {
+                    "single_instance_allowed": "Du treng berre å sette opp éin Google Cast-konfigurasjon."
+                },
+                "step": {
+                    "confirm": {
+                        "description": "Vil du sette opp Google Cast?"
+                    }
+                }
+            }
+        },
+        "climate": {
+            "title": "Klima"
+        },
+        "configurator": {
+            "title": "Konfigurator"
+        },
+        "conversation": {
+            "title": "Samtale"
+        },
+        "cover": {
+            "title": "Dekke"
+        },
+        "deconz": {
+            "config": {
+                "abort": {
+                    "already_configured": "Brua er allereie konfigurert",
+                    "no_bridges": "Oppdaga ingen deCONZ-bruer"
+                },
+                "error": {
+                    "no_key": "Kunne ikkje få ein API-nøkkel"
+                },
+                "step": {
+                    "link": {
+                        "description": "Lås opp deCONZ-gatewayen din for å registrere den med Home Assistant.\n\n1. Gå til systeminnstillingane til deCONZ\n2. Trykk på \"Lås opp gateway\"-knappen",
+                        "title": "Link med deCONZ"
+                    }
+                }
+            }
+        },
+        "demo": {
+            "entity": {
+                "vacuum": {
+                    "model_s": {
+                        "state_attributes": {
+                            "cleaned_area": {
+                                "name": "Reingjort område"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "device_tracker": {
+            "entity_component": {
+                "_": {
+                    "state": {
+                        "home": "Heime",
+                        "not_home": "Borte"
+                    }
+                }
+            },
+            "title": "Einingssporing"
+        },
+        "emulated_roku": {
+            "title": "EmulatedRoku"
+        },
+        "esphome": {
+            "config": {
+                "flow_title": "ESPHome: {name}",
+                "step": {
+                    "discovery_confirm": {
+                        "title": "Fann ESPhome node"
+                    }
+                }
+            }
+        },
+        "fan": {
+            "title": "Vifte"
+        },
+        "geonetnz_quakes": {
+            "config": {
+                "step": {
+                    "user": {
+                        "data": {
+                            "mmi": "MMI",
+                            "radius": "Radius"
+                        }
+                    }
+                }
+            }
+        },
+        "group": {
+            "entity_component": {
+                "_": {
+                    "state": {
+                        "home": "Heime",
+                        "not_home": "Borte"
+                    }
+                }
+            },
+            "title": "Gruppe"
+        },
+        "homekit_controller": {
+            "config": {
+                "step": {
+                    "pair": {
+                        "data": {
+                            "pairing_code": "Paringskode"
+                        }
+                    }
+                }
+            },
+            "title": "HomeKit tilbehør"
+        },
+        "homematicip_cloud": {
+            "config": {
+                "abort": {
+                    "already_configured": "Tilgangspunktet er allereie konfigurert",
+                    "connection_aborted": "Kunne ikkje kople til HMIP-serveren",
+                    "unknown": "Det hende ein ukjent feil."
+                },
+                "error": {
+                    "invalid_sgtin_or_pin": "Ugyldig PIN. Prøv igjen.",
+                    "press_the_button": "Ver vennleg og trykk på den blå knappen.",
+                    "register_failed": "Kunne ikkje registrere. Prøv igjen.",
+                    "timeout_button": "TIda gjekk ut for å trykke på den blå knappen. Ver vennleg og prøv igjen."
+                },
+                "step": {
+                    "init": {
+                        "data": {
+                            "hapid": "TilgangspunktID (SGTIN)",
+                            "name": "Namn (valfrii. Brukt som namnprefiks for alle einingar)",
+                            "pin": "Pinkode (valfritt)"
+                        },
+                        "title": "Vel HomematicIP tilgangspunkt"
+                    },
+                    "link": {
+                        "description": "Trykk på den blå knappen på tilgangspunktet og sendknappen for å registrere HomematicIP med Home Assistant.\n\n ! [Plassering av knapp på bro] (\/ static \/ images \/ config_flows \/ config_homematicip_cloud.png)",
+                        "title": "Link tilgangspunk"
+                    }
+                }
+            }
+        },
+        "hue": {
+            "config": {
+                "abort": {
+                    "all_configured": "Alle Philips Hue-bruer er allereie konfiguert",
+                    "already_configured": "Brua er allereie konfiguert",
+                    "cannot_connect": "Klarte ikkje å kople til brua",
+                    "discover_timeout": "Klarte ikkje å oppdage Hue-bruer",
+                    "no_bridges": "Oppdaga ingen Philips Hue-bruer",
+                    "unknown": "Ukjent feil oppstod"
+                },
+                "error": {
+                    "linking": "Ukjent linkefeil oppstod.",
+                    "register_failed": "Kunne ikkje registrere, prøv igjen"
+                },
+                "step": {
+                    "init": {
+                        "data": {
+                            "host": "Vert"
+                        },
+                        "title": "Vel Hue bru"
+                    },
+                    "link": {
+                        "description": "Trykk på knappen på brua, for å registrere Philips Hue med Home Assistant.\n\n![Lokasjon til knappen på brua](\/statisk\/bilete\/konfiguer_philips_hue.jpg)",
+                        "title": "Link Hub"
+                    }
+                }
+            }
+        },
+        "ifttt": {
+            "config": {
+                "step": {
+                    "user": {
+                        "description": "Er du sikker på at du ønskjer å setta opp IFTTT?"
+                    }
+                }
+            }
+        },
+        "image_processing": {
+            "title": "Biletehandsaming"
+        },
+        "input_boolean": {
+            "title": "Angje boolsk"
+        },
+        "input_datetime": {
+            "title": "Angje dato"
+        },
+        "input_number": {
+            "title": "Angje nummer"
+        },
+        "input_select": {
+            "title": "Angje val"
+        },
+        "input_text": {
+            "title": "Angje tekst"
+        },
+        "ios": {
+            "config": {
+                "abort": {
+                    "single_instance_allowed": "Du treng berre éin Home Assistant iOS-konfigurasjon."
+                },
+                "step": {
+                    "confirm": {
+                        "description": "Vil du sette opp Home Assistant iOS-komponenten?"
+                    }
+                }
+            }
+        },
+        "ipma": {
+            "config": {
+                "step": {
+                    "user": {
+                        "data": {
+                            "name": "Namn"
+                        }
+                    }
+                }
+            }
+        },
+        "life360": {
+            "config": {
+                "step": {
+                    "user": {
+                        "data": {
+                            "username": "Brukarnamn"
+                        }
+                    }
+                }
+            }
+        },
+        "light": {
+            "entity_component": {
+                "_": {
+                    "name": "Lys",
+                    "state_attributes": {
+                        "color_mode": {
+                            "state": {
+                                "white": "Kvit"
+                            }
+                        },
+                        "supported_color_modes": {
+                            "state": {
+                                "onoff": "På\/Av",
+                                "white": "Kvit"
+                            }
+                        }
+                    }
+                }
+            },
+            "title": "Lys"
+        },
+        "lock": {
+            "title": "Lås"
+        },
+        "logi_circle": {
+            "config": {
+                "step": {
+                    "auth": {
+                        "title": "Godkjenn med Logi Circle"
+                    },
+                    "user": {
+                        "description": "Vel kva for ein autentiseringsleverandør du vil godkjenne med Logi Circle"
+                    }
+                }
+            }
+        },
+        "mailbox": {
+            "title": "Postkasse"
+        },
+        "media_player": {
+            "title": "Mediaspelar"
+        },
+        "met": {
+            "config": {
+                "step": {
+                    "user": {
+                        "data": {
+                            "name": "Namn"
+                        }
+                    }
+                }
+            }
+        },
+        "mqtt": {
+            "config": {
+                "abort": {
+                    "single_instance_allowed": "Det er berre lov å ha éin MQTT-konfigurasjon"
+                },
+                "error": {
+                    "cannot_connect": "Klarte ikkje å kople til meglaren."
+                },
+                "step": {
+                    "broker": {
+                        "data": {
+                            "broker": "Meglar",
+                            "password": "Passord",
+                            "port": "Port",
+                            "username": "Brukarnamn"
+                        },
+                        "description": "Ver vennleg å skriv inn tilkoplingsinformasjonen for MQTT-meglaren din"
+                    }
+                }
+            }
+        },
+        "nest": {
+            "config": {
+                "abort": {
+                    "authorize_url_timeout": "Tida gjekk ut for generert autentikasjons-URL"
+                },
+                "error": {
+                    "internal_error": "Intern feil ved validering av kode",
+                    "timeout": "Tida gjekk ut for validering av kode",
+                    "unknown": "Det hende ein ukjent feil ved validering av kode."
+                },
+                "step": {
+                    "init": {
+                        "data": {
+                            "flow_impl": "Leverandør"
+                        },
+                        "description": "Vel kva for ein autentiseringsleverandør du vil godkjenne med Nest.",
+                        "title": "Autentiseringsleverandør"
+                    },
+                    "link": {
+                        "data": {
+                            "code": "Pinkode"
+                        },
+                        "description": "For å linke Nestkontoen din, [autoriser kontoen din]{url}.\nEtter autentiseringa, kopier-lim inn koda du fekk under her.",
+                        "title": "Link Nestkonto"
+                    }
+                }
+            }
+        },
+        "notify": {
+            "title": "Varsle"
+        },
+        "notion": {
+            "config": {
+                "step": {
+                    "user": {
+                        "data": {
+                            "password": "Notion"
+                        }
+                    }
+                }
+            }
+        },
+        "opentherm_gw": {
+            "config": {
+                "step": {
+                    "init": {
+                        "data": {
+                            "id": "ID",
+                            "name": "Namn"
+                        }
+                    }
+                }
+            }
+        },
+        "openuv": {
+            "config": {
+                "error": {
+                    "invalid_api_key": "Ugyldig API-nøkkel"
+                },
+                "step": {
+                    "user": {
+                        "data": {
+                            "api_key": "OpenUV API-nøkkel",
+                            "elevation": "Høgde",
+                            "latitude": "Breiddegrad",
+                            "longitude": "Lengdegrad"
+                        },
+                        "title": "Fyll ut informasjonen din"
+                    }
+                }
+            }
+        },
+        "person": {
+            "entity_component": {
+                "_": {
+                    "state": {
+                        "home": "Heime",
+                        "not_home": "Borte"
+                    }
+                }
+            },
+            "title": "Person"
+        },
+        "plant": {
+            "title": "Plante"
+        },
+        "proximity": {
+            "title": "Nærleik"
+        },
+        "ps4": {
+            "config": {
+                "abort": {
+                    "port_987_bind_error": "Kunne ikkje binda til port 987. Sjå [dokumentasjonen](https:\/\/www.home-assistant.io\/components\/ps4\/) for meir informasjon.",
+                    "port_997_bind_error": "Kunne ikkje binde til port 997. Sjå [dokumentasjonen] (https:\/\/www.home-assistant.io\/components\/ps4\/) for ytterlegare informasjon."
+                },
+                "step": {
+                    "link": {
+                        "data": {
+                            "code": "PIN",
+                            "name": "Namn"
+                        }
+                    }
+                }
+            }
+        },
+        "remote": {
+            "title": "Fjernkontroll"
+        },
+        "roborock": {
+            "config": {
+                "error": {
+                    "unknown_url": "Det oppstod eit problem med å finne rett url for roborock-kontoen din - sjekk loggane dine."
+                },
+                "step": {
+                    "user": {
+                        "data": {
+                            "username": "E-post"
+                        },
+                        "description": "Skriv inn di Roborock-e-postadresse."
+                    }
+                }
+            },
+            "entity": {
+                "select": {
+                    "mop_intensity": {
+                        "name": "Mop intensitet",
+                        "state": {
+                            "custom": "Tilpassa",
+                            "intense": "Intensiv",
+                            "mild": "Mild",
+                            "moderate": "Moderat",
+                            "off": "Av"
+                        }
+                    },
+                    "mop_mode": {
+                        "name": "Mod modus",
+                        "state": {
+                            "custom": "Tilpassa",
+                            "standard": "Standard"
+                        }
+                    }
+                },
+                "sensor": {
+                    "filter_time_left": {
+                        "name": "Filter tid igjen"
+                    },
+                    "main_brush_time_left": {
+                        "name": "Hovudbørste tid igjen"
+                    },
+                    "sensor_time_left": {
+                        "name": "Sensor tid igjen"
+                    },
+                    "side_brush_time_left": {
+                        "name": "Sidebørste tid igjen"
+                    }
+                }
+            }
+        },
+        "scene": {
+            "title": "Scene"
+        },
+        "script": {
+            "title": "Skript"
+        },
+        "season": {
+            "platform": {
+                "sensor": {
+                    "state": {
+                        "season__season__": {
+                            "summer": "Sommar",
+                            "winter": "Vinter"
+                        }
+                    }
+                }
+            }
+        },
+        "sensor": {
+            "title": "Sensor"
+        },
+        "sonos": {
+            "config": {
+                "abort": {
+                    "no_devices_found": "Det vart ikkje funne noko Sonos-einingar på nettverket.",
+                    "single_instance_allowed": "Du treng berre å sette opp éin Sonos-konfigurasjon."
+                },
+                "step": {
+                    "confirm": {
+                        "description": "Vil du sette opp Sonos?"
+                    }
+                }
+            }
+        },
+        "starline": {
+            "config": {
+                "step": {
+                    "auth_captcha": {
+                        "description": "{captcha_img}"
+                    }
+                }
+            }
+        },
+        "sun": {
+            "title": "Sol"
+        },
+        "switch": {
+            "title": "Brytar"
+        },
+        "system_health": {
+            "title": "Systemhelse"
+        },
+        "tradfri": {
+            "config": {
+                "abort": {
+                    "already_configured": "Brua er allereie konfigurert"
+                },
+                "error": {
+                    "cannot_connect": "Klarte ikkje å kople til gatewayen.",
+                    "invalid_key": "Kunne ikkje registrere med den brukte nøkkelen. Dersom dette held fram, prøv å starta gatewayen på ny.",
+                    "timeout": "Tida gjekk ut for validering av kode"
+                },
+                "step": {
+                    "auth": {
+                        "data": {
+                            "host": "Vert",
+                            "security_code": "Sikkerheitskode"
+                        },
+                        "description": "Du finn sikkerheitskoda på baksida av gatewayen din.",
+                        "title": "Skriv inn sikkerheitskode"
+                    }
+                }
+            }
+        },
+        "transmission": {
+            "config": {
+                "step": {
+                    "user": {
+                        "data": {
+                            "name": "Namn",
+                            "username": "Brukarnamn"
+                        }
+                    }
+                }
+            }
+        },
+        "tuya": {
+            "entity": {
+                "select": {
+                    "vacuum_mode": {
+                        "state": {
+                            "spiral": "Spiral",
+                            "standby": "Avventar",
+                            "wall_follow": "Følg vegg",
+                            "zone": "Sone"
+                        }
+                    }
+                }
+            }
+        },
+        "unifi": {
+            "config": {
+                "step": {
+                    "user": {
+                        "data": {
+                            "username": "Brukarnamn"
+                        }
+                    }
+                }
+            }
+        },
+        "upnp": {
+            "config": {
+                "error": {
+                    "one": "Ein",
+                    "other": "Andre"
+                }
+            }
+        },
+        "vacuum": {
+            "device_automation": {
+                "condition_type": {
+                    "is_cleaning": "{entity_name} rydder",
+                    "is_docked": "{entity_name} er parkert"
+                },
+                "trigger_type": {
+                    "cleaning": "{entity_name} begynte å rydde",
+                    "docked": "{entity_name} parkert"
+                }
+            },
+            "entity_component": {
+                "_": {
+                    "name": "Støvsuger",
+                    "state": {
+                        "cleaning": "Reingjer",
+                        "docked": "Parkert",
+                        "error": "Feil",
+                        "idle": "Ventar",
+                        "off": "Av",
+                        "on": "På",
+                        "paused": "Pausa",
+                        "returning": "Går heim"
+                    }
+                }
+            },
+            "title": "Støvsugar"
+        },
+        "weather": {
+            "entity_component": {
+                "_": {
+                    "state": {
+                        "lightning": "Lyn",
+                        "lightning-rainy": "Lyn, regn"
+                    }
+                }
+            }
+        },
+        "youtube": {
+            "config": {
+                "step": {
+                    "channels": {
+                        "data": {
+                            "channels": "YouTube-kanalar"
+                        },
+                        "description": "Vel kanalane du vil legge til"
+                    }
+                }
+            },
+            "entity": {
+                "sensor": {
+                    "latest_upload": {
+                        "name": "Siste opplasting"
+                    },
+                    "subscribers": {
+                        "name": "Abonnentar"
+                    }
+                }
+            },
+            "options": {
+                "step": {
+                    "init": {
+                        "data": {
+                            "channels": "YouTube-kanalar"
+                        },
+                        "description": "Vel kanalane du vil legge til."
+                    }
+                }
+            }
+        },
+        "zha": {
+            "device_automation": {
+                "action_type": {
+                    "squawk": "Squawk"
+                }
+            }
+        },
+        "zone": {
+            "config": {
+                "error": {
+                    "name_exists": "Namnet eksisterar allereie"
+                },
+                "step": {
+                    "init": {
+                        "data": {
+                            "icon": "Ikon",
+                            "latitude": "Breiddegrad",
+                            "longitude": "Lengdegrad",
+                            "name": "Namn",
+                            "passive": "Passiv",
+                            "radius": "Radius"
+                        },
+                        "title": "Definer soneparameterar"
+                    }
+                },
+                "title": "Sone"
+            }
+        }
+    }
+}

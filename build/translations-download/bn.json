@@ -1,0 +1,169 @@
+{
+    "common": {
+        "config_flow": {
+            "abort": {
+                "already_configured_account": "অ্যাকাউন্ট ইতিমধ্যে কনফিগার করা হয়েছে"
+            }
+        }
+    },
+    "component": {
+        "bluemaestro": {
+            "config": {
+                "abort": {
+                    "already_configured": "ডিভাইস ইতিমধ্যে কনফিগার করা আছে",
+                    "already_in_progress": "কনফিগারেশন প্রবাহ ইতিমধ্যেই চলছে",
+                    "no_devices_found": "নেটওয়ার্কে কোনো ডিভাইস পাওয়া যায়নি",
+                    "not_supported": "ডিভাইস সমর্থিত নয়"
+                },
+                "step": {
+                    "user": {
+                        "data": {
+                            "address": "ডিভাইস"
+                        },
+                        "description": "সেটআপ করার জন্য একটি ডিভাইস চয়ন করুন"
+                    }
+                }
+            }
+        },
+        "nobo_hub": {
+            "config": {
+                "abort": {
+                    "already_configured": "ডিভাইস ইতিমধ্যে কনফিগার করা আছে"
+                },
+                "error": {
+                    "cannot_connect": "সংযোগ করতে ব্যর্থ - ক্রমিক সংখ্যা পরীক্ষা করুন",
+                    "invalid_ip": "অকার্যকর আইপি ঠিকানা",
+                    "invalid_serial": "অকার্যকর ক্রমিক সংখ্যা",
+                    "unknown": "অপ্রত্যাশিত ত্রুটি"
+                },
+                "step": {
+                    "manual": {
+                        "data": {
+                            "ip_address": "আইপি ঠিকানা",
+                            "serial": "ক্রমিক সংখ্যা (১২ টি সংখ্যা)"
+                        },
+                        "description": "আপনার স্থানীয় নেটওয়ার্কে আবিষ্কৃত নয় এমন একটি নোবো ইকোহাব কনফিগার করুন। যদি আপনার হাবটি অন্য নেটওয়ার্কে থাকে তবে আপনি এখনও সম্পূর্ণ ক্রমিক নম্বর (১২ টি সংখ্যা) এবং এর আইপি ঠিকানা লিখে এটির সাথে সংযোগ করতে পারেন।"
+                    },
+                    "selected": {
+                        "data": {
+                            "serial_suffix": "ক্রমিক সংখ্যা প্রত্যয় (৩ টি সংখ্যা)"
+                        },
+                        "description": "{hub} কনফিগার করা হচ্ছে।\n\nহাবের সাথে সংযোগ করতে, আপনাকে হাবের ক্রমিক নম্বরের শেষ ৩ টি সংখ্যা লিখতে হবে।"
+                    },
+                    "user": {
+                        "data": {
+                            "device": "আবিষ্কৃত হাব"
+                        },
+                        "description": "কনফিগার করতে Nobø Ecohub নির্বাচন করুন।"
+                    }
+                }
+            },
+            "options": {
+                "step": {
+                    "init": {
+                        "data": {
+                            "override_type": "অগ্রাধিকার ধরণ"
+                        },
+                        "description": "পরের সপ্তাহের প্রোফাইল পরিবর্তনে ওভাররাইড শেষ করতে ওভাররাইড টাইপ \"এখন\" নির্বাচন করুন।"
+                    }
+                }
+            }
+        },
+        "sensibo": {
+            "config": {
+                "step": {
+                    "reauth_confirm": {
+                        "data_description": {
+                            "api_key": "একটি নতুন এপিআই কী পেতে ডকুমেন্টেশন অনুসরণ করুন।"
+                        }
+                    },
+                    "user": {
+                        "data_description": {
+                            "api_key": "আপনার এপিআই কী পেতে ডকুমেন্টেশন অনুসরণ করুন।"
+                        }
+                    }
+                }
+            }
+        },
+        "sensor": {
+            "device_automation": {
+                "condition_type": {
+                    "is_moisture": "বর্তমান {entity_name} আর্দ্রতা"
+                },
+                "trigger_type": {
+                    "moisture": "{entity_name} আর্দ্রতা পরিবর্তন"
+                }
+            }
+        },
+        "volvooncall": {
+            "config": {
+                "abort": {
+                    "reauth_successful": "পুনরায় প্রমাণীকরণ সফল হয়েছে"
+                }
+            }
+        },
+        "withings": {
+            "config": {
+                "step": {
+                    "reauth_confirm": {
+                        "title": "ইন্টিগ্রেশন পুনরায় প্রমাণীকরণ"
+                    }
+                }
+            }
+        },
+        "zha": {
+            "config": {
+                "step": {
+                    "manual_pick_radio_type": {
+                        "data": {
+                            "radio_type": "রেডিওর ধরন"
+                        },
+                        "description": "আপনার Zigbee রেডিও প্রকার চয়ন করুন",
+                        "title": "রেডিওর ধরন"
+                    },
+                    "manual_port_config": {
+                        "data": {
+                            "baudrate": "পোর্টের গতি",
+                            "flow_control": "তথ্য প্রবাহ নিয়ন্ত্রণ",
+                            "path": "সিরিয়াল ডিভাইস পথ"
+                        },
+                        "description": "সিরিয়াল পোর্ট সেটিংস লিখুন",
+                        "title": "সিরিয়াল পোর্ট সেটিংস"
+                    },
+                    "maybe_confirm_ezsp_restore": {
+                        "data": {
+                            "overwrite_coordinator_ieee": "স্থায়ীভাবে রেডিও IEEE ঠিকানা প্রতিস্থাপন করুন"
+                        },
+                        "title": "রেডিও IEEE ঠিকানা ওভাররাইট করুন"
+                    },
+                    "upload_manual_backup": {
+                        "data": {
+                            "uploaded_backup_file": "একটি ফাইল আপলোড করুন"
+                        },
+                        "title": "একটি ম্যানুয়াল ব্যাকআপ আপলোড করুন"
+                    }
+                }
+            },
+            "options": {
+                "step": {
+                    "init": {
+                        "description": "ZHA বন্ধ করে দেওয়া হবে।  আপনি কি চালিয়ে যেতে চান?",
+                        "title": "ZHA পুনরায় কনফিগার করুন"
+                    },
+                    "manual_pick_radio_type": {
+                        "data": {
+                            "radio_type": "রেডিও প্রকার"
+                        },
+                        "description": "আপনার জিগবি রেডিও টাইপ চয়ন করুন",
+                        "title": "রেডিও প্রকার"
+                    },
+                    "manual_port_config": {
+                        "data": {
+                            "baudrate": "পোর্ট গতি"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

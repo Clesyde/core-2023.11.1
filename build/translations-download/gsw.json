@@ -1,0 +1,3441 @@
+{
+    "common": {
+        "action": {
+            "close": "Zuetue",
+            "connect": "Verbinde",
+            "disable": "Deaktiviere",
+            "disconnect": "Verbindig ufhäbe",
+            "enable": "Aktiviere",
+            "open": "Uftue",
+            "pause": "Pousiere",
+            "reload": "Nöi lade",
+            "restart": "Nöi starte",
+            "start": "Starte",
+            "stop": "Aahaute",
+            "toggle": "Umschaute",
+            "turn_off": "Usschaute",
+            "turn_on": "Yyschaute"
+        },
+        "config_flow": {
+            "abort": {
+                "already_configured_account": "Konto isch scho konfiguriert",
+                "already_configured_device": "Grät isch scho konfiguriert",
+                "already_configured_location": "Ort isch scho konfiguriert",
+                "already_configured_service": "Dienst isch scho konfiguriert",
+                "already_in_progress": "Konfigurationsprozäss louft scho",
+                "cloud_not_connected": "Ke Verbindig zu Home Assistant Cloud.",
+                "no_devices_found": "Kes Grät im Netwärch gfunde",
+                "oauth2_authorize_url_timeout": "Zytüberschryttig bim Generiere for e URL.",
+                "oauth2_error": "Ungüudige Schlüssu erhaute.",
+                "oauth2_missing_configuration": "Der Komponänt isch nid konfiguriert. Bitte lueg ir Dokumentation nache.",
+                "oauth2_missing_credentials": "D Integration bruucht Awändigs-Zuegangsdate.",
+                "oauth2_no_url_available": "Ke URL verfüegbar. für meh Informatione zu däm Fähler lueg ihr Hiuf nache ({docs_url}).",
+                "oauth2_timeout": "Zytüberschryttig bim Uflöse vom OAuth-Schlüssu.",
+                "oauth2_user_rejected_authorize": "Kontoverbindig zrüggwise: {error}",
+                "reauth_successful": "Nöiouthentifizierig erfougrych",
+                "single_instance_allowed": "Scho konfiguriert. Nume ei einzegi Konfiguration müglech.",
+                "unknown_authorize_url_generation": "Unbekannte Fähler bim Generiere vor URL.",
+                "webhook_not_internet_accessible": "Dini Home Assistant Instanz mues vom Internet erreichbar sy, für Webhook-Nachrichte z empfah."
+            },
+            "create_entry": {
+                "authenticated": "Erfougrych outhentifiziert"
+            },
+            "data": {
+                "access_token": "Zuegangsschlüssu",
+                "api_key": "API-Schlüssu (key)",
+                "api_token": "API-Schlüssu (token)",
+                "device": "Grät",
+                "elevation": "Höchi",
+                "email": "E-Mail",
+                "host": "Host",
+                "ip": "IP Adrässe",
+                "latitude": "Breitegrad",
+                "location": "Ort",
+                "longitude": "Längegrad",
+                "mode": "Modus",
+                "name": "Name",
+                "password": "Passwort",
+                "path": "Pfad",
+                "pin": "PIN-Code",
+                "port": "Port",
+                "ssl": "Bruucht es SSL-Zertifikat",
+                "url": "URL",
+                "usb_path": "USB Grätepfad",
+                "username": "Benutzername",
+                "verify_ssl": "SSL-Zertivikat verifiziere"
+            },
+            "description": {
+                "confirm_setup": "Wosch d Yyrichtig aafah?"
+            },
+            "error": {
+                "cannot_connect": "Verbindig gschytteret",
+                "invalid_access_token": "Ungüutige Zuegangsschlüssu",
+                "invalid_api_key": "Ungüutige API-Schlüssu",
+                "invalid_auth": "Ungüutegi Outhentifizierig",
+                "invalid_host": "Ungüutige Hostname oder IP Adrässe",
+                "timeout_connect": "Zytüberschryttig bim Verbinde",
+                "unknown": "Unerwartete Fähler"
+            },
+            "title": {
+                "oauth2_pick_implementation": "Wäu d Outhentifizierigsmethode",
+                "reauth": "Integration nöi Outhentifiziere",
+                "via_hassio_addon": "{name} via Home Assistant Add-On"
+            }
+        },
+        "device_automation": {
+            "action_type": {
+                "toggle": "{entity_name} umschaute",
+                "turn_off": "{entity_name} usschaute",
+                "turn_on": "{entity_name} yyschaute"
+            },
+            "condition_type": {
+                "is_off": "{entity_name} isch usschaute",
+                "is_on": "{entity_name} is yygschaute"
+            },
+            "trigger_type": {
+                "changed_states": "{entity_name} isch yy- oder usgschaute worde",
+                "turned_off": "{entity_name} isch usschaute worde",
+                "turned_on": "{entity_name} isch yyschaute worde"
+            }
+        },
+        "generic": {
+            "model": "Modäu",
+            "ui_managed": "Ir Benutzeroberflächi verwautet"
+        },
+        "issues": {
+            "platform_integration_no_support_description": "D Platform {platform} für d {domain} Integration ungerstützt ke Platform-yyrichtig.\n\nBitte lösch se us dine Yystellige und start Home Assistant nöi, für ds Problem z behäbe.",
+            "platform_integration_no_support_title": "Plattform nid ungerstützt"
+        },
+        "state": {
+            "active": "Aktiv",
+            "closed": "Zue",
+            "connected": "Verbunde",
+            "disabled": "Deaktiviert",
+            "disconnected": "Trennt",
+            "enabled": "Freigäh",
+            "home": "Deheime",
+            "idle": "Läärlouf",
+            "locked": "Bschlosse",
+            "no": "Nei",
+            "not_home": "Nid Deheime",
+            "off": "Us",
+            "on": "Anne",
+            "open": "Offe",
+            "paused": "Pousiert",
+            "standby": "Standby",
+            "unlocked": "Ufbschlosse",
+            "yes": "Ja"
+        },
+        "time": {
+            "friday": "Frytig",
+            "monday": "Mäntig",
+            "saturday": "Samstig",
+            "sunday": "Sunntig",
+            "thursday": "Donnstig",
+            "tuesday": "Zystig",
+            "wednesday": "Midwuch"
+        }
+    },
+    "component": {
+        "abode": {
+            "config": {
+                "abort": {
+                    "reauth_successful": "Nöiouthentifizierig erfougrych",
+                    "single_instance_allowed": "Scho konfiguriert. Nume ei einzegi Konfiguration müglech."
+                },
+                "error": {
+                    "cannot_connect": "Verbindig gschytteret",
+                    "invalid_auth": "Ungüutegi Outhentifizierig",
+                    "invalid_mfa_code": "Ungüutige MFA-Code"
+                },
+                "step": {
+                    "mfa": {
+                        "data": {
+                            "mfa_code": "MFA-Code (6 Zahle)"
+                        },
+                        "title": "Gib di MFA-Code für Abode yy"
+                    },
+                    "reauth_confirm": {
+                        "data": {
+                            "password": "Passwort",
+                            "username": "E-Mail"
+                        },
+                        "title": "Gib dini Abode-Aamäudedate aa"
+                    },
+                    "user": {
+                        "data": {
+                            "password": "Passwort",
+                            "username": "E-Mail"
+                        },
+                        "title": "Gib dini Abode-Aamäudedate aa"
+                    }
+                }
+            },
+            "services": {
+                "capture_image": {
+                    "description": "Nim mit ere Kamera es nöis Biud uuf.",
+                    "fields": {
+                        "entity_id": {
+                            "description": "Entitäts-ID vor Kamera nötig.",
+                            "name": "Entität"
+                        }
+                    },
+                    "name": "BIud ufnäh"
+                },
+                "change_setting": {
+                    "description": "Abode-Systemyystellige ändere.",
+                    "fields": {
+                        "setting": {
+                            "description": "Yystellige ändere.",
+                            "name": "Yystellig"
+                        },
+                        "value": {
+                            "description": "Wärt",
+                            "name": "Wärt"
+                        }
+                    },
+                    "name": "Yystellige ändere"
+                },
+                "trigger_automation": {
+                    "description": "E Abode-Outomation uslöse.",
+                    "fields": {
+                        "entity_id": {
+                            "description": "Entitäts-ID vom Outomationsuslöser.",
+                            "name": "Entität"
+                        }
+                    },
+                    "name": "Outomation uslöse"
+                }
+            }
+        },
+        "accuweather": {
+            "config": {
+                "abort": {
+                    "single_instance_allowed": "Scho konfiguriert. Nume ei einzegi Konfiguration müglech."
+                },
+                "create_entry": {
+                    "default": "Gwüssi Sensore wärde standardmässig nid aktiviert. Du chasch die im Entitäts-Regischter aktiviere, we de d Yyrichtig vor Integration abgschlosse hesch.\nD Wättervorhärsag isch standardmässig nid aktiviert. Du chasch se ide Integrationsoptione aktiviere."
+                },
+                "error": {
+                    "cannot_connect": "Verbindig gschytteret",
+                    "invalid_api_key": "Ungüutige API-Schlüssu",
+                    "requests_exceeded": "Die erloubti Aazau vo Aafrage a Accuweather API isch überschritte. Du muesch warte oder der API-Schlüss ändere."
+                },
+                "step": {
+                    "user": {
+                        "data": {
+                            "api_key": "API-Schlüssu (key)",
+                            "latitude": "Breitegrad",
+                            "longitude": "Längegrad",
+                            "name": "Name"
+                        }
+                    }
+                }
+            },
+            "entity": {
+                "sensor": {
+                    "air_quality": {
+                        "state": {
+                            "good": "Guet",
+                            "hazardous": "Gfährlech",
+                            "high": "Höch",
+                            "low": "Töif",
+                            "moderate": "Moderat",
+                            "unhealthy": "Ungsund"
+                        }
+                    },
+                    "air_quality_0d": {
+                        "name": "Hütegi Luftqualität",
+                        "state": {
+                            "good": "Guet",
+                            "hazardous": "Gfährlech",
+                            "high": "Höch",
+                            "low": "Töif",
+                            "moderate": "Moderat",
+                            "unhealthy": "Ungsund"
+                        }
+                    },
+                    "air_quality_1d": {
+                        "name": "Luftqualität Tag 1",
+                        "state": {
+                            "good": "Guet",
+                            "hazardous": "Gfährlech",
+                            "high": "Höch",
+                            "low": "Töif",
+                            "moderate": "Moderat",
+                            "unhealthy": "Ungsund"
+                        }
+                    },
+                    "air_quality_2d": {
+                        "name": "Luftqualität Tag 2",
+                        "state": {
+                            "good": "Guet",
+                            "hazardous": "Gfährlech",
+                            "high": "Höch",
+                            "low": "Töif",
+                            "moderate": "Moderat",
+                            "unhealthy": "Ungsund"
+                        }
+                    },
+                    "air_quality_3d": {
+                        "name": "Luftqualität Tag 3",
+                        "state": {
+                            "good": "Guet",
+                            "hazardous": "Gfährlech",
+                            "high": "Höch",
+                            "low": "Töif",
+                            "moderate": "Moderat",
+                            "unhealthy": "Ungsund"
+                        }
+                    },
+                    "air_quality_4d": {
+                        "name": "Luftqualität Tag 4",
+                        "state": {
+                            "good": "Guet",
+                            "hazardous": "Gfährlech",
+                            "high": "Höch",
+                            "low": "Töif",
+                            "moderate": "Moderat",
+                            "unhealthy": "Ungsund"
+                        }
+                    },
+                    "apparent_temperature": {
+                        "name": "Gfüeuti Temperatur"
+                    },
+                    "cloud_ceiling": {
+                        "name": "Woukehöchi"
+                    },
+                    "cloud_cover": {
+                        "name": "Wouchedechi"
+                    },
+                    "cloud_cover_day_0d": {
+                        "name": "Hütegi Wouchedechi"
+                    },
+                    "cloud_cover_day_1d": {
+                        "name": "Wouchedechi Tag 1"
+                    },
+                    "cloud_cover_day_2d": {
+                        "name": "Wouchedechi Tag 2"
+                    },
+                    "cloud_cover_day_3d": {
+                        "name": "Wouchedechi Tag 3"
+                    },
+                    "cloud_cover_day_4d": {
+                        "name": "Wouchedechi Tag 4"
+                    },
+                    "cloud_cover_night_0d": {
+                        "name": "Wouchedechi hüt Nacht"
+                    },
+                    "cloud_cover_night_1d": {
+                        "name": "Wouchedechi Nacht 1"
+                    },
+                    "cloud_cover_night_2d": {
+                        "name": "Wouchedechi Nacht 2"
+                    },
+                    "cloud_cover_night_3d": {
+                        "name": "Wouchedechi Nacht 3"
+                    },
+                    "cloud_cover_night_4d": {
+                        "name": "Wouchedechi Nacht 4"
+                    },
+                    "dew_point": {
+                        "name": "Toupunkt"
+                    },
+                    "grass_pollen": {
+                        "state_attributes": {
+                            "level": {
+                                "name": "Level",
+                                "state": {
+                                    "good": "Guet",
+                                    "hazardous": "Gfährlech",
+                                    "high": "Höch",
+                                    "low": "Töif",
+                                    "moderate": "Moderat",
+                                    "unhealthy": "Ungsund"
+                                }
+                            }
+                        }
+                    },
+                    "grass_pollen_0d": {
+                        "name": "Graspoue",
+                        "state_attributes": {
+                            "level": {
+                                "name": "Level",
+                                "state": {
+                                    "good": "Guet",
+                                    "hazardous": "Gfährlech",
+                                    "high": "Höch",
+                                    "low": "Töif",
+                                    "moderate": "Moderat",
+                                    "unhealthy": "Ungsund"
+                                }
+                            }
+                        }
+                    },
+                    "grass_pollen_1d": {
+                        "name": "Grasspoue Tag 1",
+                        "state_attributes": {
+                            "level": {
+                                "name": "Level",
+                                "state": {
+                                    "good": "Guet",
+                                    "hazardous": "Gfährlech",
+                                    "high": "Höch",
+                                    "low": "Töif",
+                                    "moderate": "Moderat",
+                                    "unhealthy": "Ungsund"
+                                }
+                            }
+                        }
+                    },
+                    "grass_pollen_2d": {
+                        "name": "Grasspoue Tag 2",
+                        "state_attributes": {
+                            "level": {
+                                "name": "Level",
+                                "state": {
+                                    "good": "Guet",
+                                    "hazardous": "Gfährlech",
+                                    "high": "Höch",
+                                    "low": "Töif",
+                                    "moderate": "Moderat",
+                                    "unhealthy": "Ungsund"
+                                }
+                            }
+                        }
+                    },
+                    "grass_pollen_3d": {
+                        "name": "Grasspoue Tag 3",
+                        "state_attributes": {
+                            "level": {
+                                "name": "Level",
+                                "state": {
+                                    "good": "Guet",
+                                    "hazardous": "Gfährlech",
+                                    "high": "Höch",
+                                    "low": "Töif",
+                                    "moderate": "Moderat",
+                                    "unhealthy": "Ungsund"
+                                }
+                            }
+                        }
+                    },
+                    "grass_pollen_4d": {
+                        "name": "Grasspoue Tag 4",
+                        "state_attributes": {
+                            "level": {
+                                "name": "Level",
+                                "state": {
+                                    "good": "Guet",
+                                    "hazardous": "Gfährlech",
+                                    "high": "Höch",
+                                    "low": "Töif",
+                                    "moderate": "Moderat",
+                                    "unhealthy": "Ungsund"
+                                }
+                            }
+                        }
+                    },
+                    "mold_pollen_2d": {
+                        "name": "Piuzspore Tag 2",
+                        "state_attributes": {
+                            "level": {
+                                "name": "Level",
+                                "state": {
+                                    "good": "Guet",
+                                    "hazardous": "Gfährlech",
+                                    "high": "Höch",
+                                    "low": "Töif",
+                                    "moderate": "Moderat",
+                                    "unhealthy": "Ungsund"
+                                }
+                            }
+                        }
+                    },
+                    "mold_pollen_3d": {
+                        "name": "Piuzspore Tag 3",
+                        "state_attributes": {
+                            "level": {
+                                "name": "Level",
+                                "state": {
+                                    "good": "Guet",
+                                    "hazardous": "Gfährlech",
+                                    "high": "Höch",
+                                    "low": "Töif",
+                                    "moderate": "Moderat",
+                                    "unhealthy": "Ungsund"
+                                }
+                            }
+                        }
+                    },
+                    "mold_pollen_4d": {
+                        "name": "Piuzspore Tag 4",
+                        "state_attributes": {
+                            "level": {
+                                "name": "Level",
+                                "state": {
+                                    "good": "Guet",
+                                    "hazardous": "Gfährlech",
+                                    "high": "Höch",
+                                    "low": "Töif",
+                                    "moderate": "Moderat",
+                                    "unhealthy": "Ungsund"
+                                }
+                            }
+                        }
+                    },
+                    "pressure_tendency": {
+                        "name": "Druckentwicklig",
+                        "state": {
+                            "falling": "Am gheie",
+                            "rising": "Am styge",
+                            "steady": "Konstant"
+                        }
+                    },
+                    "ragweed_pollen": {
+                        "state_attributes": {
+                            "level": {
+                                "name": "Level",
+                                "state": {
+                                    "good": "Guet",
+                                    "hazardous": "Gfährlech",
+                                    "high": "Höch",
+                                    "low": "Töif",
+                                    "moderate": "Moderat",
+                                    "unhealthy": "Ungsund"
+                                }
+                            }
+                        }
+                    },
+                    "ragweed_pollen_0d": {
+                        "state_attributes": {
+                            "level": {
+                                "name": "Level",
+                                "state": {
+                                    "good": "Guet",
+                                    "hazardous": "Gfährlech",
+                                    "high": "Höch",
+                                    "low": "Töif",
+                                    "moderate": "Moderat",
+                                    "unhealthy": "Ungsund"
+                                }
+                            }
+                        }
+                    },
+                    "ragweed_pollen_1d": {
+                        "state_attributes": {
+                            "level": {
+                                "name": "Level",
+                                "state": {
+                                    "good": "Guet",
+                                    "hazardous": "Gfährlech",
+                                    "high": "Höch",
+                                    "low": "Töif",
+                                    "moderate": "Moderat",
+                                    "unhealthy": "Ungsund"
+                                }
+                            }
+                        }
+                    },
+                    "ragweed_pollen_2d": {
+                        "state_attributes": {
+                            "level": {
+                                "name": "Level",
+                                "state": {
+                                    "good": "Guet",
+                                    "hazardous": "Gfährlech",
+                                    "high": "Höch",
+                                    "low": "Töif",
+                                    "moderate": "Moderat",
+                                    "unhealthy": "Ungsund"
+                                }
+                            }
+                        }
+                    },
+                    "ragweed_pollen_3d": {
+                        "name": "Ambrosiapoue Tag 3",
+                        "state_attributes": {
+                            "level": {
+                                "name": "Level",
+                                "state": {
+                                    "good": "Guet",
+                                    "hazardous": "Gfährlech",
+                                    "high": "Höch",
+                                    "low": "Töif",
+                                    "moderate": "Moderat",
+                                    "unhealthy": "Ungsund"
+                                }
+                            }
+                        }
+                    },
+                    "ragweed_pollen_4d": {
+                        "name": "Ambrosiapoue Tag 4",
+                        "state_attributes": {
+                            "level": {
+                                "name": "Level",
+                                "state": {
+                                    "good": "Guet",
+                                    "hazardous": "Gfährlech",
+                                    "high": "Höch",
+                                    "low": "Töif",
+                                    "moderate": "Moderat",
+                                    "unhealthy": "Ungsund"
+                                }
+                            }
+                        }
+                    },
+                    "realfeel_temperature": {
+                        "name": "Gfüeuti Temperatur"
+                    },
+                    "tree_pollen": {
+                        "state_attributes": {
+                            "level": {
+                                "state": {
+                                    "good": "Guet",
+                                    "hazardous": "Gfährlech",
+                                    "high": "Höch",
+                                    "low": "Töif",
+                                    "moderate": "Moderat",
+                                    "unhealthy": "Ungsund"
+                                }
+                            }
+                        }
+                    },
+                    "tree_pollen_0d": {
+                        "state_attributes": {
+                            "level": {
+                                "name": "Level",
+                                "state": {
+                                    "good": "Guet",
+                                    "hazardous": "Gfährlech",
+                                    "high": "Höch",
+                                    "low": "Töif",
+                                    "moderate": "Moderat"
+                                }
+                            }
+                        }
+                    },
+                    "tree_pollen_2d": {
+                        "state_attributes": {
+                            "level": {
+                                "name": "Level",
+                                "state": {
+                                    "good": "Guet",
+                                    "hazardous": "Gfährlech",
+                                    "high": "Höch",
+                                    "low": "Töif",
+                                    "moderate": "Moderat",
+                                    "unhealthy": "Ungsund"
+                                }
+                            }
+                        }
+                    },
+                    "tree_pollen_3d": {
+                        "state_attributes": {
+                            "level": {
+                                "name": "Level",
+                                "state": {
+                                    "good": "Guet",
+                                    "hazardous": "Gfährlech",
+                                    "high": "Höch",
+                                    "low": "Töif",
+                                    "moderate": "Moderat",
+                                    "unhealthy": "Ungsund"
+                                }
+                            }
+                        }
+                    },
+                    "tree_pollen_4d": {
+                        "state_attributes": {
+                            "level": {
+                                "name": "Level",
+                                "state": {
+                                    "good": "Guet",
+                                    "hazardous": "Gfährlech",
+                                    "high": "Höch",
+                                    "low": "Töif",
+                                    "moderate": "Moderat",
+                                    "unhealthy": "Ungsund"
+                                }
+                            }
+                        }
+                    },
+                    "uv_index": {
+                        "state_attributes": {
+                            "level": {
+                                "name": "Level",
+                                "state": {
+                                    "good": "Guet",
+                                    "hazardous": "Gfährlech",
+                                    "high": "Höch",
+                                    "low": "Töif",
+                                    "moderate": "Moderat"
+                                }
+                            }
+                        }
+                    },
+                    "uv_index_2d": {
+                        "state_attributes": {
+                            "level": {
+                                "state": {
+                                    "moderate": "Moderat",
+                                    "unhealthy": "Ungsund"
+                                }
+                            }
+                        }
+                    },
+                    "uv_index_3d": {
+                        "state_attributes": {
+                            "level": {
+                                "name": "Level",
+                                "state": {
+                                    "good": "Guet",
+                                    "hazardous": "Gfährlech",
+                                    "high": "Höch",
+                                    "low": "Töif",
+                                    "moderate": "Moderat",
+                                    "unhealthy": "Ungsund"
+                                }
+                            }
+                        }
+                    },
+                    "uv_index_4d": {
+                        "state_attributes": {
+                            "level": {
+                                "name": "Level",
+                                "state": {
+                                    "good": "Guet",
+                                    "hazardous": "Gfährlech",
+                                    "high": "Höch",
+                                    "low": "Töif",
+                                    "moderate": "Moderat",
+                                    "unhealthy": "Ungsund"
+                                }
+                            }
+                        }
+                    },
+                    "wind_gust_speed": {
+                        "name": "Böhegschwindigkeit"
+                    }
+                }
+            }
+        },
+        "adax": {
+            "config": {
+                "step": {
+                    "cloud": {
+                        "data": {
+                            "password": "Passwort"
+                        }
+                    }
+                }
+            }
+        },
+        "airzone": {
+            "entity": {
+                "select": {
+                    "sleep_times": {
+                        "state": {
+                            "off": "Us"
+                        }
+                    }
+                }
+            }
+        },
+        "alert": {
+            "entity_component": {
+                "_": {
+                    "state": {
+                        "idle": "Läärlouf",
+                        "on": "Aktiv"
+                    }
+                }
+            }
+        },
+        "automation": {
+            "entity_component": {
+                "_": {
+                    "state": {
+                        "off": "Us",
+                        "on": "Anne"
+                    }
+                }
+            },
+            "title": "Automation"
+        },
+        "binary_sensor": {
+            "entity_component": {
+                "_": {
+                    "state": {
+                        "off": "Us",
+                        "on": "Anne"
+                    }
+                },
+                "connectivity": {
+                    "state": {
+                        "off": "Trennt",
+                        "on": "Verbunde"
+                    }
+                },
+                "door": {
+                    "state": {
+                        "off": "Zue",
+                        "on": "Offe"
+                    }
+                },
+                "garage_door": {
+                    "state": {
+                        "off": "Zue",
+                        "on": "Offe"
+                    }
+                },
+                "lock": {
+                    "state": {
+                        "off": "Bschlosse",
+                        "on": "Ufbschlosse"
+                    }
+                },
+                "opening": {
+                    "state": {
+                        "off": "Zue",
+                        "on": "Offe"
+                    }
+                },
+                "window": {
+                    "state": {
+                        "off": "Zue",
+                        "on": "Offe"
+                    }
+                }
+            },
+            "title": "Binäre Sensor"
+        },
+        "calendar": {
+            "entity_component": {
+                "_": {
+                    "state": {
+                        "off": "Us",
+                        "on": "Anne"
+                    },
+                    "state_attributes": {
+                        "all_day": {
+                            "state": {
+                                "false": "Nei",
+                                "true": "Ja"
+                            }
+                        }
+                    }
+                }
+            },
+            "title": "Kaländer"
+        },
+        "camera": {
+            "entity_component": {
+                "_": {
+                    "state": {
+                        "idle": "Läärlouf"
+                    },
+                    "state_attributes": {
+                        "motion_detection": {
+                            "state": {
+                                "false": "Deaktiviert",
+                                "true": "Freigäh"
+                            }
+                        }
+                    }
+                }
+            },
+            "title": "Kamera"
+        },
+        "climate": {
+            "entity_component": {
+                "_": {
+                    "state": {
+                        "off": "Us"
+                    },
+                    "state_attributes": {
+                        "fan_mode": {
+                            "state": {
+                                "off": "Us",
+                                "on": "Anne"
+                            }
+                        },
+                        "hvac_action": {
+                            "state": {
+                                "off": "Us"
+                            }
+                        },
+                        "swing_mode": {
+                            "state": {
+                                "off": "Us",
+                                "on": "Anne"
+                            }
+                        }
+                    }
+                }
+            },
+            "title": "Klima"
+        },
+        "co2signal": {
+            "entity": {
+                "sensor": {
+                    "fossil_fuel_percentage": {
+                        "state_attributes": {
+                            "country_code": {
+                                "name": "Ländercode"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "configurator": {
+            "title": "Configurator"
+        },
+        "conversation": {
+            "title": "Gspräch"
+        },
+        "counter": {
+            "entity_component": {
+                "_": {
+                    "state_attributes": {
+                        "editable": {
+                            "state": {
+                                "false": "Nei",
+                                "true": "Ja"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "cover": {
+            "entity_component": {
+                "_": {
+                    "state": {
+                        "closed": "Zue",
+                        "open": "Offe"
+                    }
+                }
+            },
+            "title": "Roulade"
+        },
+        "deluge": {
+            "entity": {
+                "sensor": {
+                    "status": {
+                        "state": {
+                            "idle": "Läärlouf"
+                        }
+                    }
+                }
+            }
+        },
+        "demo": {
+            "entity": {
+                "climate": {
+                    "ubercool": {
+                        "state_attributes": {
+                            "swing_mode": {
+                                "state": {
+                                    "off": "Us"
+                                }
+                            }
+                        }
+                    }
+                },
+                "sensor": {
+                    "thermostat_mode": {
+                        "state": {
+                            "away": "Nid Deheime"
+                        }
+                    }
+                }
+            }
+        },
+        "device_tracker": {
+            "entity_component": {
+                "_": {
+                    "state": {
+                        "home": "Deheime",
+                        "not_home": "Nid Deheime"
+                    }
+                }
+            }
+        },
+        "energyzero": {
+            "services": {
+                "get_prices": {
+                    "fields": {
+                        "end": {
+                            "name": "Endi"
+                        },
+                        "incl_vat": {
+                            "name": "Inklusiv MWsT"
+                        },
+                        "start": {
+                            "name": "Afang"
+                        },
+                        "type": {
+                            "description": "Priisart zum abfrage, energie oder gas.",
+                            "name": "Typ"
+                        }
+                    }
+                }
+            }
+        },
+        "fan": {
+            "entity_component": {
+                "_": {
+                    "state": {
+                        "off": "Us",
+                        "on": "Anne"
+                    },
+                    "state_attributes": {
+                        "oscillating": {
+                            "state": {
+                                "false": "Nei",
+                                "true": "Ja"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "fitbit": {
+            "config": {
+                "abort": {
+                    "invalid_access_token": "Ungültige Zuegriffstoken",
+                    "unknown": "Unerwartete Fehler"
+                },
+                "create_entry": {
+                    "default": "Erfolgriich authentifiziert"
+                }
+            }
+        },
+        "forecast_solar": {
+            "config": {
+                "step": {
+                    "user": {
+                        "data": {
+                            "azimuth": "Azimut (360 grad, 0=Nord, 90=Ost, 180=Süd, 270=West)",
+                            "declination": "Deklination (0=horizontau, 90=vertikau)",
+                            "latitude": "Breitegrad",
+                            "longitude": "Längegrad",
+                            "modules power": "Totau Wattspitze vo dine Solarmodul (Watt peak)",
+                            "modules_power": "Totau Wattspitze vo dine Solarmodul (Watt peak)",
+                            "name": "Name"
+                        },
+                        "description": "Füu d Date vo dine Solarpanel yy. Lueg ir Dokumentation nache, we der es Fäud unklar isch."
+                    }
+                }
+            },
+            "entity": {
+                "sensor": {
+                    "energy_current_hour": {
+                        "name": "Gschetzty Energieproduktion - die Stund"
+                    },
+                    "energy_next_hour": {
+                        "name": "Gschetzty Energieproduktion - nächst Stund"
+                    },
+                    "energy_production_today": {
+                        "name": "Gschetzty Energieproduktion - hüt"
+                    },
+                    "energy_production_today_remaining": {
+                        "name": "Gschetzty Energieproduktion - vo itz bis am Aabe"
+                    },
+                    "energy_production_tomorrow": {
+                        "name": "Gschetzty Energieproduktion - morn"
+                    },
+                    "power_highest_peak_time_today": {
+                        "name": "Höchsti Leistig - hüt"
+                    },
+                    "power_highest_peak_time_tomorrow": {
+                        "name": "Höchsti Leistig - morn"
+                    },
+                    "power_production_next_12hours": {
+                        "name": "Gschetzty Stromproduktion - i de nächste 12 Stund"
+                    },
+                    "power_production_next_24hours": {
+                        "name": "Gschetzty Stromproduktion - i de nächste 24 Stund"
+                    },
+                    "power_production_next_hour": {
+                        "name": "Gschetzty Stromproduktion - nächst Stund"
+                    },
+                    "power_production_now": {
+                        "name": "Gschetzty Stromproduktion - itze"
+                    }
+                }
+            },
+            "options": {
+                "error": {
+                    "invalid_api_key": "Ungüutige API-Schlüssu"
+                }
+            }
+        },
+        "gardena_bluetooth": {
+            "entity": {
+                "switch": {
+                    "state": {
+                        "name": "Offe"
+                    }
+                }
+            }
+        },
+        "google_mail": {
+            "services": {
+                "set_vacation": {
+                    "fields": {
+                        "enabled": {
+                            "name": "Freigäh"
+                        }
+                    }
+                }
+            }
+        },
+        "group": {
+            "entity_component": {
+                "_": {
+                    "state": {
+                        "closed": "Zue",
+                        "locked": "Bschlosse",
+                        "off": "Us",
+                        "on": "Anne",
+                        "open": "Offe",
+                        "unlocked": "Ufbschlosse"
+                    }
+                }
+            },
+            "title": "Gruppe"
+        },
+        "hassio": {
+            "issues": {
+                "unhealthy_supervisor": {
+                    "description": "Ds System isch nid gsund, wüu e Versuech gschytteret isch, Supervisor uf die letschti Version z aktualisiere. Über e Link lehrsch meh, wie de ds Problem chasch behäbe.",
+                    "title": "Ungsunds System - Aktualisierig vo Supervisor gschytteret"
+                },
+                "unsupported_supervisor_version": {
+                    "description": "Ds System wird nid understützt, wüus e verauteti Version vo Supervisor bruucht und die outomatischi Aktualisierig deaktiviert isch. Über e Link lehrsch meh, wie de ds Problem chasch behäbe.",
+                    "title": "Nid understützts System - Supervisor-Version"
+                }
+            },
+            "system_health": {
+                "info": {
+                    "supervisor_api": "Supervisor-API",
+                    "supervisor_version": "Supervisor-Version"
+                }
+            }
+        },
+        "hdmi_cec": {
+            "services": {
+                "standby": {
+                    "name": "Standby"
+                }
+            }
+        },
+        "homeassistant_hardware": {
+            "silabs_multiprotocol_hardware": {
+                "options": {
+                    "abort": {
+                        "zha_migration_failed": "D ZHA-Migration isch nid erfougrych gsy."
+                    },
+                    "step": {
+                        "notify_unknown_multipan_user": {
+                            "description": "Home Assistant cha d Kanäu für OTBR und ZHA outomatisch ändere. We du en angeri Integration für d Zigbee-Antenne konfiguriert hesch (z.B. Zigbee2MQTT), de muesch der Kanau i dere Integration ändere, nachdäm hie fertig bisch."
+                        }
+                    }
+                }
+            }
+        },
+        "homeassistant_sky_connect": {
+            "options": {
+                "abort": {
+                    "zha_migration_failed": "D ZHA-Migration isch nid erfougrych gsy."
+                }
+            }
+        },
+        "homeassistant_yellow": {
+            "options": {
+                "abort": {
+                    "zha_migration_failed": "D ZHA-Migration isch nid erfougrych gsy."
+                }
+            }
+        },
+        "homekit_controller": {
+            "entity": {
+                "select": {
+                    "ecobee_mode": {
+                        "state": {
+                            "away": "Nid Deheime",
+                            "home": "Deheime"
+                        }
+                    }
+                },
+                "sensor": {
+                    "thread_node_capabilities": {
+                        "state": {
+                            "border_router_capable": "Border-Router fähig",
+                            "full": "Vouständigs Ändgrät",
+                            "minimal": "Minimals Ändgrät",
+                            "none": "Keni",
+                            "router_eligible": "Routerfähigs Ändgrät",
+                            "sleepy": "Schlafends Ändgrät"
+                        }
+                    },
+                    "thread_status": {
+                        "state": {
+                            "border_router": "Border Router",
+                            "child": "Chind",
+                            "detached": "Abtrennt",
+                            "disabled": "Deaktiviert",
+                            "joining": "Am verbinde",
+                            "leader": "Leiter",
+                            "router": "Router"
+                        }
+                    }
+                }
+            },
+            "platform": {
+                "sensor": {
+                    "state": {
+                        "homekit_controller__thread_node_capabilities": {
+                            "border_router_capable": "Border-Router fähig",
+                            "full": "Vouständigs Ändgrät",
+                            "minimal": "Minimals Ändgrät",
+                            "none": "Keni",
+                            "router_eligible": "Routerfähigs Ändgrät",
+                            "sleepy": "Schlafends Ändgrät"
+                        },
+                        "homekit_controller__thread_status": {
+                            "border_router": "Border Router",
+                            "child": "Chind",
+                            "detached": "Abtrennt",
+                            "disabled": "Deaktiviert",
+                            "joining": "Am verbinde",
+                            "leader": "Leiter",
+                            "router": "Router"
+                        }
+                    }
+                }
+            }
+        },
+        "humidifier": {
+            "entity_component": {
+                "_": {
+                    "state": {
+                        "off": "Us",
+                        "on": "Anne"
+                    },
+                    "state_attributes": {
+                        "action": {
+                            "state": {
+                                "off": "Us"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "input_boolean": {
+            "entity_component": {
+                "_": {
+                    "state": {
+                        "off": "Us",
+                        "on": "Anne"
+                    },
+                    "state_attributes": {
+                        "editable": {
+                            "state": {
+                                "false": "Nei",
+                                "true": "Ja"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "input_button": {
+            "entity_component": {
+                "_": {
+                    "state_attributes": {
+                        "editable": {
+                            "state": {
+                                "false": "Nei",
+                                "true": "Ja"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "input_datetime": {
+            "entity_component": {
+                "_": {
+                    "state_attributes": {
+                        "editable": {
+                            "state": {
+                                "false": "Nei",
+                                "true": "Ja"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "input_number": {
+            "entity_component": {
+                "_": {
+                    "state_attributes": {
+                        "editable": {
+                            "state": {
+                                "false": "Nei",
+                                "true": "Ja"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "input_select": {
+            "entity_component": {
+                "_": {
+                    "state_attributes": {
+                        "editable": {
+                            "state": {
+                                "false": "Nei",
+                                "true": "Ja"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "input_text": {
+            "entity_component": {
+                "_": {
+                    "state_attributes": {
+                        "editable": {
+                            "state": {
+                                "false": "Nei",
+                                "true": "Ja"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "ipp": {
+            "entity": {
+                "sensor": {
+                    "printer": {
+                        "state": {
+                            "idle": "Läärlouf"
+                        }
+                    }
+                }
+            }
+        },
+        "light": {
+            "device_automation": {
+                "condition_type": {
+                    "is_on": "{entity_name} is yygschaute"
+                },
+                "trigger_type": {
+                    "changed_states": "{entity_name} isch yy- oder usgschaute worde"
+                }
+            },
+            "entity_component": {
+                "_": {
+                    "state": {
+                        "off": "Us",
+                        "on": "Anne"
+                    }
+                }
+            },
+            "title": "Liächt"
+        },
+        "litterrobot": {
+            "entity": {
+                "sensor": {
+                    "status_code": {
+                        "state": {
+                            "off": "Us",
+                            "p": "Pousiert"
+                        }
+                    }
+                }
+            },
+            "platform": {
+                "sensor": {
+                    "state": {
+                        "litterrobot__status_code": {
+                            "off": "Us",
+                            "p": "Pousiert"
+                        }
+                    }
+                }
+            },
+            "services": {
+                "set_sleep_mode": {
+                    "fields": {
+                        "enabled": {
+                            "name": "Freigäh"
+                        }
+                    }
+                }
+            }
+        },
+        "lock": {
+            "entity_component": {
+                "_": {
+                    "state": {
+                        "locked": "Bschlosse",
+                        "unlocked": "Ufbschlosse"
+                    }
+                }
+            },
+            "title": "Schloss"
+        },
+        "lutron_caseta": {
+            "device_automation": {
+                "trigger_subtype": {
+                    "off": "Us",
+                    "on": "Anne"
+                }
+            }
+        },
+        "matter": {
+            "config": {
+                "abort": {
+                    "addon_get_discovery_info_failed": "Fähler bim Lade vo de Matter-Server Add-On Entdeckingsinformatione.",
+                    "addon_info_failed": "Fähler bim Lade vo de Matter-Server Add-On Informatione.",
+                    "addon_install_failed": "Installation vom Matter-Server Add-On gschytteret.",
+                    "addon_start_failed": "Start vom Matter-Server Add-On gschytteret.",
+                    "already_configured": "Grät isch scho konfiguriert",
+                    "already_in_progress": "Konfigurationsprozäss louft scho",
+                    "not_matter_addon": "Ds entdeckte Add-On isch nid ds offizielle Matter-Server Add-On.",
+                    "reconfiguration_successful": "Matter-Integration erfougrych nöi konfiguriert."
+                },
+                "error": {
+                    "cannot_connect": "Verbindig gschytteret",
+                    "invalid_server_version": "Der Matter-Server het nid die richtegi Version",
+                    "unknown": "Unerwartete Fähler"
+                },
+                "flow_title": "{name}",
+                "progress": {
+                    "install_addon": "Bitte wart, bis d Installation vom Matter-Server Add-On abschlosse isch. Das cha es Momäntli gah.",
+                    "start_addon": "Bitte wart, bis ds Matter-Server Add-On ufgstartet isch. Ds Add-On isch nötig für Matter in Home Assistant. Das cha es Momäntli gah."
+                },
+                "step": {
+                    "hassio_confirm": {
+                        "title": "D Matter-Integration mit em Matter-Server Add-On yyrichte"
+                    },
+                    "install_addon": {
+                        "title": "D Installation vom Add-On het gstartet"
+                    },
+                    "manual": {
+                        "data": {
+                            "url": "URL"
+                        }
+                    },
+                    "on_supervisor": {
+                        "data": {
+                            "use_addon": "Bruuch ds offizieue Matter-Server Supervisor Add-On"
+                        },
+                        "description": "Wosch ds offizieue Matter-Server Supervisor Add-On bruuche?\n\nWe de scho e Matter-Server im ne andere Add-O, em ne Container oder schüsch betrybsch, de wäu die Option uus.",
+                        "title": "Vermindigsmethode uswähle"
+                    },
+                    "start_addon": {
+                        "title": "Add-On ufstarte"
+                    }
+                }
+            },
+            "entity": {
+                "event": {
+                    "push": {
+                        "state_attributes": {
+                            "event_type": {
+                                "state": {
+                                    "initial_press": "Initials Drücke",
+                                    "long_press": "Lang drücke",
+                                    "long_release": "Lang looslah",
+                                    "multi_press_complete": "Mehrfach drücke abgschlosse",
+                                    "multi_press_ongoing": "Mehrfach drücke am Loufe",
+                                    "short_release": "Churz looslah",
+                                    "switch_latched": "Schauter yygrastet"
+                                }
+                            }
+                        }
+                    }
+                },
+                "sensor": {
+                    "flow": {
+                        "name": "Ablouf"
+                    }
+                }
+            },
+            "services": {
+                "open_commissioning_window": {
+                    "description": "Ermüglechet dir, Grät zum ne andere Matter-Netzwärch derzuezfüege, indäm z Fänster für d Inbetribnahm für 60 Sekunde uftah wird.",
+                    "fields": {
+                        "device_id": {
+                            "description": "Matter-Grät wo söu zum andere Matter-Netzwärch derzuegfüegt wärde.",
+                            "name": "Grät"
+                        }
+                    },
+                    "name": "Fänster für Inbetribnahm uftue"
+                }
+            }
+        },
+        "media_player": {
+            "entity_component": {
+                "_": {
+                    "state": {
+                        "idle": "Läärlouf",
+                        "off": "Us",
+                        "on": "Anne",
+                        "paused": "Pousiert",
+                        "standby": "Standby"
+                    },
+                    "state_attributes": {
+                        "is_volume_muted": {
+                            "state": {
+                                "false": "Nei",
+                                "true": "Ja"
+                            }
+                        },
+                        "repeat": {
+                            "state": {
+                                "off": "Us"
+                            }
+                        },
+                        "shuffle": {
+                            "state": {
+                                "false": "Us",
+                                "true": "Anne"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "mobile_app": {
+            "config": {
+                "abort": {
+                    "install_app": "Mach d Mobile App uff, für d Integration mit Home Assistant ufztue. Lueg ir [Dokumentation]({apps_url}) für a Lyste vo de kompatible Apps."
+                },
+                "step": {
+                    "confirm": {
+                        "description": "Möchtisch d Mobile App yyrichte?"
+                    }
+                }
+            },
+            "device_automation": {
+                "action_type": {
+                    "notify": "Sänd e Benachrichtigung"
+                }
+            },
+            "title": "Mobile App"
+        },
+        "mqtt": {
+            "selector": {
+                "set_ca_cert": {
+                    "options": {
+                        "off": "Us"
+                    }
+                }
+            }
+        },
+        "netatmo": {
+            "device_automation": {
+                "trigger_subtype": {
+                    "away": "Nid Deheime"
+                }
+            }
+        },
+        "nextcloud": {
+            "config": {
+                "abort": {
+                    "already_configured": "Grät isch scho konfiguriert",
+                    "connection_error_during_import": "Verbindigsfähler während em Import vo de YAML-Yystellige",
+                    "reauth_successful": "Nöiouthentifizierig erfougrych"
+                },
+                "error": {
+                    "connection_error": "Verbindig gschytteret",
+                    "invalid_auth": "Ungüutegi Outhentifizierig"
+                },
+                "flow_title": "Nextcloud",
+                "step": {
+                    "reauth_confirm": {
+                        "data": {
+                            "password": "Passwort",
+                            "username": "Benutzername"
+                        },
+                        "description": "Aktualisier dini Aamäudedate für {url}."
+                    },
+                    "user": {
+                        "data": {
+                            "password": "Passwort",
+                            "url": "URL",
+                            "username": "Benutzername",
+                            "verify_ssl": "SSL-Zertivikat verifiziere"
+                        },
+                        "description": "Gib d Nextloud-Informatione aa."
+                    }
+                }
+            },
+            "entity": {
+                "binary_sensor": {
+                    "nextcloud_system_debug": {
+                        "name": "Fählerbehäbig aktiviert"
+                    },
+                    "nextcloud_system_enable_avatars": {
+                        "name": "Avatars aktiviert"
+                    },
+                    "nextcloud_system_enable_previews": {
+                        "name": "Vorschou aktiviert"
+                    },
+                    "nextcloud_system_filelocking_enabled": {
+                        "name": "Dateisperri aktiviert"
+                    }
+                },
+                "sensor": {
+                    "nextcloud_activeusers_last1hour": {
+                        "name": "Aazau aktivi Nutzer letscht Stund"
+                    },
+                    "nextcloud_activeusers_last24hours": {
+                        "name": "Aazau aktivi Nutzer geschter"
+                    },
+                    "nextcloud_activeusers_last5minutes": {
+                        "name": "Aazau aktivi Nutzer i de letschte 5 Minute"
+                    },
+                    "nextcloud_database_type": {
+                        "name": "Datebank-Typ"
+                    },
+                    "nextcloud_database_version": {
+                        "name": "Datebank-Version"
+                    },
+                    "nextcloud_server_php_max_execution_time": {
+                        "name": "PHP maximali Usfüehrigszyt"
+                    },
+                    "nextcloud_server_php_memory_limit": {
+                        "name": "PHP Spycherlimite"
+                    },
+                    "nextcloud_server_php_upload_max_filesize": {
+                        "name": "PHP maximali Dateigrössi für ufezlade"
+                    },
+                    "nextcloud_server_php_version": {
+                        "name": "PHP-Version"
+                    },
+                    "nextcloud_server_webserver": {
+                        "name": "Webserver"
+                    },
+                    "nextcloud_shares_num_fed_shares_received": {
+                        "name": "Aazau vo erhautnige Sache"
+                    },
+                    "nextcloud_shares_num_fed_shares_sent": {
+                        "name": "Aazau vo teilte Sache"
+                    },
+                    "nextcloud_system_cpuload": {
+                        "name": "CPU-Uslaschtig"
+                    },
+                    "nextcloud_system_freespace": {
+                        "name": "Freie Platz"
+                    },
+                    "nextcloud_system_mem_free": {
+                        "name": "Freie Spycher"
+                    },
+                    "nextcloud_system_mem_total": {
+                        "name": "Totau Spycher"
+                    },
+                    "nextcloud_system_memcache_distributed": {
+                        "name": "System Zwüschespycher verteilt"
+                    },
+                    "nextcloud_system_memcache_local": {
+                        "name": "System Zwüschespycher lokau"
+                    },
+                    "nextcloud_system_memcache_locking": {
+                        "name": "System Zwüschespycher gsperrt"
+                    },
+                    "nextcloud_system_swap_free": {
+                        "name": "Freie Swap-Spycher"
+                    },
+                    "nextcloud_system_swap_total": {
+                        "name": "Totau Swap-Spycher"
+                    },
+                    "nextcloud_system_theme": {
+                        "name": "Thema"
+                    },
+                    "nextcloud_system_version": {
+                        "name": "System-Version"
+                    }
+                }
+            },
+            "issues": {
+                "deprecated_yaml": {
+                    "description": "Nextcloud cha nümme über YAML konfiguriert wärde.\n\nDini bestehendi YAML-Konfiguration isch importiert worde.\n\nLösch d 'nextcloud' YAML-Konfiguration us der configuration.yaml und start Home Assistant nöi, für ds Problem z behäbe.",
+                    "title": "D YAML-Konfiguration für Nextcloud wird nümme understützt."
+                }
+            }
+        },
+        "openweathermap": {
+            "config": {
+                "abort": {
+                    "already_configured": "Ort isch scho konfiguriert"
+                },
+                "error": {
+                    "cannot_connect": "Verbindig gschytteret",
+                    "invalid_api_key": "Ungüutige API-Schlüssu"
+                },
+                "step": {
+                    "user": {
+                        "data": {
+                            "api_key": "API-Schlüssu (key)",
+                            "language": "Sprach",
+                            "latitude": "Breitegrad",
+                            "longitude": "Längegrad",
+                            "mode": "Modus",
+                            "name": "Name"
+                        },
+                        "description": "Gang uf https:\/\/openweathermap.org\/appid für en API-Schlüssu z generiere."
+                    }
+                }
+            },
+            "options": {
+                "step": {
+                    "init": {
+                        "data": {
+                            "language": "Sprach",
+                            "mode": "Modus"
+                        }
+                    }
+                }
+            }
+        },
+        "otbr": {
+            "config": {
+                "abort": {
+                    "single_instance_allowed": "Scho konfiguriert. Nume ei einzegi Konfiguration müglech."
+                },
+                "error": {
+                    "cannot_connect": "Verbindig gschytteret"
+                },
+                "step": {
+                    "user": {
+                        "data": {
+                            "url": "URL"
+                        },
+                        "description": "Gib d URL für d Open Thread Border Ruter REST API aa"
+                    }
+                }
+            },
+            "issues": {
+                "insecure_thread_network": {
+                    "description": "Dis Thread-Netzwärch bruucht e Standard-Netzwärchschlüssu oder es Standardpasswort.\n\nDas isch es Sicherheitsrisiko, bitte ersteu es nöis Thread-Netzwärch.",
+                    "title": "Unsicheri Thread-Netzwärchyystellige entdeckt"
+                },
+                "otbr_zha_channel_collision": {
+                    "description": "We OTBR und ZHA en Antenne teile, de müesse si der glych Netzwärchkanau bruuche.\n\nWe OTBR und ZHA uf verschidene Kanäu versueche mit em ne Netzwärch z verbinde, de wird weder Thrad\/Matter no Zigbee funktioniere.\n\nOTBR isch mit em Thread-Netzwärch uf Kanau {otbr_channel} yygrichtet, ZHA mit em Zigbee-Netzwärch uf Kanau {zha_channel}.",
+                    "title": "OTBR und ZHA teile die glychi Antenne aber bruuche verschideni Kanäu"
+                }
+            }
+        },
+        "overkiz": {
+            "entity": {
+                "climate": {
+                    "overkiz": {
+                        "state_attributes": {
+                            "fan_mode": {
+                                "state": {
+                                    "away": "Nid Deheime"
+                                }
+                            }
+                        }
+                    }
+                },
+                "select": {
+                    "open_closed_pedestrian": {
+                        "state": {
+                            "closed": "Zue",
+                            "open": "Offe"
+                        }
+                    }
+                },
+                "sensor": {
+                    "three_way_handle_direction": {
+                        "state": {
+                            "closed": "Zue",
+                            "open": "Offe"
+                        }
+                    }
+                }
+            }
+        },
+        "person": {
+            "entity_component": {
+                "_": {
+                    "state": {
+                        "home": "Deheime",
+                        "not_home": "Nid Deheime"
+                    }
+                }
+            }
+        },
+        "plant": {
+            "title": "Pflanze"
+        },
+        "plugwise": {
+            "entity": {
+                "select": {
+                    "dhw_mode": {
+                        "state": {
+                            "off": "Us"
+                        }
+                    },
+                    "regulation_mode": {
+                        "state": {
+                            "off": "Us"
+                        }
+                    }
+                }
+            }
+        },
+        "profiler": {
+            "services": {
+                "log_thread_frames": {
+                    "description": "Zeichnet die aktuelle Frames für aui Threads uf.",
+                    "name": "Thread Frames ufzeichne"
+                }
+            }
+        },
+        "prusalink": {
+            "entity": {
+                "sensor": {
+                    "printer_state": {
+                        "state": {
+                            "idle": "Läärlouf",
+                            "paused": "Pousiert"
+                        }
+                    }
+                }
+            }
+        },
+        "remote": {
+            "device_automation": {
+                "action_type": {
+                    "turn_on": "{entity_name} yyschaute"
+                }
+            },
+            "entity_component": {
+                "_": {
+                    "state": {
+                        "off": "Us",
+                        "on": "Anne"
+                    }
+                }
+            },
+            "title": "Entfernt"
+        },
+        "renson": {
+            "entity": {
+                "sensor": {
+                    "breeze_level": {
+                        "state": {
+                            "off": "Us"
+                        }
+                    },
+                    "manual_level": {
+                        "state": {
+                            "off": "Us"
+                        }
+                    },
+                    "ventilation_level": {
+                        "state": {
+                            "off": "Us"
+                        }
+                    }
+                }
+            }
+        },
+        "reolink": {
+            "entity": {
+                "select": {
+                    "auto_quick_reply_message": {
+                        "state": {
+                            "off": "Us"
+                        }
+                    },
+                    "floodlight_mode": {
+                        "state": {
+                            "off": "Us"
+                        }
+                    }
+                }
+            }
+        },
+        "roborock": {
+            "entity": {
+                "select": {
+                    "mop_intensity": {
+                        "state": {
+                            "off": "Us"
+                        }
+                    }
+                },
+                "sensor": {
+                    "status": {
+                        "state": {
+                            "idle": "Läärlouf",
+                            "paused": "Pousiert"
+                        }
+                    }
+                },
+                "vacuum": {
+                    "roborock": {
+                        "state_attributes": {
+                            "fan_speed": {
+                                "state": {
+                                    "off": "Us"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "scene": {
+            "title": "Szene"
+        },
+        "schedule": {
+            "entity_component": {
+                "_": {
+                    "state": {
+                        "off": "Us",
+                        "on": "Anne"
+                    },
+                    "state_attributes": {
+                        "editable": {
+                            "state": {
+                                "false": "Nei",
+                                "true": "Ja"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "script": {
+            "entity_component": {
+                "_": {
+                    "state": {
+                        "off": "Us",
+                        "on": "Anne"
+                    }
+                }
+            },
+            "title": "Skript"
+        },
+        "sensibo": {
+            "entity": {
+                "select": {
+                    "horizontalswing": {
+                        "state": {
+                            "stopped": "Us"
+                        }
+                    },
+                    "light": {
+                        "state": {
+                            "off": "Us",
+                            "on": "Anne"
+                        }
+                    }
+                },
+                "sensor": {
+                    "climate_react_high": {
+                        "state_attributes": {
+                            "horizontalswing": {
+                                "state": {
+                                    "stopped": "Us"
+                                }
+                            },
+                            "light": {
+                                "state": {
+                                    "off": "Us",
+                                    "on": "Anne"
+                                }
+                            },
+                            "mode": {
+                                "state": {
+                                    "off": "Us"
+                                }
+                            },
+                            "on": {
+                                "name": "Anne",
+                                "state": {
+                                    "false": "Us",
+                                    "true": "Anne"
+                                }
+                            },
+                            "swing": {
+                                "state": {
+                                    "stopped": "Us"
+                                }
+                            }
+                        }
+                    },
+                    "climate_react_low": {
+                        "state_attributes": {
+                            "horizontalswing": {
+                                "state": {
+                                    "stopped": "Us"
+                                }
+                            },
+                            "light": {
+                                "state": {
+                                    "off": "Us",
+                                    "on": "Anne"
+                                }
+                            },
+                            "mode": {
+                                "state": {
+                                    "off": "Us"
+                                }
+                            },
+                            "on": {
+                                "name": "Anne",
+                                "state": {
+                                    "false": "Us",
+                                    "true": "Anne"
+                                }
+                            },
+                            "swing": {
+                                "state": {
+                                    "stopped": "Us"
+                                }
+                            }
+                        }
+                    }
+                },
+                "switch": {
+                    "timer_on_switch": {
+                        "state_attributes": {
+                            "turn_on": {
+                                "state": {
+                                    "false": "Us",
+                                    "true": "Anne"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "sensor": {
+            "entity_component": {
+                "_": {
+                    "state": {
+                        "off": "Us",
+                        "on": "Anne"
+                    }
+                }
+            },
+            "title": "Sensor"
+        },
+        "sfr_box": {
+            "entity": {
+                "sensor": {
+                    "dsl_training": {
+                        "state": {
+                            "idle": "Läärlouf"
+                        }
+                    }
+                }
+            }
+        },
+        "shelly": {
+            "selector": {
+                "ble_scanner_mode": {
+                    "options": {
+                        "active": "Aktiv",
+                        "disabled": "Deaktiviert"
+                    }
+                }
+            }
+        },
+        "siren": {
+            "entity_component": {
+                "_": {
+                    "state": {
+                        "off": "Us",
+                        "on": "Anne"
+                    }
+                }
+            }
+        },
+        "solarlog": {
+            "config": {
+                "abort": {
+                    "already_configured": "Grät isch scho konfiguriert"
+                },
+                "error": {
+                    "already_configured": "Grät isch scho konfiguriert",
+                    "cannot_connect": "Verbindig gschytteret"
+                },
+                "step": {
+                    "user": {
+                        "data": {
+                            "host": "Host",
+                            "name": "Ds Präfix, wo für Solar-Log Sensore söu bruucht wärde"
+                        },
+                        "title": "Definier dini Solar-Log Verbindig"
+                    }
+                }
+            },
+            "entity": {
+                "sensor": {
+                    "alternator_loss": {
+                        "name": "Wächsurichter-Verluscht"
+                    },
+                    "capacity": {
+                        "name": "Kapazität"
+                    },
+                    "consumption_ac": {
+                        "name": "Verbruuch Wächsustrom (AC)"
+                    },
+                    "consumption_day": {
+                        "name": "Tagesverbruch"
+                    },
+                    "consumption_month": {
+                        "name": "Monatleche Verbruuch"
+                    },
+                    "consumption_total": {
+                        "name": "Totau Verbruuch"
+                    },
+                    "consumption_year": {
+                        "name": "Jährleche Verbruuch"
+                    },
+                    "consumption_yesterday": {
+                        "name": "Verbruuch geschter"
+                    },
+                    "efficiency": {
+                        "name": "Effiziänz"
+                    },
+                    "last_update": {
+                        "name": "Letschti Aktualisierig"
+                    },
+                    "power_ac": {
+                        "name": "Leischtig Wächsustrom (AC)"
+                    },
+                    "power_available": {
+                        "name": "Verfüegbari Leischtig"
+                    },
+                    "power_dc": {
+                        "name": "Leischtig Glychstrom (DC)"
+                    },
+                    "total_power": {
+                        "name": "Installierti Spitzeleistig"
+                    },
+                    "usage": {
+                        "name": "Gebruuch"
+                    },
+                    "voltage_ac": {
+                        "name": "Spannig Wächsustrom (AC)"
+                    },
+                    "voltage_dc": {
+                        "name": "Spannig Glychstrom (DC)"
+                    },
+                    "yield_day": {
+                        "name": "Tagesertrag"
+                    },
+                    "yield_month": {
+                        "name": "Monatleche Ertrag"
+                    },
+                    "yield_total": {
+                        "name": "Totau Ertrag"
+                    },
+                    "yield_year": {
+                        "name": "Jährleche Ertrag"
+                    },
+                    "yield_yesterday": {
+                        "name": "Ertrag vo Geschter"
+                    }
+                }
+            }
+        },
+        "sonos": {
+            "config": {
+                "abort": {
+                    "no_devices_found": "Kes Grät im Netwärch gfunde",
+                    "not_sonos_device": "Ds entdeckte Grät isch de Sonos",
+                    "single_instance_allowed": "Scho konfiguriert. Nume ei einzegi Konfiguration müglech."
+                },
+                "step": {
+                    "confirm": {
+                        "description": "Wosch du Sonos yyrichte?"
+                    }
+                }
+            },
+            "entity": {
+                "binary_sensor": {
+                    "microphone": {
+                        "name": "Mikorphon"
+                    }
+                },
+                "number": {
+                    "audio_delay": {
+                        "name": "Audio-Verzögerig"
+                    },
+                    "balance": {
+                        "name": "Glychgwicht"
+                    },
+                    "bass": {
+                        "name": "Bass"
+                    },
+                    "music_surround_level": {
+                        "name": "Musig Ruumklang-Level"
+                    },
+                    "sub_gain": {
+                        "name": "Underverstercher"
+                    },
+                    "surround_level": {
+                        "name": "Ruumklang-Level"
+                    },
+                    "treble": {
+                        "name": "Hochtön"
+                    }
+                },
+                "sensor": {
+                    "audio_input_format": {
+                        "name": "Audio-Yygangsformat"
+                    }
+                },
+                "switch": {
+                    "buttons_enabled": {
+                        "name": "Berüerigsstüürig"
+                    },
+                    "cross_fade": {
+                        "name": "Übergang"
+                    },
+                    "dialog_level": {
+                        "name": "Sprachverbesserig"
+                    },
+                    "loudness": {
+                        "name": "Lutsterchi"
+                    },
+                    "night_mode": {
+                        "name": "Nachtton"
+                    },
+                    "status_light": {
+                        "name": "Statusliecht"
+                    },
+                    "sub_enabled": {
+                        "name": "Subwoofer aktiviert"
+                    },
+                    "surround_enabled": {
+                        "name": "Ruumklang aktiviert"
+                    },
+                    "surround_mode": {
+                        "name": "Musig Ruumklang voui Lutsterchi"
+                    }
+                }
+            },
+            "issues": {
+                "subscriptions_failed": {
+                    "description": "Mit em Rückfau uf regumässigi Abfrage cha d Funktionalität yygschränkt sy.\n\nDs Sonos-Grät {device_ip} cha Home Assistant unger {listener_address} nid erreiche.\n\nlueg ir [Dokumentation]({sub_fail_url}) für meh Informatione wie me dä Fähler cha behäbe.",
+                    "title": "Netzwärchfähler: abonnierig gschytteret"
+                }
+            },
+            "services": {
+                "clear_sleep_timer": {
+                    "description": "Sonos-Schautuhr lääre",
+                    "name": "Schautuhr lääre"
+                },
+                "play_queue": {
+                    "description": "Lyste ab em erschte Elemänt abspile.",
+                    "fields": {
+                        "queue_position": {
+                            "description": "Position vom Lied, wo d Lyste dervo söu abgspiut wärde.",
+                            "name": "Lysteposition"
+                        }
+                    },
+                    "name": "Lyste abspile"
+                },
+                "remove_from_queue": {
+                    "description": "Elemänt us der Lyste lösche.",
+                    "fields": {
+                        "queue_position": {
+                            "description": "Position ir Lyste zum lösche.",
+                            "name": "Lysteposition"
+                        }
+                    },
+                    "name": "Us Lyste lösche"
+                },
+                "restore": {
+                    "description": "Momäntufnahm vom Mediespiler widerhärsteue.",
+                    "fields": {
+                        "entity_id": {
+                            "description": "Name vor Entität wo widerhärgsteut wird.",
+                            "name": "Entität"
+                        },
+                        "with_group": {
+                            "description": "Wahr oder Fautsch. O d Gruppezueghörigkeit widerhärsteue.",
+                            "name": "Mit Gruppe"
+                        }
+                    },
+                    "name": "Widerhärsteue"
+                },
+                "set_sleep_timer": {
+                    "description": "E Sonos-Schautuhr steue",
+                    "fields": {
+                        "sleep_time": {
+                            "description": "Aazau Sekunde",
+                            "name": "Yyschlaf-Schautuhr"
+                        }
+                    },
+                    "name": "Schautuhr steue"
+                },
+                "snapshot": {
+                    "description": "Momäntufnahm vom Mediespiler mache.",
+                    "fields": {
+                        "entity_id": {
+                            "description": "Name vor Entität, wo dervo e Momäntufnahm gmacht wird.",
+                            "name": "Entität"
+                        },
+                        "with_group": {
+                            "description": "Wahr oder Fautsch. O d Gruppezueghörigkeit ufnäh.",
+                            "name": "Mit Gruppe"
+                        }
+                    },
+                    "name": "Momäntufnahm"
+                },
+                "update_alarm": {
+                    "description": "Wecker mit ere nöie Zyt und Lutsterchi aktualisiere.",
+                    "fields": {
+                        "alarm_id": {
+                            "description": "ID vom Wecker wo söu aapasst wärde.",
+                            "name": "Wecker ID"
+                        },
+                        "enabled": {
+                            "description": "Wecker yy- oder usschaute.",
+                            "name": "Wecker yygschautet"
+                        },
+                        "include_linked_zones": {
+                            "description": "Der Yybezug vo gruppierte Rüüm yy- oder usschaute.",
+                            "name": "Verbundeni Zone yybezieh"
+                        },
+                        "time": {
+                            "description": "Zyt für e Wecker steue.",
+                            "name": "Zyt"
+                        },
+                        "volume": {
+                            "description": "D Lutsterchi vom Wecker steue.",
+                            "name": "Lutsterchi"
+                        }
+                    },
+                    "name": "Wecker aktualisiere"
+                }
+            }
+        },
+        "starlink": {
+            "entity": {
+                "binary_sensor": {
+                    "power_save_idle": {
+                        "name": "Läärlouf"
+                    }
+                }
+            }
+        },
+        "sun": {
+            "config": {
+                "abort": {
+                    "single_instance_allowed": "Scho konfiguriert. Nume ei einzegi Konfiguration müglech."
+                },
+                "step": {
+                    "user": {
+                        "description": "Wosch d Yyrichtig aafah?"
+                    }
+                }
+            },
+            "entity": {
+                "sensor": {
+                    "next_dawn": {
+                        "name": "Nächsti Morgedämmerig"
+                    },
+                    "next_dusk": {
+                        "name": "Nächsti Abedämmerig"
+                    },
+                    "next_midnight": {
+                        "name": "Nächsti Mitternacht"
+                    },
+                    "next_noon": {
+                        "name": "Nächste Mittag"
+                    },
+                    "next_rising": {
+                        "name": "Nächste Sunneufgang"
+                    },
+                    "next_setting": {
+                        "name": "Nächste Sunneundergang"
+                    },
+                    "solar_azimuth": {
+                        "name": "Sunneazimut"
+                    },
+                    "solar_elevation": {
+                        "name": "Sunnehöchi"
+                    }
+                }
+            },
+            "entity_component": {
+                "_": {
+                    "name": "Sunne",
+                    "state": {
+                        "above_horizon": "Überem Horizont",
+                        "below_horizon": "Underem Horizont"
+                    }
+                }
+            },
+            "title": "Sunne"
+        },
+        "switch": {
+            "entity_component": {
+                "_": {
+                    "state": {
+                        "off": "Us",
+                        "on": "Anne"
+                    }
+                }
+            },
+            "title": "Schauter"
+        },
+        "synology_dsm": {
+            "config": {
+                "abort": {
+                    "already_configured": "Grät isch scho konfiguriert",
+                    "no_mac_address": "D MAC-Adrässe fäut im zeroconf-Yytrag",
+                    "reauth_successful": "Nöiouthentifizierig erfougrych",
+                    "reconfigure_successful": "Nöikonfiguration erfougrych"
+                },
+                "error": {
+                    "cannot_connect": "Verbindig gschytteret",
+                    "invalid_auth": "Ungüutegi Outhentifizierig",
+                    "missing_data": "Fählendi Aagabe: Bitte versuech speter oder mit ere andere Konfiguration",
+                    "otp_failed": "Zwöischritt-Outhentifizierig gschytteret, versuech mit em ne nöie Passwort",
+                    "unknown": "Unerwartete Fähler"
+                },
+                "flow_title": "{name} ({host})",
+                "step": {
+                    "2sa": {
+                        "data": {
+                            "otp_code": "Code"
+                        },
+                        "title": "Synology DSM: Zwöischritt-Outhentifizierig"
+                    },
+                    "link": {
+                        "data": {
+                            "password": "Passwort",
+                            "port": "Port",
+                            "ssl": "Bruucht es SSL-Zertifikat",
+                            "username": "Benutzername",
+                            "verify_ssl": "SSL-Zertivikat verifiziere"
+                        },
+                        "description": "Wosch {name} ({host}) yyrichte?"
+                    },
+                    "reauth_confirm": {
+                        "data": {
+                            "password": "Passwort",
+                            "username": "Benutzername"
+                        },
+                        "title": "Synology DSM nöi Outhentifiziere"
+                    },
+                    "user": {
+                        "data": {
+                            "host": "Host",
+                            "password": "Passwort",
+                            "port": "Port",
+                            "ssl": "Bruucht es SSL-Zertifikat",
+                            "username": "Benutzername",
+                            "verify_ssl": "SSL-Zertivikat verifiziere"
+                        }
+                    }
+                }
+            },
+            "entity": {
+                "binary_sensor": {
+                    "disk_below_remain_life_thr": {
+                        "name": "Under der minimale Läbenserwartig"
+                    },
+                    "disk_exceed_bad_sector_thr": {
+                        "name": "Maximali Aazau schlächti Sektore überschritte"
+                    },
+                    "status": {
+                        "name": "Sicherheitsstatus"
+                    }
+                },
+                "sensor": {
+                    "uptime": {
+                        "name": "Letschte Start"
+                    },
+                    "volume_disk_temp_avg": {
+                        "name": "Durchschnittlechi Temperatur vor Festplatte"
+                    },
+                    "volume_disk_temp_max": {
+                        "name": "Maximali Temperatur vor Festplatte"
+                    },
+                    "volume_percentage_used": {
+                        "name": "Lutsterchi"
+                    },
+                    "volume_size_total": {
+                        "name": "Totau Grössi"
+                    },
+                    "volume_size_used": {
+                        "name": "Bruuchte Platz"
+                    },
+                    "volume_status": {
+                        "name": "Status"
+                    }
+                },
+                "switch": {
+                    "home_mode": {
+                        "name": "Heimmodus"
+                    }
+                },
+                "update": {
+                    "update": {
+                        "name": "DSM-Aktualisierig"
+                    }
+                }
+            },
+            "options": {
+                "step": {
+                    "init": {
+                        "data": {
+                            "scan_interval": "Minute zwüsche Scans",
+                            "snap_profile_type": "Qualität vo Kamera Schnappschüss (0: höch, 1: mittu, 2: nidrig)",
+                            "timeout": "Timeout (Sekunde)"
+                        }
+                    }
+                }
+            },
+            "services": {
+                "reboot": {
+                    "description": "Start ds NAS nöi. Dä Dienst wird nümme understützt und wird i Zuekunft glöscht. Bitte bruuch die entsprächendi Chnopf-Entität.",
+                    "fields": {
+                        "serial": {
+                            "description": "Serienummere vom NAS wo söu nöigstartet wärde. Wird bruucht, we meh aus eis NAS konfiguriert sy.",
+                            "name": "Serienummere"
+                        }
+                    },
+                    "name": "Nöistart"
+                },
+                "shutdown": {
+                    "description": "Fahr ds NAS abe. Dä Dienst wird nümme understützt und wird i Zuekunft glöscht. Bitte bruuch die entsprächendi Chnopf-Entität.",
+                    "fields": {
+                        "serial": {
+                            "description": "Serienummere vom NAS wo söu abegfahre wärde. Wird bruucht, we meh aus eis NAS konfiguriert sy.",
+                            "name": "Serienummere"
+                        }
+                    },
+                    "name": "Abefahre"
+                }
+            }
+        },
+        "thread": {
+            "config": {
+                "step": {
+                    "confirm": {
+                        "description": "Wosch d Yyrichtig aafah?"
+                    }
+                }
+            }
+        },
+        "timer": {
+            "entity_component": {
+                "_": {
+                    "state": {
+                        "active": "Aktiv",
+                        "idle": "Läärlouf",
+                        "paused": "Pousiert"
+                    },
+                    "state_attributes": {
+                        "editable": {
+                            "state": {
+                                "false": "Nei",
+                                "true": "Ja"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "trafikverket_ferry": {
+            "selector": {
+                "weekday": {
+                    "options": {
+                        "sun": "Sunntig"
+                    }
+                }
+            }
+        },
+        "trafikverket_train": {
+            "selector": {
+                "weekday": {
+                    "options": {
+                        "sun": "Sunntig"
+                    }
+                }
+            }
+        },
+        "transmission": {
+            "entity": {
+                "sensor": {
+                    "transmission_status": {
+                        "state": {
+                            "idle": "Läärlouf"
+                        }
+                    }
+                }
+            }
+        },
+        "tuya": {
+            "entity": {
+                "select": {
+                    "basic_anti_flicker": {
+                        "state": {
+                            "0": "Deaktiviert"
+                        }
+                    },
+                    "basic_nightvision": {
+                        "state": {
+                            "1": "Us",
+                            "2": "Anne"
+                        }
+                    },
+                    "light_mode": {
+                        "state": {
+                            "none": "Us"
+                        }
+                    },
+                    "relay_status": {
+                        "state": {
+                            "off": "Us",
+                            "on": "Anne",
+                            "power_off": "Us",
+                            "power_on": "Anne"
+                        }
+                    },
+                    "vacuum_cistern": {
+                        "state": {
+                            "closed": "Zue"
+                        }
+                    },
+                    "vacuum_mode": {
+                        "state": {
+                            "standby": "Standby"
+                        }
+                    }
+                },
+                "sensor": {
+                    "sous_vide_status": {
+                        "state": {
+                            "standby": "Standby"
+                        }
+                    },
+                    "status": {
+                        "state": {
+                            "standby": "Standby"
+                        }
+                    }
+                }
+            },
+            "platform": {
+                "select": {
+                    "state": {
+                        "tuya__light_mode": {
+                            "none": "Us"
+                        },
+                        "tuya__relay_status": {
+                            "off": "Us",
+                            "on": "Anne",
+                            "power_off": "Us",
+                            "power_on": "Anne"
+                        }
+                    }
+                }
+            }
+        },
+        "vacuum": {
+            "entity_component": {
+                "_": {
+                    "state": {
+                        "idle": "Läärlouf",
+                        "off": "Us",
+                        "on": "Anne",
+                        "paused": "Pousiert"
+                    }
+                }
+            },
+            "title": "Stoubsuger"
+        },
+        "water_heater": {
+            "entity_component": {
+                "_": {
+                    "state": {
+                        "off": "Us"
+                    }
+                }
+            }
+        },
+        "weather": {
+            "entity_component": {
+                "_": {
+                    "name": "Wätter",
+                    "state": {
+                        "clear-night": "Klari Nacht",
+                        "cloudy": "Bewöukt",
+                        "exceptional": "Usserordentlech",
+                        "fog": "Näbu",
+                        "hail": "Hagu",
+                        "lightning": "Blitze",
+                        "lightning-rainy": "Blitze, rägnerisch",
+                        "partlycloudy": "Teilwys bewöukt",
+                        "pouring": "Am schütte",
+                        "rainy": "Rägnerisch",
+                        "snowy": "Schneie",
+                        "snowy-rainy": "Schneeräge",
+                        "sunny": "Sunnig",
+                        "windy": "Windig",
+                        "windy-variant": "Windig"
+                    },
+                    "state_attributes": {
+                        "apparent_temperature": {
+                            "name": "Gfüeuti Temperatur"
+                        },
+                        "cloud_coverage": {
+                            "name": "Wouchedechi"
+                        },
+                        "dew_point": {
+                            "name": "Temperatur vom Toupunkt"
+                        },
+                        "forecast": {
+                            "name": "Vorhärsag"
+                        },
+                        "temperature_unit": {
+                            "name": "Temperatureinheit"
+                        },
+                        "uv_index": {
+                            "name": "UV-Index"
+                        },
+                        "visibility": {
+                            "name": "Sichtwyti"
+                        },
+                        "visibility_unit": {
+                            "name": "Einheit für Sichtwyti"
+                        },
+                        "wind_bearing": {
+                            "name": "Windverhaute"
+                        },
+                        "wind_gust_speed": {
+                            "name": "Böhegschwindigkeit"
+                        },
+                        "wind_speed": {
+                            "name": "Windgschwindigkeit"
+                        },
+                        "wind_speed_unit": {
+                            "name": "Einheit für Windgschwindigkeit"
+                        }
+                    }
+                }
+            },
+            "issues": {
+                "platform_integration_no_support": {
+                    "description": "D Platform {platform} für d {domain} Integration ungerstützt ke Platform-yyrichtig.\n\nBitte lösch se us dine Yystellige und start Home Assistant nöi, für ds Problem z behäbe.",
+                    "title": "Plattform nid ungerstützt"
+                }
+            },
+            "selector": {
+                "forecast_type": {
+                    "options": {
+                        "daily": "Täglech",
+                        "hourly": "Stündlech",
+                        "twice_daily": "Zwöi Mau täglech"
+                    }
+                }
+            },
+            "services": {
+                "get_forecast": {
+                    "description": "Wättervorhärsag übercho.",
+                    "fields": {
+                        "type": {
+                            "description": "Art vor Vorhärsag: täglech, stündlech oder zwöi mau täglech.",
+                            "name": "Art vor Vorhärsag"
+                        }
+                    },
+                    "name": "Vorhärsag"
+                }
+            },
+            "title": "Wätter"
+        },
+        "whirlpool": {
+            "entity": {
+                "sensor": {
+                    "whirlpool_machine": {
+                        "state": {
+                            "pause": "Pousiert",
+                            "standby": "Standby"
+                        }
+                    },
+                    "whirlpool_tank": {
+                        "state": {
+                            "active": "Aktiv"
+                        }
+                    }
+                }
+            }
+        },
+        "withings": {
+            "entity": {
+                "sensor": {
+                    "minimum_heart_rate": {
+                        "name": "Minimali Herzfrequenz"
+                    }
+                }
+            }
+        },
+        "wled": {
+            "entity": {
+                "select": {
+                    "live_override": {
+                        "state": {
+                            "0": "Us",
+                            "1": "Anne"
+                        }
+                    }
+                }
+            }
+        },
+        "wolflink": {
+            "entity": {
+                "sensor": {
+                    "state": {
+                        "state": {
+                            "aus": "Deaktiviert",
+                            "ein": "Freigäh",
+                            "standby": "Standby"
+                        }
+                    }
+                }
+            }
+        },
+        "workday": {
+            "selector": {
+                "days": {
+                    "options": {
+                        "sun": "Sunntig"
+                    }
+                }
+            }
+        },
+        "wyoming": {
+            "config": {
+                "abort": {
+                    "already_configured": "Dienst isch scho konfiguriert",
+                    "no_services": "Ke Dienst a däm Ändpunkt gfunde"
+                },
+                "error": {
+                    "cannot_connect": "Verbindig gschytteret"
+                },
+                "step": {
+                    "hassio_confirm": {
+                        "description": "Wosch Home Assistant so yyrichte, das es mit fougendem Add-On zu Wyoming verbindet: {addon}?"
+                    },
+                    "user": {
+                        "data": {
+                            "host": "Host",
+                            "port": "Port"
+                        }
+                    }
+                }
+            }
+        },
+        "xiaomi_miio": {
+            "entity": {
+                "select": {
+                    "led_brightness": {
+                        "state": {
+                            "off": "Us"
+                        }
+                    }
+                }
+            }
+        },
+        "yamaha": {
+            "services": {
+                "enable_output": {
+                    "fields": {
+                        "enabled": {
+                            "name": "Freigäh"
+                        }
+                    }
+                }
+            }
+        },
+        "yamaha_musiccast": {
+            "entity": {
+                "select": {
+                    "zone_sleep": {
+                        "state": {
+                            "off": "Us"
+                        }
+                    }
+                }
+            }
+        },
+        "yeelight": {
+            "selector": {
+                "action": {
+                    "options": {
+                        "off": "Us"
+                    }
+                }
+            }
+        },
+        "yolink": {
+            "entity": {
+                "sensor": {
+                    "power_failure_alarm": {
+                        "state": {
+                            "off": "Us"
+                        }
+                    },
+                    "power_failure_alarm_beep": {
+                        "state": {
+                            "disabled": "Deaktiviert",
+                            "enabled": "Freigäh"
+                        }
+                    }
+                }
+            }
+        },
+        "zha": {
+            "config": {
+                "abort": {
+                    "not_zha_device": "Das Grät isch kes ZHA-Grät",
+                    "single_instance_allowed": "Scho konfiguriert. Nume ei einzegi Konfiguration müglech.",
+                    "usb_probe_failed": "Test vom USB-Grät gschytteret"
+                },
+                "error": {
+                    "cannot_connect": "Verbindig gschytteret",
+                    "invalid_backup_json": "Ungüutegi JSON-Sicherig"
+                },
+                "flow_title": "{name}",
+                "step": {
+                    "choose_automatic_backup": {
+                        "data": {
+                            "choose_automatic_backup": "Wäu e outomatischi Sicherig us"
+                        },
+                        "description": "Steu dini Netzwärchyystellige vor e outomatische Sicherig wider här",
+                        "title": "Outomatischi Sicherig widerhärsteue"
+                    },
+                    "choose_formation_strategy": {
+                        "description": "Wäu d Netzwärchyystellige für dini Antenne us.",
+                        "menu_options": {
+                            "choose_automatic_backup": "Outomatischi Sicherig widerhärsteue",
+                            "form_initial_network": "Netzwärch ersteue",
+                            "form_new_network": "Netzwärchyystellige lösche und es nöis Netzwärch ersteue",
+                            "reuse_settings": "Antenneyystellige bhaute",
+                            "upload_manual_backup": "Manuelli Sicherig ufelade"
+                        },
+                        "title": "Netzwärchformation"
+                    },
+                    "choose_serial_port": {
+                        "data": {
+                            "path": "Pfad zum serielle Grät"
+                        },
+                        "description": "Wäu der seriell Port für d Zigbee-Antenne us",
+                        "title": "Serielle Port uswähle"
+                    },
+                    "confirm": {
+                        "description": "Wosch du {name} yyrichte?"
+                    },
+                    "confirm_hardware": {
+                        "description": "Wosch du {name} yyrichte?"
+                    },
+                    "manual_pick_radio_type": {
+                        "data": {
+                            "radio_type": "Antenne-Typ"
+                        },
+                        "description": "Wäu di Zigbee-Antenne-Typ us",
+                        "title": "Antenne-Typ"
+                    },
+                    "manual_port_config": {
+                        "data": {
+                            "baudrate": "Port-Gschwindigkeit",
+                            "flow_control": "Dateflusskontroue",
+                            "path": "Pfad zum serielle Grät"
+                        },
+                        "description": "Gib d Yystellige vom serielle Port aa",
+                        "title": "Ystellige vom serielle Port"
+                    },
+                    "maybe_confirm_ezsp_restore": {
+                        "data": {
+                            "overwrite_coordinator_ieee": "Permanänti Ersetzig vor IEEE-Adrässe vor Antenne"
+                        },
+                        "description": "Dini Sicherig het a anderi IEEE-Adrässe aus dini Antenne. We ds Netzwärch richtig söu funktioniere, de mues o d IEEE-Adrässe vor Antenne gänderet wärde.\n\nDas isch e permanänti Änderig.",
+                        "title": "Permanänti Ersetzig vor IEEE-Adrässe vor Antenne"
+                    },
+                    "upload_manual_backup": {
+                        "data": {
+                            "uploaded_backup_file": "Datei ufelade"
+                        },
+                        "description": "Steu dini Netzwärchyystellige us ere ufegladene JSON-Datei wider här. Du chasch die zum Bischpiu vor e andere ZHA-Installation unger de **Netzärchyystellilge** abelade oder d Datei 'coordinator_backup.json' vo Zigbee2MQTT bruuche.",
+                        "title": "Manuelli Sicherig ufelade"
+                    },
+                    "verify_radio": {
+                        "description": "Dini Antenne ({name}) isch nid empfohle und es isch müglech, dass d Ungerstützig i Zuenkuft ufhört. Bitte lueg i der Dokumentation vo ZHA für d [Lyste vo de empfohlene Antenne]({docs_recommended_adapters_url}).",
+                        "title": "Antenne isch nid empfohle"
+                    }
+                }
+            },
+            "config_panel": {
+                "zha_alarm_options": {
+                    "alarm_arm_requires_code": "Code für d Alarm-Aktivierig",
+                    "alarm_failed_tries": "D Aazau vo fautsche Yygabe für en Alarm uszlöse",
+                    "alarm_master_code": "Houptcode für ds Alarm-Kontroupanel",
+                    "title": "Alarm Kontroupanel Optione"
+                },
+                "zha_options": {
+                    "always_prefer_xy_color_mode": "Bevorzug immer XY Farbmodus",
+                    "consider_unavailable_battery": "Batteriebetribeni Grät nach söfu Sekunde aus nidverfüegbar betrachte",
+                    "consider_unavailable_mains": "Netzbetribeni Grät nach söfu Sekunde aus nidverfüegbar betrachte",
+                    "default_light_transition": "Standard Zyt für Liechtübergang (Sekunde)",
+                    "enable_identify_on_join": "Identifikations-Effekt bi Netzwärchbytritt aktiviere",
+                    "enhanced_light_transition": "Farb- und Temperaturübergang bim Yyschaute vo Lampe aktiviere",
+                    "group_members_assume_state": "Gruppemitglider näme der Status vor Gruppe aa",
+                    "light_transitioning_flag": "Verbessereti Häuigkeitsregler während em Übergang aktiviere",
+                    "title": "Globali Optione"
+                }
+            },
+            "device_automation": {
+                "action_type": {
+                    "issue_all_led_effect": "Effekte für aui LED uslöse",
+                    "issue_individual_led_effect": "Effekte für individuelli LED uslöse",
+                    "squawk": "Kreische",
+                    "warn": "Warne"
+                },
+                "trigger_subtype": {
+                    "both_buttons": "Beidi Chnöpf",
+                    "button": "Chnopf",
+                    "button_1": "Erschte Chnopf",
+                    "button_2": "Zwöite Chnopf",
+                    "button_3": "Dritte Chnopf",
+                    "button_4": "Vierte Chnopf",
+                    "button_5": "Füfte Chnopf",
+                    "button_6": "Sächste Chnopf",
+                    "close": "Zuetue",
+                    "dim_down": "Abe dimme",
+                    "dim_up": "Ufe dimme",
+                    "face_1": "Aktiviert mit Gsicht 1",
+                    "face_2": "Aktiviert mit Gsicht 2",
+                    "face_3": "Aktiviert mit Gsicht 3",
+                    "face_4": "Aktiviert mit Gsicht 4",
+                    "face_5": "Aktiviert mit Gsicht 5",
+                    "face_6": "Aktiviert mit Gsicht 6",
+                    "face_any": "Mit irgend em ne Gsicht aktiviert",
+                    "left": "Links",
+                    "open": "Uftue",
+                    "right": "Rächts",
+                    "turn_off": "Usschaute",
+                    "turn_on": "Yyschaute"
+                },
+                "trigger_type": {
+                    "device_dropped": "Grät la gheie",
+                    "device_flipped": "Grät umdrähit \"{subtype}\"",
+                    "device_knocked": "Grät aaklopfet \"{subtype}\"",
+                    "device_offline": "Grät offline",
+                    "device_rotated": "Grät drähit \"{subtype}\"",
+                    "device_shaken": "Grät gschüttlet",
+                    "device_slid": "Grät verschobe \"{subtype}\"",
+                    "device_tilted": "Grät kippet",
+                    "remote_button_alt_double_press": "\"{subtype}\" doppuklicket (alternative Modus)",
+                    "remote_button_alt_long_press": "\"{subtype}\" lang drückt (alternative Modus)",
+                    "remote_button_alt_long_release": "\"{subtype}\" loosglah nach langem Drücke (alternative Modus)",
+                    "remote_button_alt_quadruple_press": "\"{subtype}\" vier Mau klicket (alternative Modus)",
+                    "remote_button_alt_quintuple_press": "\"{subtype}\" füf Mau klicket (alternative Modus)",
+                    "remote_button_alt_short_press": "\"{subtype}\" drückt (alternative Modus)",
+                    "remote_button_alt_short_release": "\"{subtype}\" loosglah (alternative Modus)",
+                    "remote_button_alt_triple_press": "\"{subtype}\" drü Mau klicket (alternative Modus)",
+                    "remote_button_double_press": "\"{subtype}\" doppuklicket",
+                    "remote_button_long_press": "\"{subtype}\" lang drückt",
+                    "remote_button_long_release": "\"{subtype}\" loosglah nach langem Drücke",
+                    "remote_button_quadruple_press": "\"{subtype}\" Vier Mau klicket",
+                    "remote_button_quintuple_press": "\"{subtype}\" Füf Mau klicket",
+                    "remote_button_short_press": "\"{subtype}\" drückt",
+                    "remote_button_short_release": "\"{subtype}\" loosglah",
+                    "remote_button_triple_press": "\"{subtype}\" drü Mau klicket"
+                }
+            },
+            "options": {
+                "abort": {
+                    "not_zha_device": "Das Grät isch kes ZHA-Grät",
+                    "single_instance_allowed": "Scho konfiguriert. Nume ei einzegi Konfiguration müglech.",
+                    "usb_probe_failed": "Test vom USB-Grät gschytteret"
+                },
+                "error": {
+                    "cannot_connect": "Verbindig gschytteret",
+                    "invalid_backup_json": "Ungüutegi JSON-Sicherig"
+                },
+                "flow_title": "{name}",
+                "step": {
+                    "choose_automatic_backup": {
+                        "data": {
+                            "choose_automatic_backup": "Wäu e outomatischi Sicherig us"
+                        },
+                        "description": "Steu dini Netzwärchyystellige vor e outomatische Sicherig wider här",
+                        "title": "Outomatischi Sicherig widerhärsteue"
+                    },
+                    "choose_formation_strategy": {
+                        "description": "Wäu d Netzwärchyystellige für dini Antenne us.",
+                        "menu_options": {
+                            "choose_automatic_backup": "Outomatischi Sicherig widerhärsteue",
+                            "form_initial_network": "Netzwärch ersteue",
+                            "form_new_network": "Netzwärchyystellige lösche und es nöis Netzwärch ersteue",
+                            "reuse_settings": "Antenneyystellige bhaute",
+                            "upload_manual_backup": "Manuelli Sicherig ufelade"
+                        },
+                        "title": "Netzwärchformation"
+                    },
+                    "choose_serial_port": {
+                        "data": {
+                            "path": "Pfad zum serielle Grät"
+                        },
+                        "description": "Wäu der seriell Port für d Zigbee-Antenne us",
+                        "title": "Serielle Port uswähle"
+                    },
+                    "init": {
+                        "description": "ZHA wird aaghaute. Wosch wyterfahre?",
+                        "title": "ZHA nöi konfiguriere"
+                    },
+                    "instruct_unplug": {
+                        "description": "Dini auti Antenne isch zrüggsetzt worde. We de d Hardware nid lenger bruuchsch, de chasch se itze uszieh.\n\nDu chasch dini nöii Antenne itze yystecke.",
+                        "title": "Auti Antenne uszieh"
+                    },
+                    "intent_migrate": {
+                        "description": "Bevor d die nöii Antenne yystecksch, mues die auti Antenne zrüggsetzt wärde. Es wird en outomatischi Sicherig gmacht. We de es Kombinierts Z-Wave- und Zigbee-Grät wie der HUSBZB-1 hesch, de wird nume der Zigbee-Teil zgrügggsetzt.\n\n*Hiwys: We de vo **ConBee\/RaspBee** migriersch, steu sicher, dass d Firmware '0x26720700' oder nöier hesch! Schüsch chönntis sy, das nach der Migration es paar Grät nümme kontrolliert chöi wärde, bis sy zrügggsetzt wärde.*",
+                        "title": "Migration uf nöii Antenne"
+                    },
+                    "manual_pick_radio_type": {
+                        "data": {
+                            "radio_type": "Antenne-Typ"
+                        },
+                        "description": "Wäu di Zigbee-Antenne-Typ us",
+                        "title": "Antenne-Typ"
+                    },
+                    "manual_port_config": {
+                        "data": {
+                            "baudrate": "Port-Gschwindigkeit",
+                            "flow_control": "Dateflusskontroue",
+                            "path": "Pfad zum serielle Grät"
+                        },
+                        "description": "Gib d Yystellige vom serielle Port aa",
+                        "title": "Ystellige vom serielle Port"
+                    },
+                    "maybe_confirm_ezsp_restore": {
+                        "data": {
+                            "overwrite_coordinator_ieee": "Permanänti Ersetzig vor IEEE-Adrässe vor Antenne"
+                        },
+                        "description": "Dini Sicherig het a anderi IEEE-Adrässe aus dini Antenne. We ds Netzwärch richtig söu funktioniere, de mues o d IEEE-Adrässe vor Antenne gänderet wärde.\n\nDas isch e permanänti Änderig.",
+                        "title": "Permanänti Ersetzig vor IEEE-Adrässe vor Antenne"
+                    },
+                    "prompt_migrate_or_reconfigure": {
+                        "description": "Migriersch uf e nöii Antenne oder richtisch die bestehendi Antenne nöi yy?",
+                        "menu_options": {
+                            "intent_migrate": "Migration uf nöii Antenne",
+                            "intent_reconfigure": "Antenne nöi yyrichte"
+                        },
+                        "title": "Migration oder Nöikonfiguration"
+                    },
+                    "upload_manual_backup": {
+                        "data": {
+                            "uploaded_backup_file": "Datei ufelade"
+                        },
+                        "description": "Steu dini Netzwärchyystellige us ere ufegladene JSON-Datei wider här. Du chasch die zum Bischpiu vor e andere ZHA-Installation unger de **Netzärchyystellilge** abelade oder d Datei 'coordinator_backup.json' vo Zigbee2MQTT bruuche.",
+                        "title": "Manuelli Sicherig ufelade"
+                    },
+                    "verify_radio": {
+                        "description": "Dini Antenne ({name}) isch nid empfohle und es isch müglech, dass d Ungerstützig i Zuenkuft ufhört. Bitte lueg i der Dokumentation vo ZHA für d [Lyste vo de empfohlene Antenne]({docs_recommended_adapters_url}).",
+                        "title": "Antenne isch nid empfohle"
+                    }
+                }
+            },
+            "services": {
+                "clear_lock_user_code": {
+                    "description": "Benutzercode vo Schloss lösche.",
+                    "fields": {
+                        "code_slot": {
+                            "description": "Codeplatz für e Code z lösche.",
+                            "name": "Codeplatz"
+                        }
+                    },
+                    "name": "Schloss-Benutzer lösche"
+                },
+                "disable_lock_user_code": {
+                    "description": "Benutzercode uf em ne Schloss deaktiviere.",
+                    "fields": {
+                        "code_slot": {
+                            "description": "Codeplatz zum deaktiviere.",
+                            "name": "Codeplatz"
+                        }
+                    },
+                    "name": "Schlossbenutzer deaktiviere"
+                },
+                "enable_lock_user_code": {
+                    "description": "Benutzercode uf em ne Schloss aktiviere.",
+                    "fields": {
+                        "code_slot": {
+                            "description": "Codeplatz zum aktiviere.",
+                            "name": "Codeplatz"
+                        }
+                    },
+                    "name": "Schlossbenutzer aktiviere"
+                },
+                "issue_zigbee_cluster_command": {
+                    "description": "E Befäu an es spezieus Cluster vor e bestimmte Entität absetze.",
+                    "fields": {
+                        "args": {
+                            "description": "Argumänt wo mit em Befäu mitgäbe wärde",
+                            "name": "Argumänt"
+                        },
+                        "cluster_id": {
+                            "description": "ZCL-Cluster für d Eigeschaft z bezieh.",
+                            "name": "Cluster-ID"
+                        },
+                        "cluster_type": {
+                            "description": "Typ vom Cluster.",
+                            "name": "Cluster-Typ"
+                        },
+                        "command": {
+                            "description": "ID vom uszfüehrende Befäu.",
+                            "name": "Befäu"
+                        },
+                        "command_type": {
+                            "description": "Typ vom uszfüehrende Befäu.",
+                            "name": "Befäu-Typ"
+                        },
+                        "endpoint_id": {
+                            "description": "Ändpunkt-ID für ds Cluster.",
+                            "name": "Ändpunkt-ID"
+                        },
+                        "ieee": {
+                            "description": "IEE-Adrässe für ds Grät.",
+                            "name": "IEEE"
+                        },
+                        "manufacturer": {
+                            "description": "Härsteuer-Code",
+                            "name": "Härsteuer"
+                        },
+                        "params": {
+                            "description": "Parameter wo mit em Befäu mitgäbe wärde.",
+                            "name": "Parameter"
+                        }
+                    },
+                    "name": "Zigbee-Cluster-Befäu absetze"
+                },
+                "issue_zigbee_group_command": {
+                    "description": "E Befäu an es spezieus Cluster vor e bestimmte Gruppe absetze.",
+                    "fields": {
+                        "args": {
+                            "description": "Argumänt wo mit em Befäu mitgäbe wärde",
+                            "name": "Argumänt"
+                        },
+                        "cluster_id": {
+                            "description": "ZCL-Cluster für e Befäu dra z sände.",
+                            "name": "Cluster-ID"
+                        },
+                        "cluster_type": {
+                            "description": "Typ vom Cluster.",
+                            "name": "Cluster-Typ"
+                        },
+                        "command": {
+                            "description": "ID vom uszfüehrende Befäu.",
+                            "name": "Befäu"
+                        },
+                        "group": {
+                            "description": "Hexadezimau-Adrässe vor Gruppe.",
+                            "name": "Gruppe"
+                        },
+                        "manufacturer": {
+                            "description": "Härsteuer-Code",
+                            "name": "Härsteuer"
+                        }
+                    },
+                    "name": "Zigbee-Gruppe-Befäu absetze"
+                },
+                "permit": {
+                    "description": "Erloub Knotepünkt, em Zigbee-Netzwärch byyzträtte.",
+                    "fields": {
+                        "duration": {
+                            "description": "Zyt für e Byytrit z erloube.",
+                            "name": "Duur"
+                        },
+                        "ieee": {
+                            "description": "IEEE-Adrässe vom Knotepunkt wo darf byyträtte.",
+                            "name": "IEEE"
+                        },
+                        "install_code": {
+                            "description": "Installationscode vom byyträttende Grät (mues mit source_ieee bruucht wärde)",
+                            "name": "Installationscode"
+                        },
+                        "qr_code": {
+                            "description": "Wärt vom QR-Installationscode (ungerschidlech je nach Härsteuer).",
+                            "name": "QR-Code"
+                        },
+                        "source_ieee": {
+                            "description": "IEEE-Adrässe vom byyträttende Grät (mues mit em Installationscode bruucht wärde)",
+                            "name": "Queu-IEEE"
+                        }
+                    },
+                    "name": "Erloube"
+                },
+                "reconfigure_device": {
+                    "description": "ZHA-Grät nöi konfiguriere (Grät repariere). Bruuch das we de Problem mit em Grät hesch. We ds fragleche Grät batteriebetribe isch, steu sicher das es wach isch und Nachrichte cha empfah, we de der Dienst usfüehrsch.",
+                    "fields": {
+                        "ieee": {
+                            "description": "IEEE-Adrässe vom Grät wo söu nöikonfiguriert wärde.",
+                            "name": "IEEE"
+                        }
+                    },
+                    "name": "Grät nöi konfiguriere"
+                },
+                "remove": {
+                    "description": "Chnotepunkt us Zigbee-Netzwärch lösche.",
+                    "fields": {
+                        "ieee": {
+                            "description": "IEEE-Adrässe vom Chnotepunkt.",
+                            "name": "IEEE"
+                        }
+                    },
+                    "name": "Lösche"
+                },
+                "set_lock_user_code": {
+                    "description": "Benutzercode am Schloss yyrichte.",
+                    "fields": {
+                        "code_slot": {
+                            "description": "Codeplatz für e Code yyzfüege.",
+                            "name": "Codeplatz"
+                        },
+                        "user_code": {
+                            "description": "Code zum yyrichte.",
+                            "name": "Code"
+                        }
+                    },
+                    "name": "Schlossbenutzer Cod yyrichte"
+                },
+                "set_zigbee_cluster_attribute": {
+                    "description": "E Eigeschaftswärt für es spezieus Cluster vor e bestimmte Entität setze.",
+                    "fields": {
+                        "attribute": {
+                            "description": "ID vor Eigeschaft.",
+                            "name": "Eigeschaft"
+                        },
+                        "cluster_id": {
+                            "description": "ZCL-Cluster für d Eigeschaft z bezieh.",
+                            "name": "Cluster-ID"
+                        },
+                        "cluster_type": {
+                            "description": "Typ vom Cluster.",
+                            "name": "Cluster-Typ"
+                        },
+                        "endpoint_id": {
+                            "description": "Ändpunkt-ID für ds Cluster.",
+                            "name": "Ändpunkt-ID"
+                        },
+                        "ieee": {
+                            "description": "IEE-Adrässe für ds Grät.",
+                            "name": "IEEE"
+                        },
+                        "manufacturer": {
+                            "description": "Härsteuer-Code",
+                            "name": "Härsteuer"
+                        },
+                        "value": {
+                            "description": "Wärt für i d Eigeschaft z schrybe.",
+                            "name": "Wärt"
+                        }
+                    },
+                    "name": "Zigbee-Cluster-Eigeschaft schrybe"
+                },
+                "warning_device_squawk": {
+                    "description": "Dä Dienst bruucht d WD-Fähigkeite vür e schnäue seh-\/hörbare Puls uszände (sog. \"kreische\"). Der Kreisch-Befäu het ke effekt, we d WD aktiv isch.",
+                    "fields": {
+                        "ieee": {
+                            "description": "IEE-Adrässe für ds Grät.",
+                            "name": "IEEE"
+                        },
+                        "level": {
+                            "description": "Ds Kreischlevelfäud isch e 2-bit Enumeration und bestimmt Sterchi vom Kreischton gemäss Tabäue 8-26 vo der ZCL-Spezifikation.",
+                            "name": "Level"
+                        },
+                        "mode": {
+                            "description": "Ds Kreischmodusfäud isch e 4-bit Enumeration und cha eine vo de Wärte gemäss Tabäue 8-24 vo der ZCL-Spezifikation ha. Der gmai Effelt vo de Modi hanget vo der Implementierig ab.",
+                            "name": "Modus"
+                        },
+                        "strobe": {
+                            "description": "Ds Stroboskopfäud isch e Boolean und leit fescht, öb zuesätzlich zum Kreische e visuelli Warnig nötig isch, gemäss Tabäue 8-25 vo der ZCL-Spezifikation.",
+                            "name": "Stroboskop"
+                        }
+                    },
+                    "name": "Warngrät Kreische"
+                },
+                "warning_device_warn": {
+                    "description": "Dä Dienst startet ds Warngrät. Ds Warngrät warnet d Umgäbig mit hörbare (Sirene) und visuelle (Stroboskop) Signau.",
+                    "fields": {
+                        "duration": {
+                            "description": "D Duur vor Warnig i Sekunde (16-bit). We sowou Stroboskop und Warnigsmodus \"0\" sy, wird das Fäud ignoriert.",
+                            "name": "Duur"
+                        },
+                        "duty_cycle": {
+                            "description": "Zeigt d Lengi vom ne Blitzzyklus aa. Das erloubt je nach Alarm-Typ (z.B. Füür, Polizei, Yybrächer) es anders Signau z bruuche. Es sy Wärte i Zähnerschritte vo 0 bis 100 müglech. Aui andere Wärte wärde uf e nächst Wärt grundet. Für ds Stroboskop wird e Zyklus über ne Sekunde berächnet, zersch mit ON, nächär mit OFF. We z.B. aus Dienstzyklus \"40\" definitiert isch, de blitzt ds Stroboskop für 4\/10 vor e Sekunde uf und isch de für 4\/10 vor e Sekunde abgsteut.",
+                            "name": "Dienstzyklus"
+                        },
+                        "ieee": {
+                            "description": "IEE-Adrässe für ds Grät.",
+                            "name": "IEEE"
+                        },
+                        "intensity": {
+                            "description": "Zeigt d Intensität vom Stroboskop gemäss Tabäue 8-23 vo der ZCL-Spezifikation. Die Eigeschaft wird bruucht für d Häuigkeit vom Stroboskop yyzsteue (vgl. Abschnitt 8.4.2.3.1.6 vo der ZCL-Spezifikation).",
+                            "name": "Intensität"
+                        },
+                        "level": {
+                            "description": "Ds Sirenelevelfäud isch e 2-bit Enumeration und bestimmt d Intensität vom Kreischton gemäss Tabäue 8-22 vo der ZCL-Spezifikation.",
+                            "name": "Level"
+                        },
+                        "mode": {
+                            "description": "Ds Warnigsmodusfäud isch e 4-bit Enumeration und cha e Wärt vo 0 bis 6 ha gemäss Tabäue 8-20 vo der ZCL-Spezifikation. Ds gnaue Verhaute vom warnende Grät i jedem Modus hanget vom jewilige Sicherheitsstandard ab.",
+                            "name": "Modus"
+                        },
+                        "strobe": {
+                            "description": "Ds Stroboskobfäud isch e 2-bit Enumeration und legt fescht, öb zuesätzliche zur Sirene e visuelli Warnig nötig isch, gemäss Tabäue 8-21 vor ZCL-Spezifikation. \"0\" heist kes Stroboskop, \"1\" heisst Stroboskop. We ds Stroboskopfäud \"1\" isch und der Warnigsmodus \"0\" (\"stop\"), de wird nume ds Stroboskop aktiviert.",
+                            "name": "Stroboskop"
+                        }
+                    },
+                    "name": "Warngrät faht Warnig aa"
+                }
+            }
+        },
+        "zwave_js": {
+            "config": {
+                "step": {
+                    "on_supervisor": {
+                        "title": "Verbindigsmethode wähle"
+                    }
+                }
+            },
+            "options": {
+                "step": {
+                    "on_supervisor": {
+                        "title": "Verbindigsmethode wähle"
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,308 @@
+{
+    "common": {
+        "config_flow": {
+            "abort": {
+                "already_configured_account": "Tài khoản đã được định cấu hình"
+            },
+            "data": {
+                "host": "Địa chỉ",
+                "port": "Cổng"
+            }
+        },
+        "state": {
+            "active": "hoạt động",
+            "closed": "Đã đóng",
+            "connected": "Đã kết nối",
+            "disconnected": "Đã ngắt kết nối",
+            "home": "Ở nhà",
+            "idle": "Không hoạt động",
+            "locked": "Đã khóa",
+            "not_home": "Đi vắng",
+            "off": "Tắt",
+            "on": "Bật",
+            "open": "Mở",
+            "paused": "Tạm dừng",
+            "standby": "Chế độ chờ",
+            "unlocked": "Mở khóa"
+        }
+    },
+    "component": {
+        "adguard": {
+            "config": {
+                "step": {
+                    "user": {
+                        "data": {
+                            "password": "Mật khẩu",
+                            "username": "Tên đăng nhập"
+                        }
+                    }
+                }
+            }
+        },
+        "alarm_control_panel": {
+            "title": "Bảng điều khiển an ninh"
+        },
+        "auth": {
+            "mfa_setup": {
+                "totp": {
+                    "error": {
+                        "invalid_code": "Mã không hợp lệ, vui lòng thử lại. Nếu bạn gặp lỗi này một cách nhất quán, vui lòng đảm bảo đồng hồ của hệ thống Home Assistant là chính xác."
+                    },
+                    "step": {
+                        "init": {
+                            "description": "Để kích hoạt xác thực hai yếu tố bằng mật khẩu một lần dựa trên thời gian, hãy quét mã QR bằng ứng dụng xác thực của bạn. Nếu bạn không có, chúng tôi khuyên bạn nên dùng [Google Authenticator] (https:\/\/support.google.com\/accounts\/answer\/1066447) hoặc [Authy] (https:\/\/authy.com\/). \n\n {qr_code} \n \n Sau khi quét mã, nhập mã sáu chữ số từ ứng dụng của bạn để xác minh thiết lập. Nếu bạn gặp vấn đề khi quét mã QR, hãy thực hiện cài đặt thủ công với mã ** ` {code} ` **.",
+                            "title": "Thiết lập xác thực hai yếu tố bằng TOTP"
+                        }
+                    },
+                    "title": "TOTP"
+                }
+            }
+        },
+        "automation": {
+            "title": "Tự động hóa"
+        },
+        "binary_sensor": {
+            "title": "Cảm biến nhị phân"
+        },
+        "calendar": {
+            "title": "Lịch"
+        },
+        "camera": {
+            "title": "Máy ảnh"
+        },
+        "cast": {
+            "config": {
+                "abort": {
+                    "single_instance_allowed": "Chỉ cần một cấu hình duy nhất của Google Cast là đủ."
+                },
+                "step": {
+                    "confirm": {
+                        "description": "Bạn có muốn thiết lập Google Cast không?"
+                    }
+                }
+            }
+        },
+        "climate": {
+            "title": "Khí hậu"
+        },
+        "configurator": {
+            "title": "Trình cấu hình"
+        },
+        "conversation": {
+            "title": "Hội thoại"
+        },
+        "cover": {
+            "title": "Rèm, cửa cuốn"
+        },
+        "deconz": {
+            "config": {
+                "abort": {
+                    "already_configured": "Cầu đã được cấu hình",
+                    "no_bridges": "Không tìm thấy cầu deCONZ nào"
+                },
+                "error": {
+                    "no_key": "Không thể lấy khóa API"
+                }
+            }
+        },
+        "device_tracker": {
+            "title": "Trình theo dõi thiết bị"
+        },
+        "fan": {
+            "title": "Quạt"
+        },
+        "group": {
+            "title": "Nhóm"
+        },
+        "homekit_controller": {
+            "config": {
+                "step": {
+                    "pair": {
+                        "data": {
+                            "pairing_code": "Mã kết nối"
+                        },
+                        "title": "Kết nối với Phụ kiện HomeKit"
+                    },
+                    "user": {
+                        "data": {
+                            "device": "Thiết bị"
+                        },
+                        "description": "Chọn thiết bị bạn muốn kết nối",
+                        "title": "Kết nối với Phụ kiện HomeKit"
+                    }
+                }
+            },
+            "title": "Phụ kiện HomeKit"
+        },
+        "hue": {
+            "config": {
+                "abort": {
+                    "all_configured": "Tất cả các cầu Philips Hue đã được cấu hình",
+                    "unknown": "Xảy ra lỗi không xác định được"
+                },
+                "error": {
+                    "linking": "Đã xảy ra lỗi liên kết không xác định.",
+                    "register_failed": "Không thể đăng ký, vui lòng thử lại"
+                },
+                "step": {
+                    "link": {
+                        "title": "Liên kết Hub"
+                    }
+                }
+            }
+        },
+        "image_processing": {
+            "title": "Xử lý ảnh"
+        },
+        "input_boolean": {
+            "title": "Đầu vào lôgic"
+        },
+        "input_datetime": {
+            "title": "Đầu vào ngày giờ"
+        },
+        "input_number": {
+            "title": "Đầu vào số"
+        },
+        "input_select": {
+            "title": "Chọn đầu vào"
+        },
+        "input_text": {
+            "title": "Đầu vào ký tự"
+        },
+        "light": {
+            "title": "Đèn"
+        },
+        "lock": {
+            "title": "Khóa"
+        },
+        "mailbox": {
+            "title": "Hộp thư"
+        },
+        "media_player": {
+            "title": "Media player"
+        },
+        "met": {
+            "config": {
+                "step": {
+                    "user": {
+                        "data": {
+                            "latitude": "Vĩ độ",
+                            "longitude": "Kinh độ",
+                            "name": "Tên"
+                        },
+                        "title": "Vị trí"
+                    }
+                }
+            }
+        },
+        "mobile_app": {
+            "config": {
+                "abort": {
+                    "install_app": "Mở ứng dụng di động để thiết lập tích hợp với Home Assistant. Xem [tài liệu] ({apps_url}) cho danh sách các ứng dụng tương thích."
+                },
+                "step": {
+                    "confirm": {
+                        "description": "Bạn có muốn thiết lập thành phần Ứng dụng di động không?"
+                    }
+                }
+            }
+        },
+        "nest": {
+            "config": {
+                "error": {
+                    "internal_error": "Mã xác thực lỗi nội bộ",
+                    "timeout": "Mã xác thực hết thời gian chờ",
+                    "unknown": "Mã xác thực lỗi không xác định"
+                },
+                "step": {
+                    "init": {
+                        "data": {
+                            "flow_impl": "Nhà cung cấp"
+                        },
+                        "title": "Nhà cung cấp xác thực"
+                    },
+                    "link": {
+                        "title": "Liên kết tài khoản Nest"
+                    }
+                }
+            }
+        },
+        "notify": {
+            "title": "Thông báo"
+        },
+        "onboarding": {
+            "area": {
+                "bedroom": "Phòng ngủ",
+                "kitchen": "Phòng bếp",
+                "living_room": "Phòng khách"
+            }
+        },
+        "person": {
+            "title": "Người"
+        },
+        "plant": {
+            "title": "Cây trồng"
+        },
+        "proximity": {
+            "title": "Tiệm cận"
+        },
+        "remote": {
+            "title": "ĐK Từ xa"
+        },
+        "scene": {
+            "title": "Bối cảnh"
+        },
+        "script": {
+            "title": "Kịch bản"
+        },
+        "sensor": {
+            "title": "Cảm biến"
+        },
+        "sonos": {
+            "config": {
+                "abort": {
+                    "no_devices_found": "Không tìm thấy thiết bị Sonos nào trên mạng.",
+                    "single_instance_allowed": "Chỉ cần một cấu hình duy nhất của Sonos là đủ."
+                },
+                "step": {
+                    "confirm": {
+                        "description": "Bạn có muốn thiết lập Sonos không?"
+                    }
+                }
+            }
+        },
+        "sun": {
+            "title": "Mặt trời"
+        },
+        "switch": {
+            "title": "Công tắc"
+        },
+        "system_health": {
+            "title": "Sức khỏe hệ thống"
+        },
+        "vacuum": {
+            "title": "Vacuum"
+        },
+        "zone": {
+            "config": {
+                "error": {
+                    "name_exists": "Tên đã tồn tại"
+                },
+                "step": {
+                    "init": {
+                        "data": {
+                            "icon": "Biểu tượng",
+                            "latitude": "Vĩ độ",
+                            "longitude": "Kinh độ",
+                            "name": "Tên",
+                            "passive": "Thụ động",
+                            "radius": "Bán kính"
+                        },
+                        "title": "Xác định tham số vùng"
+                    }
+                },
+                "title": "Vùng"
+            }
+        }
+    }
+}

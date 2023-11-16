@@ -1,0 +1,9 @@
+{
+    "common": {
+        "config_flow": {
+            "abort": {
+                "already_configured_account": "Konto jam estas agordita"
+            }
+        }
+    }
+}

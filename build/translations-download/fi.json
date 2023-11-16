@@ -1,0 +1,3801 @@
+{
+    "common": {
+        "action": {
+            "close": "Sulje",
+            "connect": "Yhdistä",
+            "disable": "Poista käytöstä",
+            "disconnect": "Katkaise yhteys",
+            "enable": "Ota käyttöön",
+            "open": "Avaa",
+            "pause": "Keskeytä",
+            "reload": "Uudelleenlataa",
+            "restart": "Uudelleenkäynnistä",
+            "start": "Käynnistä",
+            "stop": "Pysäytä",
+            "toggle": "Vaihda",
+            "turn_off": "Sammuta",
+            "turn_on": "Laita päälle"
+        },
+        "config_flow": {
+            "abort": {
+                "already_configured_account": "Tili on jo määritetty",
+                "already_configured_device": "Laite on jo määritetty",
+                "already_configured_location": "Sijainti on jo määritetty",
+                "already_configured_service": "Palvelu on jo määritetty",
+                "already_in_progress": "Määritysprosessi on jo käynnissä",
+                "cloud_not_connected": "Ei yhdistetty Home Assistant Cloudiin",
+                "no_devices_found": "Verkosta ei löytynyt laitteita",
+                "oauth2_authorize_url_timeout": "Valtuutus-URL-osoitteen luomisen aikakatkaisu.",
+                "oauth2_error": "Vastaanotettu virheelliset tunnustiedot.",
+                "oauth2_missing_configuration": "Komponenttia ei ole määritetty. Seuraa dokumentaatiota.",
+                "oauth2_missing_credentials": "Integraatio vaatii sovelluksen tunnistetiedot",
+                "oauth2_no_url_available": "URL-osoitetta ei ole saatavilla. Lisätietoja tästä virheestä saat [täältä]({docs_url})",
+                "oauth2_timeout": "Aikakatkaisu ratkaistaessa OAuth tokenia.",
+                "oauth2_user_rejected_authorize": "Tilin yhdistäminen hylätty: {error}",
+                "reauth_successful": "Uudelleentodennus onnistui",
+                "single_instance_allowed": "Jo määritetty. Vain yksi konfiguraatio mahdollinen.",
+                "unknown_authorize_url_generation": "Tuntematon virhe luotaessa valtuutus-URL-osoitetta.",
+                "webhook_not_internet_accessible": "Home Assistant -esiintymän on oltava käytettävissä Internetistä, jotta se voi vastaanottaa webhook-viestejä."
+            },
+            "create_entry": {
+                "authenticated": "Todennettu onnistuneesti"
+            },
+            "data": {
+                "access_token": "Käyttöoikeustunnus",
+                "api_key": "API-avain",
+                "api_token": "API-tunnus",
+                "device": "Laite",
+                "elevation": "Korkeus merenpinnasta",
+                "email": "Sähköposti",
+                "host": "Palvelin",
+                "ip": "IP-osoite",
+                "latitude": "Leveysaste",
+                "location": "Sijainti",
+                "longitude": "Pituusaste",
+                "mode": "Tila",
+                "name": "Nimi",
+                "password": "Salasana",
+                "path": "Polku",
+                "pin": "PIN-koodi",
+                "port": "Portti",
+                "ssl": "Käyttää SSL-varmennetta",
+                "url": "URL-osoite",
+                "usb_path": "USB-laitteen polku",
+                "username": "Käyttäjätunnus",
+                "verify_ssl": "Tarkista SSL-varmenne"
+            },
+            "description": {
+                "confirm_setup": "Haluatko aloittaa määrityksen?"
+            },
+            "error": {
+                "cannot_connect": "Yhteyden muodostaminen epäonnistui",
+                "invalid_access_token": "Virheellinen käyttöoikeustunnus",
+                "invalid_api_key": "Virheellinen API-avain",
+                "invalid_auth": "Virheellinen todennus",
+                "invalid_host": "Virheellinen isäntänimi tai IP-osoite",
+                "timeout_connect": "Aikakatkaisu yhteyttä luodessa",
+                "unknown": "Odottamaton virhe"
+            },
+            "title": {
+                "oauth2_pick_implementation": "Valitse todennusmenetelmä",
+                "reauth": "Todenna integraatio uudelleen",
+                "via_hassio_addon": "{name} Home Assistant -laajennuksen kautta"
+            }
+        },
+        "device_automation": {
+            "action_type": {
+                "toggle": "Vaihda {entity_name}",
+                "turn_off": "Sammuta {entity_name}",
+                "turn_on": "Kytke päälle {entity_name}"
+            },
+            "condition_type": {
+                "is_off": "{entity_name} on pois päältä",
+                "is_on": "{entity_name} on päällä"
+            },
+            "trigger_type": {
+                "changed_states": "{entity_name} laitettiin päälle tai pois",
+                "turned_off": "{entity_name} sammui",
+                "turned_on": "{entity_name} laitettiin päälle"
+            }
+        },
+        "generic": {
+            "model": "Malli",
+            "ui_managed": "Hallinnoitu käyttöliittymän kautta"
+        },
+        "issues": {
+            "platform_integration_no_support_description": "{platform}-integraation {domain}-alusta ei tue alustan asetuksia.\n\nPoista se asetuksista ja käynnistä Home Assistant uudelleen ongelman korjaamiseksi.",
+            "platform_integration_no_support_title": "Alustan tukea ei tueta"
+        },
+        "state": {
+            "active": "aktiivinen",
+            "closed": "Suljettu",
+            "connected": "Yhdistetty",
+            "disabled": "Ei käytössä",
+            "disconnected": "Ei yhteyttä",
+            "enabled": "Käytössä",
+            "home": "Kotona",
+            "idle": "Lepotilassa",
+            "locked": "Lukittu",
+            "no": "Ei",
+            "not_home": "Poissa",
+            "off": "Pois",
+            "on": "Päällä",
+            "open": "Auki",
+            "paused": "Pysäytetty",
+            "standby": "Lepotilassa",
+            "unlocked": "Auki",
+            "yes": "Kyllä"
+        },
+        "time": {
+            "friday": "Perjantai",
+            "monday": "Maanantai",
+            "saturday": "Lauantai",
+            "sunday": "Sunnuntai",
+            "thursday": "Torstai",
+            "tuesday": "Tiistai",
+            "wednesday": "Keskiviikko"
+        }
+    },
+    "component": {
+        "abode": {
+            "services": {
+                "change_setting": {
+                    "fields": {
+                        "setting": {
+                            "description": "Muutettava asetus",
+                            "name": "Asetus"
+                        },
+                        "value": {
+                            "description": "Asetuksen arvo",
+                            "name": "Arvo"
+                        }
+                    },
+                    "name": "Vaihda asetus"
+                },
+                "trigger_automation": {
+                    "description": "Laukaise Abode automaatio",
+                    "fields": {
+                        "entity_id": {
+                            "description": "Laukaistavan automaation kohdetunnus.",
+                            "name": "Kohde"
+                        }
+                    },
+                    "name": "Laukaise automaatio"
+                }
+            }
+        },
+        "accuweather": {
+            "config": {
+                "abort": {
+                    "single_instance_allowed": "Jo määritetty. Vain yksi konfiguraatio mahdollinen."
+                },
+                "create_entry": {
+                    "default": "Jotkin sensorit eivät ole oletusarvoisesti käytössä. Voit ottaa ne käyttöön kokonaisuusrekisterissä integraatiokonfiguroinnin jälkeen.\nSääennuste ei ole oletusarvoisesti käytössä. Voit ottaa sen käyttöön integraatioasetuksissa."
+                },
+                "error": {
+                    "cannot_connect": "Yhteys epäonnistui",
+                    "invalid_api_key": "Epäkelpo API-avain",
+                    "requests_exceeded": "Accuweather API:lle tehtyjen pyyntöjen sallittu määrä on ylitetty. Sinun on odotettava tai vaihdettava API-avainta."
+                },
+                "step": {
+                    "user": {
+                        "data": {
+                            "api_key": "API-avain",
+                            "latitude": "Leveysaste",
+                            "longitude": "Pituusaste",
+                            "name": "Nimi"
+                        }
+                    }
+                }
+            },
+            "entity": {
+                "sensor": {
+                    "air_quality": {
+                        "state": {
+                            "good": "Hyvä",
+                            "hazardous": "Vaarallinen",
+                            "high": "Korkea",
+                            "low": "Matala",
+                            "moderate": "Kohtalainen",
+                            "unhealthy": "Epäterveellinen"
+                        }
+                    },
+                    "air_quality_0d": {
+                        "name": "Ilmanlaatu tänään",
+                        "state": {
+                            "good": "Hyvä",
+                            "hazardous": "Vaarallinen",
+                            "high": "Korkea",
+                            "low": "Matala",
+                            "moderate": "Keskiverto",
+                            "unhealthy": "Epäterveellinen"
+                        }
+                    },
+                    "air_quality_1d": {
+                        "name": "Ilmanlaatu päivä 1",
+                        "state": {
+                            "good": "Hyvä",
+                            "hazardous": "Vaarallinen",
+                            "high": "Korkea",
+                            "low": "Matala"
+                        }
+                    },
+                    "cloud_cover_day_4d": {
+                        "name": "Pilvipeite päivä 4"
+                    },
+                    "cloud_cover_night_0d": {
+                        "name": "Pilvipeite tänä yönä"
+                    },
+                    "cloud_cover_night_1d": {
+                        "name": "Pilvipeite yö 1"
+                    },
+                    "cloud_cover_night_2d": {
+                        "name": "Pilvipeite yö 2"
+                    },
+                    "cloud_cover_night_3d": {
+                        "name": "Pilvipeite yö 3"
+                    },
+                    "cloud_cover_night_4d": {
+                        "name": "Pilvipeite yö 4"
+                    },
+                    "condition_day_0d": {
+                        "name": "Tilanne tänään"
+                    },
+                    "condition_day_1d": {
+                        "name": "Tilanne päivä 1"
+                    },
+                    "condition_day_2d": {
+                        "name": "Tilanne päivä 2"
+                    },
+                    "condition_day_3d": {
+                        "name": "Tilanne päivä 3"
+                    },
+                    "condition_day_4d": {
+                        "name": "Tilanne päivä 4"
+                    },
+                    "condition_night_0d": {
+                        "name": "Tilanne tänä yönä"
+                    },
+                    "condition_night_1d": {
+                        "name": "Tilanne yö 1"
+                    },
+                    "condition_night_2d": {
+                        "name": "Tilanne yö 2"
+                    },
+                    "condition_night_3d": {
+                        "name": "Tilanne yö 3"
+                    },
+                    "condition_night_4d": {
+                        "name": "Tilanne yö 4"
+                    },
+                    "dew_point": {
+                        "name": "Kastepiste"
+                    },
+                    "grass_pollen": {
+                        "state_attributes": {
+                            "level": {
+                                "name": "Taso",
+                                "state": {
+                                    "good": "Hyvä",
+                                    "hazardous": "Vaarallinen",
+                                    "high": "Korkea",
+                                    "low": "Matala",
+                                    "moderate": "Kohtalainen",
+                                    "unhealthy": "Epäterveellinen"
+                                }
+                            }
+                        }
+                    },
+                    "grass_pollen_0d": {
+                        "name": "Ruohon siitepöly tänään",
+                        "state_attributes": {
+                            "level": {
+                                "name": "Taso",
+                                "state": {
+                                    "good": "Hyvä",
+                                    "hazardous": "Vaarallinen",
+                                    "high": "Korkea",
+                                    "low": "Matala",
+                                    "moderate": "Keskiverto",
+                                    "unhealthy": "Epäterveellinen"
+                                }
+                            }
+                        }
+                    },
+                    "grass_pollen_1d": {
+                        "name": "Ruohon siitepöly päivä 1",
+                        "state_attributes": {
+                            "level": {
+                                "name": "Taso",
+                                "state": {
+                                    "good": "Hyvä",
+                                    "hazardous": "Vaarallinen",
+                                    "high": "Korkea"
+                                }
+                            }
+                        }
+                    },
+                    "hours_of_sun_4d": {
+                        "name": "Tuntia aurinkoa päivä 4"
+                    },
+                    "mold_pollen": {
+                        "state_attributes": {
+                            "level": {
+                                "name": "Taso",
+                                "state": {
+                                    "good": "Hyvä",
+                                    "hazardous": "Vaarallinen",
+                                    "high": "Korkea",
+                                    "low": "Matala",
+                                    "moderate": "Kohtalainen",
+                                    "unhealthy": "Epäterveellinen"
+                                }
+                            }
+                        }
+                    },
+                    "mold_pollen_0d": {
+                        "name": "Homeen siitepöly tänään",
+                        "state_attributes": {
+                            "level": {
+                                "name": "Taso",
+                                "state": {
+                                    "good": "Hyvä",
+                                    "hazardous": "Vaarallinen",
+                                    "high": "Korkea",
+                                    "low": "Matala",
+                                    "moderate": "Keskiverto",
+                                    "unhealthy": "Epäterveellinen"
+                                }
+                            }
+                        }
+                    },
+                    "mold_pollen_1d": {
+                        "name": "Homeen siitepöly päivä 1",
+                        "state_attributes": {
+                            "level": {
+                                "name": "Taso",
+                                "state": {
+                                    "good": "Hyvä",
+                                    "hazardous": "Vaarallinen",
+                                    "high": "Korkea",
+                                    "low": "Matala",
+                                    "moderate": "Keskiverto",
+                                    "unhealthy": "Epäterveellinen"
+                                }
+                            }
+                        }
+                    },
+                    "mold_pollen_2d": {
+                        "name": "Homeen siitepöly päivä 2",
+                        "state_attributes": {
+                            "level": {
+                                "name": "Taso",
+                                "state": {
+                                    "good": "Hyvä",
+                                    "hazardous": "Vaarallinen",
+                                    "high": "Korkea",
+                                    "low": "Matala",
+                                    "moderate": "Keskiverto",
+                                    "unhealthy": "Epäterveellinen"
+                                }
+                            }
+                        }
+                    },
+                    "pressure_tendency": {
+                        "state": {
+                            "rising": "Auringonnousu",
+                            "steady": "Vakaa"
+                        }
+                    },
+                    "ragweed_pollen": {
+                        "state_attributes": {
+                            "level": {
+                                "name": "Taso",
+                                "state": {
+                                    "good": "Hyvä"
+                                }
+                            }
+                        }
+                    },
+                    "uv_index": {
+                        "state_attributes": {
+                            "level": {
+                                "state": {
+                                    "good": "Hyvä",
+                                    "hazardous": "Vaarallinen",
+                                    "high": "Korkea",
+                                    "low": "Matala",
+                                    "moderate": "Keskiverto",
+                                    "unhealthy": "Epäterveellinen"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "options": {
+                "step": {
+                    "init": {
+                        "data": {
+                            "forecast": "Sääennuste"
+                        }
+                    }
+                }
+            }
+        },
+        "adguard": {
+            "config": {
+                "step": {
+                    "user": {
+                        "data": {
+                            "host": "Palvelin",
+                            "password": "Salasana",
+                            "port": "Portti",
+                            "ssl": "Käyttää SSL-sertifikaattia",
+                            "username": "Käyttäjätunnus",
+                            "verify_ssl": "Vahvista SSL-sertifikaatti"
+                        }
+                    }
+                }
+            }
+        },
+        "agent_dvr": {
+            "config": {
+                "abort": {
+                    "already_configured": "Laite on jo määritetty"
+                },
+                "error": {
+                    "already_in_progress": "Laitteen määritysvirta on jo käynnissä."
+                },
+                "step": {
+                    "user": {
+                        "data": {
+                            "host": "Palvelin",
+                            "port": "Portti"
+                        },
+                        "title": "Asenna Agent DVR"
+                    }
+                }
+            }
+        },
+        "airq": {
+            "entity": {
+                "sensor": {
+                    "carbon_dioxide": {
+                        "name": "Hiilidioksidi"
+                    },
+                    "carbon_monoxide": {
+                        "name": "Häkä"
+                    }
+                }
+            }
+        },
+        "airvisual": {
+            "config": {
+                "error": {
+                    "general_error": "Tapahtui tuntematon virhe."
+                }
+            },
+            "entity": {
+                "sensor": {
+                    "pollutant_label": {
+                        "state": {
+                            "co": "Häkä"
+                        }
+                    }
+                }
+            },
+            "platform": {
+                "sensor": {
+                    "state": {
+                        "airvisual__pollutant_label": {
+                            "co": "Häkä"
+                        }
+                    }
+                }
+            }
+        },
+        "alarm_control_panel": {
+            "title": "Hälytysasetukset"
+        },
+        "almond": {
+            "config": {
+                "abort": {
+                    "cannot_connect": "Yhteyden muodostaminen Almond-palvelimeen ei onnistu."
+                }
+            }
+        },
+        "ambient_station": {
+            "config": {
+                "error": {
+                    "invalid_key": "Virheellinen API-avain"
+                },
+                "step": {
+                    "user": {
+                        "data": {
+                            "api_key": "API-avain",
+                            "app_key": "Sovellusavain"
+                        },
+                        "title": "Täytä tietosi"
+                    }
+                }
+            }
+        },
+        "android_ip_webcam": {
+            "config": {
+                "step": {
+                    "user": {
+                        "data": {
+                            "password": "Salasana",
+                            "username": "Käyttäjätunnus"
+                        }
+                    }
+                }
+            }
+        },
+        "anova": {
+            "entity": {
+                "sensor": {
+                    "state": {
+                        "name": "Tila"
+                    }
+                }
+            }
+        },
+        "atag": {
+            "config": {
+                "step": {
+                    "user": {
+                        "data": {
+                            "host": "Palvelin",
+                            "port": "Portti"
+                        },
+                        "title": "Yhdistä laitteeseen"
+                    }
+                }
+            }
+        },
+        "auth": {
+            "mfa_setup": {
+                "notify": {
+                    "abort": {
+                        "no_available_service": "Ilmoituspalveluita ei ole saatavilla."
+                    },
+                    "error": {
+                        "invalid_code": "Virheellinen koodi. Yritä uudelleen."
+                    },
+                    "step": {
+                        "init": {
+                            "description": "Valitse jokin ilmoituspalveluista:",
+                            "title": "Määritä kertakäyttösalasana, jonka notify-komponentti toimittaa"
+                        },
+                        "setup": {
+                            "description": "Kertakäyttösalasana on lähetetty **notify.{notify_service}** kautta. Syötä se alla olevaan kenttään:",
+                            "title": "Varmista asetukset"
+                        }
+                    },
+                    "title": "Ilmoita kertaluonteinen salasana"
+                },
+                "totp": {
+                    "error": {
+                        "invalid_code": "Virheellinen koodi, yritä uudelleen. Jos saat tämän virheen jatkuvasti, varmista, että Home Assistant -järjestelmäsi kello on ajassa."
+                    },
+                    "step": {
+                        "init": {
+                            "title": "Määritä kaksivaiheinen todennus TOTP:n avulla"
+                        }
+                    },
+                    "title": "TOTP"
+                }
+            }
+        },
+        "automation": {
+            "entity_component": {
+                "_": {
+                    "name": "Automaatio",
+                    "state": {
+                        "off": "Pois",
+                        "on": "Päällä"
+                    },
+                    "state_attributes": {
+                        "current": {
+                            "name": "Käynnissä olevat automaatiot"
+                        },
+                        "last_triggered": {
+                            "name": "Viimeksi käynnistetty"
+                        },
+                        "max": {
+                            "name": "Ajettavien automaatioiden maksimimäärä"
+                        },
+                        "mode": {
+                            "name": "Ajotila",
+                            "state": {
+                                "parallel": "Rinnakkain",
+                                "queued": "Jonossa",
+                                "restart": "Käynnistä uudelleen",
+                                "single": "Yksittäinen"
+                            }
+                        }
+                    }
+                }
+            },
+            "services": {
+                "reload": {
+                    "description": "Lataa automaatiokonfiguraation uudelleen.",
+                    "name": "Lataa uudelleen"
+                },
+                "toggle": {
+                    "description": "Vaihtaa (ottaa käyttöön \/ poistaa käytöstä) automaation.",
+                    "name": "Vaihda"
+                },
+                "trigger": {
+                    "name": "Laukaisusehto"
+                },
+                "turn_off": {
+                    "name": "Laita pois päältä"
+                },
+                "turn_on": {
+                    "description": "Ottaa automaation käyttöön.",
+                    "name": "Laita päälle"
+                }
+            },
+            "title": "Automaatio"
+        },
+        "awair": {
+            "config": {
+                "step": {
+                    "cloud": {
+                        "data": {
+                            "email": "Sähköposti"
+                        }
+                    }
+                }
+            }
+        },
+        "axis": {
+            "config": {
+                "step": {
+                    "user": {
+                        "data": {
+                            "host": "Palvelin",
+                            "password": "Salasana",
+                            "port": "Portti",
+                            "username": "Käyttäjätunnus"
+                        },
+                        "title": "Asenna Axis-laite"
+                    }
+                }
+            }
+        },
+        "binary_sensor": {
+            "device_automation": {
+                "condition_type": {
+                    "is_co": "{entity_name} havaitsee häkää",
+                    "is_no_co": "{entity_name} ei havaitse häkää",
+                    "is_not_locked": "{entity_name} on auki"
+                },
+                "trigger_type": {
+                    "co": "{entity_name} alkoi havaita häkää",
+                    "no_co": "{entity_name} lopetti hään havaitsemisen",
+                    "not_locked": "{entity_name} auki"
+                }
+            },
+            "device_class": {
+                "co": "häkä"
+            },
+            "entity_component": {
+                "_": {
+                    "state": {
+                        "off": "Pois",
+                        "on": "Päällä"
+                    }
+                },
+                "battery_charging": {
+                    "name": "Latautuu",
+                    "state": {
+                        "off": "Ei lataudu",
+                        "on": "Latautuu"
+                    }
+                },
+                "carbon_monoxide": {
+                    "name": "Häkä",
+                    "state": {
+                        "off": "Ei hiilidioksidia"
+                    }
+                },
+                "door": {
+                    "state": {
+                        "off": "Suljettu",
+                        "on": "Auki"
+                    }
+                },
+                "garage_door": {
+                    "state": {
+                        "off": "Suljettu",
+                        "on": "Auki"
+                    }
+                },
+                "gas": {
+                    "state": {
+                        "off": "Ei kaasua"
+                    }
+                },
+                "heat": {
+                    "state": {
+                        "off": "Normaali",
+                        "on": "Kuuma"
+                    }
+                },
+                "light": {
+                    "name": "Valo",
+                    "state": {
+                        "off": "Ei valoa",
+                        "on": "Valo havaittu"
+                    }
+                },
+                "lock": {
+                    "state": {
+                        "on": "Auki"
+                    }
+                },
+                "moisture": {
+                    "name": "Kosteus",
+                    "state": {
+                        "off": "Kuiva",
+                        "on": "Märkä"
+                    }
+                },
+                "opening": {
+                    "name": "Avataan",
+                    "state": {
+                        "off": "Suljettu",
+                        "on": "Auki"
+                    }
+                },
+                "presence": {
+                    "name": "Paikallaolo"
+                },
+                "problem": {
+                    "name": "Ongelma",
+                    "state": {
+                        "off": "Ok",
+                        "on": "Ongelma"
+                    }
+                },
+                "running": {
+                    "name": "Käynnissä"
+                },
+                "safety": {
+                    "name": "Turva"
+                },
+                "smoke": {
+                    "name": "Savu"
+                },
+                "sound": {
+                    "name": "Ääni"
+                },
+                "update": {
+                    "name": "Päivitä"
+                },
+                "vibration": {
+                    "name": "Värinä"
+                },
+                "window": {
+                    "name": "Ikkuna",
+                    "state": {
+                        "off": "Suljettu"
+                    }
+                }
+            },
+            "title": "Binäärisensori"
+        },
+        "blebox": {
+            "config": {
+                "step": {
+                    "user": {
+                        "data": {
+                            "port": "Portti"
+                        }
+                    }
+                }
+            }
+        },
+        "bsblan": {
+            "config": {
+                "abort": {
+                    "already_configured": "Laite on jo määritetty"
+                },
+                "flow_title": "BSB-Lan: {name}",
+                "step": {
+                    "user": {
+                        "data": {
+                            "host": "Palvelin tai IP-osoite",
+                            "passkey": "Todentamisavaimen merkkijono",
+                            "port": "Portti"
+                        },
+                        "description": "Asenna BSB-Lan-laite integroitavaksi Home Assistant -sovellukseen.",
+                        "title": "Yhdistä BSB-Lan-laitteeseen"
+                    }
+                }
+            }
+        },
+        "bthome": {
+            "device_automation": {
+                "trigger_subtype": {
+                    "press": "Paina",
+                    "rotate_left": "Käännä vasemmalle",
+                    "rotate_right": "Käännä oikealle"
+                }
+            }
+        },
+        "button": {
+            "entity_component": {
+                "_": {
+                    "name": "Painike"
+                },
+                "restart": {
+                    "name": "Käynnistä uudelleen"
+                },
+                "update": {
+                    "name": "Päivitä"
+                }
+            }
+        },
+        "calendar": {
+            "entity_component": {
+                "_": {
+                    "name": "Kalenteri",
+                    "state_attributes": {
+                        "all_day": {
+                            "state": {
+                                "true": "Kyllä"
+                            }
+                        }
+                    }
+                }
+            },
+            "title": "Kalenteri"
+        },
+        "camera": {
+            "entity_component": {
+                "_": {
+                    "name": "Kamera"
+                }
+            },
+            "title": "Kamera"
+        },
+        "cast": {
+            "config": {
+                "abort": {
+                    "single_instance_allowed": "Vain yksi Google Cast -määritys on tarpeen."
+                },
+                "step": {
+                    "confirm": {
+                        "description": "Haluatko määrittää Google Castin?"
+                    }
+                }
+            }
+        },
+        "cert_expiry": {
+            "config": {
+                "step": {
+                    "user": {
+                        "data": {
+                            "name": "Varmenteen nimi",
+                            "port": "Portti"
+                        },
+                        "title": "Määritä testattava sertifikaatti"
+                    }
+                }
+            }
+        },
+        "climate": {
+            "entity_component": {
+                "_": {
+                    "name": "Termostaatti",
+                    "state_attributes": {
+                        "current_temperature": {
+                            "name": "Nykyinen lämpötila"
+                        }
+                    }
+                }
+            },
+            "title": "Ilmasto"
+        },
+        "comelit": {
+            "config": {
+                "abort": {
+                    "reauth_successful": "Uudelleenvarmennus onnistui",
+                    "unknown": "Epäodotettu virhe"
+                },
+                "error": {
+                    "cannot_connect": "Yhteyden muodostaminen epäonnistui",
+                    "invalid_auth": "Epäkelpo varmennus",
+                    "unknown": "Epäodotettu virhe"
+                },
+                "flow_title": "{host}",
+                "step": {
+                    "reauth_confirm": {
+                        "data": {
+                            "pin": "PIN-koodi"
+                        },
+                        "description": "Ole hyvä ja syötä oikea PIN VEDO:a varten {host}"
+                    },
+                    "user": {
+                        "data": {
+                            "host": "Isäntä",
+                            "pin": "PIN-koodi"
+                        }
+                    }
+                }
+            }
+        },
+        "configurator": {
+            "entity_component": {
+                "_": {
+                    "name": "Konfiguraattori"
+                }
+            },
+            "title": "Asetukset"
+        },
+        "conversation": {
+            "title": "Keskustelu"
+        },
+        "counter": {
+            "entity_component": {
+                "_": {
+                    "name": "Laskuri",
+                    "state_attributes": {
+                        "editable": {
+                            "name": "Hallinta käyttöliittymästä",
+                            "state": {
+                                "false": "Ei",
+                                "true": "Kyllä"
+                            }
+                        },
+                        "initial": {
+                            "name": "Alkuarvo"
+                        },
+                        "maximum": {
+                            "name": "Maksimi"
+                        },
+                        "minimum": {
+                            "name": "Minimi"
+                        },
+                        "step": {
+                            "name": "Askel"
+                        }
+                    }
+                }
+            }
+        },
+        "cover": {
+            "entity_component": {
+                "_": {
+                    "name": "Suoja",
+                    "state": {
+                        "closed": "Suljettu",
+                        "open": "Auki",
+                        "opening": "Avataan"
+                    }
+                },
+                "awning": {
+                    "name": "Markiisi"
+                },
+                "blind": {
+                    "name": "Sälekaihdin"
+                },
+                "curtain": {
+                    "name": "Verho"
+                },
+                "damper": {
+                    "name": "Vaimennin"
+                },
+                "door": {
+                    "name": "Ovi"
+                },
+                "garage": {
+                    "name": "Autotalli"
+                },
+                "gate": {
+                    "name": "Portti"
+                },
+                "shade": {
+                    "name": "Rullaverho"
+                },
+                "shutter": {
+                    "name": "Suljin"
+                },
+                "window": {
+                    "name": "Ikkuna"
+                }
+            },
+            "title": "Kaihtimet"
+        },
+        "daikin": {
+            "config": {
+                "abort": {
+                    "already_configured": "Laite on jo konfiguroitu"
+                },
+                "step": {
+                    "user": {
+                        "data": {
+                            "host": "Palvelin"
+                        }
+                    }
+                }
+            }
+        },
+        "date": {
+            "entity_component": {
+                "_": {
+                    "name": "Päivämäärä"
+                }
+            }
+        },
+        "deconz": {
+            "config": {
+                "abort": {
+                    "already_configured": "Silta on jo määritetty",
+                    "no_bridges": "deCONZ-siltoja ei löydy"
+                },
+                "error": {
+                    "no_key": "API-avainta ei voitu saada"
+                },
+                "step": {
+                    "link": {
+                        "description": "Avaa deCONZ-yhdyskäytävän lukitus rekisteröityäksesi Home Assistantiin.\n\n1. Siirry deCONZ-asetuksiin -> Gateway -> Lisäasetukset.\n2. Paina \"Authenticate app\" -painiketta",
+                        "title": "Linkitä deCONZiin"
+                    }
+                }
+            },
+            "device_automation": {
+                "trigger_subtype": {
+                    "button_1": "Ensimmäinen painike",
+                    "button_2": "Toinen painike",
+                    "button_3": "Kolmas painike",
+                    "button_4": "Neljäs painike",
+                    "left": "Vasen",
+                    "right": "Oikea",
+                    "turn_off": "Sammuta",
+                    "turn_on": "Kytke päälle"
+                }
+            }
+        },
+        "demo": {
+            "entity": {
+                "vacuum": {
+                    "model_s": {
+                        "state_attributes": {
+                            "cleaned_area": {
+                                "name": "Puhdistettu alue"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "device_tracker": {
+            "entity_component": {
+                "_": {
+                    "name": "Seurantalaite",
+                    "state": {
+                        "home": "Kotona",
+                        "not_home": "Poissa"
+                    }
+                }
+            },
+            "title": "Laiteseuranta"
+        },
+        "devolo_home_control": {
+            "config": {
+                "step": {
+                    "user": {
+                        "data": {
+                            "mydevolo_url": "mydevolo URL",
+                            "password": "Salasana"
+                        }
+                    }
+                }
+            }
+        },
+        "doorbird": {
+            "config": {
+                "abort": {
+                    "already_configured": "Laite on jo määritetty"
+                },
+                "error": {
+                    "cannot_connect": "Yhteyden muodostaminen epäonnistui",
+                    "invalid_auth": "Virheellinen todennus",
+                    "unknown": "Odottamaton virhe"
+                },
+                "step": {
+                    "user": {
+                        "data": {
+                            "host": "Palvelin",
+                            "password": "Salasana",
+                            "username": "Käyttäjätunnus"
+                        }
+                    }
+                }
+            }
+        },
+        "dynalite": {
+            "config": {
+                "abort": {
+                    "already_configured": "Laite on jo konfiguroitu"
+                },
+                "step": {
+                    "user": {
+                        "data": {
+                            "host": "Isäntä",
+                            "port": "Portti"
+                        }
+                    }
+                }
+            }
+        },
+        "ebusd": {
+            "state": {
+                "day": "Päivä",
+                "night": "Yö"
+            }
+        },
+        "emulated_roku": {
+            "config": {
+                "step": {
+                    "user": {
+                        "data": {
+                            "advertise_ip": "Mainosta IP-osoitetta",
+                            "host_ip": "Palvelimen IP-osoite",
+                            "listen_port": "Kuuntele porttia"
+                        },
+                        "title": "Määritä palvelimen asetukset"
+                    }
+                }
+            }
+        },
+        "energy": {
+            "title": "Energia"
+        },
+        "enphase_envoy": {
+            "entity": {
+                "number": {
+                    "cutoff_battery_level": {
+                        "name": "Grenzwertiger Batteriestand"
+                    },
+                    "restore_battery_level": {
+                        "name": "Batteriestand wiederherstellen"
+                    }
+                }
+            }
+        },
+        "esphome": {
+            "config": {
+                "abort": {
+                    "already_configured": "ESP on jo määritetty"
+                },
+                "flow_title": "ESPHome: {name}",
+                "step": {
+                    "authenticate": {
+                        "data": {
+                            "password": "Salasana"
+                        }
+                    },
+                    "discovery_confirm": {
+                        "title": "ESPHome löydetty"
+                    },
+                    "user": {
+                        "data": {
+                            "host": "Palvelin",
+                            "port": "Portti"
+                        }
+                    }
+                }
+            }
+        },
+        "fan": {
+            "entity_component": {
+                "_": {
+                    "name": "Tuuletin",
+                    "state": {
+                        "off": "Pois",
+                        "on": "Päällä"
+                    },
+                    "state_attributes": {
+                        "preset_modes": {
+                            "name": "Saatavilla olevat esiasetetut tilat"
+                        }
+                    }
+                }
+            },
+            "title": "Tuuletin"
+        },
+        "flick_electric": {
+            "config": {
+                "abort": {
+                    "already_configured": "Tämä tili on jo määritetty"
+                },
+                "error": {
+                    "cannot_connect": "Yhteyden muodostaminen epäonnistui. Yritä uudelleen",
+                    "invalid_auth": "Virheellinen todennus",
+                    "unknown": "Odottamaton virhe"
+                },
+                "step": {
+                    "user": {
+                        "data": {
+                            "client_id": "Client ID (valinnainen)",
+                            "client_secret": "Client Secret (valinnainen)",
+                            "password": "Salasana",
+                            "username": "Käyttäjätunnus"
+                        },
+                        "title": "Flick Login -tunnukset"
+                    }
+                }
+            }
+        },
+        "fritzbox": {
+            "config": {
+                "step": {
+                    "confirm": {
+                        "data": {
+                            "password": "Salasana",
+                            "username": "Käyttäjätunnus"
+                        }
+                    },
+                    "user": {
+                        "data": {
+                            "password": "Salasana",
+                            "username": "Käyttäjätunnus"
+                        }
+                    }
+                }
+            }
+        },
+        "fronius": {
+            "config": {
+                "flow_title": "{device}",
+                "step": {
+                    "confirm_discovery": {
+                        "description": "Haluatko lisätä laitteen {device} Home Assistantiin?"
+                    }
+                }
+            }
+        },
+        "fully_kiosk": {
+            "config": {
+                "abort": {
+                    "already_configured": "Tili on jo määritelty"
+                },
+                "error": {
+                    "cannot_connect": "Ei voida yhdistää",
+                    "unknown": "Odottamaton virhe"
+                },
+                "step": {
+                    "discovery_confirm": {
+                        "data": {
+                            "password": "Salasana"
+                        },
+                        "description": "Haluatko määrittää {name} ( {host} )?"
+                    },
+                    "user": {
+                        "data": {
+                            "host": "Isäntä",
+                            "password": "Salasana"
+                        }
+                    }
+                }
+            },
+            "entity": {
+                "binary_sensor": {
+                    "device_admin": {
+                        "name": "Laitteen ylläpitäjä"
+                    },
+                    "kiosk_mode": {
+                        "name": "Kioskitila"
+                    },
+                    "plugged_in": {
+                        "name": "Kytketty"
+                    }
+                },
+                "button": {
+                    "load_start_url": {
+                        "name": "Lataa aloitus URL-osoite"
+                    },
+                    "restart_browser": {
+                        "name": "Käynnistä selain uudelleen"
+                    },
+                    "restart_device": {
+                        "name": "Käynnistä laite uudelleen"
+                    },
+                    "to_background": {
+                        "name": "Lähetä taustalle"
+                    },
+                    "to_foreground": {
+                        "name": "Tuo etualalle"
+                    }
+                },
+                "number": {
+                    "screen_brightness": {
+                        "name": "Näytön kirkkaus"
+                    },
+                    "screen_off_time": {
+                        "name": "Näytön sammutusajastin"
+                    },
+                    "screensaver_brightness": {
+                        "name": "Näytönsäästäjän kirkkaus"
+                    },
+                    "screensaver_time": {
+                        "name": "Näytönsäästäjä ajastin"
+                    }
+                },
+                "sensor": {
+                    "current_page": {
+                        "name": "Nykyinen sivu"
+                    },
+                    "foreground_app": {
+                        "name": "Etualalla oleva sovellus"
+                    },
+                    "internal_storage_free_space": {
+                        "name": "Sisäisen tallennustilan vapaa tila"
+                    },
+                    "internal_storage_total_space": {
+                        "name": "Sisäinen tallennustila yhteensä"
+                    },
+                    "ram_free_memory": {
+                        "name": "Vapaa muisti"
+                    },
+                    "ram_total_memory": {
+                        "name": "Kokonaismuisti"
+                    },
+                    "screen_orientation": {
+                        "name": "Näytön suunta"
+                    }
+                },
+                "switch": {
+                    "kiosk": {
+                        "name": "Kioskin lukko"
+                    },
+                    "maintenance": {
+                        "name": "Huoltotila"
+                    },
+                    "motion_detection": {
+                        "name": "Liiketunnistus"
+                    },
+                    "screen_on": {
+                        "name": "Näyttö"
+                    },
+                    "screensaver": {
+                        "name": "Näytönsäästäjä"
+                    }
+                }
+            },
+            "services": {
+                "load_url": {
+                    "description": "Lataa URL-osoitteen Fully Kiosk Browserissa",
+                    "fields": {
+                        "url": {
+                            "description": "Ladattava URL-osoite",
+                            "name": "URL"
+                        }
+                    },
+                    "name": "Lataa URL-osoite"
+                },
+                "set_config": {
+                    "description": "Asettaa konfiguraatioparametrin Fully Kiosk Browserissa.",
+                    "fields": {
+                        "key": {
+                            "description": "Asetettava konfigurointiparametri.",
+                            "name": "Avain"
+                        },
+                        "value": {
+                            "description": "Konfiguraatioparametrin arvo.",
+                            "name": "Arvo"
+                        }
+                    },
+                    "name": "Aseta konfiguraatio"
+                },
+                "start_application": {
+                    "description": "Käynnistää sovelluksen laitteessa, jossa on Fully Kiosk Browser.",
+                    "fields": {
+                        "application": {
+                            "description": "Käynnistettävän sovelluksen paketin nimi.",
+                            "name": "Sovellus"
+                        }
+                    },
+                    "name": "Käynnistä sovellus"
+                }
+            }
+        },
+        "gios": {
+            "entity": {
+                "sensor": {
+                    "co": {
+                        "name": "Häkä"
+                    }
+                }
+            }
+        },
+        "glances": {
+            "config": {
+                "error": {
+                    "cannot_connect": "Yhteyden muodostaminen palvelimeen ei onnistu"
+                },
+                "step": {
+                    "user": {
+                        "data": {
+                            "password": "Salasana",
+                            "port": "portti"
+                        }
+                    }
+                }
+            }
+        },
+        "goalzero": {
+            "entity": {
+                "binary_sensor": {
+                    "backlight": {
+                        "name": "Taustavalo"
+                    }
+                },
+                "sensor": {
+                    "amps_in": {
+                        "name": "Virta sisään"
+                    },
+                    "amps_out": {
+                        "name": "Virta ulos"
+                    },
+                    "ip_addr": {
+                        "name": "IP-osoite"
+                    },
+                    "soc_percent": {
+                        "name": "Lataustila prosenttia"
+                    },
+                    "ssid": {
+                        "name": "Wi-Fi SSID"
+                    },
+                    "wh_stored": {
+                        "name": "Varastoitu energia"
+                    },
+                    "wifi_strength": {
+                        "name": "Wifi-signaalin voimakkuus"
+                    }
+                },
+                "switch": {
+                    "ac_port_status": {
+                        "name": "AC-portin tila"
+                    },
+                    "usb_port_status": {
+                        "name": "USB-portin tila"
+                    }
+                }
+            }
+        },
+        "google_assistant_sdk": {
+            "config": {
+                "abort": {
+                    "missing_configuration": "Komponenttia ei ole määritetty. Seuraa dokumentaatiota.",
+                    "oauth_error": "Vastaanotettu virheelliset tunnustiedot."
+                },
+                "step": {
+                    "pick_implementation": {
+                        "title": "Valitse todennusmenetelmä"
+                    }
+                }
+            }
+        },
+        "google_mail": {
+            "config": {
+                "abort": {
+                    "missing_configuration": "Komponenttia ei ole määritetty. Seuraa dokumentaatiota.",
+                    "oauth_error": "Vastaanotettu virheelliset tunnustiedot."
+                },
+                "step": {
+                    "pick_implementation": {
+                        "title": "Valitse todennusmenetelmä"
+                    }
+                }
+            }
+        },
+        "group": {
+            "config": {
+                "step": {
+                    "light": {
+                        "data": {
+                            "entities": "Jäsenet",
+                            "hide_members": "Piilota jäsenet",
+                            "name": "Nimi"
+                        },
+                        "title": "Lisää ryhmä"
+                    },
+                    "user": {
+                        "menu_options": {
+                            "light": "Valoryhmä"
+                        }
+                    }
+                }
+            },
+            "entity_component": {
+                "_": {
+                    "name": "Ryhmä",
+                    "state": {
+                        "closed": "Suljettu",
+                        "ok": "Ok",
+                        "problem": "Ongelma",
+                        "unlocked": "Auki"
+                    }
+                }
+            },
+            "title": "Ryhmä"
+        },
+        "hassio": {
+            "entity": {
+                "binary_sensor": {
+                    "state": {
+                        "name": "Käynnissä"
+                    }
+                },
+                "sensor": {
+                    "agent_version": {
+                        "name": "Käyttöjärjestelmän agentin versio"
+                    },
+                    "apparmor_version": {
+                        "name": "Apparmor-versio"
+                    },
+                    "cpu_percent": {
+                        "name": "Suorittimen käyttö prosentteina"
+                    },
+                    "disk_free": {
+                        "name": "Tallennustilaa vapaana"
+                    },
+                    "disk_total": {
+                        "name": "Tallennustilaa yhteensä"
+                    },
+                    "disk_used": {
+                        "name": "Tallennustilaa käyetty"
+                    },
+                    "memory_percent": {
+                        "name": "Muistin käyttö prosentteina"
+                    },
+                    "version": {
+                        "name": "Versio"
+                    },
+                    "version_latest": {
+                        "name": "Uusin versio"
+                    }
+                }
+            },
+            "issues": {
+                "issue_system_reboot_required": {
+                    "title": "Uudelleenkäynnistys vaaditaan"
+                }
+            }
+        },
+        "heos": {
+            "config": {
+                "step": {
+                    "user": {
+                        "title": "Yhdistä Heosiin"
+                    }
+                }
+            }
+        },
+        "homeassistant_yellow": {
+            "options": {
+                "step": {
+                    "reboot_menu": {
+                        "menu_options": {
+                            "reboot_later": "Käynnistä manuaalisesti myöhemmin uudelleen",
+                            "reboot_now": "Käynnistä uudelleen nyt"
+                        },
+                        "title": "Uudelleenkäynnistys vaaditaan"
+                    }
+                }
+            }
+        },
+        "homekit": {
+            "config": {
+                "step": {
+                    "pairing": {
+                        "title": "Parita HomeKit-silta"
+                    }
+                }
+            },
+            "options": {
+                "step": {
+                    "advanced": {
+                        "title": "Lisäasetukset"
+                    }
+                }
+            }
+        },
+        "homekit_controller": {
+            "config": {
+                "step": {
+                    "pair": {
+                        "data": {
+                            "pairing_code": "Yhdistämiskoodi"
+                        }
+                    },
+                    "user": {
+                        "data": {
+                            "device": "Laite"
+                        },
+                        "title": "Laitteen valinta"
+                    }
+                }
+            },
+            "title": "HomeKit-ohjain"
+        },
+        "homematicip_cloud": {
+            "config": {
+                "abort": {
+                    "already_configured": "Laite on jo määritetty",
+                    "connection_aborted": "Yhdistäminen epäonnistui",
+                    "unknown": "Tapahtui tuntematon virhe."
+                },
+                "error": {
+                    "invalid_sgtin_or_pin": "Virheellinen PIN-koodi, yritä uudelleen.",
+                    "press_the_button": "Paina sinistä painiketta.",
+                    "register_failed": "Rekisteröinti epäonnistui, yritä uudelleen.",
+                    "timeout_button": "Sinisen painikkeen painalluksen aikakatkaisu, yritä uudelleen."
+                },
+                "step": {
+                    "init": {
+                        "data": {
+                            "hapid": "Yhteyspisteen tunniste (SGTIN)",
+                            "name": "Nimi (valinnainen, käytetään kaikkien laitteiden nimen etuliitteenä)",
+                            "pin": "PIN-koodi"
+                        },
+                        "title": "Valitse HomematicIP-tukiasema"
+                    },
+                    "link": {
+                        "description": "Rekisteröi HomematicIP Home Assistantiin painamalla tukiaseman sinistä painiketta ja lähetyspainiketta. \n\n ![Painikkeen sijainti sillalla](\/static\/images\/config_flows\/config_homematicip_cloud.png)",
+                        "title": "Linkitä tukiasema"
+                    }
+                }
+            }
+        },
+        "hue": {
+            "config": {
+                "abort": {
+                    "all_configured": "Kaikki Philips Hue -sillat on jo määritetty",
+                    "already_configured": "Silta on jo määritetty",
+                    "cannot_connect": "Yhdistäminen siltaan ei onnistu",
+                    "discover_timeout": "Hue-siltoja ei löydy",
+                    "no_bridges": "Philips Hue -siltoja ei löydy",
+                    "not_hue_bridge": "Ei Hue-silta",
+                    "unknown": "Tapahtui tuntematon virhe"
+                },
+                "error": {
+                    "linking": "Tuntematon linkitysvirhe.",
+                    "register_failed": "Rekisteröinti epäonnistui. Yritä uudelleen"
+                },
+                "step": {
+                    "init": {
+                        "data": {
+                            "host": "Palvelin"
+                        },
+                        "title": "Valitse Hue-silta"
+                    },
+                    "link": {
+                        "description": "Paina hue sillan painiketta rekisteröidäksesi Philips Hue Home Assistantiin.\n\n![Painikkeen sijainti sillalla](\/static\/images\/config_philips_hue.jpg)",
+                        "title": "Link Hub"
+                    }
+                }
+            }
+        },
+        "hunterdouglas_powerview": {
+            "config": {
+                "abort": {
+                    "already_configured": "Laite on jo määritetty"
+                },
+                "error": {
+                    "cannot_connect": "Yhteyden muodostaminen epäonnistui. Yritä uudelleen",
+                    "unknown": "Odottamaton virhe"
+                },
+                "step": {
+                    "link": {
+                        "title": "Yhdistä PowerView-keskittimeen"
+                    },
+                    "user": {
+                        "data": {
+                            "host": "IP-osoite"
+                        },
+                        "title": "Yhdistä PowerView-keskittimeen"
+                    }
+                }
+            }
+        },
+        "ifttt": {
+            "config": {
+                "step": {
+                    "user": {
+                        "description": "Haluatko varmasti määrittää IFTTT:n?",
+                        "title": "Määritä IFTTT Webhook -sovelma"
+                    }
+                }
+            }
+        },
+        "image_processing": {
+            "title": "Kuvantunnistus"
+        },
+        "input_boolean": {
+            "title": "Syötä totuusarvo"
+        },
+        "input_datetime": {
+            "title": "Syötä päivämäärä"
+        },
+        "input_number": {
+            "entity_component": {
+                "_": {
+                    "state_attributes": {
+                        "editable": {
+                            "state": {
+                                "true": "Kyllä"
+                            }
+                        },
+                        "initial": {
+                            "name": "Alkuarvo"
+                        },
+                        "max": {
+                            "name": "Maksimi"
+                        },
+                        "min": {
+                            "name": "Minimi"
+                        },
+                        "mode": {
+                            "name": "Tila",
+                            "state": {
+                                "auto": "Automaattinen",
+                                "box": "Laatikko",
+                                "slider": "Liukusäädin"
+                            }
+                        },
+                        "step": {
+                            "name": "Askel"
+                        }
+                    }
+                }
+            },
+            "title": "Syötä numero"
+        },
+        "input_select": {
+            "entity_component": {
+                "_": {
+                    "name": "Syötön valinta",
+                    "state_attributes": {
+                        "editable": {
+                            "name": "Hallinta käyttöliittymästä",
+                            "state": {
+                                "false": "Ei",
+                                "true": "Kyllä"
+                            }
+                        },
+                        "options": {
+                            "name": "Asetukset"
+                        }
+                    }
+                }
+            },
+            "title": "Valinta"
+        },
+        "input_text": {
+            "entity_component": {
+                "_": {
+                    "name": "Syötä teksti",
+                    "state_attributes": {
+                        "editable": {
+                            "name": "Hallinta käyttöliittymästä",
+                            "state": {
+                                "false": "Ei",
+                                "true": "Kyllä"
+                            }
+                        },
+                        "max": {
+                            "name": "Maksimipituus"
+                        },
+                        "min": {
+                            "name": "Minimipituus"
+                        },
+                        "mode": {
+                            "name": "Tila",
+                            "state": {
+                                "password": "Salasana",
+                                "text": "Teksti"
+                            }
+                        },
+                        "pattern": {
+                            "name": "Malli"
+                        }
+                    }
+                }
+            },
+            "title": "Syötä teksti"
+        },
+        "ios": {
+            "config": {
+                "abort": {
+                    "single_instance_allowed": "Jo määritelty. Vain yksi määrittely mahdollista."
+                },
+                "step": {
+                    "confirm": {
+                        "description": "Haluatko aloittaa käyttöönoton?"
+                    }
+                }
+            }
+        },
+        "ipma": {
+            "config": {
+                "error": {
+                    "name_exists": "Nimi on jo olemassa"
+                },
+                "step": {
+                    "user": {
+                        "data": {
+                            "latitude": "Leveysaste",
+                            "longitude": "Pituusaste",
+                            "name": "Nimi"
+                        },
+                        "title": "Sijainti"
+                    }
+                }
+            }
+        },
+        "iqvia": {
+            "config": {
+                "error": {
+                    "invalid_zip_code": "Postinumero on virheellinen"
+                },
+                "step": {
+                    "user": {
+                        "data": {
+                            "zip_code": "Postinumero"
+                        }
+                    }
+                }
+            }
+        },
+        "isy994": {
+            "config": {
+                "error": {
+                    "invalid_host": "Palvelimen osoite ei ollut täydessä URL-muodossa, esim. http:\/\/192.168.10.100:80"
+                },
+                "step": {
+                    "user": {
+                        "data": {
+                            "host": "URL",
+                            "password": "Salasana",
+                            "tls": "ISY-ohjaimen TLS-versio.",
+                            "username": "Käyttäjätunnus"
+                        }
+                    }
+                }
+            },
+            "options": {
+                "step": {
+                    "init": {
+                        "data": {
+                            "ignore_string": "Ohita merkkijono",
+                            "restore_light_state": "Valon kirkkauden palauttaminen",
+                            "variable_sensor_string": "Muuttuva anturin merkkijono"
+                        },
+                        "title": "ISY994-asetukset"
+                    }
+                }
+            }
+        },
+        "juicenet": {
+            "config": {
+                "step": {
+                    "user": {
+                        "data": {
+                            "api_token": "JuiceNet API-tunnus"
+                        },
+                        "description": "Tarvitset API-tunnuksen osoitteesta https:\/\/home.juice.net\/Manage.",
+                        "title": "Yhdistä JuiceNetiin"
+                    }
+                }
+            }
+        },
+        "knx": {
+            "device_automation": {
+                "trigger_type": {
+                    "telegram": "Telegram-viesti lähetetty tai vastaanotettu"
+                }
+            }
+        },
+        "life360": {
+            "config": {
+                "step": {
+                    "user": {
+                        "title": "Life360-tilitiedot"
+                    }
+                }
+            }
+        },
+        "lifx": {
+            "config": {
+                "abort": {
+                    "no_devices_found": "Verkosta ei löytynyt laitteita."
+                }
+            }
+        },
+        "light": {
+            "device_automation": {
+                "action_type": {
+                    "brightness_decrease": "Vähennä {entity_name} kirkkautta",
+                    "brightness_increase": "Lisää {entity_name} kirkkautta",
+                    "flash": "Väläytä {entity_name}",
+                    "toggle": "Vaihda {entity_name}",
+                    "turn_off": "Sammuta {entity_name}",
+                    "turn_on": "Kytke päälle {entity_name}"
+                },
+                "condition_type": {
+                    "is_off": "{entity_name} on pois päältä",
+                    "is_on": "{entity_name} on päällä"
+                },
+                "trigger_type": {
+                    "changed_states": "{entity_name} laitettiin päälle tai pois",
+                    "turned_off": "{entity_name} sammui",
+                    "turned_on": "{entity_name} laitettiin päälle"
+                }
+            },
+            "entity_component": {
+                "_": {
+                    "name": "Valo",
+                    "state": {
+                        "off": "Pois",
+                        "on": "Päällä"
+                    },
+                    "state_attributes": {
+                        "brightness": {
+                            "name": "Kirkkaus"
+                        },
+                        "color_mode": {
+                            "name": "Väritila",
+                            "state": {
+                                "brightness": "Vain kirkkaus",
+                                "color_temp": "Värilämpötila",
+                                "onoff": "Päälle\/Pois",
+                                "unknown": "Tuntematon",
+                                "white": "Valkoinen"
+                            }
+                        },
+                        "color_temp": {
+                            "name": "Värilämpötila (mired)"
+                        },
+                        "color_temp_kelvin": {
+                            "name": "Värilämpötila (Kelvin)"
+                        },
+                        "effect": {
+                            "name": "Efekti"
+                        },
+                        "effect_list": {
+                            "name": "Käytettävissä olevat efektit"
+                        },
+                        "max_color_temp_kelvin": {
+                            "name": "Maksimi värilämpötila (Kelvin)"
+                        },
+                        "max_mireds": {
+                            "name": "Maksimi värilämpötila (mired)"
+                        },
+                        "min_color_temp_kelvin": {
+                            "name": "Minimi värilämpötila (Kelvin)"
+                        },
+                        "min_mireds": {
+                            "name": "Minimi värilämpötila (mired)"
+                        },
+                        "supported_color_modes": {
+                            "name": "Saatavilla olevat väritilat",
+                            "state": {
+                                "brightness": "Vain kirkkaus",
+                                "color_temp": "Värilämpötila",
+                                "onoff": "Päällä\/Pois",
+                                "unknown": "Tuntematon",
+                                "white": "Valkoinen"
+                            }
+                        }
+                    }
+                }
+            },
+            "title": "Valo"
+        },
+        "lock": {
+            "device_automation": {
+                "condition_type": {
+                    "is_unlocked": "{entity_name} on auki"
+                },
+                "trigger_type": {
+                    "unlocked": "{entity_name} auki"
+                }
+            },
+            "entity_component": {
+                "_": {
+                    "state": {
+                        "unlocked": "Auki"
+                    }
+                }
+            },
+            "title": "Lukko"
+        },
+        "logi_circle": {
+            "config": {
+                "step": {
+                    "user": {
+                        "data": {
+                            "flow_impl": "Tarjoaja"
+                        },
+                        "title": "Todentamisen tarjoaja"
+                    }
+                }
+            }
+        },
+        "luftdaten": {
+            "config": {
+                "step": {
+                    "user": {
+                        "data": {
+                            "show_on_map": "Näytä kartalla",
+                            "station_id": "Luftdaten-anturin ID"
+                        }
+                    }
+                }
+            }
+        },
+        "lutron_caseta": {
+            "config": {
+                "abort": {
+                    "already_configured": "Caséta-silta on jo konfiguroitu."
+                },
+                "step": {
+                    "import_failed": {
+                        "title": "Caséta-sillan asetuksien tuonti epäonnistui."
+                    }
+                }
+            }
+        },
+        "mailbox": {
+            "title": "Postilaatikko"
+        },
+        "mailgun": {
+            "config": {
+                "step": {
+                    "user": {
+                        "description": "Haluatko varmasti määrittää Mailgunin?",
+                        "title": "Määritä Mailgun-webhook"
+                    }
+                }
+            }
+        },
+        "media_player": {
+            "entity_component": {
+                "_": {
+                    "state_attributes": {
+                        "app_id": {
+                            "name": "Sovelluksen ID"
+                        },
+                        "app_name": {
+                            "name": "Sovellus"
+                        },
+                        "entity_picture_local": {
+                            "name": "Paikallisesti saavutettava kohteen kuva"
+                        },
+                        "media_content_type": {
+                            "state": {
+                                "season": "Tuotantokausi",
+                                "track": "Kappale",
+                                "tvshow": "TV-sarja"
+                            }
+                        },
+                        "media_duration": {
+                            "name": "Kesto"
+                        },
+                        "media_episode": {
+                            "name": "Jakso"
+                        },
+                        "media_playlist": {
+                            "name": "Soittolista"
+                        },
+                        "media_position": {
+                            "name": "Asema"
+                        },
+                        "media_position_updated_at": {
+                            "name": "Asema päivitetty"
+                        },
+                        "media_season": {
+                            "name": "Tuotantokausi"
+                        },
+                        "media_series_title": {
+                            "name": "Sarja"
+                        },
+                        "media_title": {
+                            "name": "Nimi"
+                        },
+                        "media_track": {
+                            "name": "Kappale"
+                        },
+                        "repeat": {
+                            "name": "Uudelleentoisto",
+                            "state": {
+                                "all": "Kaikki",
+                                "off": "Pois",
+                                "one": "Yksi"
+                            }
+                        },
+                        "shuffle": {
+                            "name": "Sekoitus",
+                            "state": {
+                                "false": "Pois",
+                                "true": "Päällä"
+                            }
+                        },
+                        "sound_mode": {
+                            "name": "Äänitila"
+                        },
+                        "sound_mode_list": {
+                            "name": "Saatavilla olevat äänitilat"
+                        },
+                        "source": {
+                            "name": "Lähde"
+                        },
+                        "source_list": {
+                            "name": "Saatavilla olevat lähteet"
+                        },
+                        "volume_level": {
+                            "name": "Äänenvoimakkuus"
+                        }
+                    }
+                }
+            },
+            "title": "Mediatoistin"
+        },
+        "met": {
+            "config": {
+                "step": {
+                    "user": {
+                        "data": {
+                            "elevation": "Korkeus merenpinnasta",
+                            "latitude": "Leveysaste",
+                            "longitude": "Pituusaste",
+                            "name": "Nimi"
+                        },
+                        "description": "Meteorologisk institutt",
+                        "title": "Sijainti"
+                    }
+                }
+            }
+        },
+        "mobile_app": {
+            "config": {
+                "step": {
+                    "confirm": {
+                        "description": "Haluatko määrittää Mobile App -komponentin?"
+                    }
+                }
+            }
+        },
+        "moon": {
+            "platform": {
+                "sensor": {
+                    "state": {
+                        "moon__phase": {
+                            "first_quarter": "Ensimmäinen neljännes",
+                            "full_moon": "Täysikuu",
+                            "last_quarter": "Viimeinen neljännes",
+                            "new_moon": "Uusikuu",
+                            "waning_crescent": "Vähenevä sirppi",
+                            "waning_gibbous": "Vähenevä kuperakuu",
+                            "waxing_crescent": "Kasvava sirppi",
+                            "waxing_gibbous": "Kasvava kuperakuu"
+                        }
+                    }
+                }
+            }
+        },
+        "mqtt": {
+            "config": {
+                "abort": {
+                    "single_instance_allowed": "Jo konfiguroitu. Vain yksi konfigurointi sallitaan."
+                },
+                "error": {
+                    "cannot_connect": "Yhdistäminen epäonnistui"
+                },
+                "step": {
+                    "broker": {
+                        "data": {
+                            "broker": "Välittäjä",
+                            "password": "Salasana",
+                            "port": "Portti",
+                            "username": "Käyttäjätunnus"
+                        },
+                        "description": "Syötä MQTT-välittäjän yhteystiedot."
+                    },
+                    "hassio_confirm": {
+                        "data": {
+                            "discovery": "Ota etsintä käyttöön"
+                        },
+                        "title": "MQTT-välittäjä Home Assistant -lisäosan kautta"
+                    }
+                }
+            },
+            "device_automation": {
+                "trigger_subtype": {
+                    "button_1": "Ensimmäinen painike",
+                    "button_2": "Toinen painike",
+                    "button_3": "Kolmas painike",
+                    "button_4": "Neljäs painike",
+                    "button_5": "Viides painike",
+                    "button_6": "Kuudes painike",
+                    "turn_off": "Kytke pois",
+                    "turn_on": "Kytke päälle"
+                },
+                "trigger_type": {
+                    "button_short_press": "\"{subtype}\" painettu",
+                    "button_short_release": "\"{subtype}\" vapautettu",
+                    "button_triple_press": "\"{subtype}\" kolmoisnapsautettu"
+                }
+            },
+            "options": {
+                "step": {
+                    "broker": {
+                        "data": {
+                            "password": "Salasana",
+                            "port": "Portti",
+                            "username": "Käyttäjätunnus"
+                        }
+                    }
+                }
+            }
+        },
+        "nest": {
+            "config": {
+                "abort": {
+                    "authorize_url_timeout": "Valtuutus-URL-osoitteen luomisen aikakatkaisu."
+                },
+                "error": {
+                    "internal_error": "Sisäinen virhe koodin vahvistamisessa",
+                    "timeout": "Aikakatkaisu varmennettaessa koodia",
+                    "unknown": "Odottamaton virhe"
+                },
+                "step": {
+                    "init": {
+                        "data": {
+                            "flow_impl": "Tarjoaja"
+                        },
+                        "description": "Valitse todennusmenetelmä",
+                        "title": "Todentamisen tarjoaja"
+                    },
+                    "link": {
+                        "data": {
+                            "code": "Pin-koodi"
+                        },
+                        "description": "Voit yhdistää Nest-tilisi [valtuuta tilisi]({url}).\n\nValtuuttamisen jälkeen kopioi ja liitä PIN-koodi alas.",
+                        "title": "Linkitä Nest-tili"
+                    }
+                }
+            }
+        },
+        "notify": {
+            "title": "Ilmoita"
+        },
+        "notion": {
+            "config": {
+                "step": {
+                    "user": {
+                        "title": "Täytä tietosi."
+                    }
+                }
+            }
+        },
+        "number": {
+            "entity_component": {
+                "_": {
+                    "state_attributes": {
+                        "max": {
+                            "name": "Maksimi"
+                        },
+                        "min": {
+                            "name": "Minimi"
+                        },
+                        "mode": {
+                            "name": "Tila",
+                            "state": {
+                                "auto": "Automaattinen",
+                                "box": "Laatikko",
+                                "slider": "Liukusäädin"
+                            }
+                        },
+                        "step": {
+                            "name": "Askel"
+                        }
+                    }
+                },
+                "energy_storage": {
+                    "name": "Varastoitu energia"
+                },
+                "frequency": {
+                    "name": "Taajuus"
+                },
+                "humidity": {
+                    "name": "Kosteus"
+                },
+                "illuminance": {
+                    "name": "Valaistusvoimakkuus"
+                },
+                "moisture": {
+                    "name": "Kosteus"
+                },
+                "power": {
+                    "name": "Teho"
+                },
+                "power_factor": {
+                    "name": "Tehokerroin"
+                },
+                "pressure": {
+                    "name": "Paine"
+                },
+                "reactive_power": {
+                    "name": "Loisteho"
+                },
+                "signal_strength": {
+                    "name": "Signaalin voimakkuus"
+                },
+                "sound_pressure": {
+                    "name": "Äänenpaine"
+                },
+                "speed": {
+                    "name": "Nopeus"
+                },
+                "temperature": {
+                    "name": "Lämpötila"
+                },
+                "voltage": {
+                    "name": "Jännite"
+                },
+                "volume": {
+                    "name": "Tilavuus"
+                },
+                "volume_storage": {
+                    "name": "Varastoitu tilavuus"
+                },
+                "water": {
+                    "name": "Vesi"
+                },
+                "weight": {
+                    "name": "Paino"
+                },
+                "wind_speed": {
+                    "name": "Tuulen nopeus"
+                }
+            }
+        },
+        "nws": {
+            "config": {
+                "error": {
+                    "unknown": "Odottamaton virhe"
+                },
+                "step": {
+                    "user": {
+                        "data": {
+                            "api_key": "API-avain (sähköposti)",
+                            "latitude": "Leveysaste",
+                            "longitude": "Pituusaste"
+                        }
+                    }
+                }
+            }
+        },
+        "onboarding": {
+            "area": {
+                "bedroom": "Makuuhuone",
+                "kitchen": "Keittiö",
+                "living_room": "Olohuone"
+            }
+        },
+        "onvif": {
+            "config": {
+                "step": {
+                    "configure_profile": {
+                        "data": {
+                            "include": "Luo kamerakohde"
+                        },
+                        "title": "Määritä profiilit"
+                    }
+                }
+            }
+        },
+        "openai_conversation": {
+            "options": {
+                "step": {
+                    "init": {
+                        "data": {
+                            "temperature": "Lämpötila"
+                        }
+                    }
+                }
+            }
+        },
+        "openuv": {
+            "config": {
+                "error": {
+                    "invalid_api_key": "Virheellinen API-avain"
+                },
+                "step": {
+                    "user": {
+                        "data": {
+                            "api_key": "OpenUV API-avain",
+                            "elevation": "Korkeus merenpinnasta",
+                            "latitude": "Leveysaste",
+                            "longitude": "Pituusaste"
+                        },
+                        "title": "Täytä tietosi"
+                    }
+                }
+            }
+        },
+        "openweathermap": {
+            "config": {
+                "error": {
+                    "cannot_connect": "Ei voida yhdistää",
+                    "invalid_api_key": "Virheellinen API avain"
+                },
+                "step": {
+                    "user": {
+                        "data": {
+                            "api_key": "API avain",
+                            "language": "Kieli",
+                            "mode": "Tila",
+                            "name": "Nimi"
+                        }
+                    }
+                }
+            },
+            "options": {
+                "step": {
+                    "init": {
+                        "data": {
+                            "language": "Kieli",
+                            "mode": "Tila"
+                        }
+                    }
+                }
+            }
+        },
+        "panasonic_viera": {
+            "config": {
+                "abort": {
+                    "unknown": "Tapahtui tuntematon virhe. Lisätietoja on lokeissa."
+                },
+                "error": {
+                    "invalid_pin_code": "Antamasi PIN-koodi ei kelpaa"
+                },
+                "step": {
+                    "pairing": {
+                        "data": {
+                            "pin": "PIN"
+                        },
+                        "description": "Kirjoita televisiossa näkyvä PIN-koodi",
+                        "title": "Paritus"
+                    },
+                    "user": {
+                        "data": {
+                            "host": "IP-osoite",
+                            "name": "Nimi"
+                        },
+                        "description": "Anna Panasonic Viera TV:n IP-osoite",
+                        "title": "Television määrittäminen"
+                    }
+                }
+            }
+        },
+        "person": {
+            "entity_component": {
+                "_": {
+                    "state": {
+                        "home": "Kotona"
+                    },
+                    "state_attributes": {
+                        "device_trackers": {
+                            "name": "Seurantalaitteet"
+                        },
+                        "gps_accuracy": {
+                            "name": "GPS:n tarkkuus"
+                        },
+                        "latitude": {
+                            "name": "Leveysaste"
+                        },
+                        "longitude": {
+                            "name": "Pituusaste"
+                        },
+                        "source": {
+                            "name": "Lähde"
+                        }
+                    }
+                }
+            },
+            "title": "Henkilö"
+        },
+        "plant": {
+            "entity_component": {
+                "_": {
+                    "state": {
+                        "ok": "Ok",
+                        "problem": "Ongelma"
+                    }
+                }
+            },
+            "title": "Kasvi"
+        },
+        "plex": {
+            "config": {
+                "abort": {
+                    "all_configured": "Kaikki linkitetyt palvelimet on jo määritetty",
+                    "already_configured": "Tämä Plex-palvelin on jo määritetty",
+                    "already_in_progress": "Konfiguraatioflow on jo käynnissä",
+                    "token_request_timeout": "Tokenin haku aikakatkaistiin",
+                    "unknown": "Odottamaton virhe"
+                },
+                "error": {
+                    "faulty_credentials": "Valtuutus epäonnistui, tarkista Token",
+                    "no_servers": "Plex-tiliin ei ole linkitetty palvelimia",
+                    "not_found": "Plex-palvelinta ei löydy",
+                    "ssl_error": "SSL-varmenneongelma"
+                },
+                "step": {
+                    "manual_setup": {
+                        "data": {
+                            "host": "Palvelin (valinnainen, jos token on annettu)",
+                            "port": "Portti",
+                            "ssl": "Käytä SSL:ää",
+                            "token": "Token (valinnainen)"
+                        },
+                        "title": "Manuaalinen Plex-konfigurointi"
+                    },
+                    "select_server": {
+                        "data": {
+                            "server": "Palvelin"
+                        },
+                        "description": "Useita palvelimia käytettävissä, valitse yksi:",
+                        "title": "Valitse Plex-palvelin"
+                    },
+                    "user_advanced": {
+                        "data": {
+                            "setup_method": "Asennusmenetelmä"
+                        }
+                    }
+                }
+            },
+            "options": {
+                "step": {
+                    "plex_mp_settings": {
+                        "data": {
+                            "ignore_plex_web_clients": "Ohita Plex web-asiakasohjelmat",
+                            "use_episode_art": "Käytä episoditaidetta"
+                        },
+                        "description": "Plex-mediasoittimien asetukset"
+                    }
+                }
+            }
+        },
+        "plum_lightpad": {
+            "config": {
+                "step": {
+                    "user": {
+                        "data": {
+                            "password": "Salasana",
+                            "username": "Sähköposti"
+                        }
+                    }
+                }
+            }
+        },
+        "point": {
+            "config": {
+                "abort": {
+                    "already_setup": "Jo määritelty. Vain yksi määrittely mahdollista."
+                },
+                "step": {
+                    "user": {
+                        "data": {
+                            "flow_impl": "Tarjoaja"
+                        }
+                    }
+                }
+            }
+        },
+        "prosegur": {
+            "config": {
+                "step": {
+                    "user": {
+                        "data": {
+                            "country": "Maa"
+                        }
+                    }
+                }
+            }
+        },
+        "proximity": {
+            "title": "Läheisyys"
+        },
+        "ps4": {
+            "config": {
+                "abort": {
+                    "credential_error": "Virhe haettaessa kirjautumistietoja."
+                },
+                "step": {
+                    "link": {
+                        "data": {
+                            "code": "PIN",
+                            "ip_address": "IP-osoite",
+                            "name": "Nimi",
+                            "region": "Alue"
+                        }
+                    },
+                    "mode": {
+                        "data": {
+                            "ip_address": "IP-osoite (jätä tyhjäksi, jos käytät automaattista etsintää).",
+                            "mode": "Konfigurointitila"
+                        }
+                    }
+                }
+            }
+        },
+        "qingping": {
+            "config": {
+                "abort": {
+                    "not_supported": "Laitetta ei tueta"
+                }
+            }
+        },
+        "rainmachine": {
+            "config": {
+                "step": {
+                    "user": {
+                        "data": {
+                            "ip_address": "Palvelin tai IP-osoite",
+                            "password": "Salasana",
+                            "port": "Portti"
+                        },
+                        "title": "Täytä tietosi."
+                    }
+                }
+            }
+        },
+        "remote": {
+            "title": "Kauko-ohjaus"
+        },
+        "reolink": {
+            "entity": {
+                "select": {
+                    "floodlight_mode": {
+                        "state": {
+                            "auto": "Auto",
+                            "off": "Pois"
+                        }
+                    }
+                },
+                "sensor": {
+                    "ptz_pan_position": {
+                        "name": "PTZ:n panorointiasento"
+                    }
+                }
+            }
+        },
+        "roborock": {
+            "config": {
+                "error": {
+                    "invalid_code": "Antamasi koodi oli virheellinen, tarkista se ja yritä uudelleen.",
+                    "invalid_email": "Antamaasi sähköpostiosoitteeseen ei ole liitetty tiliä. Yritä uudelleen.",
+                    "invalid_email_format": "Sähköpostisi muotoilussa on ongelma - yritä uudelleen.",
+                    "unknown": "Odottamaton virhe",
+                    "unknown_url": "Robock-tilisi oikean URL-osoitteen määrittämisessä oli ongelma - tarkista lokit."
+                },
+                "step": {
+                    "code": {
+                        "data": {
+                            "code": "Vahvistuskoodi"
+                        },
+                        "description": "Kirjoita sähköpostiisi lähetetty vahvistuskoodi"
+                    },
+                    "user": {
+                        "data": {
+                            "username": "Sähköposti"
+                        },
+                        "description": "Kirjoita Roborock-sähköpostiosoitteesi."
+                    }
+                }
+            },
+            "entity": {
+                "select": {
+                    "mop_mode": {
+                        "name": "Moppitila"
+                    }
+                }
+            }
+        },
+        "scene": {
+            "title": "Skene"
+        },
+        "schedule": {
+            "entity_component": {
+                "_": {
+                    "state_attributes": {
+                        "editable": {
+                            "name": "Hallinta käyttöliittymästä",
+                            "state": {
+                                "false": "Ei",
+                                "true": "Kyllä"
+                            }
+                        },
+                        "next_event": {
+                            "name": "Seuraava tapahtuma"
+                        }
+                    }
+                }
+            },
+            "title": "Aikataulu"
+        },
+        "script": {
+            "title": "Skripti"
+        },
+        "season": {
+            "entity": {
+                "sensor": {
+                    "season": {
+                        "state": {
+                            "autumn": "Syksy",
+                            "spring": "Kevät",
+                            "summer": "Kesä",
+                            "winter": "Talvi"
+                        }
+                    }
+                }
+            },
+            "platform": {
+                "sensor": {
+                    "state": {
+                        "season__season": {
+                            "autumn": "Syksy",
+                            "spring": "Kevät",
+                            "summer": "Kesä",
+                            "winter": "Talvi"
+                        },
+                        "season__season__": {
+                            "autumn": "Syksy",
+                            "spring": "Kevät",
+                            "summer": "Kesä",
+                            "winter": "Talvi"
+                        }
+                    }
+                }
+            }
+        },
+        "sensibo": {
+            "entity": {
+                "select": {
+                    "light": {
+                        "state": {
+                            "dim": "Himmeä",
+                            "off": "Pois",
+                            "on": "Päällä"
+                        }
+                    }
+                },
+                "sensor": {
+                    "climate_react_high": {
+                        "state_attributes": {
+                            "mode": {
+                                "state": {
+                                    "heat": "Lämpö"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "sensor": {
+            "device_automation": {
+                "condition_type": {
+                    "is_carbon_monoxide": "{entity_name} tämänhetkinen häkäpitoisuus"
+                },
+                "trigger_type": {
+                    "carbon_monoxide": "{entity_name} häkäpitoisuus muuttuu"
+                }
+            },
+            "entity_component": {
+                "_": {
+                    "state_attributes": {
+                        "options": {
+                            "name": "Mahdolliset tilat"
+                        },
+                        "state_class": {
+                            "name": "Tilan luokka",
+                            "state": {
+                                "measurement": "Mittaus",
+                                "total": "Yhteensä",
+                                "total_increasing": "Nousu yhteensä"
+                            }
+                        }
+                    }
+                },
+                "carbon_monoxide": {
+                    "name": "Häkä"
+                },
+                "energy": {
+                    "name": "Energia"
+                },
+                "energy_storage": {
+                    "name": "Varastoitu energia"
+                },
+                "frequency": {
+                    "name": "Taajuus"
+                },
+                "humidity": {
+                    "name": "Kosteus"
+                },
+                "illuminance": {
+                    "name": "Valaistusvoimakkuus"
+                },
+                "moisture": {
+                    "name": "Kosteus"
+                },
+                "monetary": {
+                    "name": "Saldo"
+                },
+                "power": {
+                    "name": "Teho"
+                },
+                "power_factor": {
+                    "name": "Tehokerroin"
+                },
+                "pressure": {
+                    "name": "Paine"
+                },
+                "reactive_power": {
+                    "name": "Loisteho"
+                },
+                "signal_strength": {
+                    "name": "Signaalin voimakkuus"
+                },
+                "sound_pressure": {
+                    "name": "Äänenpaine"
+                },
+                "speed": {
+                    "name": "Nopeus"
+                },
+                "temperature": {
+                    "name": "Lämpötila"
+                },
+                "voltage": {
+                    "name": "Jännite"
+                },
+                "volume": {
+                    "name": "Tilavuus"
+                },
+                "volume_storage": {
+                    "name": "Varastoitu tilavuus"
+                },
+                "water": {
+                    "name": "Vesi"
+                }
+            },
+            "title": "Sensori"
+        },
+        "sfr_box": {
+            "entity": {
+                "sensor": {
+                    "dsl_line_status": {
+                        "state": {
+                            "unknown": "Tuntematon"
+                        }
+                    },
+                    "dsl_training": {
+                        "state": {
+                            "unknown": "Tuntematon"
+                        }
+                    },
+                    "net_infra": {
+                        "state": {
+                            "unknown": "Tuntematon"
+                        }
+                    },
+                    "wan_mode": {
+                        "state": {
+                            "unknown": "Tuntematon"
+                        }
+                    }
+                }
+            }
+        },
+        "shelly": {
+            "entity": {
+                "binary_sensor": {
+                    "gas": {
+                        "state_attributes": {
+                            "detected": {
+                                "state": {
+                                    "unknown": "Tuntematon"
+                                }
+                            }
+                        }
+                    }
+                },
+                "sensor": {
+                    "operation": {
+                        "state": {
+                            "unknown": "Tuntematon"
+                        }
+                    }
+                }
+            }
+        },
+        "smartthings": {
+            "config": {
+                "error": {
+                    "token_unauthorized": "Tunnus on virheellinen tai sitä ei ole enää valtuutettu."
+                },
+                "step": {
+                    "user": {
+                        "title": "Vahvista Callback URL-osoite"
+                    }
+                }
+            }
+        },
+        "smhi": {
+            "config": {
+                "error": {
+                    "wrong_location": "Sijainti vain Ruotsi"
+                },
+                "step": {
+                    "user": {
+                        "data": {
+                            "latitude": "Leveysaste",
+                            "longitude": "Pituusaste"
+                        },
+                        "title": "Sijainti Ruotsissa"
+                    }
+                }
+            }
+        },
+        "solaredge": {
+            "config": {
+                "step": {
+                    "user": {
+                        "data": {
+                            "api_key": "API-avain",
+                            "name": "Tämän asennuksen nimi",
+                            "site_id": "Solaredge site-id"
+                        }
+                    }
+                }
+            }
+        },
+        "soma": {
+            "config": {
+                "abort": {
+                    "authorize_url_timeout": "Valtuutus-URL-osoitteen luomisen aikakatkaisu."
+                }
+            }
+        },
+        "songpal": {
+            "config": {
+                "abort": {
+                    "already_configured": "Laite on jo määritetty",
+                    "not_songpal_device": "Ei Songpal-laite"
+                },
+                "flow_title": "Sony Songpal {name} ({host})",
+                "step": {
+                    "init": {
+                        "description": "Haluatko määrittää kohteen {name} ({host})?"
+                    },
+                    "user": {
+                        "data": {
+                            "endpoint": "Päätepiste"
+                        }
+                    }
+                }
+            }
+        },
+        "sonos": {
+            "config": {
+                "abort": {
+                    "no_devices_found": "Laitteita ei löytynyt verkosta",
+                    "single_instance_allowed": "Jo määritelty. Vain yksi määrittely mahdollista."
+                },
+                "step": {
+                    "confirm": {
+                        "description": "Haluatko määrittää Sonosin?"
+                    }
+                }
+            }
+        },
+        "sql": {
+            "selector": {
+                "device_class": {
+                    "options": {
+                        "carbon_dioxide": "Hiilidioksidi",
+                        "carbon_monoxide": "Häkä"
+                    }
+                }
+            }
+        },
+        "starlink": {
+            "entity": {
+                "device_tracker": {
+                    "device_location": {
+                        "name": "Laitteen sijainti"
+                    }
+                }
+            }
+        },
+        "sun": {
+            "entity": {
+                "sensor": {
+                    "next_dawn": {
+                        "name": "Seuraava aamunkoitto"
+                    },
+                    "next_dusk": {
+                        "name": "Seuraava hämärä"
+                    },
+                    "next_midnight": {
+                        "name": "Seuraava keskiyö"
+                    },
+                    "next_noon": {
+                        "name": "Seuraava keskipäivä"
+                    },
+                    "next_rising": {
+                        "name": "Seuraava nousu"
+                    },
+                    "next_setting": {
+                        "name": "Seuraava lasku"
+                    },
+                    "solar_azimuth": {
+                        "name": "Auringon atsimuutti"
+                    },
+                    "solar_elevation": {
+                        "name": "Auringon korkeuskulma"
+                    }
+                }
+            },
+            "entity_component": {
+                "_": {
+                    "name": "Aurinko"
+                }
+            },
+            "title": "Aurinko"
+        },
+        "switch": {
+            "entity_component": {
+                "_": {
+                    "name": "Kytkin"
+                }
+            },
+            "title": "Kytkin"
+        },
+        "switchbot": {
+            "config": {
+                "step": {
+                    "password": {
+                        "data": {
+                            "password": "Salasana"
+                        }
+                    }
+                }
+            },
+            "entity": {
+                "binary_sensor": {
+                    "light": {
+                        "name": "Valo"
+                    }
+                }
+            }
+        },
+        "synology_dsm": {
+            "config": {
+                "error": {
+                    "otp_failed": "Kaksivaiheinen todennus epäonnistui, yritä uudelleen uudella salasanalla."
+                },
+                "step": {
+                    "2sa": {
+                        "data": {
+                            "otp_code": "Koodi"
+                        }
+                    }
+                }
+            },
+            "options": {
+                "step": {
+                    "init": {
+                        "data": {
+                            "scan_interval": "Minuutit skannausten välillä"
+                        }
+                    }
+                }
+            }
+        },
+        "system_health": {
+            "title": "Järjestelmän kunto"
+        },
+        "tado": {
+            "entity": {
+                "sensor": {
+                    "heating": {
+                        "name": "Lämmitys"
+                    }
+                }
+            }
+        },
+        "tellduslive": {
+            "config": {
+                "step": {
+                    "user": {
+                        "data": {
+                            "host": "Palvelin"
+                        },
+                        "description": "Tyhjä",
+                        "title": "Valitse päätepiste."
+                    }
+                }
+            }
+        },
+        "template": {
+            "config": {
+                "step": {
+                    "binary_sensor": {
+                        "data": {
+                            "device_class": "Laiteluokka",
+                            "name": "Nimi"
+                        }
+                    },
+                    "sensor": {
+                        "data": {
+                            "name": "Nimi",
+                            "state_class": "Tilaluokka",
+                            "state_template": "Tilamalli",
+                            "unit_of_measurement": "Mittayksikkö"
+                        },
+                        "title": "Mallisensori"
+                    },
+                    "user": {
+                        "menu_options": {
+                            "sensor": "Tee sensorimalli"
+                        },
+                        "title": "Malliavustin"
+                    }
+                }
+            },
+            "options": {
+                "step": {
+                    "binary_sensor": {
+                        "data": {
+                            "device_class": "Laiteluokka"
+                        }
+                    },
+                    "sensor": {
+                        "data": {
+                            "device_class": "Laiteluokka",
+                            "state_class": "Tilaluokka",
+                            "unit_of_measurement": "Mittayksikkö"
+                        }
+                    }
+                }
+            },
+            "selector": {
+                "binary_sensor_device_class": {
+                    "options": {
+                        "battery": "Paristo",
+                        "battery_charging": "Lataus",
+                        "carbon_monoxide": "Häkä",
+                        "cold": "Kylmä",
+                        "connectivity": "Yhteys",
+                        "door": "Ovi",
+                        "garage_door": "Autotallin ovi",
+                        "gas": "Kaasu",
+                        "heat": "Lämpö",
+                        "light": "Valo",
+                        "lock": "Lukko",
+                        "moisture": "Kosteus",
+                        "motion": "Liike",
+                        "moving": "Liikkeessäolo",
+                        "none": "Ei laiteluokkaa",
+                        "opening": "Avaus",
+                        "plug": "Töpseli",
+                        "power": "Virta",
+                        "presence": "Läsnäolo",
+                        "problem": "Ongelma",
+                        "running": "Käynnissäolo",
+                        "safety": "Turvallisuus",
+                        "smoke": "Savu",
+                        "sound": "Ääni",
+                        "update": "Päivitä",
+                        "vibration": "Värinä",
+                        "window": "Ikkuna"
+                    }
+                },
+                "sensor_device_class": {
+                    "options": {
+                        "aqi": "Ilmanlaatuindeksi",
+                        "atmospheric_pressure": "Ilmakehän paine",
+                        "battery": "Paristo",
+                        "carbon_dioxide": "Hiilidioksidi",
+                        "carbon_monoxide": "Häkä",
+                        "current": "Virta",
+                        "data_rate": "Datanopeus",
+                        "data_size": "Datakoko",
+                        "date": "Päivämäärä",
+                        "distance": "Etäisyys",
+                        "duration": "Kesto",
+                        "energy": "Energia",
+                        "energy_storage": "Säilötty energia",
+                        "frequency": "Taajuus",
+                        "gas": "Kaasu",
+                        "humidity": "Kosteus",
+                        "moisture": "Kosteustaso",
+                        "nitrogen_dioxide": "Typpidioksidi",
+                        "nitrogen_monoxide": "Typpimonoksidi",
+                        "nitrous_oxide": "Typpioksidi",
+                        "none": "Ei laiteluokkaa",
+                        "ozone": "Otsoni",
+                        "ph": "pH",
+                        "pm1": "PM1",
+                        "pm10": "PM10",
+                        "power": "Voima",
+                        "power_factor": "Voimakerroin",
+                        "precipitation": "Sade",
+                        "precipitation_intensity": "Sateen voimakkuus",
+                        "pressure": "Paine",
+                        "reactive_power": "Reaktiivinen voima",
+                        "signal_strength": "Signaalin voimakkuus",
+                        "sound_pressure": "Äänenpaine",
+                        "speed": "Nopeus",
+                        "sulphur_dioxide": "Rikkidioksidi",
+                        "temperature": "Lämpötila",
+                        "timestamp": "Aikaleima",
+                        "volatile_organic_compounds": "VOCit",
+                        "volatile_organic_compounds_parts": "VOCit",
+                        "voltage": "Jännite",
+                        "volume": "Tilavuus",
+                        "volume_storage": "Säilötty tilavuus",
+                        "water": "Vesi",
+                        "weight": "Paino",
+                        "wind_speed": "Tuulen nopeus"
+                    }
+                },
+                "sensor_state_class": {
+                    "options": {
+                        "none": "Ei tilaluokkaa"
+                    }
+                },
+                "sensor_unit_of_measurement": {
+                    "options": {
+                        "none": "Ei mittayksikköä"
+                    }
+                }
+            }
+        },
+        "text": {
+            "entity_component": {
+                "_": {
+                    "name": "Teksti",
+                    "state_attributes": {
+                        "max": {
+                            "name": "Maksimipituus"
+                        },
+                        "min": {
+                            "name": "Minimipituus"
+                        }
+                    }
+                }
+            }
+        },
+        "time": {
+            "entity_component": {
+                "_": {
+                    "name": "Aika"
+                }
+            }
+        },
+        "timer": {
+            "entity_component": {
+                "_": {
+                    "state_attributes": {
+                        "duration": {
+                            "name": "Kesto"
+                        },
+                        "editable": {
+                            "name": "Hallinta käyttöliittymästä",
+                            "state": {
+                                "false": "Ei",
+                                "true": "Kyllä"
+                            }
+                        },
+                        "finishes_at": {
+                            "name": "Päättyy"
+                        },
+                        "remaining": {
+                            "name": "Jäljellä"
+                        },
+                        "restore": {
+                            "name": "Palauta"
+                        }
+                    }
+                }
+            }
+        },
+        "tomorrowio": {
+            "entity": {
+                "sensor": {
+                    "primary_pollutant": {
+                        "state": {
+                            "co": "Häkä"
+                        }
+                    }
+                }
+            }
+        },
+        "toon": {
+            "config": {
+                "abort": {
+                    "no_agreements": "Tällä tilillä ei ole Toon-näyttöjä."
+                }
+            }
+        },
+        "traccar": {
+            "config": {
+                "step": {
+                    "user": {
+                        "title": "Määritä Traccar"
+                    }
+                }
+            }
+        },
+        "tractive": {
+            "entity": {
+                "sensor": {
+                    "activity": {
+                        "name": "Toiminta",
+                        "state": {
+                            "good": "Hyvä",
+                            "ok": "OK"
+                        }
+                    },
+                    "sleep": {
+                        "name": "Nukkuu",
+                        "state": {
+                            "good": "Hyvä",
+                            "ok": "OK"
+                        }
+                    }
+                }
+            }
+        },
+        "tradfri": {
+            "config": {
+                "abort": {
+                    "already_configured": "Silta on jo määritetty"
+                },
+                "error": {
+                    "cannot_connect": "Yhdistäminen epäonnistui",
+                    "invalid_key": "Rekisteröinti annetulla avaimella epäonnistui. Jos tämä toistuu, yritä käynnistää yhdyskäytävä uudelleen.",
+                    "timeout": "Aikakatkaisu koodin vahvistamisessa."
+                },
+                "step": {
+                    "auth": {
+                        "data": {
+                            "host": "Palvelin",
+                            "security_code": "Turvakoodi"
+                        },
+                        "description": "Löydät suojakoodin yhdyskäytäväsi takaosasta.",
+                        "title": "Kirjoita suojakoodi"
+                    }
+                }
+            }
+        },
+        "transmission": {
+            "config": {
+                "error": {
+                    "cannot_connect": "Yhteyden muodostaminen palvelimeen ei onnistu"
+                }
+            }
+        },
+        "tuya": {
+            "config": {
+                "step": {
+                    "user": {
+                        "data": {
+                            "country_code": "Tilisi maakoodi (esim. 1 Yhdysvalloissa, 358 Suomessa)",
+                            "password": "Salasana",
+                            "username": "Käyttäjätunnus"
+                        },
+                        "description": "Anna Tuya-tunnistetietosi."
+                    }
+                }
+            },
+            "entity": {
+                "binary_sensor": {
+                    "carbon_dioxide": {
+                        "name": "Hiilidioksidi"
+                    },
+                    "carbon_monoxide": {
+                        "name": "Häkä"
+                    }
+                },
+                "select": {
+                    "light_mode": {
+                        "state": {
+                            "none": "Pois"
+                        }
+                    },
+                    "vacuum_mode": {
+                        "state": {
+                            "spiral": "Kierre",
+                            "standby": "Valmiustila",
+                            "wall_follow": "Seuraa seinää",
+                            "zone": "Alue"
+                        }
+                    }
+                },
+                "sensor": {
+                    "carbon_monoxide": {
+                        "name": "Häkä"
+                    },
+                    "concentration_carbon_dioxide": {
+                        "name": "Hiilidioksidipitoisuus"
+                    },
+                    "sous_vide_status": {
+                        "state": {
+                            "heating": "Lämmitys"
+                        }
+                    }
+                }
+            },
+            "platform": {
+                "select": {
+                    "state": {
+                        "tuya__light_mode": {
+                            "none": "Pois"
+                        },
+                        "tuya__relay_status": {
+                            "off": "Pois",
+                            "on": "Päällä",
+                            "power_off": "Pois",
+                            "power_on": "Päällä"
+                        },
+                        "tuya__vacuum_mode": {
+                            "chargego": "Palaa telakkaan"
+                        }
+                    }
+                }
+            }
+        },
+        "twentemilieu": {
+            "config": {
+                "step": {
+                    "user": {
+                        "data": {
+                            "house_number": "Talon numero",
+                            "post_code": "Postinumero"
+                        }
+                    }
+                }
+            }
+        },
+        "twilio": {
+            "config": {
+                "step": {
+                    "user": {
+                        "title": "Määritä Twilio-webhook"
+                    }
+                }
+            }
+        },
+        "unifi": {
+            "config": {
+                "abort": {
+                    "already_configured": "UniFI Network on jo konfiguroitu"
+                },
+                "error": {
+                    "faulty_credentials": "Virheellinen tunnistautuminen",
+                    "service_unavailable": "Yhdistäminen epäonnistui"
+                },
+                "step": {
+                    "user": {
+                        "data": {
+                            "host": "Palvelin",
+                            "password": "Salasana",
+                            "port": "Portti",
+                            "site": "Sivuston ID",
+                            "username": "Käyttäjätunnus",
+                            "verify_ssl": "Varmista SSL-sertifikaatti"
+                        },
+                        "title": "Määritä UniFi-verkko"
+                    }
+                }
+            }
+        },
+        "upb": {
+            "config": {
+                "error": {
+                    "unknown": "Odottamaton virhe"
+                },
+                "step": {
+                    "user": {
+                        "data": {
+                            "protocol": "Protokolla"
+                        },
+                        "title": "Yhdistä UPB PIM:ään"
+                    }
+                }
+            }
+        },
+        "upnp": {
+            "config": {
+                "abort": {
+                    "already_configured": "Laite on jo määritetty"
+                },
+                "error": {
+                    "one": "Tyhjä",
+                    "other": "Tyhjä"
+                }
+            }
+        },
+        "vacuum": {
+            "device_automation": {
+                "action_type": {
+                    "clean": "Anna {entity_name} puhdistaa",
+                    "dock": "Anna {entity_name} palata telakkaan"
+                },
+                "condition_type": {
+                    "is_cleaning": "{entity_name} on siivoamassa",
+                    "is_docked": "{entity_name} on telakoituna"
+                },
+                "trigger_type": {
+                    "cleaning": "{entity_name} aloitti siivouksen",
+                    "docked": "{entity_name} telakoitu"
+                }
+            },
+            "entity_component": {
+                "_": {
+                    "name": "Imuri",
+                    "state": {
+                        "cleaning": "Siivoaa",
+                        "docked": "Telakoituna",
+                        "error": "Virhe",
+                        "idle": "Jouten",
+                        "off": "Pois",
+                        "on": "Päällä",
+                        "paused": "Keskeytetty",
+                        "returning": "Palaamassa telakkaan"
+                    }
+                }
+            },
+            "title": "Imuri"
+        },
+        "vesync": {
+            "config": {
+                "step": {
+                    "user": {
+                        "data": {
+                            "password": "Salasana",
+                            "username": "Sähköpostiosoite"
+                        }
+                    }
+                }
+            }
+        },
+        "water_heater": {
+            "services": {
+                "set_temperature": {
+                    "fields": {
+                        "temperature": {
+                            "name": "Lämpötila"
+                        }
+                    }
+                }
+            }
+        },
+        "weather": {
+            "entity_component": {
+                "_": {
+                    "name": "Sää",
+                    "state": {
+                        "clear-night": "Yö, selkeää",
+                        "cloudy": "Pilvistä",
+                        "exceptional": "Poikkeuksellinen",
+                        "fog": "Sumuista",
+                        "hail": "Raekuuroja",
+                        "lightning": "Ukkoskuuroja",
+                        "lightning-rainy": "Ukkosvaara, sateista",
+                        "partlycloudy": "Puolipilvistä",
+                        "pouring": "Kaatosadetta",
+                        "rainy": "Sateista",
+                        "snowy": "Lumisadetta",
+                        "snowy-rainy": "Räntäsadetta",
+                        "sunny": "Aurinkoista",
+                        "windy": "Tuulista",
+                        "windy-variant": "Tuulista"
+                    },
+                    "state_attributes": {
+                        "forecast": {
+                            "name": "Sääennuste"
+                        },
+                        "humidity": {
+                            "name": "Kosteus"
+                        },
+                        "ozone": {
+                            "name": "Otsoni"
+                        },
+                        "precipitation_unit": {
+                            "name": "Sademäärän yksikkö"
+                        },
+                        "pressure": {
+                            "name": "Ilmanpaine"
+                        },
+                        "pressure_unit": {
+                            "name": "Ilmanpaineen yksikkö"
+                        },
+                        "temperature": {
+                            "name": "Lämpötila"
+                        },
+                        "temperature_unit": {
+                            "name": "Lämpötilan yksikkö"
+                        },
+                        "visibility": {
+                            "name": "Näkyvyys"
+                        },
+                        "visibility_unit": {
+                            "name": "Näkyvyyden yksikkö"
+                        },
+                        "wind_speed": {
+                            "name": "Tuulennopeus"
+                        },
+                        "wind_speed_unit": {
+                            "name": "Tuulen nopeuden yksikkö"
+                        }
+                    }
+                }
+            },
+            "title": "Sää"
+        },
+        "wemo": {
+            "config": {
+                "abort": {
+                    "single_instance_allowed": "Jo määritelty. Vain yksi määrittely mahdollista."
+                }
+            }
+        },
+        "whirlpool": {
+            "entity": {
+                "sensor": {
+                    "whirlpool_tank": {
+                        "state": {
+                            "unknown": "Tuntematon"
+                        }
+                    }
+                }
+            }
+        },
+        "workday": {
+            "config": {
+                "abort": {
+                    "already_configured": "Palvelu on jo konfiguroitu"
+                },
+                "step": {
+                    "options": {
+                        "data": {
+                            "add_holidays": "Lisää lomat"
+                        },
+                        "data_description": {
+                            "workdays": "Lista työpäivistä"
+                        }
+                    },
+                    "user": {
+                        "data": {
+                            "country": "Maa",
+                            "name": "Nimi"
+                        }
+                    }
+                }
+            },
+            "options": {
+                "step": {
+                    "init": {
+                        "data": {
+                            "add_holidays": "Lisää lomat",
+                            "remove_holidays": "Poista lomat",
+                            "workdays": "Työpäivät"
+                        },
+                        "data_description": {
+                            "workdays": "Lista työpäivistä"
+                        }
+                    }
+                }
+            },
+            "selector": {
+                "days": {
+                    "options": {
+                        "fri": "Perjantai",
+                        "holiday": "Lomat",
+                        "mon": "Maanantai",
+                        "sat": "Lauantai",
+                        "sun": "Sunnuntai",
+                        "thu": "Torstai",
+                        "tue": "Tiistai",
+                        "wed": "Keskiviikko"
+                    }
+                }
+            }
+        },
+        "yeelight": {
+            "config": {
+                "step": {
+                    "pick_device": {
+                        "data": {
+                            "device": "Laite"
+                        }
+                    }
+                }
+            }
+        },
+        "zha": {
+            "config": {
+                "abort": {
+                    "single_instance_allowed": "Jo määritelty. Vain yksi määrittely mahdollista."
+                },
+                "error": {
+                    "cannot_connect": "Yhteyden muodostaminen ZHA-laitteeseen ei onnistu."
+                }
+            }
+        },
+        "zone": {
+            "config": {
+                "error": {
+                    "name_exists": "Nimi on jo olemassa"
+                },
+                "step": {
+                    "init": {
+                        "data": {
+                            "icon": "Kuvake",
+                            "latitude": "Leveysaste",
+                            "longitude": "Pituusaste",
+                            "name": "Nimi",
+                            "passive": "Passiivinen",
+                            "radius": "Säde"
+                        },
+                        "title": "Määritä vyöhykeparametrit"
+                    }
+                },
+                "title": "Vyöhyke"
+            }
+        },
+        "zwave_js": {
+            "issues": {
+                "device_config_file_changed": {
+                    "fix_flow": {
+                        "step": {
+                            "confirm": {
+                                "title": "Z-Wave-laitteen määritystiedostoa muutettu: {device_name}"
+                            }
+                        }
+                    },
+                    "title": "Z-Wave-laitteen määritystiedostoa muutettu: {device_name}"
+                }
+            }
+        },
+        "zwave_me": {
+            "config": {
+                "step": {
+                    "user": {
+                        "data": {
+                            "token": "API-token",
+                            "url": "URL-osoite"
+                        },
+                        "description": "Syötä Z-Way-palvelimen IP-osoite, portti ja pääsykoodi. Tokenin saat Z-Wayn käyttöliittymästä Smart Home UI > Menu > Settings > Users > Administrator > API token.\n\nEsimerkki yhteyden muodostamisesta Z-Wayhin, joka toimii lisäosana:\nURL-OSOITE: {add_on_url}\nToken: {local_token}\n\nEsimerkki yhteyden muodostamisesta Z-Wayhin paikallisverkossa:\nURL: {local_url}\nToken: {local_token}\n\nEsimerkki yhteyden muodostamisesta Z-Wayhin etäkäytön kautta find.z-wave.me:\nURL: {find_url}\nToken: {find_token}\n\nEsimerkki yhteyden muodostamisesta Z-Wayhin staattisella julkisella IP-osoitteella:\nURL: {remote_url}\nToken: {local_token}\n\nKun muodostat yhteyden find.z-wave.me-sivuston kautta, sinun on käytettävä globaalin kattavaa tokenia (kirjaudu Z-Wayhin tätä varten find.z-wave.me-sivuston kautta)."
+                    }
+                }
+            }
+        }
+    }
+}

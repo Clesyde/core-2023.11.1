@@ -1,0 +1,187 @@
+{
+    "common": {
+        "config_flow": {
+            "abort": {
+                "already_configured_account": "खाता पहले से कॉन्फ़िगर है"
+            },
+            "data": {
+                "api_key": "एपीआई कुंजी"
+            }
+        },
+        "state": {
+            "connected": "जुड़े हुए",
+            "disconnected": "डिस्कनेक्ट किया गया",
+            "home": "घर",
+            "locked": "अवरोधित",
+            "off": "बंद",
+            "unlocked": "खुला"
+        }
+    },
+    "component": {
+        "airvisual": {
+            "config": {
+                "error": {
+                    "general_error": "कोई अज्ञात त्रुटि थी।"
+                }
+            }
+        },
+        "atag": {
+            "config": {
+                "step": {
+                    "user": {
+                        "data": {
+                            "host": "Host",
+                            "port": "पोर्ट (10000)"
+                        },
+                        "title": "डिवाइस से कनेक्ट करें"
+                    }
+                }
+            }
+        },
+        "automation": {
+            "title": "स्वचालन"
+        },
+        "binary_sensor": {
+            "title": "बाइनरी सेंसर"
+        },
+        "braviatv": {
+            "config": {
+                "step": {
+                    "authorize": {
+                        "description": "सोनी ब्राविया टीवी पर दिखाया गया पिन कोड डालें। \n\n यदि पिन कोड नहीं दिखाया गया है, तो आपको अपने टीवी पर होम असिस्टेंट को अपंजीकृत करना होगा, इसके लिए जाएं: सेटिंग्स - > नेटवर्क - > दूरस्थ डिवाइस सेटिंग्स - > अपंजीकृत रिमोट डिवाइस।"
+                    }
+                }
+            }
+        },
+        "climate": {
+            "title": "जलवायु"
+        },
+        "device_tracker": {
+            "title": "डिवाइस ट्रैकर"
+        },
+        "ezviz": {
+            "entity": {
+                "image": {
+                    "last_motion_image": {
+                        "name": "अंतिम गति छवि"
+                    }
+                }
+            }
+        },
+        "fan": {
+            "title": "पंखा"
+        },
+        "forecast_solar": {
+            "config": {
+                "step": {
+                    "user": {
+                        "data": {
+                            "modules_power": "आपके सौर मॉड्यूल की कुल वाट पीक पावर"
+                        }
+                    }
+                }
+            }
+        },
+        "group": {
+            "title": "समूह"
+        },
+        "image_processing": {
+            "title": "इमेज प्रोसेसिंग"
+        },
+        "input_boolean": {
+            "title": "इनपुट बूलियन"
+        },
+        "input_datetime": {
+            "title": "इनपुट दिनांक समय"
+        },
+        "input_number": {
+            "title": "इनपुट संख्या"
+        },
+        "input_select": {
+            "title": "इनपुट का चयन करें"
+        },
+        "input_text": {
+            "title": "इनपुट टेक्स्ट"
+        },
+        "light": {
+            "title": "रोशनी"
+        },
+        "lock": {
+            "title": "ताला"
+        },
+        "mailbox": {
+            "title": "मेलबॉक्स"
+        },
+        "media_player": {
+            "title": "मीडिया प्लेयर"
+        },
+        "notify": {
+            "title": "सूचित"
+        },
+        "panasonic_viera": {
+            "config": {
+                "step": {
+                    "pairing": {
+                        "description": "अपने टीवी पर प्रदर्शित पिन दर्ज करें"
+                    }
+                }
+            }
+        },
+        "proximity": {
+            "title": "निकटता"
+        },
+        "remote": {
+            "title": "रिमोट"
+        },
+        "scene": {
+            "title": "दृश्य"
+        },
+        "script": {
+            "title": "स्क्रिप्ट"
+        },
+        "sensor": {
+            "title": "सेंसर"
+        },
+        "sun": {
+            "title": "सूरज"
+        },
+        "switch": {
+            "title": "स्विच"
+        },
+        "synology_dsm": {
+            "config": {
+                "error": {
+                    "unknown": "अज्ञात त्रुटि: अधिक विवरण प्राप्त करने के लिए लॉग की जांच करें"
+                }
+            }
+        },
+        "vera": {
+            "options": {
+                "step": {
+                    "init": {
+                        "description": "वैकल्पिक मापदंडों के विवरण के लिए वेरा प्रलेखन देखें: https:\/\/www.home-assistant.io\/integrations\/vera\/। नोट: यहां किसी भी बदलाव के लिए होम असिस्टेंट सर्वर को रिस्टार्ट करना होगा। मूल्यों को स्पष्ट करने के लिए, एक स्थान प्रदान करें।"
+                    }
+                }
+            }
+        },
+        "zwave_js": {
+            "services": {
+                "set_value": {
+                    "fields": {
+                        "property_key": {
+                            "name": "गुण key"
+                        },
+                        "value": {
+                            "description": "नया मान सेट करने के लिए",
+                            "name": "मूल्य"
+                        },
+                        "wait_for_result": {
+                            "name": "परिणाम की प्रतीक्षा करें?"
+                        }
+                    },
+                    "name": "कोई मान सेट करें (उन्नत)"
+                }
+            }
+        }
+    }
+}

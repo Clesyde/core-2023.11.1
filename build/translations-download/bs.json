@@ -1,0 +1,163 @@
+{
+    "common": {
+        "config_flow": {
+            "abort": {
+                "already_configured_account": "Račun je već konfiguriran"
+            },
+            "error": {
+                "invalid_host": "Neplatný název hostitele nebo IP adresa"
+            }
+        },
+        "state": {
+            "closed": "Zatvoren",
+            "connected": "Povezan",
+            "disconnected": "Nepovezan",
+            "home": "Kod kuće",
+            "idle": "Besposlen",
+            "locked": "Zaključan",
+            "not_home": "Odsutan",
+            "off": "Isključen",
+            "on": "Uključen",
+            "open": "Otvoren",
+            "paused": "Pauziran",
+            "standby": "U stanju čekanja",
+            "unlocked": "Otključan"
+        }
+    },
+    "component": {
+        "alarm_control_panel": {
+            "title": "Centralni sistem za alarm"
+        },
+        "automation": {
+            "title": "Automatizacija"
+        },
+        "binary_sensor": {
+            "title": "Binarni senzor"
+        },
+        "brother": {
+            "config": {
+                "error": {
+                    "wrong_host": "Neplatný název hostitele nebo IP adresa"
+                }
+            }
+        },
+        "calendar": {
+            "title": "Kalendar"
+        },
+        "camera": {
+            "title": "Kamera"
+        },
+        "climate": {
+            "title": "Klima"
+        },
+        "configurator": {
+            "title": "Konfigurator"
+        },
+        "conversation": {
+            "title": "Razgovor"
+        },
+        "cover": {
+            "title": "Poklopac"
+        },
+        "device_tracker": {
+            "title": "Praćenje uređaja"
+        },
+        "dnsip": {
+            "config": {
+                "error": {
+                    "invalid_hostname": "Neplatný název hostitele"
+                }
+            }
+        },
+        "esphome": {
+            "config": {
+                "abort": {
+                    "mdns_missing_mac": "Chybějící MAC adresa ve vlastnostech MDNS."
+                }
+            }
+        },
+        "fan": {
+            "title": "Ventilator"
+        },
+        "group": {
+            "title": "Grupa"
+        },
+        "image_processing": {
+            "title": "Obrada slike"
+        },
+        "input_boolean": {
+            "title": "Unos boolean"
+        },
+        "input_datetime": {
+            "title": "Unos datuma"
+        },
+        "input_number": {
+            "title": "Unos broja"
+        },
+        "input_select": {
+            "title": "Unos izbora"
+        },
+        "input_text": {
+            "title": "Unos teksta"
+        },
+        "light": {
+            "title": "Svjetlo"
+        },
+        "lock": {
+            "title": "Zaključaj"
+        },
+        "mailbox": {
+            "title": "Poštansko sanduče"
+        },
+        "media_player": {
+            "title": "Media player"
+        },
+        "notify": {
+            "title": "Obavjesti"
+        },
+        "plant": {
+            "title": "Biljka"
+        },
+        "proximity": {
+            "title": "Udaljenost"
+        },
+        "rainmachine": {
+            "config": {
+                "step": {
+                    "user": {
+                        "data": {
+                            "ip_address": "Název hostitele nebo IP adresa"
+                        }
+                    }
+                }
+            }
+        },
+        "remote": {
+            "title": "Daljinski"
+        },
+        "scene": {
+            "title": "Scena"
+        },
+        "script": {
+            "title": "Skripta"
+        },
+        "sensor": {
+            "title": "Senzor"
+        },
+        "sun": {
+            "title": "Sunce"
+        },
+        "switch": {
+            "title": "Prekidač"
+        },
+        "withings": {
+            "config": {
+                "step": {
+                    "reauth_confirm": {
+                        "title": "Ponovo potvrdite integraciju"
+                    }
+                }
+            }
+        }
+    }
+}

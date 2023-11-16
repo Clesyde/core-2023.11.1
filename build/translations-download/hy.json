@@ -1,0 +1,163 @@
+{
+    "common": {
+        "config_flow": {
+            "abort": {
+                "already_configured_account": "Հաշիվն արդեն կազմաձևված է"
+            }
+        },
+        "state": {
+            "active": "ակտիվ",
+            "closed": "Փակված",
+            "connected": "Կապված",
+            "disconnected": "Անջատված է",
+            "home": "Տուն",
+            "idle": "պարապ",
+            "locked": "Կողպված է",
+            "not_home": "Հեռու",
+            "off": "Անջատած",
+            "on": "Միացված",
+            "open": "Բաց",
+            "paused": "Դադար է",
+            "standby": "Սպասում",
+            "unlocked": "Բաց է"
+        }
+    },
+    "component": {
+        "airthings_ble": {
+            "config": {
+                "abort": {
+                    "cannot_connect": "Չհաջողվեց միանալ",
+                    "no_devices_found": "Ցանցում սարքեր չեն գտնվել",
+                    "unknown": "Անսպասելի սխալ"
+                },
+                "step": {
+                    "user": {
+                        "description": "Ընտրեք սարքը կարգավորելու համար"
+                    }
+                }
+            }
+        },
+        "alarm_control_panel": {
+            "title": "Տագնապի կառավարման վահանակ"
+        },
+        "automation": {
+            "title": "Ավտոմատացում"
+        },
+        "binary_sensor": {
+            "title": "Երկուական Սենսոր"
+        },
+        "calendar": {
+            "title": "Օրացույց"
+        },
+        "camera": {
+            "title": "Տեսախցիկ"
+        },
+        "climate": {
+            "title": "Կլիմա"
+        },
+        "configurator": {
+            "title": "Կարգավորիչ"
+        },
+        "conversation": {
+            "title": "Խոսակցություն"
+        },
+        "cover": {
+            "title": "Ծածկել"
+        },
+        "device_tracker": {
+            "title": "Սարքի որոնիչ"
+        },
+        "fan": {
+            "title": "օդափոխիչ"
+        },
+        "group": {
+            "title": "Խումբ"
+        },
+        "image_processing": {
+            "title": "Պատկերի մշակում"
+        },
+        "input_boolean": {
+            "title": "Մուտքագրված տրամաբանական արժեք"
+        },
+        "input_datetime": {
+            "title": "Մուտքագրեք  ժամանակի տվյալները"
+        },
+        "input_number": {
+            "title": "Մուտքագրման համարը"
+        },
+        "input_select": {
+            "title": "Մուտքագրեք ընտրածը"
+        },
+        "input_text": {
+            "title": "Մուտքագրեք տեքստը"
+        },
+        "light": {
+            "title": "Լույս"
+        },
+        "lock": {
+            "title": "Կողպեք"
+        },
+        "mailbox": {
+            "title": "Փոստարկղ"
+        },
+        "media_player": {
+            "title": "Մեդիա նվագարկիչ"
+        },
+        "mikrotik": {
+            "config": {
+                "step": {
+                    "reauth_confirm": {
+                        "data": {
+                            "password": "Գաղտնաբառ"
+                        }
+                    }
+                }
+            }
+        },
+        "notify": {
+            "title": "Ծանուցում"
+        },
+        "person": {
+            "title": "Անձը"
+        },
+        "plant": {
+            "title": "Գործարան"
+        },
+        "proximity": {
+            "title": "Հարևանություն"
+        },
+        "remote": {
+            "title": "Հեռավար"
+        },
+        "scene": {
+            "title": "Տեսարան"
+        },
+        "script": {
+            "title": "Սցենար"
+        },
+        "sensor": {
+            "title": "Սենսոր"
+        },
+        "sun": {
+            "title": "Արև"
+        },
+        "switch": {
+            "title": "Անջատիչ"
+        },
+        "system_health": {
+            "title": "Համակարգի առողջություն"
+        },
+        "vacuum": {
+            "title": "Վակում"
+        },
+        "withings": {
+            "config": {
+                "step": {
+                    "reauth_confirm": {
+                        "title": "Վերահաստատել ինտեգրումը"
+                    }
+                }
+            }
+        }
+    }
+}

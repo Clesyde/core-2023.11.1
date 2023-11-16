@@ -1,0 +1,365 @@
+{
+    "common": {
+        "config_flow": {
+            "abort": {
+                "already_configured_account": "Rekening is reeds opgestel"
+            },
+            "data": {
+                "host": "Hostitel",
+                "location": "Ort",
+                "mode": "Modus"
+            }
+        },
+        "state": {
+            "active": "aktief",
+            "closed": "Toe",
+            "connected": "Gekoppel",
+            "disconnected": "Ontkoppel",
+            "home": "Tuis",
+            "idle": "Onaktief",
+            "locked": "Gesluit",
+            "not_home": "Elders",
+            "off": "Af",
+            "on": "Aan",
+            "open": "Oop",
+            "paused": "Onderbreek",
+            "standby": "Gereed",
+            "unlocked": "Oopgesluit"
+        }
+    },
+    "component": {
+        "alarm_control_panel": {
+            "title": "Alarm beheer paneel"
+        },
+        "automation": {
+            "title": "Outomatisering"
+        },
+        "binary_sensor": {
+            "device_class": {
+                "cold": "hideg",
+                "gas": "gáz",
+                "heat": "hő",
+                "moisture": "páratartalom",
+                "motion": "mozgás",
+                "problem": "probléma",
+                "smoke": "füst",
+                "sound": "hang",
+                "vibration": "rezgés"
+            },
+            "title": "Binêre sensor"
+        },
+        "button": {
+            "device_automation": {
+                "action_type": {
+                    "press": "Nyomd meg a(z) {entity_name} gombot"
+                },
+                "trigger_type": {
+                    "pressed": "{entity_name} is gedruk"
+                }
+            },
+            "title": "Gomb"
+        },
+        "calendar": {
+            "title": "Kalender"
+        },
+        "camera": {
+            "title": "Kamera"
+        },
+        "climacell": {
+            "options": {
+                "step": {
+                    "init": {
+                        "title": "Update [%key:component::climacell::title%] opties"
+                    }
+                }
+            }
+        },
+        "climate": {
+            "title": "Klimaat"
+        },
+        "configurator": {
+            "title": "Konfigureerder"
+        },
+        "conversation": {
+            "title": "Konversasie"
+        },
+        "cover": {
+            "title": "Dekking"
+        },
+        "device_tracker": {
+            "title": "Toestel opspoorder"
+        },
+        "devolo_home_network": {
+            "config": {
+                "abort": {
+                    "already_configured": "Az eszköz már be van állítva"
+                },
+                "error": {
+                    "cannot_connect": "Sikertelen kapcsolódás",
+                    "unknown": "Váratlan hiba"
+                },
+                "step": {
+                    "user": {
+                        "data": {
+                            "ip_address": "IP cím"
+                        }
+                    }
+                }
+            }
+        },
+        "fan": {
+            "title": "Waaier"
+        },
+        "foscam": {
+            "config": {
+                "step": {
+                    "user": {
+                        "data": {
+                            "password": "Senha"
+                        }
+                    }
+                }
+            }
+        },
+        "group": {
+            "title": "Groep"
+        },
+        "homekit": {
+            "options": {
+                "step": {
+                    "init": {
+                        "data": {
+                            "mode": "Modus"
+                        }
+                    }
+                }
+            }
+        },
+        "image_processing": {
+            "title": "Beeldverwerking"
+        },
+        "input_boolean": {
+            "title": "Invoer boole"
+        },
+        "input_datetime": {
+            "title": "Invoer datum\/tyd"
+        },
+        "input_number": {
+            "title": "Invoer nommer"
+        },
+        "input_select": {
+            "title": "Invoer seleksie"
+        },
+        "input_text": {
+            "title": "Invoer teks"
+        },
+        "isy994": {
+            "system_health": {
+                "info": {
+                    "host_reachable": "Afrikanisch"
+                }
+            }
+        },
+        "light": {
+            "title": "Lig"
+        },
+        "lock": {
+            "title": "Slot"
+        },
+        "luftdaten": {
+            "config": {
+                "error": {
+                    "already_configured": "Dienst ist bereits konfiguriert",
+                    "cannot_connect": "Verbindung fehlgeschlagen"
+                }
+            }
+        },
+        "mailbox": {
+            "title": "Posbus"
+        },
+        "media_player": {
+            "title": "Media-speler"
+        },
+        "mopeka": {
+            "config": {
+                "abort": {
+                    "already_configured": "Zařízení je již konfigurované"
+                }
+            }
+        },
+        "motion_blinds": {
+            "config": {
+                "flow_title": "{short_mac} ({ip_address})"
+            }
+        },
+        "mqtt": {
+            "issues": {
+                "entity_name_startswith_device_name_yaml": {
+                    "title": "Gekonfigureerde MQTT-entiteite wat se naam begin met die naam van die toestel."
+                }
+            }
+        },
+        "notify": {
+            "title": "Stel in kennis"
+        },
+        "openai_conversation": {
+            "config": {
+                "error": {
+                    "invalid_auth": "Chybné ověření",
+                    "unknown": "Nečekaná chyba"
+                },
+                "step": {
+                    "user": {
+                        "data": {
+                            "api_key": "Klíč API"
+                        }
+                    }
+                }
+            },
+            "options": {
+                "step": {
+                    "init": {
+                        "data": {
+                            "temperature": "Teplota",
+                            "top_p": "Nejvyšší P"
+                        }
+                    }
+                }
+            }
+        },
+        "opentherm_gw": {
+            "config": {
+                "error": {
+                    "cannot_connect": "Verbindung fehlgeschlagen"
+                }
+            }
+        },
+        "person": {
+            "title": "Persoon"
+        },
+        "plant": {
+            "title": "Plant"
+        },
+        "proximity": {
+            "title": "Nabyheid"
+        },
+        "recorder": {
+            "issues": {
+                "maria_db_range_index_regression": {
+                    "title": "Aktualizujte MariaDB na {min_version} nebo novější pro zlepšení výkonu."
+                }
+            }
+        },
+        "remote": {
+            "title": "Afgeleë"
+        },
+        "ridwell": {
+            "config": {
+                "abort": {
+                    "already_configured": "A fiók már be van állítva"
+                },
+                "error": {
+                    "invalid_auth": "Sikertelen hitelesítés",
+                    "unknown": "Váratlan hiba"
+                },
+                "step": {
+                    "reauth_confirm": {
+                        "data": {
+                            "password": "Jelszó"
+                        },
+                        "description": "Voer asseblief die wagwoord vir {username} weer in:"
+                    },
+                    "user": {
+                        "data": {
+                            "password": "Jelszó",
+                            "username": "Felhasználónév"
+                        },
+                        "description": "Add meg a felhasználónevet és a jelszót"
+                    }
+                }
+            }
+        },
+        "scene": {
+            "title": "Toneel"
+        },
+        "script": {
+            "title": "Skrip"
+        },
+        "sense": {
+            "config": {
+                "step": {
+                    "user": {
+                        "data": {
+                            "timeout": "Időtúllépés"
+                        }
+                    }
+                }
+            }
+        },
+        "sensor": {
+            "title": "Sensor"
+        },
+        "starlink": {
+            "entity": {
+                "binary_sensor": {
+                    "roaming": {
+                        "name": "Swerfmodus"
+                    }
+                }
+            }
+        },
+        "sun": {
+            "title": "Son"
+        },
+        "switch": {
+            "title": "Skakelaar"
+        },
+        "system_health": {
+            "title": "Stelsel Gesondheid"
+        },
+        "vacuum": {
+            "title": "Vakuum"
+        },
+        "vicare": {
+            "config": {
+                "step": {
+                    "user": {
+                        "data": {
+                            "password": "密码",
+                            "username": "电子邮箱"
+                        }
+                    }
+                }
+            }
+        },
+        "withings": {
+            "config": {
+                "step": {
+                    "reauth_confirm": {
+                        "title": "Herverifieer integrasie"
+                    }
+                }
+            }
+        },
+        "zha": {
+            "config": {
+                "step": {
+                    "choose_formation_strategy": {
+                        "menu_options": {
+                            "form_initial_network": "Vytvořit síť"
+                        }
+                    }
+                }
+            },
+            "options": {
+                "step": {
+                    "choose_formation_strategy": {
+                        "menu_options": {
+                            "form_initial_network": "Vytvořit síť"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

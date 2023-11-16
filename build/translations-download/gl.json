@@ -1,0 +1,32 @@
+{
+    "common": {
+        "config_flow": {
+            "abort": {
+                "already_configured_account": "A conta xa está configurada"
+            },
+            "data": {
+                "api_key": "Clave API",
+                "longitude": "Lonxitude"
+            }
+        },
+        "time": {
+            "sunday": "domingo",
+            "thursday": "xoves",
+            "tuesday": "martes",
+            "wednesday": "mércores"
+        }
+    },
+    "component": {
+        "zone": {
+            "config": {
+                "step": {
+                    "init": {
+                        "data": {
+                            "longitude": "Lonxitude"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

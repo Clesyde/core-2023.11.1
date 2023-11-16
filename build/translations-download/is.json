@@ -1,0 +1,2213 @@
+{
+    "common": {
+        "action": {
+            "close": "Loka",
+            "connect": "Tengjast",
+            "disable": "Afvirkja",
+            "disconnect": "Aftengja",
+            "enable": "Virkja",
+            "open": "Opinn",
+            "pause": "Hlé",
+            "reload": "Endurhlaða",
+            "restart": "Endurræsa",
+            "start": "Ræsa",
+            "stop": "Stöðva",
+            "toggle": "Víxla",
+            "turn_off": "Slökkva á",
+            "turn_on": "Kveikja á"
+        },
+        "config_flow": {
+            "abort": {
+                "already_configured_account": "Reikningurinn er þegar stilltur",
+                "already_configured_device": "Tæki er þegar stillt",
+                "already_configured_location": "Staðsetning er þegar stillt",
+                "already_configured_service": "Þjónustan er þegar stillt",
+                "cloud_not_connected": "Ekki tengdur við Home Assistant Cloud.",
+                "no_devices_found": "Engin tæki fundust á netinu"
+            },
+            "create_entry": {
+                "authenticated": "Tókst að sannvotta"
+            },
+            "data": {
+                "access_token": "Auðkenningarkóði",
+                "api_key": "API lykill",
+                "api_token": "API tóki",
+                "device": "Tæki",
+                "email": "Netfang",
+                "ip": "IP vistfang",
+                "latitude": "Breiddargráða",
+                "location": "Staðsetning",
+                "longitude": "Lengdargráða",
+                "mode": "Hamur",
+                "name": "Nafn",
+                "password": "Lykilorð",
+                "path": "Slóð",
+                "pin": "PIN númer",
+                "port": "Gátt",
+                "ssl": "Notar SSL skilríki",
+                "url": "Slóð",
+                "usb_path": "Slóð USB tækis",
+                "username": "Notandanafn",
+                "verify_ssl": "Staðfesta SSL vottorð"
+            },
+            "description": {
+                "confirm_setup": "Viltu hefja uppsetningu?"
+            },
+            "error": {
+                "cannot_connect": "Tókst ekki að tengjast",
+                "invalid_access_token": "Ógildur auðkenningarkóði",
+                "invalid_api_key": "Ógildur API lykill",
+                "invalid_auth": "Ógildur auðkenningarkóði",
+                "invalid_host": "Ógilt vélarnafn eða IP-tala",
+                "timeout_connect": "Tímamörk á tengingu",
+                "unknown": "Óþekkt villa"
+            }
+        },
+        "generic": {
+            "model": "Gerð",
+            "ui_managed": "Stjórnað í gegnum viðmót"
+        },
+        "state": {
+            "active": "Virkur",
+            "closed": "Lokað",
+            "connected": "Tengdur",
+            "disabled": "Óvirkt",
+            "disconnected": "Aftengdur",
+            "enabled": "Virkt",
+            "home": "Heima",
+            "idle": "Aðgerðalaus",
+            "locked": "Læst",
+            "no": "Nei",
+            "not_home": "Fjarverandi",
+            "off": "Af",
+            "on": "Kveikt",
+            "open": "Opin",
+            "paused": "Í bið",
+            "standby": "Biðstaða",
+            "unlocked": "Ólæst",
+            "yes": "Já"
+        },
+        "time": {
+            "monday": "Mánudagur",
+            "saturday": "Laugardagur",
+            "sunday": "Sunnudagur",
+            "thursday": "Fimmtudagur",
+            "tuesday": "Þriðjudagur",
+            "wednesday": "Miðvikudagur"
+        }
+    },
+    "component": {
+        "abode": {
+            "config": {
+                "step": {
+                    "reauth_confirm": {
+                        "data": {
+                            "password": "Lykilorð",
+                            "username": "Netfang"
+                        }
+                    },
+                    "user": {
+                        "data": {
+                            "password": "Lykilorð",
+                            "username": "Netfang"
+                        }
+                    }
+                }
+            }
+        },
+        "accuweather": {
+            "config": {
+                "step": {
+                    "user": {
+                        "data": {
+                            "name": "Nafn"
+                        }
+                    }
+                }
+            },
+            "entity": {
+                "sensor": {
+                    "air_quality": {
+                        "state": {
+                            "good": "Gott",
+                            "hazardous": "Hættulegt"
+                        }
+                    }
+                }
+            }
+        },
+        "airly": {
+            "entity": {
+                "sensor": {
+                    "humidity": {
+                        "name": "Rakastig"
+                    },
+                    "temperature": {
+                        "name": "Hitastig"
+                    }
+                }
+            }
+        },
+        "airq": {
+            "entity": {
+                "sensor": {
+                    "dew_point": {
+                        "name": "Daggarmark"
+                    },
+                    "ethanol": {
+                        "name": "Etanól"
+                    },
+                    "fluorine": {
+                        "name": "Flúor"
+                    },
+                    "humidity": {
+                        "name": "Rakastig"
+                    },
+                    "hydrogen_fluoride": {
+                        "name": "Vetnisflúoríð"
+                    },
+                    "methane": {
+                        "name": "Metan"
+                    },
+                    "methanethiol": {
+                        "name": "Metanþíól"
+                    },
+                    "noise": {
+                        "name": "Hávaði"
+                    },
+                    "organic_acid": {
+                        "name": "Lífræn sýra"
+                    },
+                    "oxygen": {
+                        "name": "Súrefni"
+                    },
+                    "pressure": {
+                        "name": "Þrýstingur"
+                    },
+                    "propane": {
+                        "name": "Própan"
+                    }
+                }
+            }
+        },
+        "alarm_control_panel": {
+            "device_automation": {
+                "condition_type": {
+                    "is_armed_away": "{entity_name} er á verði úti",
+                    "is_armed_home": "{entity_name} er á verði heima",
+                    "is_armed_night": "{entity_name} er á verði nótt",
+                    "is_disarmed": "{entity_name} er ekki á verði",
+                    "is_triggered": "{entity_name} er ræst"
+                },
+                "trigger_type": {
+                    "armed_away": "{entity_name} á verði úti",
+                    "armed_home": "{entity_name} á verði heima",
+                    "armed_night": "{entity_name} á verði nótt",
+                    "disarmed": "{entity_name} ekki á verði"
+                }
+            },
+            "entity_component": {
+                "_": {
+                    "state": {
+                        "armed": "Á verði",
+                        "armed_away": "Á verði úti",
+                        "armed_home": "Á verði heima",
+                        "armed_night": "Á verði nótt",
+                        "arming": "Set á vörð",
+                        "disarmed": "Ekki á verði",
+                        "disarming": "Tek af verði",
+                        "pending": "Bíður",
+                        "triggered": "Ræst"
+                    },
+                    "state_attributes": {
+                        "code_arm_required": {
+                            "state": {
+                                "true": "Skilyrt"
+                            }
+                        },
+                        "code_format": {
+                            "state": {
+                                "number": "Númer",
+                                "text": "Texti"
+                            }
+                        }
+                    }
+                }
+            },
+            "title": "Stjórnborð öryggiskerfis"
+        },
+        "alert": {
+            "entity_component": {
+                "_": {
+                    "name": "Viðvörun",
+                    "state": {
+                        "idle": "Óvirkur",
+                        "on": "Virkt"
+                    }
+                }
+            },
+            "title": "Viðvörun"
+        },
+        "anova": {
+            "entity": {
+                "sensor": {
+                    "mode": {
+                        "name": "Hamur"
+                    },
+                    "state": {
+                        "name": "Staða"
+                    }
+                }
+            }
+        },
+        "automation": {
+            "entity_component": {
+                "_": {
+                    "state": {
+                        "off": "Óvirkt",
+                        "on": "Virkt"
+                    }
+                }
+            },
+            "title": "Sjálfvirkni"
+        },
+        "binary_sensor": {
+            "device_automation": {
+                "condition_type": {
+                    "is_bat_low": "{entity_name} rafhlaðan er lítil",
+                    "is_co": "{entity_name} skynjaði kolmónoxið",
+                    "is_cold": "{entity_name} er kalt",
+                    "is_connected": "{entity_name} er tengdur",
+                    "is_gas": "{entity_name} skynjaði gas",
+                    "is_hot": "{entity_name} er heitt",
+                    "is_light": "{entity_name} skynjaði ljós",
+                    "is_locked": "{entity_name} er læst",
+                    "is_moist": "{entity_name} er rakt",
+                    "is_motion": "{entity_name} skynjaði hreyfingu",
+                    "is_moving": "{entity_name} er á hreyfingu",
+                    "is_no_co": "{entity_name} er ekki að skynja kolmónoxíð",
+                    "is_no_gas": "{entity_name} greinir ekki gas",
+                    "is_no_light": "{entity_name} greinir ekki ljós",
+                    "is_no_motion": "{entity_name} er ekki að skynja hreyfingu",
+                    "is_no_problem": "{entity_name} greinir ekki vandamál",
+                    "is_no_smoke": "{entity_name} er ekki að skynja reyk",
+                    "is_no_sound": "{entity_name} greinir ekki hljóð",
+                    "is_no_update": "{entity_name} er uppfært",
+                    "is_no_vibration": "{entity_name} greinir ekki titring",
+                    "is_not_bat_low": "{entity_name} rafhlaða er eðlileg",
+                    "is_not_cold": "{entity_name} er ekki kalt",
+                    "is_not_connected": "{entity_name} er aftengt",
+                    "is_not_locked": "{entity_name} er ólæst",
+                    "is_not_moist": "{entity_name} er þurr",
+                    "is_not_moving": "{entity_name} hreyfist ekki",
+                    "is_not_open": "{entity_name} er lokuð",
+                    "is_not_plugged_in": "{entity_name} er aftengt",
+                    "is_not_powered": "{entity_name} er ekki í gangi",
+                    "is_not_present": "{entity_name} er ekki til staðar",
+                    "is_not_running": "{entity_name} er ekki keyrandi",
+                    "is_not_tampered": "{entity_name} skynjaði ekki fikt",
+                    "is_not_unsafe": "{entity_name} er öruggt",
+                    "is_occupied": "{entity_name} er upptekið",
+                    "is_open": "{entity_name} er opin",
+                    "is_plugged_in": "{entity_name} er tengdur",
+                    "is_powered": "{entity_name} er í gangi",
+                    "is_present": "{entity_name} er til staðar",
+                    "is_problem": "{entity_name} skynjaði vandamál",
+                    "is_running": "{entity_name} er keyrandi",
+                    "is_smoke": "{entity_name} skynjaði reyk",
+                    "is_sound": "{entity_name} skynjaði hljóð",
+                    "is_tampered": "{entity_name} skynjaði fikt",
+                    "is_unsafe": "{entity_name} er óöruggt",
+                    "is_vibration": "{entity_name} skynjaði titring"
+                },
+                "trigger_type": {
+                    "gas": "{entity_name} byrjaði að skynja gas",
+                    "hot": "{entity_name} varð heitt",
+                    "motion": "{entity_name} byrjaði að skynja hreyfingu",
+                    "no_motion": "{entity_name} hætti að skynja hreyfingu",
+                    "not_hot": "{entity_name} varð ekki heitt",
+                    "not_opened": "{entity_name} lokuð",
+                    "opened": "{entity_name} opnuð",
+                    "problem": "{entity_name} byrjaði að skynja vandamál"
+                }
+            },
+            "device_class": {
+                "co": "Kolmónoxíð",
+                "cold": "kalt",
+                "gas": "gas",
+                "heat": "hiti",
+                "power": "orka",
+                "problem": "vandamál",
+                "smoke": "reykur",
+                "sound": "hljóð"
+            },
+            "entity_component": {
+                "_": {
+                    "state": {
+                        "off": "Óvirkur",
+                        "on": "Virkur"
+                    }
+                },
+                "battery": {
+                    "name": "Rafhlaða",
+                    "state": {
+                        "off": "Venjulegt",
+                        "on": "Lágt"
+                    }
+                },
+                "battery_charging": {
+                    "name": "Hleður",
+                    "state": {
+                        "off": "Hleður ekki",
+                        "on": "Hleður"
+                    }
+                },
+                "carbon_monoxide": {
+                    "name": "Kolmónoxíð",
+                    "state": {
+                        "off": "Ekkert",
+                        "on": "Fann"
+                    }
+                },
+                "cold": {
+                    "name": "Kalt",
+                    "state": {
+                        "off": "Venjulegt",
+                        "on": "Kalt"
+                    }
+                },
+                "connectivity": {
+                    "state": {
+                        "off": "Ótengdur",
+                        "on": "Tengdur"
+                    }
+                },
+                "door": {
+                    "name": "Hurð",
+                    "state": {
+                        "off": "Lokuð",
+                        "on": "Opin"
+                    }
+                },
+                "garage_door": {
+                    "name": "Bílskúrshurð",
+                    "state": {
+                        "off": "Lokuð",
+                        "on": "Opin"
+                    }
+                },
+                "gas": {
+                    "name": "Gas",
+                    "state": {
+                        "off": "Ekkert",
+                        "on": "Uppgötvað"
+                    }
+                },
+                "heat": {
+                    "name": "Hiti",
+                    "state": {
+                        "off": "Venjulegt",
+                        "on": "Heitt"
+                    }
+                },
+                "light": {
+                    "name": "Ljós",
+                    "state": {
+                        "off": "Ekkert ljós",
+                        "on": "Ljós fannst"
+                    }
+                },
+                "lock": {
+                    "name": "Lás",
+                    "state": {
+                        "off": "Læst",
+                        "on": "Ólæst"
+                    }
+                },
+                "moisture": {
+                    "name": "Raki",
+                    "state": {
+                        "off": "Þurrt",
+                        "on": "Blautt"
+                    }
+                },
+                "motion": {
+                    "name": "Hreyfing",
+                    "state": {
+                        "off": "Engin",
+                        "on": "Fannst"
+                    }
+                },
+                "moving": {
+                    "name": "Hreyfist",
+                    "state": {
+                        "off": "Engin hreyfing",
+                        "on": "Hreyfing"
+                    }
+                },
+                "occupancy": {
+                    "state": {
+                        "off": "Enginn",
+                        "on": "Fann"
+                    }
+                },
+                "opening": {
+                    "name": "Opnast",
+                    "state": {
+                        "off": "Lokuð",
+                        "on": "Opinn"
+                    }
+                },
+                "plug": {
+                    "name": "Tengdur",
+                    "state": {
+                        "off": "Aftengdur",
+                        "on": "Tengdur"
+                    }
+                },
+                "power": {
+                    "name": "Orka"
+                },
+                "presence": {
+                    "name": "Viðvera"
+                },
+                "problem": {
+                    "name": "Vandamál",
+                    "state": {
+                        "off": "Í lagi",
+                        "on": "Vandamál"
+                    }
+                },
+                "running": {
+                    "name": "Í gangi",
+                    "state": {
+                        "off": "Ekki í gangi",
+                        "on": "Í gangi"
+                    }
+                },
+                "safety": {
+                    "name": "Öryggi",
+                    "state": {
+                        "off": "Öruggt",
+                        "on": "Óöruggt"
+                    }
+                },
+                "smoke": {
+                    "name": "Reykur",
+                    "state": {
+                        "off": "Enginn",
+                        "on": "Fannst"
+                    }
+                },
+                "sound": {
+                    "name": "Hljóð",
+                    "state": {
+                        "off": "Ekkert",
+                        "on": "Heyri"
+                    }
+                },
+                "update": {
+                    "name": "Uppfæra",
+                    "state": {
+                        "off": "Er uppfært",
+                        "on": "Uppfærsla í boði"
+                    }
+                },
+                "vibration": {
+                    "name": "Titringur"
+                },
+                "window": {
+                    "name": "Gluggi",
+                    "state": {
+                        "off": "Lokaður",
+                        "on": "Opinn"
+                    }
+                }
+            },
+            "title": "Tvíundar skynjari"
+        },
+        "broadlink": {
+            "entity": {
+                "sensor": {
+                    "current": {
+                        "name": "Straumur"
+                    },
+                    "humidity": {
+                        "name": "Rakastig"
+                    },
+                    "power": {
+                        "name": "Orka"
+                    },
+                    "temperature": {
+                        "name": "Hitastig"
+                    },
+                    "voltage": {
+                        "name": "Rafspenna"
+                    }
+                }
+            }
+        },
+        "calendar": {
+            "entity_component": {
+                "_": {
+                    "state": {
+                        "off": "Óvirkt",
+                        "on": "Virkt"
+                    },
+                    "state_attributes": {
+                        "all_day": {
+                            "state": {
+                                "false": "Nei",
+                                "true": "Já"
+                            }
+                        }
+                    }
+                }
+            },
+            "title": "Dagatal"
+        },
+        "camera": {
+            "entity_component": {
+                "_": {
+                    "state": {
+                        "idle": "Óvirkur"
+                    }
+                }
+            },
+            "title": "Myndavél"
+        },
+        "climacell": {
+            "platform": {
+                "sensor": {
+                    "state": {
+                        "climacell__health_concern": {
+                            "hazardous": "Hættulegt",
+                            "unhealthy": "Óhollt"
+                        },
+                        "climacell__precipitation_type": {
+                            "rain": "Rigning",
+                            "snow": "Snjór"
+                        }
+                    }
+                }
+            }
+        },
+        "climate": {
+            "entity_component": {
+                "_": {
+                    "name": "Hitastillir",
+                    "state": {
+                        "auto": "Sjálfvirkni",
+                        "cool": "Kæling",
+                        "dry": "Þurrkun",
+                        "fan_only": "Vifta eingöngu",
+                        "heat": "Hita",
+                        "heat_cool": "Hita\/Kæla",
+                        "off": "Óvirkt"
+                    },
+                    "state_attributes": {
+                        "current_humidity": {
+                            "name": "Núverandi rakastig"
+                        },
+                        "current_temperature": {
+                            "name": "Núverandi hitastig"
+                        },
+                        "fan_mode": {
+                            "name": "Viftuhamur",
+                            "state": {
+                                "auto": "Sjálfvirkni",
+                                "high": "Hátt",
+                                "low": "Lágt",
+                                "medium": "Miðlungs",
+                                "middle": "Miðja",
+                                "off": "Slökkt",
+                                "on": "Kveikt"
+                            }
+                        },
+                        "fan_modes": {
+                            "name": "Viftuhamur"
+                        },
+                        "hvac_action": {
+                            "name": "Núverandi aðgerð",
+                            "state": {
+                                "cooling": "Kæling",
+                                "drying": "Þurrkun",
+                                "fan": "Vifta",
+                                "heating": "Kynding",
+                                "idle": "Aðgerðalaus",
+                                "off": "Slökkt"
+                            }
+                        },
+                        "preset_mode": {
+                            "name": "Forstilling",
+                            "state": {
+                                "activity": "Virkni",
+                                "away": "Fjarverandi",
+                                "home": "Heima",
+                                "none": "Ekkert",
+                                "sleep": "Svefn"
+                            }
+                        },
+                        "preset_modes": {
+                            "name": "Forstillingar"
+                        },
+                        "swing_mode": {
+                            "name": "Sveifluhamur",
+                            "state": {
+                                "both": "Bæði",
+                                "off": "Slökkt",
+                                "on": "Kveikt"
+                            }
+                        }
+                    }
+                }
+            },
+            "title": "Loftslag"
+        },
+        "configurator": {
+            "title": "Stillingarálfur"
+        },
+        "conversation": {
+            "title": "Samtal"
+        },
+        "counter": {
+            "entity_component": {
+                "_": {
+                    "state_attributes": {
+                        "editable": {
+                            "state": {
+                                "false": "Nei",
+                                "true": "Já"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "cover": {
+            "device_automation": {
+                "condition_type": {
+                    "is_closed": "{entity_name} er lokaður",
+                    "is_closing": "{entity_name} er að loka",
+                    "is_open": "{entity_name} er opin",
+                    "is_opening": "{entity_name} er að opnast"
+                },
+                "trigger_type": {
+                    "closed": "{entity_name} lokaður",
+                    "opened": "{entity_name} opnuð"
+                }
+            },
+            "entity_component": {
+                "_": {
+                    "state": {
+                        "closed": "Lokaður",
+                        "closing": "Lokast",
+                        "open": "Opinn",
+                        "opening": "Opnast",
+                        "stopped": "Stopp"
+                    },
+                    "state_attributes": {
+                        "current_position": {
+                            "name": "Staða"
+                        },
+                        "current_tilt_position": {
+                            "name": "Hallastaða"
+                        }
+                    }
+                },
+                "garage": {
+                    "name": "Bílskúr"
+                },
+                "gate": {
+                    "name": "Hlið"
+                },
+                "window": {
+                    "name": "Gluggi"
+                }
+            },
+            "title": "Gluggatjöld"
+        },
+        "cpuspeed": {
+            "config": {
+                "step": {
+                    "user": {
+                        "title": "CPU hraði"
+                    }
+                }
+            },
+            "title": "CPU hraði"
+        },
+        "daikin": {
+            "config": {
+                "error": {
+                    "api_password": "Ógild auðkenning, notaðu annaðhvort API lykil eða lykilorð."
+                }
+            }
+        },
+        "date": {
+            "entity_component": {
+                "_": {
+                    "name": "Dagsetning"
+                }
+            },
+            "title": "Dagsetning"
+        },
+        "deconz": {
+            "config": {
+                "flow_title": "{host}",
+                "step": {
+                    "manual_input": {
+                        "data": {
+                            "port": "Gátt"
+                        }
+                    }
+                }
+            },
+            "device_automation": {
+                "trigger_subtype": {
+                    "both_buttons": "Báðir hnappar",
+                    "bottom_buttons": "Neðri hnappar",
+                    "button_1": "Fyrsti hnappur",
+                    "button_2": "Annar hnappur",
+                    "button_3": "Þriðji hnappur",
+                    "button_4": "Fjórði hnappur",
+                    "button_5": "Fimmti hnappur",
+                    "button_6": "Sjötti hnappur",
+                    "button_7": "Sjöundi hnappur",
+                    "button_8": "Áttundi hnappur",
+                    "left": "Vinstri",
+                    "right": "Hægri"
+                }
+            }
+        },
+        "demo": {
+            "entity": {
+                "climate": {
+                    "ubercool": {
+                        "state_attributes": {
+                            "swing_mode": {
+                                "state": {
+                                    "off": "Slökkt"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "device_tracker": {
+            "device_automation": {
+                "condition_type": {
+                    "is_home": "{entity_name} er heima",
+                    "is_not_home": "{entity_name} er ekki heima"
+                }
+            },
+            "entity_component": {
+                "_": {
+                    "state": {
+                        "home": "Heima",
+                        "not_home": "Fjarverandi"
+                    }
+                }
+            },
+            "title": "Rekja tæki"
+        },
+        "dlna_dmr": {
+            "config": {
+                "step": {
+                    "import_turn_on": {
+                        "description": "Kveiktu á tækinu og smelltu á senda til að halda áfram flutningi"
+                    }
+                }
+            }
+        },
+        "elgato": {
+            "entity": {
+                "sensor": {
+                    "battery": {
+                        "name": "Rafhlaða"
+                    }
+                }
+            }
+        },
+        "elmax": {
+            "config": {
+                "step": {
+                    "reauth_confirm": {
+                        "data": {
+                            "password": "Lykilorð",
+                            "username": "Notandanafn"
+                        }
+                    }
+                }
+            }
+        },
+        "fan": {
+            "entity_component": {
+                "_": {
+                    "state": {
+                        "off": "Slökkt",
+                        "on": "Í gangi"
+                    },
+                    "state_attributes": {
+                        "oscillating": {
+                            "state": {
+                                "false": "Nei",
+                                "true": "Já"
+                            }
+                        }
+                    }
+                }
+            },
+            "title": "Vifta"
+        },
+        "flux_led": {
+            "config": {
+                "abort": {
+                    "already_configured": "Tæki nú þegar stillt",
+                    "no_devices_found": "Engin tæki fundust á netinu"
+                },
+                "error": {
+                    "cannot_connect": "Tenging mistókst"
+                },
+                "flow_title": "{model} {id} ( {ipaddr} )",
+                "step": {
+                    "discovery_confirm": {
+                        "description": "Viltu setja upp {model} {id} ( {ipaddr} )?"
+                    },
+                    "user": {
+                        "data": {
+                            "host": "Host"
+                        },
+                        "description": "Ef þú skilur host eftir autt verður leit notuð til að finna tæki"
+                    }
+                }
+            },
+            "options": {
+                "step": {
+                    "init": {
+                        "data": {
+                            "custom_effect_colors": "Sérsniðin áhrif: Listi yfir 1 til 16 [R, G, B] liti. Dæmi: [255,0,255], [60,128,0]",
+                            "custom_effect_speed_pct": "Sérsniðin áhrif: Hraði í prósentum fyrir áhrifin sem skipta um liti.",
+                            "custom_effect_transition": "Sérsniðin áhrif: Gerð blöndunar á milli litanna.",
+                            "mode": "Valinn birtuhamur"
+                        }
+                    }
+                }
+            }
+        },
+        "fritzbox": {
+            "entity": {
+                "sensor": {
+                    "temperature": {
+                        "name": "Hitastig"
+                    },
+                    "total_energy": {
+                        "name": "Orka"
+                    }
+                }
+            }
+        },
+        "fronius": {
+            "entity": {
+                "sensor": {
+                    "power_real_ac": {
+                        "name": "Orka"
+                    },
+                    "temperature_cell": {
+                        "name": "Hitastig"
+                    },
+                    "temperature_channel_1": {
+                        "name": "Hitastig"
+                    }
+                }
+            }
+        },
+        "group": {
+            "entity_component": {
+                "_": {
+                    "state": {
+                        "closed": "Lokað",
+                        "locked": "Læstur",
+                        "off": "Óvirkur",
+                        "ok": "Í lagi",
+                        "on": "Virkur",
+                        "open": "Opin",
+                        "problem": "Vandamál",
+                        "unlocked": "Ólæst"
+                    }
+                }
+            },
+            "title": "Hópur"
+        },
+        "hassio": {
+            "entity": {
+                "binary_sensor": {
+                    "state": {
+                        "name": "Keyrandi"
+                    }
+                },
+                "sensor": {
+                    "cpu_percent": {
+                        "name": "CPU prósent"
+                    },
+                    "disk_free": {
+                        "name": "Diskapláss laust"
+                    },
+                    "memory_percent": {
+                        "name": "Minni prósent"
+                    },
+                    "version": {
+                        "name": "Útgáfa"
+                    },
+                    "version_latest": {
+                        "name": "Nýjasta útgáfa"
+                    }
+                }
+            },
+            "issues": {
+                "unsupported_os": {
+                    "title": "Óstutt kerfi - Stýrikerfi"
+                }
+            },
+            "system_health": {
+                "info": {
+                    "host_os": "Stýrikerfi hýsils"
+                }
+            }
+        },
+        "homeassistant": {
+            "system_health": {
+                "info": {
+                    "os_version": "Stýrikerfisútgáfa"
+                }
+            }
+        },
+        "homeassistant_yellow": {
+            "options": {
+                "step": {
+                    "hardware_settings": {
+                        "data": {
+                            "disk_led": "Diska LED",
+                            "heartbeat_led": "Hjartslátta LED",
+                            "power_led": "Orku LED"
+                        }
+                    },
+                    "reboot_menu": {
+                        "menu_options": {
+                            "reboot_later": "Endurræsa handvirkt síðar",
+                            "reboot_now": "Endurræsa núna"
+                        }
+                    }
+                }
+            }
+        },
+        "homekit_controller": {
+            "entity": {
+                "select": {
+                    "ecobee_mode": {
+                        "state": {
+                            "home": "Heima"
+                        }
+                    }
+                }
+            },
+            "platform": {
+                "select": {
+                    "state": {
+                        "homekit_controller__ecobee_mode": {
+                            "home": "Heima"
+                        }
+                    }
+                }
+            }
+        },
+        "humidifier": {
+            "entity_component": {
+                "_": {
+                    "state": {
+                        "off": "Slökkt",
+                        "on": "Í gangi"
+                    },
+                    "state_attributes": {
+                        "mode": {
+                            "name": "Hamur"
+                        }
+                    }
+                }
+            }
+        },
+        "input_boolean": {
+            "entity_component": {
+                "_": {
+                    "state": {
+                        "off": "Óvirkt",
+                        "on": "Virkt"
+                    },
+                    "state_attributes": {
+                        "editable": {
+                            "state": {
+                                "false": "Nei",
+                                "true": "Já"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "input_button": {
+            "entity_component": {
+                "_": {
+                    "state_attributes": {
+                        "editable": {
+                            "state": {
+                                "false": "Nei",
+                                "true": "Já"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "input_datetime": {
+            "entity_component": {
+                "_": {
+                    "state_attributes": {
+                        "editable": {
+                            "state": {
+                                "false": "Nei",
+                                "true": "Já"
+                            }
+                        }
+                    }
+                }
+            },
+            "title": "Innsláttar dagsetning\/tími"
+        },
+        "input_number": {
+            "entity_component": {
+                "_": {
+                    "state_attributes": {
+                        "editable": {
+                            "state": {
+                                "false": "Nei",
+                                "true": "Já"
+                            }
+                        }
+                    }
+                }
+            },
+            "title": "Innsláttarnúmer"
+        },
+        "input_select": {
+            "entity_component": {
+                "_": {
+                    "state_attributes": {
+                        "editable": {
+                            "state": {
+                                "false": "Nei",
+                                "true": "Já"
+                            }
+                        }
+                    }
+                }
+            },
+            "title": "Innsláttarval"
+        },
+        "input_text": {
+            "entity_component": {
+                "_": {
+                    "state_attributes": {
+                        "editable": {
+                            "state": {
+                                "false": "Nei",
+                                "true": "Já"
+                            }
+                        }
+                    }
+                }
+            },
+            "title": "Innsláttartexti"
+        },
+        "ipp": {
+            "entity": {
+                "sensor": {
+                    "printer": {
+                        "state": {
+                            "idle": "Aðgerðalaus",
+                            "printing": "Prentar",
+                            "stopped": "Stoppar"
+                        }
+                    }
+                }
+            }
+        },
+        "light": {
+            "entity_component": {
+                "_": {
+                    "state": {
+                        "off": "Slökkt",
+                        "on": "Kveikt"
+                    },
+                    "state_attributes": {
+                        "color_mode": {
+                            "state": {
+                                "onoff": "Kveikt\/Slökkt"
+                            }
+                        },
+                        "supported_color_modes": {
+                            "state": {
+                                "onoff": "Kveikt\/Slökkt",
+                                "unknown": "Óþekkt",
+                                "white": "Hvítt",
+                                "xy": "XY"
+                            }
+                        }
+                    }
+                }
+            },
+            "title": "Ljós"
+        },
+        "litterrobot": {
+            "entity": {
+                "sensor": {
+                    "status_code": {
+                        "state": {
+                            "off": "Óvirkur",
+                            "p": "Í bið"
+                        }
+                    }
+                }
+            },
+            "platform": {
+                "sensor": {
+                    "state": {
+                        "litterrobot__status_code": {
+                            "off": "Slökkt",
+                            "p": "Í bið"
+                        }
+                    }
+                }
+            }
+        },
+        "lock": {
+            "device_automation": {
+                "condition_type": {
+                    "is_locked": "{entity_name} er læst",
+                    "is_unlocked": "{entity_name} er ólæst"
+                }
+            },
+            "entity_component": {
+                "_": {
+                    "state": {
+                        "locked": "Læst",
+                        "unlocked": "Ólæst"
+                    }
+                }
+            },
+            "title": "Lás"
+        },
+        "luftdaten": {
+            "entity": {
+                "sensor": {
+                    "humidity": {
+                        "name": "Rakastig"
+                    },
+                    "pressure": {
+                        "name": "Þrýstingur"
+                    },
+                    "temperature": {
+                        "name": "Hitastig"
+                    }
+                }
+            }
+        },
+        "lutron_caseta": {
+            "device_automation": {
+                "trigger_subtype": {
+                    "off": "Slökkt",
+                    "on": "Kveikt"
+                }
+            }
+        },
+        "mailbox": {
+            "title": "Pósthólf"
+        },
+        "media_player": {
+            "device_automation": {
+                "condition_type": {
+                    "is_buffering": "{entity_name} er að hlaða biðminni",
+                    "is_idle": "{entity_name} er aðgerðalaus",
+                    "is_paused": "{entity_name} er í bið",
+                    "is_playing": "{entity_name} er að spila"
+                }
+            },
+            "entity_component": {
+                "_": {
+                    "state": {
+                        "idle": "Óvirkur",
+                        "off": "Slökkt",
+                        "on": "Í gangi",
+                        "paused": "Í bið",
+                        "standby": "Biðstaða"
+                    },
+                    "state_attributes": {
+                        "is_volume_muted": {
+                            "state": {
+                                "false": "Nei",
+                                "true": "Já"
+                            }
+                        },
+                        "repeat": {
+                            "state": {
+                                "off": "Slökkt"
+                            }
+                        },
+                        "shuffle": {
+                            "state": {
+                                "false": "Slökkt",
+                                "true": "Kveikt"
+                            }
+                        }
+                    }
+                }
+            },
+            "title": "Margmiðlunarspilari"
+        },
+        "moon": {
+            "platform": {
+                "sensor": {
+                    "state": {
+                        "moon__phase": {
+                            "first_quarter": "Fyrsta kvartil",
+                            "full_moon": "Fullt tungl",
+                            "last_quarter": "Síðasta kvartil",
+                            "new_moon": "Nýtt tungl",
+                            "waning_crescent": "Minnkandi sigð",
+                            "waning_gibbous": "Gleitt minnkandi",
+                            "waxing_crescent": "Vaxandi sigð",
+                            "waxing_gibbous": "Gleitt vaxandi"
+                        }
+                    }
+                }
+            }
+        },
+        "notify": {
+            "title": "Tilkynningar"
+        },
+        "nuki": {
+            "entity": {
+                "lock": {
+                    "nuki_lock": {
+                        "state_attributes": {
+                            "battery_critical": {
+                                "state": {
+                                    "off": "Venjulegt",
+                                    "on": "Lítil"
+                                }
+                            }
+                        }
+                    }
+                },
+                "sensor": {
+                    "battery": {
+                        "name": "Rafhlaða"
+                    }
+                }
+            }
+        },
+        "onewire": {
+            "entity": {
+                "sensor": {
+                    "humidity": {
+                        "name": "Rakastig"
+                    },
+                    "pressure": {
+                        "name": "Þrýstingur"
+                    },
+                    "temperature": {
+                        "name": "Hitastig"
+                    },
+                    "voltage": {
+                        "name": "Rafspenna"
+                    }
+                }
+            }
+        },
+        "onvif": {
+            "config": {
+                "step": {
+                    "reauth_confirm": {
+                        "data": {
+                            "password": "Lykilorð"
+                        }
+                    }
+                }
+            }
+        },
+        "overkiz": {
+            "entity": {
+                "select": {
+                    "open_closed_pedestrian": {
+                        "state": {
+                            "open": "Opin",
+                            "pedestrian": "Vegfarandi"
+                        }
+                    }
+                },
+                "sensor": {
+                    "priority_lock_originator": {
+                        "state": {
+                            "rain": "Rigning"
+                        }
+                    },
+                    "three_way_handle_direction": {
+                        "state": {
+                            "closed": "Lokuð"
+                        }
+                    }
+                }
+            },
+            "platform": {
+                "sensor": {
+                    "state": {
+                        "overkiz__priority_lock_originator": {
+                            "rain": "Rigning"
+                        }
+                    }
+                }
+            }
+        },
+        "person": {
+            "entity_component": {
+                "_": {
+                    "state": {
+                        "home": "Heima",
+                        "not_home": "Fjarverandi"
+                    },
+                    "state_attributes": {
+                        "latitude": {
+                            "name": "Breiddargráða"
+                        },
+                        "longitude": {
+                            "name": "Lengdargráða"
+                        },
+                        "source": {
+                            "name": "Uppruni"
+                        }
+                    }
+                }
+            },
+            "title": "Persóna"
+        },
+        "plant": {
+            "entity_component": {
+                "_": {
+                    "state": {
+                        "ok": "Í lagi",
+                        "problem": "Vandamál"
+                    }
+                }
+            },
+            "title": "Planta"
+        },
+        "plugwise": {
+            "entity": {
+                "select": {
+                    "dhw_mode": {
+                        "state": {
+                            "off": "Óvirkt"
+                        }
+                    },
+                    "regulation_mode": {
+                        "state": {
+                            "off": "Óvirkt"
+                        }
+                    }
+                }
+            },
+            "platform": {
+                "select": {
+                    "state": {
+                        "plugwise__regulation_mode": {
+                            "off": "Slökkt"
+                        }
+                    }
+                }
+            }
+        },
+        "powerwall": {
+            "config": {
+                "step": {
+                    "reauth_confirm": {
+                        "data": {
+                            "password": "Lykilorð"
+                        }
+                    }
+                }
+            }
+        },
+        "proximity": {
+            "title": "Nálægð"
+        },
+        "rainmachine": {
+            "services": {
+                "push_weather_data": {
+                    "fields": {
+                        "temperature": {
+                            "description": "Núverandi hitastig (°C)."
+                        }
+                    }
+                }
+            }
+        },
+        "remote": {
+            "entity_component": {
+                "_": {
+                    "state": {
+                        "off": "Óvirkt",
+                        "on": "Virkt"
+                    }
+                }
+            },
+            "title": "Fjarstýring"
+        },
+        "renault": {
+            "entity": {
+                "binary_sensor": {
+                    "charging": {
+                        "name": "Hleður"
+                    },
+                    "lock_status": {
+                        "name": "Lás"
+                    },
+                    "plugged_in": {
+                        "name": "Tengdur"
+                    }
+                }
+            }
+        },
+        "reolink": {
+            "entity": {
+                "select": {
+                    "auto_quick_reply_message": {
+                        "state": {
+                            "off": "Slökkt"
+                        }
+                    },
+                    "floodlight_mode": {
+                        "state": {
+                            "off": "Slökkt"
+                        }
+                    },
+                    "status_led": {
+                        "state": {
+                            "auto": "Sjálfvirkt"
+                        }
+                    }
+                }
+            }
+        },
+        "roborock": {
+            "entity": {
+                "select": {
+                    "mop_intensity": {
+                        "state": {
+                            "custom": "Sérsniðið",
+                            "intense": "Ákaft",
+                            "mild": "Vægt",
+                            "moderate": "Í meðallagi",
+                            "off": "Slökkt"
+                        }
+                    },
+                    "mop_mode": {
+                        "state": {
+                            "custom": "Sérsniðið"
+                        }
+                    }
+                }
+            }
+        },
+        "scene": {
+            "title": "Sena"
+        },
+        "schedule": {
+            "entity_component": {
+                "_": {
+                    "state": {
+                        "off": "Óvirk",
+                        "on": "Virk"
+                    },
+                    "state_attributes": {
+                        "editable": {
+                            "state": {
+                                "false": "Nei",
+                                "true": "Já"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "scrape": {
+            "selector": {
+                "device_class": {
+                    "options": {
+                        "battery": "Rafhlaða",
+                        "date": "Dagsetning",
+                        "humidity": "Rakastig",
+                        "speed": "Hraði",
+                        "temperature": "Hitastig",
+                        "voltage": "Rafspenna",
+                        "water": "Vatn",
+                        "weight": "Þyngd",
+                        "wind_speed": "Vindhraði"
+                    }
+                }
+            }
+        },
+        "script": {
+            "entity_component": {
+                "_": {
+                    "state": {
+                        "off": "Óvirk",
+                        "on": "Virk"
+                    }
+                }
+            },
+            "title": "Skrifta"
+        },
+        "season": {
+            "platform": {
+                "sensor": {
+                    "state": {
+                        "season__season": {
+                            "autumn": "Haust",
+                            "spring": "Vor",
+                            "summer": "Sumar",
+                            "winter": "Vetur"
+                        },
+                        "season__season__": {
+                            "autumn": "Haust",
+                            "spring": "Vor",
+                            "summer": "Sumar",
+                            "winter": "Vetur"
+                        }
+                    }
+                }
+            }
+        },
+        "select": {
+            "entity_component": {
+                "_": {
+                    "name": "Velja",
+                    "state_attributes": {
+                        "options": {
+                            "name": "Valmöguleikar"
+                        }
+                    }
+                }
+            },
+            "title": "Velja"
+        },
+        "senseme": {
+            "config": {
+                "step": {
+                    "user": {
+                        "data": {
+                            "device": "Tæki"
+                        }
+                    }
+                }
+            }
+        },
+        "sensibo": {
+            "entity": {
+                "select": {
+                    "light": {
+                        "state": {
+                            "off": "Slökkt",
+                            "on": "Kveikt"
+                        }
+                    }
+                },
+                "sensor": {
+                    "smart_type": {
+                        "state": {
+                            "temperature": "Hitastig"
+                        }
+                    }
+                }
+            },
+            "platform": {
+                "sensor": {
+                    "state": {
+                        "sensibo__smart_type": {
+                            "humidity": "Rakastig",
+                            "temperature": "Hitastig"
+                        }
+                    }
+                }
+            }
+        },
+        "sensor": {
+            "device_automation": {
+                "condition_type": {
+                    "is_water": "Núverandi {entity_name} vatn"
+                }
+            },
+            "entity_component": {
+                "_": {
+                    "state": {
+                        "off": "Óvirk",
+                        "on": "Virk"
+                    },
+                    "state_attributes": {
+                        "state_class": {
+                            "state": {
+                                "measurement": "Mæling"
+                            }
+                        }
+                    }
+                },
+                "timestamp": {
+                    "name": "Tímastimpill"
+                }
+            },
+            "title": "Skynjari"
+        },
+        "shelly": {
+            "entity": {
+                "binary_sensor": {
+                    "gas": {
+                        "state_attributes": {
+                            "detected": {
+                                "state": {
+                                    "heavy": "Þungt",
+                                    "mild": "Vægt",
+                                    "none": "Ekkert",
+                                    "unknown": "Óþekkt"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "siren": {
+            "entity_component": {
+                "_": {
+                    "state": {
+                        "off": "Óvirk",
+                        "on": "Virk"
+                    }
+                }
+            }
+        },
+        "steamist": {
+            "config": {
+                "step": {
+                    "pick_device": {
+                        "data": {
+                            "device": "Tæki"
+                        }
+                    }
+                }
+            }
+        },
+        "sun": {
+            "entity": {
+                "sensor": {
+                    "next_dawn": {
+                        "name": "Næsta birting"
+                    },
+                    "next_dusk": {
+                        "name": "Næsta myrkur"
+                    },
+                    "next_midnight": {
+                        "name": "Næsta miðnætti"
+                    },
+                    "next_noon": {
+                        "name": "Næsta hádegi"
+                    },
+                    "next_rising": {
+                        "name": "Næsta sólris"
+                    },
+                    "next_setting": {
+                        "name": "Næsta sólarlag"
+                    },
+                    "solar_azimuth": {
+                        "name": "Sólarátt"
+                    },
+                    "solar_elevation": {
+                        "name": "Sólarhæð"
+                    }
+                }
+            },
+            "entity_component": {
+                "_": {
+                    "name": "Sólin",
+                    "state": {
+                        "above_horizon": "Yfir sjóndeildarhring",
+                        "below_horizon": "Undir sjóndeildarhring"
+                    }
+                }
+            },
+            "title": "Sól"
+        },
+        "switch": {
+            "entity_component": {
+                "_": {
+                    "name": "Rofi",
+                    "state": {
+                        "off": "Slökkt",
+                        "on": "Kveikt"
+                    }
+                },
+                "switch": {
+                    "name": "Rofi"
+                }
+            },
+            "title": "Rofi"
+        },
+        "switch_as_x": {
+            "config": {
+                "step": {
+                    "user": {
+                        "data": {
+                            "entity_id": "Rofi"
+                        }
+                    }
+                }
+            }
+        },
+        "switchbot": {
+            "config": {
+                "step": {
+                    "lock_auth": {
+                        "data": {
+                            "password": "Lykilorð",
+                            "username": "Notandanafn"
+                        }
+                    }
+                }
+            },
+            "entity": {
+                "binary_sensor": {
+                    "door_open": {
+                        "name": "Hurð"
+                    },
+                    "light": {
+                        "name": "Ljós"
+                    },
+                    "motion": {
+                        "name": "Hreyfing"
+                    }
+                },
+                "sensor": {
+                    "battery": {
+                        "name": "Rafhlaða"
+                    },
+                    "bluetooth_signal": {
+                        "name": "Bluetooth merki"
+                    },
+                    "humidity": {
+                        "name": "Rakastig"
+                    },
+                    "power": {
+                        "name": "Orka"
+                    },
+                    "temperature": {
+                        "name": "Hitastig"
+                    },
+                    "wifi_signal": {
+                        "name": "Wi-Fi merki"
+                    }
+                }
+            }
+        },
+        "synology_dsm": {
+            "entity": {
+                "sensor": {
+                    "disk_temp": {
+                        "name": "Hitastig"
+                    },
+                    "temperature": {
+                        "name": "Hitastig"
+                    }
+                }
+            }
+        },
+        "system_health": {
+            "title": "Heilbrigði kerfis"
+        },
+        "time": {
+            "entity_component": {
+                "_": {
+                    "name": "Tími"
+                }
+            },
+            "title": "Tími"
+        },
+        "timer": {
+            "entity_component": {
+                "_": {
+                    "state": {
+                        "active": "Virkur",
+                        "idle": "Óvirkur",
+                        "paused": "Í bið"
+                    },
+                    "state_attributes": {
+                        "editable": {
+                            "state": {
+                                "false": "Nei",
+                                "true": "Já"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "tomorrowio": {
+            "entity": {
+                "sensor": {
+                    "precipitation_type": {
+                        "state": {
+                            "rain": "Rigning",
+                            "snow": "Snjór"
+                        }
+                    }
+                }
+            },
+            "platform": {
+                "sensor": {
+                    "state": {
+                        "tomorrowio__precipitation_type": {
+                            "rain": "Rigning",
+                            "snow": "Snjór"
+                        }
+                    }
+                }
+            }
+        },
+        "trafikverket_ferry": {
+            "selector": {
+                "weekday": {
+                    "options": {
+                        "fri": "Föstudagur",
+                        "mon": "Mánudagur",
+                        "sat": "Laugardagur",
+                        "sun": "Sunnudagur",
+                        "thu": "Fimmtudagur",
+                        "tue": "Þriðjudagur",
+                        "wed": "Miðvikudagur"
+                    }
+                }
+            }
+        },
+        "tuya": {
+            "config": {
+                "error": {
+                    "login_error": "Innskráningarvilla ( {code} ): {msg}"
+                },
+                "step": {
+                    "user": {
+                        "data": {
+                            "access_id": "Tuya IoT aðgangsauðkenni",
+                            "access_secret": "Tuya IoT aðgangsleyndarmál"
+                        }
+                    }
+                }
+            },
+            "entity": {
+                "select": {
+                    "basic_nightvision": {
+                        "state": {
+                            "1": "Óvirkt",
+                            "2": "Virkt"
+                        }
+                    },
+                    "light_mode": {
+                        "state": {
+                            "none": "Slökkt"
+                        }
+                    },
+                    "relay_status": {
+                        "state": {
+                            "off": "Slökkt",
+                            "on": "Kveikt",
+                            "power_off": "Slökkt",
+                            "power_on": "Kveikt"
+                        }
+                    }
+                },
+                "sensor": {
+                    "current_temperature": {
+                        "name": "Núverandi hitastig"
+                    }
+                }
+            },
+            "platform": {
+                "select": {
+                    "state": {
+                        "tuya__light_mode": {
+                            "none": "Slökkt"
+                        },
+                        "tuya__relay_status": {
+                            "off": "Slökkt",
+                            "on": "Kveikt",
+                            "power_off": "Slökkt",
+                            "power_on": "Kveikt"
+                        }
+                    }
+                }
+            }
+        },
+        "unifiprotect": {
+            "config": {
+                "step": {
+                    "reauth_confirm": {
+                        "data": {
+                            "password": "Lykilorð",
+                            "port": "Gátt",
+                            "username": "Notandanafn"
+                        }
+                    },
+                    "user": {
+                        "data": {
+                            "port": "Gátt"
+                        }
+                    }
+                }
+            }
+        },
+        "vacuum": {
+            "device_automation": {
+                "condition_type": {
+                    "is_cleaning": "{entity_name} er að þrífa"
+                }
+            },
+            "entity_component": {
+                "_": {
+                    "state": {
+                        "idle": "Óvirkur",
+                        "off": "Slökkt",
+                        "on": "Kveikt",
+                        "paused": "Í bið"
+                    }
+                }
+            },
+            "title": "Ryksuga"
+        },
+        "verisure": {
+            "entity": {
+                "sensor": {
+                    "humidity": {
+                        "name": "Rakastig"
+                    },
+                    "temperature": {
+                        "name": "Hitastig"
+                    }
+                }
+            }
+        },
+        "voip": {
+            "options": {
+                "step": {
+                    "init": {
+                        "data": {
+                            "sip_port": "SIP gátt"
+                        }
+                    }
+                }
+            }
+        },
+        "water_heater": {
+            "entity_component": {
+                "_": {
+                    "state": {
+                        "off": "Slökkt"
+                    }
+                }
+            }
+        },
+        "waze_travel_time": {
+            "selector": {
+                "region": {
+                    "options": {
+                        "au": "Ástralía",
+                        "eu": "Evrópa",
+                        "il": "Ísrael",
+                        "na": "Norður Ameríka"
+                    }
+                },
+                "vehicle_type": {
+                    "options": {
+                        "car": "Bíll"
+                    }
+                }
+            }
+        },
+        "weather": {
+            "entity_component": {
+                "_": {
+                    "state": {
+                        "clear-night": "Heiðskírt, nótt",
+                        "cloudy": "Skýjað",
+                        "fog": "Þoka",
+                        "hail": "Haglél",
+                        "lightning": "Eldingar",
+                        "lightning-rainy": "Eldingar, rigning",
+                        "partlycloudy": "Léttskýjað",
+                        "pouring": "Úrhelli",
+                        "rainy": "Rigning",
+                        "snowy": "Snjókoma",
+                        "snowy-rainy": "Slydda",
+                        "sunny": "Heiðskírt",
+                        "windy": "Vindasamt",
+                        "windy-variant": "Vindasamt"
+                    }
+                }
+            }
+        },
+        "whirlpool": {
+            "entity": {
+                "sensor": {
+                    "whirlpool_machine": {
+                        "state": {
+                            "pause": "Í bið",
+                            "standby": "Biðstaða"
+                        }
+                    },
+                    "whirlpool_tank": {
+                        "state": {
+                            "active": "Virk"
+                        }
+                    }
+                }
+            }
+        },
+        "wled": {
+            "entity": {
+                "select": {
+                    "live_override": {
+                        "state": {
+                            "0": "Slökkt",
+                            "1": "Í gangi"
+                        }
+                    }
+                }
+            }
+        },
+        "workday": {
+            "config": {
+                "step": {
+                    "user": {
+                        "data": {
+                            "country": "Land",
+                            "name": "Nafn"
+                        }
+                    }
+                }
+            },
+            "options": {
+                "step": {
+                    "init": {
+                        "data": {
+                            "workdays": "Vinnudagar"
+                        },
+                        "data_description": {
+                            "workdays": "Listi af vinnudögum"
+                        }
+                    }
+                }
+            },
+            "selector": {
+                "days": {
+                    "options": {
+                        "fri": "Föstudagur",
+                        "holiday": "Frídagar",
+                        "mon": "Mánudagur",
+                        "sat": "Laugardagur",
+                        "sun": "Sunnudagur",
+                        "thu": "Fimmtudagur",
+                        "tue": "Þriðjudagur",
+                        "wed": "Miðvikudagur"
+                    }
+                }
+            }
+        },
+        "wyoming": {
+            "config": {
+                "step": {
+                    "user": {
+                        "data": {
+                            "port": "Gátt"
+                        }
+                    }
+                }
+            }
+        },
+        "xiaomi_miio": {
+            "entity": {
+                "select": {
+                    "led_brightness": {
+                        "state": {
+                            "off": "Slökkt"
+                        }
+                    }
+                }
+            },
+            "platform": {
+                "select": {
+                    "state": {
+                        "xiaomi_miio__led_brightness": {
+                            "off": "Slökkt"
+                        }
+                    }
+                }
+            }
+        },
+        "yamaha_musiccast": {
+            "entity": {
+                "select": {
+                    "zone_sleep": {
+                        "state": {
+                            "off": "Slökkt"
+                        }
+                    }
+                }
+            },
+            "platform": {
+                "select": {
+                    "state": {
+                        "yamaha_musiccast__zone_sleep": {
+                            "off": "Slökkt"
+                        }
+                    }
+                }
+            }
+        },
+        "zone": {
+            "config": {
+                "step": {
+                    "init": {
+                        "data": {
+                            "latitude": "Breiddargráða",
+                            "longitude": "Lengdargráða",
+                            "name": "Heiti"
+                        }
+                    }
+                },
+                "title": "Svæði"
+            }
+        },
+        "zwave_js": {
+            "device_automation": {
+                "condition_type": {
+                    "node_status": "Staða hnúts"
+                }
+            }
+        }
+    }
+}

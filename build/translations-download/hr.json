@@ -1,0 +1,966 @@
+{
+    "common": {
+        "config_flow": {
+            "abort": {
+                "already_configured_account": "Račun je već konfiguriran"
+            }
+        },
+        "state": {
+            "active": "aktivan",
+            "closed": "Zatvoreno",
+            "connected": "Spojen",
+            "disconnected": "Nije spojen",
+            "home": "Doma",
+            "idle": "Neaktivan",
+            "locked": "Zaključan",
+            "not_home": "Odsutan",
+            "off": "Isključen",
+            "on": "Uključen",
+            "open": "Otvoreno",
+            "paused": "Pauzirano",
+            "standby": "U stanju čekanja",
+            "unlocked": "Otključan"
+        }
+    },
+    "component": {
+        "adguard": {
+            "config": {
+                "abort": {
+                    "existing_instance_updated": "Postojeća konfiguracija je ažurirana."
+                }
+            }
+        },
+        "airq": {
+            "config": {
+                "abort": {
+                    "already_configured": "Uređaj je već konfiguriran"
+                },
+                "error": {
+                    "cannot_connect": "Povezivanje nije uspjelo",
+                    "invalid_auth": "Nevažeća provjera autentičnosti",
+                    "invalid_input": "Nevažeći naziv hosta ili IP adresa"
+                },
+                "step": {
+                    "user": {
+                        "data": {
+                            "ip_address": "IP adresa",
+                            "password": "Lozinka"
+                        },
+                        "description": "Navedite IP adresu ili mDNS uređaja i njegovu lozinku",
+                        "title": "Identificirajte uređaj"
+                    }
+                }
+            }
+        },
+        "alarm_control_panel": {
+            "title": "Upravljačka ploča za alarm"
+        },
+        "ambient_station": {
+            "config": {
+                "step": {
+                    "user": {
+                        "data": {
+                            "api_key": "API ključ"
+                        }
+                    }
+                }
+            }
+        },
+        "aranet": {
+            "config": {
+                "abort": {
+                    "already_configured": "Uređaj je već konfiguriran"
+                },
+                "error": {
+                    "unknown": "Neočekivana greška"
+                },
+                "step": {
+                    "user": {
+                        "data": {
+                            "address": "Uređaj"
+                        },
+                        "description": "Odaberite uređaj za postavljanje"
+                    }
+                }
+            }
+        },
+        "auth": {
+            "mfa_setup": {
+                "notify": {
+                    "abort": {
+                        "no_available_service": "Nema dostupnih usluga obavijesti."
+                    },
+                    "error": {
+                        "invalid_code": "Kod nije valjan, pokušajte ponovo."
+                    },
+                    "step": {
+                        "init": {
+                            "description": "Odaberite jednu od usluga obavijesti:",
+                            "title": "Postavite jednokratnu lozinku koju isporučuje komponenta obavijesti"
+                        },
+                        "setup": {
+                            "title": "Provjera postavki"
+                        }
+                    }
+                },
+                "totp": {
+                    "step": {
+                        "init": {
+                            "title": "Postavite dvofaktorsku autentifikaciju pomoću TOTP-a"
+                        }
+                    },
+                    "title": "TOTP"
+                }
+            }
+        },
+        "automation": {
+            "title": "Automatizacija"
+        },
+        "binary_sensor": {
+            "title": "Binarni senzor"
+        },
+        "calendar": {
+            "title": "Kalendar"
+        },
+        "camera": {
+            "title": "Kamera"
+        },
+        "climate": {
+            "title": "Klima"
+        },
+        "configurator": {
+            "title": "Konfigurator"
+        },
+        "conversation": {
+            "title": "Razgovor"
+        },
+        "cover": {
+            "title": "Poklopac"
+        },
+        "device_tracker": {
+            "title": "Praćenje uređaja"
+        },
+        "devolo_home_network": {
+            "config": {
+                "abort": {
+                    "reauth_successful": "Ponovna provjera autentičnosti je uspješna"
+                },
+                "step": {
+                    "reauth_confirm": {
+                        "data": {
+                            "password": "Lozinka"
+                        }
+                    }
+                }
+            }
+        },
+        "elkm1": {
+            "config": {
+                "abort": {
+                    "invalid_auth": "Nevažeća provjera autentičnosti",
+                    "unknown": "Neočekivana greška"
+                }
+            }
+        },
+        "esphome": {
+            "config": {
+                "step": {
+                    "authenticate": {
+                        "data": {
+                            "password": "Lozinka"
+                        }
+                    },
+                    "user": {
+                        "data": {
+                            "host": "Host",
+                            "port": "Port"
+                        }
+                    }
+                }
+            }
+        },
+        "fan": {
+            "title": "Ventilator"
+        },
+        "fireservicerota": {
+            "config": {
+                "step": {
+                    "reauth_confirm": {
+                        "data": {
+                            "password": "Lozinka"
+                        },
+                        "description": "Tokeni za provjeru autentičnosti postali su nevažeći, prijavite se da ih ponovno izradite."
+                    }
+                }
+            }
+        },
+        "generic": {
+            "config": {
+                "step": {
+                    "user_confirm_still": {
+                        "data": {
+                            "confirmed_ok": "Ova slika izgleda dobro."
+                        },
+                        "description": "![Pregled fotografije s kamere]( {preview_url} )",
+                        "title": "Pregled"
+                    }
+                }
+            },
+            "options": {
+                "step": {
+                    "confirm_still": {
+                        "data": {
+                            "confirmed_ok": "Ova slika izgleda dobro."
+                        },
+                        "description": "![Pregled fotografije s kamere]( {preview_url} )",
+                        "title": "Pregled"
+                    },
+                    "init": {
+                        "data": {
+                            "password": "Lozinka",
+                            "rtsp_transport": "RTSP transportni protokol",
+                            "username": "Korisničko ime",
+                            "verify_ssl": "Provjera SSL certifikata"
+                        }
+                    }
+                }
+            }
+        },
+        "google_travel_time": {
+            "config": {
+                "error": {
+                    "invalid_auth": "Nevažeća provjera autentičnosti"
+                }
+            }
+        },
+        "group": {
+            "title": "Grupa"
+        },
+        "hassio": {
+            "issues": {
+                "unhealthy": {
+                    "description": "Sustav je trenutno nezdrav zbog {reason}. Pomoću veze saznajte više i kako to popraviti.",
+                    "title": "Nezdrav sustav - {reason}"
+                },
+                "unhealthy_docker": {
+                    "title": "Nezdrav sustav - Docker je pogrešno konfiguriran"
+                },
+                "unhealthy_privileged": {
+                    "title": "Nezdrav sustav - Nije privilegiran"
+                },
+                "unhealthy_setup": {
+                    "title": "Neispravan sustav - Postavljanje nije uspjelo"
+                },
+                "unhealthy_supervisor": {
+                    "title": "Nezdravi sustav - Ažuriranje Supervisora nije uspjelo"
+                },
+                "unhealthy_untrusted": {
+                    "title": "Nezdravi sustav - Nepouzdan kod"
+                },
+                "unsupported": {
+                    "description": "Sustav nije podržan zbog {reason}. Koristite vezu da saznate više i kako to popraviti.",
+                    "title": "Nepodržani sustav - {reason}"
+                },
+                "unsupported_apparmor": {
+                    "title": "Nepodržani sustav - Problemi s AppArmorom"
+                },
+                "unsupported_cgroup_version": {
+                    "title": "Nepodržani sustav - verzija CGroup"
+                },
+                "unsupported_connectivity_check": {
+                    "title": "Nepodržani sustav – Provjera povezivosti je onemogućena"
+                },
+                "unsupported_content_trust": {
+                    "title": "Nepodržani sustav - Provjera pouzdanosti sadržaja onemogućena"
+                },
+                "unsupported_dbus": {
+                    "title": "Nepodržani sustav - D-Bus problemi"
+                },
+                "unsupported_dns_server": {
+                    "title": "Nepodržani sustav - Problemi s DNS poslužiteljem"
+                },
+                "unsupported_docker_configuration": {
+                    "title": "Nepodržani sustav - Docker je pogrešno konfiguriran"
+                },
+                "unsupported_docker_version": {
+                    "title": "Nepodržani sustav - Docker verzija"
+                },
+                "unsupported_job_conditions": {
+                    "title": "Nepodržani sustav - Zaštite onemogućene"
+                },
+                "unsupported_lxc": {
+                    "title": "Nepodržani sustav - LXC otkriven"
+                },
+                "unsupported_network_manager": {
+                    "title": "Nepodržani sustav - Problemi s upraviteljem mreže"
+                },
+                "unsupported_os": {
+                    "title": "Nepodržani sustav - Operativni sustav"
+                },
+                "unsupported_os_agent": {
+                    "title": "Nepodržani sustav - problemi s OS-Agentom"
+                },
+                "unsupported_restart_policy": {
+                    "title": "Nepodržani sustav - Pravila ponovnog pokretanja kontejnera"
+                },
+                "unsupported_software": {
+                    "title": "Nepodržani sustav - Nepodržani softver"
+                },
+                "unsupported_source_mods": {
+                    "title": "Nepodržani sustav - Izmjene izvornog koda supervizora"
+                },
+                "unsupported_supervisor_version": {
+                    "title": "Nepodržani sustav - Supervisor verzija"
+                },
+                "unsupported_systemd": {
+                    "title": "Nepodržani sustav - Systemd problemi"
+                },
+                "unsupported_systemd_journal": {
+                    "title": "Nepodržani sustav - Systemd Journal problemi"
+                },
+                "unsupported_systemd_resolved": {
+                    "title": "Nepodržani sustav - Systemd-Resolved problemi"
+                }
+            }
+        },
+        "homematicip_cloud": {
+            "config": {
+                "abort": {
+                    "connection_aborted": "Povezivanje nije uspjelo",
+                    "unknown": "Došlo je do nepoznate pogreške."
+                }
+            }
+        },
+        "huawei_lte": {
+            "config": {
+                "abort": {
+                    "reauth_successful": "Ponovna provjera autentičnosti je uspješna"
+                },
+                "step": {
+                    "reauth_confirm": {
+                        "data": {
+                            "password": "Lozinka",
+                            "username": "Korisničko ime"
+                        },
+                        "description": "Unesite pristupne podatke za uređaj.",
+                        "title": "Ponovno autentificirajte integraciju"
+                    }
+                }
+            }
+        },
+        "hue": {
+            "config": {
+                "abort": {
+                    "all_configured": "Sva Philips Hue čvorišta su već konfigurirana",
+                    "already_configured": "Uređaj je već konfiguriran",
+                    "cannot_connect": "Povezivanje nije uspjelo",
+                    "discover_timeout": "Nije moguće otkriti Hue čvorišta",
+                    "no_bridges": "Nisu otkrivena Philips Hue čvorišta",
+                    "unknown": "Neočekivana greška"
+                },
+                "error": {
+                    "linking": "Došlo je do nepoznate pogreške u povezivanju.",
+                    "register_failed": "Registracija nije uspjela. Pokušajte ponovo"
+                },
+                "step": {
+                    "init": {
+                        "data": {
+                            "host": "Host"
+                        },
+                        "title": "Odaberite Hue čvorište"
+                    }
+                }
+            }
+        },
+        "ifttt": {
+            "config": {
+                "step": {
+                    "user": {
+                        "description": "Jeste li sigurni da želite postaviti IFTTT?",
+                        "title": "Postavljanje IFTTT Webhook apleta"
+                    }
+                }
+            }
+        },
+        "image_processing": {
+            "title": "Obrada slike"
+        },
+        "input_boolean": {
+            "title": "Input boolean"
+        },
+        "input_datetime": {
+            "title": "Unos datuma i vremena"
+        },
+        "input_number": {
+            "title": "Unesite broj"
+        },
+        "input_select": {
+            "title": "Izbor unosa"
+        },
+        "input_text": {
+            "title": "Unesite tekst"
+        },
+        "lametric": {
+            "config": {
+                "abort": {
+                    "reauth_successful": "Ponovna provjera autentičnosti je uspješna"
+                }
+            },
+            "platform": {
+                "select": {
+                    "state": {
+                        "lametric__brightness_mode": {
+                            "auto": "Automatski",
+                            "manual": "Ručno"
+                        }
+                    }
+                }
+            }
+        },
+        "life360": {
+            "config": {
+                "step": {
+                    "user": {
+                        "data": {
+                            "password": "Lozinka",
+                            "username": "Korisničko ime"
+                        }
+                    }
+                }
+            }
+        },
+        "lifx": {
+            "config": {
+                "abort": {
+                    "no_devices_found": "Nijedan uređaj nije pronađen na mreži"
+                }
+            }
+        },
+        "light": {
+            "title": "Svjetlo"
+        },
+        "lock": {
+            "title": "Zaključavanje"
+        },
+        "mailbox": {
+            "title": "Poštanski sandučić"
+        },
+        "mailgun": {
+            "config": {
+                "step": {
+                    "user": {
+                        "description": "Jeste li sigurni da želite postaviti Mailgun?",
+                        "title": "Postavite Mailgun Webhook"
+                    }
+                }
+            }
+        },
+        "media_player": {
+            "title": "Media player"
+        },
+        "met": {
+            "config": {
+                "step": {
+                    "user": {
+                        "data": {
+                            "elevation": "Elevacija",
+                            "latitude": "Zemljopisna širina",
+                            "longitude": "Zemljopisna dužina",
+                            "name": "Ime"
+                        },
+                        "description": "Meteorološki institutt",
+                        "title": "Lokacija"
+                    }
+                }
+            }
+        },
+        "mqtt": {
+            "config": {
+                "error": {
+                    "bad_certificate": "CA certifikat nije valjan",
+                    "bad_client_cert": "Klijentski certifikat nije valjan, osigurajte da je isporučena PEM kodirana datoteka",
+                    "bad_client_cert_key": "Klijentski certifikat i privatni ključ nisu valjani par",
+                    "bad_client_key": "Privatni ključ nije valjan, osigurajte da je PEM kodirana datoteka isporučena bez lozinke",
+                    "bad_discovery_prefix": "Prefiks otkrivanja nije valjan",
+                    "cannot_connect": "Povezivanje nije uspjelo",
+                    "invalid_inclusion": "Klijentski certifikat i privatni ključ moraju biti konfigurirani zajedno"
+                },
+                "step": {
+                    "broker": {
+                        "data": {
+                            "advanced_options": "Napredne opcije",
+                            "broker": "Broker",
+                            "certificate": "Put do datoteke CA certifikata",
+                            "client_cert": "Put do datoteke klijentskog certifikata",
+                            "client_id": "ID klijenta (ostavite prazno za nasumično generiran)",
+                            "client_key": "Put do datoteke privatnog ključa",
+                            "keepalive": "Vrijeme između slanja poruka keep alive",
+                            "password": "Lozinka",
+                            "port": "Port",
+                            "protocol": "MQTT protokol",
+                            "set_ca_cert": "Provjera valjanosti brokerskog certifikata",
+                            "set_client_cert": "Korištenje klijentskog certifikata",
+                            "tls_insecure": "Zanemari provjeru valjanosti certifikata brokera",
+                            "username": "Korisničko ime"
+                        },
+                        "description": "Unesite podatke o povezivanju svog MQTT brokera."
+                    },
+                    "hassio_confirm": {
+                        "data": {
+                            "discovery": "Omogući otkrivanje"
+                        },
+                        "description": "Želite li konfigurirati Home Assistant za povezivanje s MQTT brokerom koji pruža dodatak {addon}?",
+                        "title": "MQTT Broker putem dodatka Home Assistant"
+                    }
+                }
+            },
+            "issues": {
+                "deprecated_yaml_broker_settings": {
+                    "title": "Zastarjele MQTT postavke pronađene u 'configuration.yaml'"
+                }
+            },
+            "options": {
+                "error": {
+                    "bad_certificate": "CA certifikat nije valjan",
+                    "bad_client_cert": "Klijentski certifikat nije valjan, osigurajte da je isporučena PEM kodirana datoteka",
+                    "bad_client_cert_key": "Klijentski certifikat i privatni ključ nisu valjani par",
+                    "bad_client_key": "Privatni ključ nije valjan, osigurajte da je PEM kodirana datoteka isporučena bez lozinke",
+                    "bad_discovery_prefix": "Prefiks otkrivanja nije valjan",
+                    "invalid_inclusion": "Klijentski certifikat i privatni ključ moraju biti konfigurirani zajedno"
+                },
+                "step": {
+                    "broker": {
+                        "data": {
+                            "advanced_options": "Napredne opcije",
+                            "certificate": "Prijenos datoteke CA certifikata",
+                            "client_cert": "Prijenos datoteke klijentskog certifikata",
+                            "client_id": "ID klijenta (ostavite prazno za nasumično generiran)",
+                            "client_key": "Prijenos datoteke privatnog ključa",
+                            "keepalive": "Vrijeme između slanja poruka keep alive",
+                            "protocol": "MQTT protokol",
+                            "set_ca_cert": "Provjera valjanosti certifikata brokera",
+                            "set_client_cert": "Korištenje klijentskog certifikata",
+                            "tls_insecure": "Zanemari provjeru valjanosti certifikata brokera"
+                        }
+                    },
+                    "options": {
+                        "data": {
+                            "discovery_prefix": "Prefiks otkrivanja"
+                        }
+                    }
+                }
+            }
+        },
+        "nest": {
+            "config": {
+                "abort": {
+                    "authorize_url_timeout": "Isteklo je generiranje URL-a za autorizaciju."
+                },
+                "error": {
+                    "unknown": "Neočekivana greška"
+                },
+                "step": {
+                    "init": {
+                        "data": {
+                            "flow_impl": "Pružatelj usluge"
+                        },
+                        "description": "Odaberite metodu za autorizaciju",
+                        "title": "Pružatelj usluge autentifikacije"
+                    },
+                    "link": {
+                        "data": {
+                            "code": "PIN kod"
+                        }
+                    }
+                }
+            }
+        },
+        "notify": {
+            "title": "Obavijestiti"
+        },
+        "notion": {
+            "config": {
+                "step": {
+                    "user": {
+                        "data": {
+                            "password": "Lozinka",
+                            "username": "Korisničko ime\/adresa e-pošte"
+                        },
+                        "title": "Ispunite svoje podatke"
+                    }
+                }
+            }
+        },
+        "openuv": {
+            "config": {
+                "error": {
+                    "invalid_api_key": "Nevažeći API ključ"
+                },
+                "step": {
+                    "user": {
+                        "data": {
+                            "api_key": "API ključ",
+                            "elevation": "Elevacija",
+                            "latitude": "Zemljopisna širina",
+                            "longitude": "Zemljopisna dužina"
+                        },
+                        "title": "Ispunite svoje podatke"
+                    }
+                }
+            }
+        },
+        "oralb": {
+            "config": {
+                "abort": {
+                    "already_configured": "Uređaj je već konfiguriran",
+                    "already_in_progress": "Konfiguracije je već u tijeku",
+                    "no_devices_found": "Nijedan uređaj nije pronađen na mreži",
+                    "not_supported": "Uređaj nije podržan"
+                },
+                "step": {
+                    "user": {
+                        "data": {
+                            "address": "Uređaj"
+                        },
+                        "description": "Odaberite uređaj za postavljanje"
+                    }
+                }
+            }
+        },
+        "overkiz": {
+            "config": {
+                "error": {
+                    "unsupported_hardware": "Vaš {unsupported_device} hardver nije podržan ovom integracijom."
+                }
+            }
+        },
+        "person": {
+            "title": "Osoba"
+        },
+        "plaato": {
+            "config": {
+                "create_entry": {
+                    "default": "Vaš Plaato {device_type} s nazivom **{device_name}** uspješno je postavljen!"
+                },
+                "step": {
+                    "user": {
+                        "description": "Jeste li sigurni da želite postaviti Plaato Airlock?",
+                        "title": "Postavljanje Plaato Webhook"
+                    }
+                }
+            }
+        },
+        "plant": {
+            "title": "Biljka"
+        },
+        "plugwise": {
+            "platform": {
+                "select": {
+                    "state": {
+                        "plugwise__dhw_mode": {
+                            "auto": "Auto",
+                            "boost": "Pojačano",
+                            "comfort": "Udobnost",
+                            "off": "Isključeno"
+                        },
+                        "plugwise__regulation_mode": {
+                            "bleeding_cold": "Jako hladno",
+                            "bleeding_hot": "Jako vruće",
+                            "cooling": "Hlađenje",
+                            "heating": "Grijanje",
+                            "off": "Isključeno"
+                        }
+                    }
+                }
+            }
+        },
+        "proximity": {
+            "title": "Blizina"
+        },
+        "pushbullet": {
+            "config": {
+                "abort": {
+                    "already_configured": "Servis je već konfiguriran"
+                },
+                "error": {
+                    "cannot_connect": "Povezivanje nije uspjelo",
+                    "invalid_api_key": "Neispravan API ključ"
+                },
+                "step": {
+                    "user": {
+                        "data": {
+                            "api_key": "API ključ",
+                            "name": "Ime"
+                        }
+                    }
+                }
+            }
+        },
+        "remote": {
+            "title": "Daljinski"
+        },
+        "scene": {
+            "title": "Scena"
+        },
+        "script": {
+            "title": "Skripta"
+        },
+        "sensibo": {
+            "platform": {
+                "sensor": {
+                    "state": {
+                        "sensibo__smart_type": {
+                            "feelslike": "Osjećaj",
+                            "humidity": "Vlažnost",
+                            "temperature": "Temperatura"
+                        }
+                    }
+                }
+            }
+        },
+        "sensor": {
+            "title": "Senzor"
+        },
+        "smhi": {
+            "config": {
+                "error": {
+                    "wrong_location": "Lokacija samo Švedska"
+                },
+                "step": {
+                    "user": {
+                        "data": {
+                            "latitude": "Zemljopisna širina",
+                            "longitude": "Zemljopisna dužina"
+                        },
+                        "title": "Lokacija u Švedskoj"
+                    }
+                }
+            }
+        },
+        "snooz": {
+            "config": {
+                "abort": {
+                    "already_configured": "Uređaj je već konfiguriran",
+                    "already_in_progress": "Konfiguracije je već u tijeku",
+                    "no_devices_found": "Nijedan uređaj nije pronađen na mreži"
+                },
+                "step": {
+                    "user": {
+                        "data": {
+                            "address": "Uređaj"
+                        },
+                        "description": "Odaberite uređaj za postavljanje"
+                    }
+                }
+            }
+        },
+        "somfy": {
+            "config": {
+                "create_entry": {
+                    "default": "Uspješno autentificirano sa Somfy."
+                }
+            }
+        },
+        "sun": {
+            "title": "Sunce"
+        },
+        "switch": {
+            "title": "Prekidač"
+        },
+        "system_health": {
+            "title": "Zdravlje sustava"
+        },
+        "tautulli": {
+            "config": {
+                "step": {
+                    "user": {
+                        "data": {
+                            "api_key": "API ključ"
+                        }
+                    }
+                }
+            }
+        },
+        "tellduslive": {
+            "config": {
+                "abort": {
+                    "unknown": "Neočekivana greška"
+                },
+                "step": {
+                    "user": {
+                        "data": {
+                            "host": "Host"
+                        }
+                    }
+                }
+            }
+        },
+        "tradfri": {
+            "config": {
+                "abort": {
+                    "already_configured": "Uređaj je već konfiguriran",
+                    "already_in_progress": "Konfiguracija premosnice je već u tijeku."
+                },
+                "error": {
+                    "cannot_connect": "Povezivanje nije uspjelo"
+                },
+                "step": {
+                    "auth": {
+                        "data": {
+                            "host": "Host",
+                            "security_code": "Sigurnosni kod"
+                        },
+                        "description": "Sigurnosni kôd možete pronaći na poleđini pristupnika.",
+                        "title": "Unesite sigurnosni kod"
+                    }
+                }
+            }
+        },
+        "twilio": {
+            "config": {
+                "step": {
+                    "user": {
+                        "description": "Želite li započeti s postavljanjem?",
+                        "title": "Postavite Twilio Webhook"
+                    }
+                }
+            }
+        },
+        "unifi": {
+            "config": {
+                "error": {
+                    "service_unavailable": "Povezivanje nije uspjelo"
+                },
+                "step": {
+                    "user": {
+                        "data": {
+                            "host": "Host",
+                            "password": "Lozinka",
+                            "port": "Port",
+                            "site": "ID lokacije",
+                            "username": "Korisničko ime",
+                            "verify_ssl": "Provjerite SSL certifikat"
+                        },
+                        "title": "Postavite UniFi mrežu"
+                    }
+                }
+            }
+        },
+        "upnp": {
+            "config": {
+                "abort": {
+                    "already_configured": "Uređaj je već konfiguriran",
+                    "no_devices_found": "Nijedan uređaj nije pronađen na mreži"
+                },
+                "error": {
+                    "one": "Jedan",
+                    "few": "Nekoliko",
+                    "other": "Ostalo"
+                },
+                "step": {
+                    "init": {
+                        "one": "Jedan",
+                        "few": "Nekoliko",
+                        "other": "Ostalo"
+                    }
+                }
+            }
+        },
+        "utility_meter": {
+            "config": {
+                "step": {
+                    "user": {
+                        "data": {
+                            "name": "Ime"
+                        }
+                    }
+                }
+            }
+        },
+        "vacuum": {
+            "title": "Vakuum"
+        },
+        "wolflink": {
+            "platform": {
+                "sensor": {
+                    "state": {
+                        "wolflink__state": {
+                            "permanent": "Trajno"
+                        }
+                    }
+                }
+            }
+        },
+        "xiaomi_miio": {
+            "config": {
+                "abort": {
+                    "unknown": "Neočekivana greška"
+                }
+            }
+        },
+        "zamg": {
+            "config": {
+                "abort": {
+                    "already_configured": "Uređaj je već konfiguriran",
+                    "cannot_connect": "Povezivanje nije uspjelo"
+                },
+                "error": {
+                    "cannot_connect": "Povezivanje nije uspjelo"
+                },
+                "flow_title": "{name}"
+            }
+        },
+        "zha": {
+            "config": {
+                "abort": {
+                    "single_instance_allowed": "Već konfigurirano. Moguća samo jedna konfiguracija."
+                },
+                "error": {
+                    "cannot_connect": "Povezivanje nije uspjelo"
+                }
+            },
+            "options": {
+                "abort": {
+                    "single_instance_allowed": "Već konfigurirano. Moguća samo jedna konfiguracija."
+                },
+                "error": {
+                    "cannot_connect": "Povezivanje nije uspjelo"
+                },
+                "step": {
+                    "intent_migrate": {
+                        "title": "Migracija na novi radio"
+                    },
+                    "prompt_migrate_or_reconfigure": {
+                        "description": "Migrirate li na novi radio ili rekonfigurirate trenutni radio?",
+                        "menu_options": {
+                            "intent_migrate": "Migracija na novi radio",
+                            "intent_reconfigure": "Ponovno konfiguriranje trenutnog radija"
+                        },
+                        "title": "Migracija ili ponovna konfiguracija"
+                    }
+                }
+            }
+        },
+        "zone": {
+            "config": {
+                "error": {
+                    "name_exists": "Ime već postoji"
+                },
+                "step": {
+                    "init": {
+                        "data": {
+                            "icon": "Ikona",
+                            "latitude": "Zemljopisna širina",
+                            "longitude": "Zemljopisna dužina",
+                            "name": "Ime",
+                            "passive": "Pasivno",
+                            "radius": "Radijus"
+                        },
+                        "title": "Definirajte parametre zone"
+                    }
+                },
+                "title": "Zona"
+            }
+        }
+    }
+}

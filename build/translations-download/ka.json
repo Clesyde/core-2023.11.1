@@ -1,0 +1,846 @@
+{
+    "common": {
+        "config_flow": {
+            "abort": {
+                "already_configured_account": "ანგარიში უკვე კონფიგურირებულია",
+                "already_configured_device": "მოწყობილობა უკვე კონფიგურირებულია",
+                "unknown_authorize_url_generation": "ავტორიზაციი გენერირების უცნობი შეცდომა.",
+                "webhook_not_internet_accessible": "თქვენი Home Assistant ეკზემპლარი საჭირორებს ინტერნეტთან წვდომას webhook შეტყობინებების მისაღებად."
+            },
+            "data": {
+                "elevation": "სიმაღლე",
+                "latitude": "განედი",
+                "location": "ადგილმდებარეობა",
+                "longitude": "გრძედი",
+                "mode": "რეჟიმი"
+            },
+            "title": {
+                "reauth": "ხელახალი აუთენთიფიკაციის ინტეგრაცია"
+            }
+        }
+    },
+    "component": {
+        "advantage_air": {
+            "config": {
+                "error": {
+                    "cannot_connect": "მარცხი შეერთებისას"
+                },
+                "step": {
+                    "user": {
+                        "data": {
+                            "ip_address": "IP მისამართი",
+                            "port": "პორტი"
+                        },
+                        "description": "დაუკავშირდით თქვენი Advantage Air  API-ს კედელზე დამონტაჟებული ტაბლეტით",
+                        "title": "დაკავშირება"
+                    }
+                }
+            }
+        },
+        "agent_dvr": {
+            "config": {
+                "error": {
+                    "cannot_connect": "მარცხი შეერთებისას"
+                }
+            }
+        },
+        "airvisual": {
+            "config": {
+                "abort": {
+                    "reauth_successful": "წარმატებული რე-ავთენთიკაცია"
+                },
+                "step": {
+                    "reauth_confirm": {
+                        "data": {
+                            "api_key": "API Key"
+                        },
+                        "title": "AirVisual რე-ავთენთიკაცია"
+                    }
+                }
+            }
+        },
+        "ambiclimate": {
+            "config": {
+                "abort": {
+                    "already_configured": "ანგარიში კონფიგურირებულია",
+                    "missing_configuration": "ეს კომპონენტი არ არის კონფიგურირებული. გთხოვთ მიყვეთ დოკუმენტაციას"
+                }
+            }
+        },
+        "atag": {
+            "config": {
+                "error": {
+                    "cannot_connect": "მარცხი შეერთებისას"
+                }
+            }
+        },
+        "aurora": {
+            "config": {
+                "error": {
+                    "cannot_connect": "კავშირი ვერ დამყარდა"
+                },
+                "step": {
+                    "user": {
+                        "data": {
+                            "latitude": "განედი",
+                            "longitude": "გრძედი",
+                            "name": "სახელი"
+                        }
+                    }
+                }
+            },
+            "options": {
+                "step": {
+                    "init": {
+                        "data": {
+                            "threshold": "ზღვარი (%)"
+                        }
+                    }
+                }
+            },
+            "title": "NOAA Aurora სენსორი"
+        },
+        "azure_devops": {
+            "config": {
+                "error": {
+                    "cannot_connect": "დაკავშირება ვერ მოხერხდა",
+                    "invalid_auth": "მცდარი აუთენთიკაცია"
+                }
+            }
+        },
+        "cloud": {
+            "system_health": {
+                "info": {
+                    "alexa_enabled": "Alexa დაშვებულია",
+                    "can_reach_cert_server": "მიეღწა სერტიფიკატის სერვერს",
+                    "can_reach_cloud": "მიეღწა Home Assistant ღრუბელს",
+                    "can_reach_cloud_auth": "მიეღწა ავთენტიფიკაციის სერვერს",
+                    "google_enabled": "Google დაშვებულია",
+                    "logged_in": "შესული",
+                    "relayer_connected": "რელე მიერთებულია",
+                    "remote_connected": "დისტანციურად დაკავშირებულია",
+                    "remote_enabled": "დისტანციური დაშვებულია",
+                    "subscription_expiration": "გამოწერის ვადის გასვლა"
+                }
+            }
+        },
+        "cloudflare": {
+            "config": {
+                "abort": {
+                    "single_instance_allowed": "უკვე კონფიგურირებულია. შესაძლებელია მხოლოდ ერთი კონფიგი.",
+                    "unknown": "გაუთვალისწინებელი შეცდომა"
+                },
+                "error": {
+                    "cannot_connect": "დაკავშირება ვერ მოხერხდა",
+                    "invalid_auth": "არასწორი აუთენთიფიკაცია",
+                    "invalid_zone": "არასწორი ზონა"
+                },
+                "flow_title": "Cloudflare: {name}",
+                "step": {
+                    "records": {
+                        "data": {
+                            "records": "ჩანაწერები"
+                        },
+                        "title": "აირჩიეთ ჩანაწერები განახლებისთვის"
+                    },
+                    "user": {
+                        "data": {
+                            "api_token": "API ტოკენი"
+                        },
+                        "description": "ეს ინტეგრაცია მოითხოვს API ტოკენს, რომელიც შექმნილია თქვენი ანგარიშის Zone: Zone: Read და Zone: DNS:Edit ნებართვების ყველა ზონებისათვის",
+                        "title": "Cloudflare- სთან კავშირი"
+                    },
+                    "zone": {
+                        "data": {
+                            "zone": "ზონა"
+                        },
+                        "title": "აირჩიეთ ზონა განახლებისთვის"
+                    }
+                }
+            }
+        },
+        "daikin": {
+            "config": {
+                "error": {
+                    "cannot_connect": "მარცხი შეერთებისას",
+                    "invalid_auth": "მცდარი ავთენთიკაცია",
+                    "unknown": "გაუთვალისწინებელი შეცდომა"
+                },
+                "step": {
+                    "user": {
+                        "data": {
+                            "api_key": "API Key"
+                        }
+                    }
+                }
+            }
+        },
+        "deconz": {
+            "device_automation": {
+                "trigger_type": {
+                    "remote_button_rotated_fast": "ღილაკი სწრაფად ბრუნავს \" {subtype} \""
+                }
+            }
+        },
+        "denonavr": {
+            "config": {
+                "abort": {
+                    "cannot_connect": "დაკავშირება ვერ მოხერხდა, გთხოვთ სცადოთ ხელახლა, შესაძლოა კვების და ქსელის კაბელების გათიშვამ დაგეხმაროთ"
+                }
+            }
+        },
+        "device_tracker": {
+            "device_automation": {
+                "trigger_type": {
+                    "enters": "{entity_name} შედის ზონაში",
+                    "leaves": "{entity_name} ტოვებს ზონას"
+                }
+            }
+        },
+        "dexcom": {
+            "config": {
+                "abort": {
+                    "already_configured": "ანგარიში უკვე კონფიგურირებულია"
+                }
+            }
+        },
+        "dialogflow": {
+            "config": {
+                "abort": {
+                    "single_instance_allowed": "უკვე დაკონფიგურირებულია. შესაძლებელია მხოლოდ ერთი კონფიგურაცია.",
+                    "webhook_not_internet_accessible": "თქვენი Home Assistant ეკზემპლარი საჭირორებს ინტერნეტთან წვდომას webhook შეტყობინებების მისაღებად."
+                }
+            }
+        },
+        "dsmr": {
+            "options": {
+                "step": {
+                    "init": {
+                        "data": {
+                            "time_between_update": "ობიექტების განახლებებს შორის მინიმალური დრო"
+                        },
+                        "title": "DSMR პარამეტრები"
+                    }
+                }
+            }
+        },
+        "emulated_roku": {
+            "config": {
+                "abort": {
+                    "already_configured": "მოწყობილობა დაკონფიგურირებულია"
+                }
+            }
+        },
+        "epson": {
+            "config": {
+                "error": {
+                    "cannot_connect": "დაკავშირების შეცდომა"
+                },
+                "step": {
+                    "user": {
+                        "data": {
+                            "host": "ჰოსტი",
+                            "name": "სახელი"
+                        }
+                    }
+                }
+            }
+        },
+        "esphome": {
+            "config": {
+                "error": {
+                    "invalid_auth": "მცდარი ავთენთიკაცია"
+                }
+            }
+        },
+        "fireservicerota": {
+            "config": {
+                "abort": {
+                    "already_configured": "ანგარიში უკვე კონფიგურირებულია",
+                    "reauth_successful": "რე-ავთენტიფიცრებულია წარმატებით"
+                },
+                "create_entry": {
+                    "default": "ავთენტიფიცრებულია წარმატებით"
+                },
+                "error": {
+                    "invalid_auth": "მცდარი ავთენტიფიკაცია"
+                },
+                "step": {
+                    "user": {
+                        "data": {
+                            "password": "პაროლი",
+                            "url": "ვებსაიტი",
+                            "username": "მომხმარებელი"
+                        }
+                    }
+                }
+            }
+        },
+        "forked_daapd": {
+            "config": {
+                "error": {
+                    "forbidden": "Ვერ ვუკავშირდები. გთხოვთ, შეამოწმოთ თქვენი forked-daapd ქსელის უფლებები."
+                }
+            }
+        },
+        "fritzbox": {
+            "config": {
+                "abort": {
+                    "no_devices_found": "ქსელიშ მოწყობილობა არ მოიძებნა"
+                },
+                "error": {
+                    "invalid_auth": "მცდარი ავთენთიკაცია"
+                }
+            }
+        },
+        "geofency": {
+            "config": {
+                "abort": {
+                    "single_instance_allowed": "უკვე დაკონფიგურირებულია. შესაძლებელია მხოლოდ ერთი კონფიგურაცია.",
+                    "webhook_not_internet_accessible": "თქვენი Home Assistant ეკზემპლარი საჭირორებს ინტერნეტთან წვდომას webhook შეტყობინებების მისაღებად."
+                }
+            }
+        },
+        "geonetnz_volcano": {
+            "config": {
+                "abort": {
+                    "already_configured": "ადგილმდებარეობაკონფიგურირებულია"
+                }
+            }
+        },
+        "gpslogger": {
+            "config": {
+                "abort": {
+                    "single_instance_allowed": "უკვე დაკონფიგურირებულია. შესაძლებელია მხოლოდ ერთი კონფიგურაცია.",
+                    "webhook_not_internet_accessible": "თქვენი Home Assistant ეკზემპლარი საჭირორებს ინტერნეტთან წვდომას webhook შეტყობინებების მისაღებად."
+                }
+            }
+        },
+        "gree": {
+            "config": {
+                "abort": {
+                    "no_devices_found": "ქსელის მოწყობილობა ვერ მოიძებნა",
+                    "single_instance_allowed": "უკვე კონფიგურირებულია. შესაძლებელია მხოლოდ ერთი კონფიგურაცია."
+                },
+                "step": {
+                    "confirm": {
+                        "description": "გნებავთ დაიწყოთ დაყენება?"
+                    }
+                }
+            }
+        },
+        "hassio": {
+            "system_health": {
+                "info": {
+                    "board": "დაფა",
+                    "disk_total": "დისკზე სულ",
+                    "disk_used": "დისკზე გამოყენებული",
+                    "docker_version": "Docker-ის ვერსია",
+                    "healthy": "გამართულია",
+                    "host_os": "ჰოსტ ოპერაციული სისტემა",
+                    "installed_addons": "დაინსტალირებული დამატებები",
+                    "supervisor_api": "Supervisor API",
+                    "supervisor_version": "Supervisor ვერსია",
+                    "supported": "მხარდაჭერა",
+                    "update_channel": "განახლებების არხი",
+                    "version_api": "API-ს ვერსია"
+                }
+            }
+        },
+        "heos": {
+            "config": {
+                "abort": {
+                    "single_instance_allowed": "უკვე კონფიგურირებულია. შესაძლებელია მხოლოდ ერთი კონფიგურაცია."
+                },
+                "error": {
+                    "cannot_connect": "მარცხი შეერთებისას"
+                }
+            }
+        },
+        "homeassistant": {
+            "system_health": {
+                "info": {
+                    "arch": "პროცესორის არქიტექტურა",
+                    "dev": "შემუშავება",
+                    "docker": "Docker",
+                    "hassio": "Supervisor",
+                    "installation_type": "ინსტალაციის ტიპი",
+                    "os_name": "ოპერაციული სისტემის ოჯახი",
+                    "os_version": "ოპერაციული სისტემის ვერსია",
+                    "python_version": "Python-ის ვერსია",
+                    "timezone": "Დროის სარტყელი",
+                    "version": "ვერსია",
+                    "virtualenv": "ვირტუალური გარემო"
+                }
+            }
+        },
+        "homekit": {
+            "options": {
+                "step": {
+                    "init": {
+                        "data": {
+                            "mode": "რეჟიმი"
+                        }
+                    }
+                }
+            }
+        },
+        "iaqualink": {
+            "config": {
+                "abort": {
+                    "single_instance_allowed": "უკვე კონფიგურირებულია. შესაძლებელია მხოლოდ ერთი კონფიგურაცია."
+                }
+            }
+        },
+        "icloud": {
+            "config": {
+                "abort": {
+                    "reauth_successful": "რა-ავთენთიკაცია იყო წარმატებული"
+                }
+            }
+        },
+        "ifttt": {
+            "config": {
+                "abort": {
+                    "single_instance_allowed": "უკვე დაკონფიგურირებულია. შესაძლებელია მხოლოდ ერთი კონფიგურაცია.",
+                    "webhook_not_internet_accessible": "თქვენი Home Assistant ეკზემპლარი საჭირორებს ინტერნეტთან წვდომას webhook შეტყობინებების მისაღებად."
+                }
+            }
+        },
+        "ipp": {
+            "config": {
+                "abort": {
+                    "cannot_connect": "მარცხი შეერთებისას"
+                },
+                "error": {
+                    "cannot_connect": "მარცხი შეერთებისას"
+                }
+            }
+        },
+        "islamic_prayer_times": {
+            "config": {
+                "abort": {
+                    "single_instance_allowed": "უკვე დაკონფიგურირებულია. შესაძლებელია მხოლოდ ერთი კონფიგურაცია."
+                }
+            }
+        },
+        "kodi": {
+            "config": {
+                "abort": {
+                    "no_uuid": "კოდის ინსტანსს არ აქვს უნიკალური ID. სავარაუდოდ ეს გამოწვეულია ძველი Kodi ვერსიით (17.x ან ქვემოთ). თქვენ შეგიძლიათ ხელით მოახდინოთ ინტეგრაციის კონფიგურირება ან გადახვიდეთ Kodi- ს უახლეს ვერსიაზე."
+                }
+            }
+        },
+        "life360": {
+            "config": {
+                "abort": {
+                    "invalid_auth": "მცდარი აუთენთიკაცია"
+                },
+                "error": {
+                    "already_configured": "ანგარიში უკვე კონფიგურირებულია",
+                    "invalid_auth": "მცდარი აუთენთიკაცია",
+                    "unknown": "გაუთვალისწინებელი შეცდომა"
+                }
+            }
+        },
+        "local_ip": {
+            "config": {
+                "step": {
+                    "user": {
+                        "description": "გნებავთ კონფიგურირების დაწყება?"
+                    }
+                }
+            }
+        },
+        "locative": {
+            "config": {
+                "abort": {
+                    "single_instance_allowed": "უკვე დაკონფიგურირებულია. შესაძლებელია მხოლოდ ერთი კონფიგურაცია.",
+                    "webhook_not_internet_accessible": "თქვენი Home Assistant ეკზემპლარი საჭირორებს ინტერნეტთან წვდომას webhook შეტყობინებების მისაღებად."
+                }
+            }
+        },
+        "lovelace": {
+            "system_health": {
+                "info": {
+                    "dashboards": "დეშბორდი",
+                    "mode": "რეჟიმი",
+                    "resources": "რესურსები",
+                    "views": "ხედები"
+                }
+            }
+        },
+        "luftdaten": {
+            "config": {
+                "error": {
+                    "already_configured": "სერვისი უკვე დაკონფიგურირებულია",
+                    "cannot_connect": "დაკავშრება ვერ მოხერხდა"
+                }
+            }
+        },
+        "mailgun": {
+            "config": {
+                "abort": {
+                    "single_instance_allowed": "უკვე დაკონფიგურირებულია. შესაძლებელია მხოლოდ ერთი კონფიგურაცია.",
+                    "webhook_not_internet_accessible": "თქვენი Home Assistant ეკზემპლარი საჭირორებს ინტერნეტთან წვდომას webhook შეტყობინებების მისაღებად."
+                }
+            }
+        },
+        "mill": {
+            "config": {
+                "error": {
+                    "cannot_connect": "დაკავშირება ვერ მოხერხდა"
+                }
+            }
+        },
+        "motion_blinds": {
+            "config": {
+                "abort": {
+                    "already_configured": "მოწყპბილობა უკვე დაკონფიგურირებულია",
+                    "already_in_progress": "კონფიგურირების მიმდევრბა უკვე მიმდინარეობს",
+                    "connection_error": "დაკავშრება ვერ მოხერხდა"
+                },
+                "flow_title": "{short_mac} ({ip_address})",
+                "step": {
+                    "user": {
+                        "data": {
+                            "host": "IP მისამართი"
+                        },
+                        "description": "თქვენ დაგჭირდებათ 16 ასოიანი API key, ინსტრუქციისთვის იხილეთ https:\/\/www.home-assistant.io\/integrations\/motion_blinds\/#retrieving-the-key"
+                    }
+                }
+            }
+        },
+        "nest": {
+            "config": {
+                "abort": {
+                    "unknown_authorize_url_generation": "ავტორიზაციი გენერირების უცნობი შეცდომა."
+                },
+                "create_entry": {
+                    "default": "აყთენთიფიკაცია წარმატებულია"
+                },
+                "step": {
+                    "pick_implementation": {
+                        "title": "აირჩიეთ აუთენთიკაცის მეთოდი"
+                    }
+                }
+            }
+        },
+        "onewire": {
+            "config": {
+                "abort": {
+                    "already_configured": "მოწყობილობა უკვე დაკონფიგურირებულია"
+                },
+                "error": {
+                    "cannot_connect": "დაკავშრება ვერ მოხერხდა"
+                },
+                "step": {
+                    "user": {
+                        "title": "1-მავთილის კონფიგურირება"
+                    }
+                }
+            }
+        },
+        "opentherm_gw": {
+            "config": {
+                "error": {
+                    "cannot_connect": "დაკავშრება ვერ მოხერხდა"
+                }
+            }
+        },
+        "ovo_energy": {
+            "config": {
+                "error": {
+                    "cannot_connect": "მარცხი შეერთებისას",
+                    "invalid_auth": "მცდარი აუთენთიკაცია"
+                },
+                "flow_title": "OVO Energy: {username}",
+                "step": {
+                    "reauth": {
+                        "data": {
+                            "password": "პაროლი"
+                        },
+                        "description": "ავტორიზაცია ვერ მოხერხდა OVOEnergy-სთვის. გთხოვთ, შეიყვანოთ თქვენი მიმდინარე სერთიფიკატები.",
+                        "title": "ხელახალი აუთენთიფიკაცია"
+                    }
+                }
+            }
+        },
+        "owntracks": {
+            "config": {
+                "abort": {
+                    "single_instance_allowed": "უკვე დაკონფიგურირებულია. შესაძლებელია მხოლოდ ერთი კონფიგურაცია."
+                }
+            }
+        },
+        "plaato": {
+            "config": {
+                "abort": {
+                    "webhook_not_internet_accessible": "თქვენი Home Assistant ეკზემპლარი საჭირორებს ინტერნეტთან წვდომას webhook შეტყობინებების მისაღებად."
+                }
+            }
+        },
+        "point": {
+            "config": {
+                "abort": {
+                    "unknown_authorize_url_generation": "ავტორიზაციი გენერირების უცნობი შეცდომა."
+                }
+            }
+        },
+        "rainmachine": {
+            "options": {
+                "step": {
+                    "init": {
+                        "data": {
+                            "zone_run_time": "ნაგულისხმევი ზონის გაშვების დრო (წამებში)"
+                        },
+                        "title": "RainMachine-ს კონფიგურაცია"
+                    }
+                }
+            }
+        },
+        "recollect_waste": {
+            "config": {
+                "abort": {
+                    "already_configured": "მოწყობილობა უკვე დაკონფიგურებულია"
+                },
+                "error": {
+                    "invalid_place_or_service_id": "არასწორი ადგილმდებარეობის ან სერვისის ID"
+                },
+                "step": {
+                    "user": {
+                        "data": {
+                            "place_id": "ადგილმდებარეობის ID",
+                            "service_id": "სერვისის ID"
+                        }
+                    }
+                }
+            }
+        },
+        "ruckus_unleashed": {
+            "config": {
+                "abort": {
+                    "already_configured": "მოწყობილობა უკვე კონფიგურირებულია"
+                },
+                "error": {
+                    "cannot_connect": "მარცხი შეერთებისას",
+                    "invalid_auth": "მცდარი ავტენთიკაცია",
+                    "unknown": "მოულოდნელი შეცდომა"
+                },
+                "step": {
+                    "user": {
+                        "data": {
+                            "host": "ჰოსტი",
+                            "password": "პაროლი",
+                            "username": "მომხმარებელი"
+                        }
+                    }
+                }
+            }
+        },
+        "sharkiq": {
+            "config": {
+                "abort": {
+                    "already_configured": "ანგარიში კონფიგურირებულია"
+                }
+            }
+        },
+        "simplisafe": {
+            "config": {
+                "error": {
+                    "invalid_auth": "მცდარი აუთენთიკაცია"
+                }
+            }
+        },
+        "solaredge": {
+            "config": {
+                "abort": {
+                    "already_configured": "მოწობილობა უკვე დაკონფიგურირებულია"
+                },
+                "error": {
+                    "already_configured": "მოწობილობა უკვე დაკონფიგურირებულია",
+                    "could_not_connect": "Solaredge API- სთან დაკავშირება ვერ მოხერხდა",
+                    "invalid_api_key": "მცდარი API key",
+                    "site_not_active": "საიტი არ არის აქტიური"
+                }
+            }
+        },
+        "srp_energy": {
+            "config": {
+                "abort": {
+                    "single_instance_allowed": "უკვე კონფიგურირებულილა. შესაძლებელია მხოლოდ ერთი კონფიგურაცია"
+                },
+                "error": {
+                    "cannot_connect": "შეერთაბა ვერ მოხერხდა",
+                    "invalid_account": "ანგარიშის ID უნდა იყოს 9 ციფრიანი ნომერი",
+                    "invalid_auth": "არასწორი აუთენთიფიკაცია",
+                    "unknown": "გაუთვალისწინებელი შეცდომა"
+                },
+                "step": {
+                    "user": {
+                        "data": {
+                            "id": "ანგარიშის ID",
+                            "is_tou": "გეგმის გამოყენების დრო",
+                            "password": "პაროლი",
+                            "username": "მომხმარებლის სახელი"
+                        }
+                    }
+                }
+            }
+        },
+        "synology_dsm": {
+            "config": {
+                "step": {
+                    "link": {
+                        "data": {
+                            "verify_ssl": "SSL სერტიფიკატის შემოწმება"
+                        }
+                    },
+                    "user": {
+                        "data": {
+                            "verify_ssl": "SSL სერტიფიკატის შემოწმება"
+                        }
+                    }
+                }
+            }
+        },
+        "tasmota": {
+            "config": {
+                "step": {
+                    "confirm": {
+                        "description": "გსურთ დააყენოთ Tasmota?"
+                    }
+                }
+            }
+        },
+        "tellduslive": {
+            "config": {
+                "abort": {
+                    "unknown_authorize_url_generation": "ავტორიზაციი გენერირების უცნობი შეცდომა."
+                },
+                "error": {
+                    "invalid_auth": "მცდარი ავთენთიკაცია"
+                }
+            }
+        },
+        "tibber": {
+            "config": {
+                "error": {
+                    "cannot_connect": "მარცხი შეერთებისას"
+                }
+            }
+        },
+        "toon": {
+            "config": {
+                "abort": {
+                    "unknown_authorize_url_generation": "ავტორიზაციი გენერირების უცნობი შეცდომა."
+                }
+            }
+        },
+        "traccar": {
+            "config": {
+                "abort": {
+                    "webhook_not_internet_accessible": "თქვენი Home Assistant ეკზემპლარი საჭირორებს ინტერნეტთან წვდომას webhook შეტყობინებების მისაღებად."
+                }
+            }
+        },
+        "twilio": {
+            "config": {
+                "abort": {
+                    "webhook_not_internet_accessible": "თქვენი Home Assistant ეკზემპლარი საჭირორებს ინტერნეტთან წვდომას webhook შეტყობინებების მისაღებად."
+                }
+            }
+        },
+        "twinkly": {
+            "config": {
+                "abort": {
+                    "device_exists": "მოწყობილობა უკვე დაკონფიგურებულია"
+                },
+                "error": {
+                    "cannot_connect": "კავშირი ვერ დამყარდა"
+                },
+                "step": {
+                    "user": {
+                        "data": {
+                            "host": "თქვენი twinkly მოწყობილობის ჰოსტი (ან IP მისამართი)"
+                        }
+                    }
+                }
+            }
+        },
+        "unifi": {
+            "options": {
+                "step": {
+                    "client_control": {
+                        "data": {
+                            "dpi_restrictions": "DPI შეზღუდვის ჯგუფების კონტროლის დაშვება"
+                        }
+                    }
+                }
+            }
+        },
+        "upcloud": {
+            "config": {
+                "error": {
+                    "cannot_connect": "დაკავშირება ვერ მოხერხდა",
+                    "invalid_auth": "მცდარი ავთენთიკაცია"
+                },
+                "step": {
+                    "user": {
+                        "data": {
+                            "password": "პაროლი",
+                            "username": "მომხმარებელი"
+                        }
+                    }
+                }
+            },
+            "options": {
+                "step": {
+                    "init": {
+                        "data": {
+                            "scan_interval": "განახლების ინტერვალი წამებში, მინიმუმ 30"
+                        }
+                    }
+                }
+            }
+        },
+        "vizio": {
+            "config": {
+                "abort": {
+                    "cannot_connect": "კავშირი ვერ დამყარდა"
+                }
+            }
+        },
+        "withings": {
+            "config": {
+                "error": {
+                    "already_configured": "ანგარიში კონფიგურირებულია"
+                }
+            }
+        },
+        "xbox": {
+            "config": {
+                "abort": {
+                    "authorize_url_timeout": "უვტორიზებული URL-ის გენერაციის დროის გასვლა",
+                    "missing_configuration": "კომპონენტი არ არის კონფიგურირებული. გთხოვთ მიყევით დოკუმენტაციას",
+                    "single_instance_allowed": "უკვე კონფიგურირებულია. შესაძლებელია მხოლოდ ერთი კონფიგურაცია."
+                },
+                "create_entry": {
+                    "default": "ავთენთიკაცია წარმატებულია"
+                },
+                "step": {
+                    "pick_implementation": {
+                        "title": "ამოირჩიეთ ავთენთიკაციის მეთოდი"
+                    }
+                }
+            }
+        },
+        "xiaomi_miio": {
+            "config": {
+                "error": {
+                    "cannot_connect": "მარცხი შეერთებისას"
+                }
+            }
+        }
+    }
+}

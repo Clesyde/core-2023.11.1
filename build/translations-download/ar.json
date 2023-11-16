@@ -1,0 +1,996 @@
+{
+    "common": {
+        "config_flow": {
+            "abort": {
+                "already_configured_account": "تم تكوين الحساب بالفعل"
+            }
+        },
+        "state": {
+            "active": "مفعل",
+            "closed": "مغلق",
+            "connected": "متصل",
+            "disconnected": "مفصول",
+            "home": "في المنزل",
+            "idle": "خامل",
+            "locked": "مقفل",
+            "not_home": "خارج المنزل",
+            "off": "إيقاف",
+            "on": "تشغيل",
+            "open": "مفتوح",
+            "paused": "موقّف مؤقتا",
+            "standby": "وضع الإنتظار",
+            "unlocked": "مفتوح"
+        }
+    },
+    "component": {
+        "accuweather": {
+            "config": {
+                "error": {
+                    "requests_exceeded": "تم تجاوز العدد المسموح به من الطلبات إلى Accuweather API. عليك الانتظار أو تغيير مفتاح API."
+                }
+            },
+            "platform": {
+                "sensor": {
+                    "state": {
+                        "accuweather__pressure_tendency": {
+                            "falling": "هبوط",
+                            "rising": "ارتفاع",
+                            "steady": "ثابت"
+                        }
+                    }
+                }
+            },
+            "system_health": {
+                "info": {
+                    "can_reach_server": "الوصول إلى خادم AccuWeather",
+                    "remaining_requests": "الطلبات المتبقية المسموح بها"
+                }
+            }
+        },
+        "aemet": {
+            "options": {
+                "step": {
+                    "init": {
+                        "data": {
+                            "station_updates": "جمع البيانات من محطات الطقس AEMET"
+                        }
+                    }
+                }
+            }
+        },
+        "airvisual": {
+            "config": {
+                "step": {
+                    "geography_by_name": {
+                        "data": {
+                            "country": "الدولة"
+                        }
+                    }
+                }
+            }
+        },
+        "alarm_control_panel": {
+            "device_automation": {
+                "action_type": {
+                    "disarm": "الغي تفعيل {entity_name}",
+                    "trigger": "تشغيل {entity_name}"
+                },
+                "condition_type": {
+                    "is_armed_away": "{entity_name} مفعل بعيدا",
+                    "is_armed_home": "{entity_name} مفعل بالمنزل",
+                    "is_disarmed": "{entity_name} الغي التفعيل",
+                    "is_triggered": "تم تشغيل {entity_name}"
+                },
+                "trigger_type": {
+                    "armed_away": "{entity_name} مفعل بعيدا",
+                    "armed_home": "{entity_name} مفعل بالمنزل",
+                    "disarmed": "{entity_name} الغي التفعيل"
+                }
+            },
+            "title": "لوحة تحكم الإنذار"
+        },
+        "alarmdecoder": {
+            "config": {
+                "step": {
+                    "protocol": {
+                        "data": {
+                            "device_baudrate": "معدل سرعة البث للجهاز",
+                            "device_path": "مسار الجهاز"
+                        },
+                        "title": "تكوين إعدادات الاتصال"
+                    },
+                    "user": {
+                        "data": {
+                            "protocol": "بروتوكول"
+                        }
+                    }
+                }
+            },
+            "options": {
+                "step": {
+                    "init": {
+                        "data": {
+                            "edit_select": "تعديل"
+                        },
+                        "description": "ما الذي تريد تعديله؟",
+                        "title": "تكوين AlarmDecoder"
+                    },
+                    "zone_details": {
+                        "data": {
+                            "zone_name": "اسم المنطقة",
+                            "zone_type": "نوع المنطقة"
+                        },
+                        "title": "تكوين AlarmDecoder"
+                    },
+                    "zone_select": {
+                        "data": {
+                            "zone_number": "رقم المنطقة"
+                        }
+                    }
+                }
+            }
+        },
+        "anthemav": {
+            "config": {
+                "abort": {
+                    "already_configured": "الجهاز تم تهيأته مسبقا"
+                },
+                "error": {
+                    "cannot_connect": "فشل في الاتصال"
+                },
+                "step": {
+                    "user": {
+                        "data": {
+                            "host": "مضيف",
+                            "port": "منفذ"
+                        }
+                    }
+                }
+            }
+        },
+        "apple_tv": {
+            "config": {
+                "step": {
+                    "reconfigure": {
+                        "description": "يواجه Apple TV هذا بعض الصعوبات في الاتصال ويجب إعادة تكوينه.",
+                        "title": "إعادة تكوين الجهاز"
+                    }
+                }
+            }
+        },
+        "auth": {
+            "mfa_setup": {
+                "totp": {
+                    "title": "TOTP"
+                }
+            }
+        },
+        "automation": {
+            "title": "التشغيل التلقائي"
+        },
+        "awair": {
+            "config": {
+                "step": {
+                    "reauth_confirm": {
+                        "data": {
+                            "email": "البريد الإلكتروني"
+                        }
+                    }
+                }
+            }
+        },
+        "binary_sensor": {
+            "title": "جهاز استشعار ثنائي"
+        },
+        "calendar": {
+            "title": "التقويم"
+        },
+        "camera": {
+            "title": "كاميرا"
+        },
+        "climate": {
+            "title": "الطقس"
+        },
+        "coinbase": {
+            "config": {
+                "step": {
+                    "user": {
+                        "data": {
+                            "api_token": "سر API"
+                        },
+                        "description": "يرجى إدخال تفاصيل مفتاح API الخاص بك على النحو المنصوص عليه من قبل Coinbase.",
+                        "title": "تفاصيل مفتاح Coinbase API"
+                    }
+                }
+            },
+            "options": {
+                "error": {
+                    "unknown": "حدث خطأ غير متوقع"
+                },
+                "step": {
+                    "init": {
+                        "data": {
+                            "account_balance_currencies": "أرصدة المحفظة للإبلاغ عنها.",
+                            "exchange_rate_currencies": "أسعار الصرف للإبلاغ عنها."
+                        },
+                        "description": "ضبط خيارات Coinbase"
+                    }
+                }
+            }
+        },
+        "configurator": {
+            "title": "الإعدادات"
+        },
+        "conversation": {
+            "title": "محادثة"
+        },
+        "cover": {
+            "title": "ستار"
+        },
+        "deconz": {
+            "config": {
+                "abort": {
+                    "already_configured": "الجسر تم تكوينه مسبقا",
+                    "no_bridges": "لم يتم اكتشاف جسور deCONZ"
+                },
+                "error": {
+                    "no_key": "تعذر الحصول على مفتاح API"
+                },
+                "step": {
+                    "link": {
+                        "description": "افتح بوابة deCONZ للتسجيل في Home Assistant. \n\n 1. انتقل إلى إعدادات deCONZ - > البوابة - > خيارات متقدمة\n 2. اضغط على زر \"مصادقة التطبيق\"",
+                        "title": "الارتباط مع deCONZ"
+                    }
+                }
+            },
+            "device_automation": {
+                "trigger_type": {
+                    "remote_flip_180_degrees": "انقلب الجهاز 180 درجة",
+                    "remote_flip_90_degrees": "انقلب الجهاز 90 درجة"
+                }
+            }
+        },
+        "demo": {
+            "platform": {
+                "select": {
+                    "state": {
+                        "demo__speed": {
+                            "light_speed": "سرعة الضوء"
+                        }
+                    }
+                }
+            }
+        },
+        "denonavr": {
+            "config": {
+                "abort": {
+                    "cannot_connect": "فشل الاتصال، الرجاء المحاولة مرة أخرى، قد يساعد قطع التيار الكهربائي وكابلات إيثرنت وإعادة توصيلها"
+                }
+            }
+        },
+        "device_tracker": {
+            "title": "تعقب الجهاز"
+        },
+        "ezviz": {
+            "config": {
+                "abort": {
+                    "ezviz_cloud_account_missing": "حساب سحابة Ezviz مفقود. يرجى إعادة تكوين حساب سحابة Ezviz"
+                }
+            }
+        },
+        "fan": {
+            "title": "مروحة"
+        },
+        "forecast_solar": {
+            "config": {
+                "step": {
+                    "user": {
+                        "data": {
+                            "modules power": "إجمالي طاقة ذروة واط لوحدات الطاقة الشمسية الخاصة بك"
+                        }
+                    }
+                }
+            }
+        },
+        "freedompro": {
+            "config": {
+                "step": {
+                    "user": {
+                        "description": "الرجاء إدخال مفتاح API الذي تم الحصول عليه من https:\/\/home.freedompro.eu",
+                        "title": "مفتاح Freedompro API"
+                    }
+                }
+            }
+        },
+        "gree": {
+            "config": {
+                "abort": {
+                    "no_devices_found": "لم يتم اكتشاف اجهزة في منزلك",
+                    "single_instance_allowed": "سبق وتم تكوينه. فقط تكوين واحد ممكن."
+                },
+                "step": {
+                    "confirm": {
+                        "description": "هل تريد بدء الضبط؟"
+                    }
+                }
+            }
+        },
+        "group": {
+            "title": "مجموعة"
+        },
+        "here_travel_time": {
+            "config": {
+                "step": {
+                    "origin_menu": {
+                        "menu_options": {
+                            "origin_coordinates": "استخدم موقع الخريطة",
+                            "origin_entity": "استخدم كيان"
+                        }
+                    }
+                }
+            }
+        },
+        "hive": {
+            "config": {
+                "step": {
+                    "configuration": {
+                        "data": {
+                            "device_name": "اسم الجهاز"
+                        }
+                    }
+                }
+            }
+        },
+        "homematicip_cloud": {
+            "config": {
+                "error": {
+                    "register_failed": "فشل التسجيل ، يرجى المحاولة مرة أخرى."
+                }
+            }
+        },
+        "hue": {
+            "config": {
+                "abort": {
+                    "all_configured": "تم تكوين جميع جسور Philips Hue مسبقا",
+                    "cannot_connect": "فشل في الاتصال",
+                    "discover_timeout": "غير قادر على اكتشاف جسور Hue",
+                    "no_bridges": "لم يتم اكتشاف جسور Philips Hue",
+                    "unknown": "حدث خطأ غير متوقع"
+                },
+                "error": {
+                    "linking": "حدث خطأ غير متوقع",
+                    "register_failed": "فشل التسجيل ، يرجى المحاولة مرة أخرى"
+                },
+                "step": {
+                    "link": {
+                        "description": "اضغط على الزر الموجود على الجسر لتسجيل Philips Hue مع Home Assistant. \n\n ! [موقع الزر على الجسر] (\/static\/images\/config_philips_hue.jpg)"
+                    }
+                }
+            }
+        },
+        "hyperion": {
+            "config": {
+                "step": {
+                    "confirm": {
+                        "description": "هل تريد إضافة Hyperion Ambilight إلى Home Assistant؟ \n\n ** المضيف: ** {host}\n ** المنفذ: ** {port}\n ** المعرف **: {id}",
+                        "title": "تأكيد إضافة خدمة Hyperion Ambilight"
+                    }
+                }
+            }
+        },
+        "image_processing": {
+            "title": "معالجة الصور"
+        },
+        "input_boolean": {
+            "title": "مدخل بوليني"
+        },
+        "input_datetime": {
+            "title": "خانة التاريخ والوقت"
+        },
+        "input_number": {
+            "title": "خانة الأرقام"
+        },
+        "input_select": {
+            "title": "لائحة إختيار"
+        },
+        "input_text": {
+            "title": "خانة بيانات"
+        },
+        "isy994": {
+            "options": {
+                "step": {
+                    "init": {
+                        "data": {
+                            "restore_light_state": "استعادة سطوع الضوء"
+                        },
+                        "description": "تعيين الخيارات للتكامل ISY: \n • سلسلة استشعار العقدة: أي جهاز أو مجلد يحتوي على \"سلسلة استشعار العقدة\" في الاسم سيتم التعامل معها على أنها جهاز استشعار أو جهاز استشعار ثنائي. \n • تجاهل السلسلة: سيتم تجاهل أي جهاز مع 'تجاهل سلسلة' في الاسم. \n • سلسلة استشعار المتغير: أي متغير يحتوي على \"سلسلة استشعار المتغير\" سيتم إضافتها كمستشعر. \n • استعادة سطوع الضوء: إذا تم تمكينه، سيتم استعادة السطوع السابق عند تشغيل ضوء بدلا من المدمج في الجهاز على المستوى."
+                    }
+                }
+            }
+        },
+        "konnected": {
+            "options": {
+                "step": {
+                    "options_io_ext": {
+                        "data": {
+                            "alarm1": "إنذار 1"
+                        }
+                    }
+                }
+            }
+        },
+        "kraken": {
+            "options": {
+                "step": {
+                    "init": {
+                        "data": {
+                            "scan_interval": "فترة تكرار التحديث"
+                        }
+                    }
+                }
+            }
+        },
+        "lg_soundbar": {
+            "config": {
+                "abort": {
+                    "already_configured": "الخدمة تم تهيأتها مسبقا"
+                },
+                "error": {
+                    "cannot_connect": "فشل في الاتصال"
+                },
+                "step": {
+                    "user": {
+                        "data": {
+                            "host": "المضيف"
+                        }
+                    }
+                }
+            }
+        },
+        "life360": {
+            "config": {
+                "abort": {
+                    "already_configured": "الحساب تم إعداده مسبقا",
+                    "reauth_successful": "إعادة التوثيق تمت بنجاح"
+                },
+                "error": {
+                    "cannot_connect": "فشل في الاتصال"
+                }
+            },
+            "options": {
+                "step": {
+                    "init": {
+                        "title": "خيارات الحساب"
+                    }
+                }
+            }
+        },
+        "light": {
+            "device_automation": {
+                "action_type": {
+                    "flash": "فلاش {entity_name}"
+                }
+            },
+            "title": "الضوء"
+        },
+        "lock": {
+            "title": "قفل"
+        },
+        "mailbox": {
+            "title": "البريد"
+        },
+        "media_player": {
+            "device_automation": {
+                "condition_type": {
+                    "is_idle": "{entity_name} خامل"
+                },
+                "trigger_type": {
+                    "idle": "{entity_name} اصبح خاملا"
+                }
+            },
+            "title": "مشغل الموسيقى"
+        },
+        "met_eireann": {
+            "config": {
+                "step": {
+                    "user": {
+                        "description": "أدخل موقعك لاستخدام بيانات الطقس من Met Éireann Public Weather Forecast API"
+                    }
+                }
+            }
+        },
+        "metoffice": {
+            "config": {
+                "step": {
+                    "user": {
+                        "description": "سيتم استخدام خطوط الطول والعرض للعثور على أقرب محطة طقس."
+                    }
+                }
+            }
+        },
+        "motioneye": {
+            "options": {
+                "step": {
+                    "init": {
+                        "data": {
+                            "webhook_set": "قم بتكوين webhooks الخاصة بـ motionEye للإبلاغ عن الأحداث لـ Home Assistant",
+                            "webhook_set_overwrite": "الكتابة فوق webhooks غير معروف"
+                        }
+                    }
+                }
+            }
+        },
+        "mqtt": {
+            "config": {
+                "step": {
+                    "broker": {
+                        "description": "الرجاء إدخال معلومات الاتصال لوسيط MQTT الخاص بك."
+                    }
+                }
+            }
+        },
+        "nest": {
+            "config": {
+                "error": {
+                    "unknown": "حدث خطأ غير متوقع"
+                },
+                "step": {
+                    "init": {
+                        "data": {
+                            "flow_impl": "مزود"
+                        },
+                        "title": "مزود المصادقة"
+                    },
+                    "link": {
+                        "data": {
+                            "code": "رمز PIN"
+                        },
+                        "title": "ربط حساب Nest"
+                    }
+                }
+            }
+        },
+        "netatmo": {
+            "options": {
+                "step": {
+                    "public_weather": {
+                        "data": {
+                            "area_name": "اسم المنطقة",
+                            "lat_ne": " الزاوية الشمالية الشرقية",
+                            "lat_sw": " الزاوية الجنوبية الغربية",
+                            "lon_ne": " الزاوية الشمالية الشرقية",
+                            "lon_sw": " الزاوية الجنوبية الغربية",
+                            "mode": "حساب",
+                            "show_on_map": "عرض على الخريطة"
+                        },
+                        "description": "تكوين جهاز استشعار الطقس العام لمنطقة.",
+                        "title": "جهاز استشعار الطقس العام Netatmo"
+                    },
+                    "public_weather_areas": {
+                        "data": {
+                            "new_area": "اسم المنطقة",
+                            "weather_areas": "مناطق الطقس"
+                        },
+                        "description": "تكوين أجهزة استشعار الطقس العامة.",
+                        "title": "جهاز استشعار الطقس العام Netatmo"
+                    }
+                }
+            }
+        },
+        "nextdns": {
+            "config": {
+                "error": {
+                    "cannot_connect": "فشل في الاتصال",
+                    "unknown": "خطأ غير متوقع"
+                },
+                "step": {
+                    "profiles": {
+                        "data": {
+                            "profile": "الملف الشخصي"
+                        }
+                    }
+                }
+            },
+            "system_health": {
+                "info": {
+                    "can_reach_server": "جاري الوصول إلى خادم"
+                }
+            }
+        },
+        "nina": {
+            "options": {
+                "error": {
+                    "cannot_connect": "فشل في الاتصال",
+                    "no_selection": "من فضلك اختر على الأقل مدينة\/مقاطعة واحدة",
+                    "unknown": "خطأ غير متوقع"
+                },
+                "step": {
+                    "init": {
+                        "data": {
+                            "_a_to_d": "المدينة\/المقاطعة (A-D)",
+                            "_e_to_h": "المدينة\/المقاطعة (E-H)",
+                            "_i_to_l": "المدينة\/المقاطعة (I-L)",
+                            "_m_to_q": "المدينة \/ المقاطعة (MQ)",
+                            "_r_to_u": "المدينة \/ المقاطعة (RU)",
+                            "_v_to_z": "المدينة \/ المقاطعة (VZ)",
+                            "corona_filter": "أزل تحذيرات كورونا",
+                            "slots": "التحذيرات القصوى لكل مدينة\/محافظة"
+                        },
+                        "title": "الخيارات"
+                    }
+                }
+            }
+        },
+        "nmap_tracker": {
+            "config": {
+                "error": {
+                    "invalid_hosts": "المضيفون غير صالحين"
+                },
+                "step": {
+                    "user": {
+                        "data": {
+                            "home_interval": "الحد الأدنى لعدد الدقائق بين مسح الأجهزة النشطة (للحفاظ على البطارية)",
+                            "hosts": "عناوين الشبكة (مفصولة بفواصل) للمسح"
+                        }
+                    }
+                }
+            },
+            "options": {
+                "step": {
+                    "init": {
+                        "data": {
+                            "interval_seconds": "فترة تكرار البحث"
+                        }
+                    }
+                }
+            },
+            "title": "Nmap المقتفي"
+        },
+        "notify": {
+            "title": "إشعار"
+        },
+        "nws": {
+            "config": {
+                "step": {
+                    "user": {
+                        "title": "الاتصال بخدمة الأرصاد الجوية الوطنية"
+                    }
+                }
+            }
+        },
+        "onvif": {
+            "config": {
+                "step": {
+                    "configure": {
+                        "data": {
+                            "host": "المضيف",
+                            "name": "الاسم",
+                            "password": "كلمة المرور"
+                        },
+                        "title": "تكوين جهاز ONVIF"
+                    },
+                    "user": {
+                        "data": {
+                            "auto": "بحث تلقائي"
+                        }
+                    }
+                }
+            }
+        },
+        "openweathermap": {
+            "config": {
+                "step": {
+                    "user": {
+                        "data": {
+                            "language": "اللغة",
+                            "name": "اسم التكامل"
+                        },
+                        "description": "قم بإعداد تكامل OpenWeatherMap. لإنشاء مفتاح API ، انتقل إلى https:\/\/openweathermap.org\/appid"
+                    }
+                }
+            },
+            "options": {
+                "step": {
+                    "init": {
+                        "data": {
+                            "language": "اللغة"
+                        }
+                    }
+                }
+            }
+        },
+        "overkiz": {
+            "platform": {
+                "sensor": {
+                    "state": {
+                        "overkiz__three_way_handle_direction": {
+                            "tilt": "إمالة"
+                        }
+                    }
+                }
+            }
+        },
+        "person": {
+            "title": "شخص"
+        },
+        "plant": {
+            "title": "نبتة"
+        },
+        "proximity": {
+            "title": "قرب"
+        },
+        "qnap_qsw": {
+            "config": {
+                "step": {
+                    "discovered_connection": {
+                        "data": {
+                            "password": "الرقم السري",
+                            "username": "اسم المستخدم"
+                        }
+                    }
+                }
+            }
+        },
+        "radiotherm": {
+            "config": {
+                "step": {
+                    "user": {
+                        "data": {
+                            "host": "المضيف"
+                        }
+                    }
+                }
+            }
+        },
+        "remote": {
+            "title": "تحكم عن بعد"
+        },
+        "risco": {
+            "options": {
+                "step": {
+                    "ha_to_risco": {
+                        "description": "حدد الحالة التي تريد ضبط منبه Risco عليها عند تفعيل إنذار Home Assistant"
+                    },
+                    "risco_to_ha": {
+                        "description": "حدد الحالة التي سيبلغ عنها إنذار Home Assistant لكل حالة أبلغت عنها Risco"
+                    }
+                }
+            }
+        },
+        "scene": {
+            "title": "مشهد"
+        },
+        "script": {
+            "title": "نص آلي"
+        },
+        "sensibo": {
+            "platform": {
+                "sensor": {
+                    "state": {
+                        "sensibo__sensitivity": {
+                            "n": "طبيعيا"
+                        }
+                    }
+                }
+            }
+        },
+        "sensor": {
+            "title": "أجهزة الاستشعار"
+        },
+        "shelly": {
+            "config": {
+                "step": {
+                    "confirm_discovery": {
+                        "description": "هل تريد إعداد {model} على {host} ؟ \n\n يجب إيقاظ الأجهزة التي تعمل بالبطارية والمحمية بكلمة مرور قبل متابعة الإعداد.\n ستتم إضافة الأجهزة التي تعمل بالبطارية غير المحمية بكلمة مرور عند تنشيط الجهاز ، ويمكنك الآن تنبيه الجهاز يدويًا باستخدام زر عليه أو انتظار تحديث البيانات التالي من الجهاز."
+                    }
+                }
+            }
+        },
+        "sia": {
+            "config": {
+                "step": {
+                    "user": {
+                        "title": "إنشاء اتصال لأنظمة الإنذار القائمة على SIA."
+                    }
+                }
+            }
+        },
+        "simplepush": {
+            "config": {
+                "abort": {
+                    "already_configured": "الجهاز تم تهيئته من قبل "
+                },
+                "error": {
+                    "cannot_connect": "فشل في الاتصال"
+                },
+                "step": {
+                    "user": {
+                        "data": {
+                            "device_key": "المفتاح الخاص بجهازك",
+                            "name": "الاسم"
+                        }
+                    }
+                }
+            }
+        },
+        "sonos": {
+            "config": {
+                "step": {
+                    "confirm": {
+                        "description": "هل تريد إعداد Sonos؟"
+                    }
+                }
+            }
+        },
+        "soundtouch": {
+            "config": {
+                "abort": {
+                    "already_configured": "الجهاز تم إعداده مسبقا"
+                },
+                "error": {
+                    "cannot_connect": "فشل في الاتصال"
+                },
+                "step": {
+                    "user": {
+                        "data": {
+                            "host": "المضيف"
+                        }
+                    },
+                    "zeroconf_confirm": {
+                        "description": "أنت على وشك اضافة جهاز SoundTouch ذات الاسم {name} إلى Home Assistant",
+                        "title": "جاري إضافة جهاز Bose SoundTouch"
+                    }
+                }
+            }
+        },
+        "speedtestdotnet": {
+            "config": {
+                "step": {
+                    "user": {
+                        "description": "هل أنت متأكد من أنك تريد إعداد SpeedTest؟"
+                    }
+                }
+            }
+        },
+        "sun": {
+            "title": "الشمس"
+        },
+        "switch": {
+            "title": "مفتاح"
+        },
+        "toon": {
+            "config": {
+                "abort": {
+                    "already_configured": "تم تكوين الاتفاقية المحددة بالفعل.",
+                    "no_agreements": "لا يحتوي هذا الحساب على عروض Toon."
+                },
+                "step": {
+                    "agreement": {
+                        "data": {
+                            "agreement": "اتفاقية"
+                        },
+                        "description": "حدد عنوان الاتفاقية الذي تريد إضافته.",
+                        "title": "حدد اتفاقيتك"
+                    }
+                }
+            }
+        },
+        "upnp": {
+            "options": {
+                "step": {
+                    "init": {
+                        "data": {
+                            "scan_interval": "فترة تكرار التحديث (بالثواني ، 30 على الأقل)"
+                        }
+                    }
+                }
+            }
+        },
+        "vacuum": {
+            "title": "مكنسة كهرباء"
+        },
+        "wilight": {
+            "config": {
+                "abort": {
+                    "not_supported_device": "هذا WiLight غير مدعوم حاليا",
+                    "not_wilight_device": "هذا الجهاز ليس WiLight"
+                },
+                "flow_title": "{name}",
+                "step": {
+                    "confirm": {
+                        "description": "المكونات التالية مدعومة: {components}"
+                    }
+                }
+            }
+        },
+        "withings": {
+            "config": {
+                "step": {
+                    "reauth_confirm": {
+                        "title": "إعادة مصادقة التكامل"
+                    }
+                }
+            }
+        },
+        "wled": {
+            "options": {
+                "step": {
+                    "init": {
+                        "data": {
+                            "keep_master_light": "حافظ على الضوء الرئيسي، حتى مع قطعة LED واحدة."
+                        }
+                    }
+                }
+            }
+        },
+        "wolflink": {
+            "platform": {
+                "sensor": {
+                    "state": {
+                        "wolflink__state": {
+                            "bereit_keine_ladung": "جاهز ، لا يتم التحميل"
+                        }
+                    }
+                }
+            }
+        },
+        "yeelight": {
+            "config": {
+                "flow_title": "{model} {id} ({host})",
+                "step": {
+                    "discovery_confirm": {
+                        "description": "هل تريد إعداد {model} ( {host} )؟"
+                    }
+                }
+            },
+            "options": {
+                "step": {
+                    "init": {
+                        "data": {
+                            "use_music_mode": "تمكين وضع الموسيقى"
+                        }
+                    }
+                }
+            }
+        },
+        "zha": {
+            "config_panel": {
+                "zha_alarm_options": {
+                    "title": "خيارات لوحة التحكم في الإنذار"
+                },
+                "zha_options": {
+                    "default_light_transition": "وقت انتقال الضوء الافتراضي (بالثواني)"
+                }
+            }
+        },
+        "zone": {
+            "config": {
+                "error": {
+                    "name_exists": "الاسم موجود بالفعل"
+                },
+                "step": {
+                    "init": {
+                        "data": {
+                            "icon": "أيقونة",
+                            "latitude": "خط العرض",
+                            "longitude": "خط الطول",
+                            "name": "الاسم",
+                            "radius": "نصف القطر"
+                        },
+                        "title": "تحديد معلمات المنطقة"
+                    }
+                },
+                "title": "منطقة"
+            }
+        },
+        "zwave_js": {
+            "options": {
+                "step": {
+                    "on_supervisor": {
+                        "title": "حدد طريقة الاتصال"
+                    }
+                }
+            }
+        }
+    }
+}

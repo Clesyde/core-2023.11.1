@@ -1,0 +1,15 @@
+{
+    "component": {
+        "scrape": {
+            "options": {
+                "step": {
+                    "init": {
+                        "menu_options": {
+                            "select_edit_sensor": "Configure sensor"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

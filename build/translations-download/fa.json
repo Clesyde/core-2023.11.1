@@ -1,0 +1,152 @@
+{
+    "common": {
+        "config_flow": {
+            "abort": {
+                "already_configured_account": "حساب در حال حاضر پیکربندی شده است",
+                "already_configured_device": "دستگاه در حال حاضر پیکربندی شده است",
+                "already_configured_location": "مکان در حال حاضر پیکربندی شده است",
+                "already_configured_service": "سرویس در حال حاضر پیکربندی شده است",
+                "already_in_progress": "پیکربندی در حال انجام است",
+                "cloud_not_connected": "به فضای ابری متصل نیست",
+                "no_devices_found": "هیچ دستگاهی در شبکه یافت نمی شود",
+                "oauth2_authorize_url_timeout": "مهلت تولید مجوز پایان یافت",
+                "oauth2_error": " رمز نامعتبر دریافت شد."
+            }
+        },
+        "state": {
+            "active": "فعال",
+            "closed": "بسته شده",
+            "connected": "متصل",
+            "disconnected": "قطع ",
+            "home": "خانه",
+            "idle": "بیکار",
+            "locked": "قفل شده",
+            "not_home": "بیرون",
+            "off": "خاموش",
+            "on": "روشن",
+            "open": "باز",
+            "paused": "در حالت مکث",
+            "standby": "آماده به کار",
+            "unlocked": "باز"
+        }
+    },
+    "component": {
+        "abode": {
+            "config": {
+                "step": {
+                    "user": {
+                        "data": {
+                            "password": "کلمه عبور",
+                            "username": "ایمیل"
+                        }
+                    }
+                }
+            }
+        },
+        "alarm_control_panel": {
+            "title": "کنترل پنل آلارم"
+        },
+        "automation": {
+            "title": "اتوماسیون"
+        },
+        "binary_sensor": {
+            "title": "حسگر باینری"
+        },
+        "calendar": {
+            "title": "تقویم"
+        },
+        "camera": {
+            "title": "دوربین"
+        },
+        "climate": {
+            "title": "آب و هوا"
+        },
+        "configurator": {
+            "title": "تنظیم کننده"
+        },
+        "conversation": {
+            "title": "گفتگو"
+        },
+        "cover": {
+            "title": "پوشش"
+        },
+        "device_tracker": {
+            "title": "ردیاب"
+        },
+        "fan": {
+            "title": "فن"
+        },
+        "group": {
+            "title": "گروه"
+        },
+        "image_processing": {
+            "title": "پردازش تصویر"
+        },
+        "input_boolean": {
+            "title": "ورودی بولین"
+        },
+        "insteon": {
+            "config": {
+                "abort": {
+                    "single_instance_allowed": "به درستی تنظیم شده است. تنها یک تنظیم امکان پذیر است."
+                }
+            },
+            "options": {
+                "step": {
+                    "change_plm_config": {
+                        "data": {
+                            "device": "آدرس پورت usb"
+                        }
+                    }
+                }
+            }
+        },
+        "light": {
+            "title": "چراغ"
+        },
+        "lock": {
+            "title": "قفل"
+        },
+        "mailbox": {
+            "title": "میل باکس"
+        },
+        "person": {
+            "title": "فرد"
+        },
+        "scene": {
+            "title": "صحنه"
+        },
+        "script": {
+            "title": "اسکریپت"
+        },
+        "sensor": {
+            "title": "سنسور"
+        },
+        "shelly": {
+            "config": {
+                "step": {
+                    "user": {
+                        "data": {
+                            "host": "فارسی"
+                        }
+                    }
+                }
+            }
+        },
+        "sun": {
+            "title": "آفتاب"
+        },
+        "switch": {
+            "title": "سوئیچ"
+        },
+        "system_health": {
+            "title": "سلامت سیستم"
+        },
+        "vacuum": {
+            "title": "خلاء"
+        },
+        "waze_travel_time": {
+            "title": "زمان سفر با Waze"
+        }
+    }
+}

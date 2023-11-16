@@ -1,0 +1,139 @@
+{
+    "common": {
+        "config_flow": {
+            "abort": {
+                "already_configured_account": "Kontua dagoeneko konfiguratuta dago"
+            }
+        },
+        "state": {
+            "closed": "Itxita",
+            "connected": "Konektatuta",
+            "disconnected": "Deskonektatuta",
+            "home": "Etxean",
+            "not_home": "Kanpoan",
+            "off": "Itzalita",
+            "on": "Piztuta",
+            "open": "Irekita"
+        }
+    },
+    "component": {
+        "alarm_control_panel": {
+            "title": "Alarmen kontrol panela"
+        },
+        "automation": {
+            "title": "Automatizazioa"
+        },
+        "binary_sensor": {
+            "title": "Sentsore bitarra"
+        },
+        "calendar": {
+            "title": "Egutegia"
+        },
+        "camera": {
+            "title": "Kamera"
+        },
+        "climate": {
+            "title": "Klimatizazioa"
+        },
+        "configurator": {
+            "title": "Konfiguratzailea"
+        },
+        "conversation": {
+            "title": "Elkarrizketa"
+        },
+        "dexcom": {
+            "config": {
+                "step": {
+                    "user": {
+                        "data": {
+                            "password": "密码",
+                            "server": "服务器",
+                            "username": "用户名"
+                        }
+                    }
+                }
+            },
+            "options": {
+                "step": {
+                    "init": {
+                        "data": {
+                            "unit_of_measurement": "测量单位"
+                        }
+                    }
+                }
+            }
+        },
+        "fan": {
+            "title": "Haizagailua"
+        },
+        "group": {
+            "title": "Taldea"
+        },
+        "input_boolean": {
+            "title": "Sarrera boolearra"
+        },
+        "input_datetime": {
+            "title": "Data sarrera"
+        },
+        "input_number": {
+            "title": "Zenbaki sarrera"
+        },
+        "input_select": {
+            "title": "Aukeraketa sarrera"
+        },
+        "input_text": {
+            "title": "Testu sarrera"
+        },
+        "light": {
+            "title": "Argia"
+        },
+        "lock": {
+            "title": "Sarraila"
+        },
+        "mailbox": {
+            "title": "Postontzia"
+        },
+        "notify": {
+            "title": "Jakinarazi"
+        },
+        "person": {
+            "title": "Pertsona"
+        },
+        "plant": {
+            "title": "Landarea"
+        },
+        "proximity": {
+            "title": "Gertutasuna"
+        },
+        "remote": {
+            "title": "Urrunekoa"
+        },
+        "scene": {
+            "title": "Eszena"
+        },
+        "script": {
+            "title": "Script"
+        },
+        "sensor": {
+            "title": "Sentsorea"
+        },
+        "sun": {
+            "title": "Eguzkia"
+        },
+        "system_health": {
+            "title": "Sistemaren Osasuna"
+        },
+        "vacuum": {
+            "title": "Xurgagailua"
+        },
+        "withings": {
+            "config": {
+                "step": {
+                    "reauth_confirm": {
+                        "title": "Berriro autentifikatu Integrazioa"
+                    }
+                }
+            }
+        }
+    }
+}

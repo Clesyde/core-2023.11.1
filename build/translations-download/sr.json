@@ -1,0 +1,17 @@
+{
+    "common": {
+        "config_flow": {
+            "abort": {
+                "already_configured_account": "Налог је већ конфигурисан"
+            }
+        },
+        "state": {
+            "active": "укључен"
+        }
+    },
+    "component": {
+        "person": {
+            "title": "Особа"
+        }
+    }
+}

@@ -1,0 +1,469 @@
+{
+    "common": {
+        "action": {
+            "open": "Otvoren"
+        },
+        "config_flow": {
+            "abort": {
+                "already_configured_account": "Налог је већ конфигурисан",
+                "single_instance_allowed": "Već konfigurisano. Moguća je samo jedna konfiguracija."
+            },
+            "description": {
+                "confirm_setup": "Da li želite da započnete podešavanje?"
+            }
+        },
+        "state": {
+            "closed": "Zatvoren",
+            "off": "Isključen",
+            "on": "Uključen",
+            "open": "Otvoren"
+        }
+    },
+    "component": {
+        "alarm_control_panel": {
+            "device_automation": {
+                "condition_type": {
+                    "is_disarmed": "{entity_name} je deaktiviran"
+                },
+                "trigger_type": {
+                    "disarmed": "{entity_name} deaktivirano"
+                }
+            },
+            "entity_component": {
+                "_": {
+                    "state": {
+                        "armed": "Aktivirano",
+                        "armed_away": "Aktivirano odsustvo",
+                        "armed_home": "Aktivirana kuća",
+                        "armed_night": "Aktivirana noć",
+                        "armed_vacation": "Aktiviran odmor",
+                        "arming": "Aktiviranje",
+                        "disarmed": "Deaktivirano",
+                        "disarming": "Deaktiviranje",
+                        "pending": "Čekanje"
+                    }
+                }
+            }
+        },
+        "binary_sensor": {
+            "entity_component": {
+                "door": {
+                    "state": {
+                        "off": "Zatvoren"
+                    }
+                },
+                "garage_door": {
+                    "state": {
+                        "off": "Zatvoren"
+                    }
+                },
+                "heat": {
+                    "name": "Grejanje"
+                },
+                "opening": {
+                    "state": {
+                        "off": "Zatvoren"
+                    }
+                },
+                "window": {
+                    "state": {
+                        "off": "Zatvoren"
+                    }
+                }
+            }
+        },
+        "climate": {
+            "entity_component": {
+                "_": {
+                    "name": "Termostat",
+                    "state": {
+                        "auto": "Auto",
+                        "cool": "Hlađanje",
+                        "dry": "Odvlaživanje",
+                        "fan_only": "Ventilator",
+                        "heat": "Grejanje",
+                        "heat_cool": "Grejanje\/Hlađenje"
+                    },
+                    "state_attributes": {
+                        "current_humidity": {
+                            "name": "Trenutna vlažnost"
+                        },
+                        "current_temperature": {
+                            "name": "Trenutna temperatura"
+                        },
+                        "fan_mode": {
+                            "name": "Režim ventilatora",
+                            "state": {
+                                "auto": "Auto",
+                                "high": "Visok",
+                                "low": "Nizak",
+                                "medium": "Srednji",
+                                "off": "Isključeno",
+                                "on": "Uključeno"
+                            }
+                        },
+                        "hvac_action": {
+                            "name": "Trenutna akcija",
+                            "state": {
+                                "cooling": "Hlađenje",
+                                "heating": "Grejanje",
+                                "idle": "Neaktivan",
+                                "off": "Isključen"
+                            }
+                        },
+                        "temperature": {
+                            "name": "Ciljana temperatura"
+                        }
+                    }
+                }
+            },
+            "selector": {
+                "hvac_mode": {
+                    "options": {
+                        "auto": "Auto",
+                        "cool": "Hlađanje",
+                        "dry": "Odvlaživanje",
+                        "fan_only": "Ventilator",
+                        "heat": "Grejanje",
+                        "heat_cool": "Hlađanje\/Grejanje",
+                        "off": "Isključeno"
+                    }
+                }
+            }
+        },
+        "cover": {
+            "entity_component": {
+                "_": {
+                    "state": {
+                        "closed": "Zatvoren"
+                    }
+                }
+            },
+            "services": {
+                "open_cover": {
+                    "name": "Otvoren"
+                }
+            }
+        },
+        "ezviz": {
+            "entity": {
+                "light": {
+                    "light": {
+                        "name": "Светло"
+                    }
+                }
+            }
+        },
+        "gardena_bluetooth": {
+            "entity": {
+                "switch": {
+                    "state": {
+                        "name": "Otvoren"
+                    }
+                }
+            }
+        },
+        "group": {
+            "entity_component": {
+                "_": {
+                    "state": {
+                        "closed": "Zatvoren"
+                    }
+                }
+            }
+        },
+        "lock": {
+            "services": {
+                "open": {
+                    "name": "Otvoren"
+                }
+            }
+        },
+        "media_player": {
+            "entity_component": {
+                "_": {
+                    "state_attributes": {
+                        "media_channel": {
+                            "name": "Kanal"
+                        },
+                        "media_content_type": {
+                            "state": {
+                                "channel": "Kanal"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "moon": {
+            "entity": {
+                "sensor": {
+                    "phase": {
+                        "state": {
+                            "first_quarter": "Prva četvrt",
+                            "full_moon": "Pun mesec",
+                            "last_quarter": "Poslednja četvrt",
+                            "new_moon": "Mlad mesec",
+                            "waning_crescent": "Mesečev srp u opadanju",
+                            "waning_gibbous": "Mesečeva grba u opadanju",
+                            "waxing_crescent": "Mesečev srp u porastu",
+                            "waxing_gibbous": "Mesečeva grba u porastu"
+                        }
+                    }
+                }
+            },
+            "issues": {
+                "removed_yaml": {
+                    "title": "Mesečeva YAML konfiguracija je uklonjena"
+                }
+            },
+            "platform": {
+                "sensor": {
+                    "state": {
+                        "moon__phase": {
+                            "first_quarter": "Prva četvrt",
+                            "full_moon": "Pun mesec",
+                            "last_quarter": "Poslednja četvrt",
+                            "new_moon": "Mlad mesec",
+                            "waning_crescent": "Mesečev srp u opadanju",
+                            "waning_gibbous": "Mesečeva grba u opadanju",
+                            "waxing_crescent": "Mesečev srp u porastu",
+                            "waxing_gibbous": "Mesečeva grba u porastu"
+                        }
+                    }
+                }
+            },
+            "title": "Mesec"
+        },
+        "overkiz": {
+            "entity": {
+                "select": {
+                    "open_closed_pedestrian": {
+                        "state": {
+                            "closed": "Zatvoren",
+                            "open": "Otvoren"
+                        }
+                    }
+                },
+                "sensor": {
+                    "three_way_handle_direction": {
+                        "state": {
+                            "closed": "Zatvoren",
+                            "open": "Otvoren"
+                        }
+                    }
+                }
+            },
+            "platform": {
+                "select": {
+                    "state": {
+                        "overkiz__open_closed_pedestrian": {
+                            "closed": "Zatvoren",
+                            "open": "Otvoren"
+                        }
+                    }
+                },
+                "sensor": {
+                    "state": {
+                        "overkiz__three_way_handle_direction": {
+                            "closed": "Zatvoren",
+                            "open": "Otvoren"
+                        }
+                    }
+                }
+            }
+        },
+        "season": {
+            "entity": {
+                "sensor": {
+                    "season": {
+                        "state": {
+                            "autumn": "Jesen",
+                            "spring": "Proleće",
+                            "summer": "Leto",
+                            "winter": "Zima"
+                        }
+                    }
+                }
+            },
+            "platform": {
+                "sensor": {
+                    "state": {
+                        "season__season": {
+                            "autumn": "Jesen",
+                            "spring": "Proleće",
+                            "summer": "Leto",
+                            "winter": "Zima"
+                        },
+                        "season__season__": {
+                            "autumn": "Jesen",
+                            "spring": "Proleće",
+                            "summer": "Leto",
+                            "winter": "Zima"
+                        }
+                    }
+                }
+            }
+        },
+        "sensor": {
+            "entity_component": {
+                "_": {
+                    "state_attributes": {
+                        "options": {
+                            "name": "Moguća stanja"
+                        }
+                    }
+                },
+                "temperature": {
+                    "name": "Temperatura"
+                }
+            }
+        },
+        "sun": {
+            "entity": {
+                "sensor": {
+                    "next_dawn": {
+                        "name": "Sledeća zora"
+                    },
+                    "next_dusk": {
+                        "name": "Sledeći sumrak"
+                    },
+                    "next_midnight": {
+                        "name": "Sledeća ponoć"
+                    },
+                    "next_noon": {
+                        "name": "Sledeće podne"
+                    },
+                    "next_rising": {
+                        "name": "Sledeći izlazak"
+                    },
+                    "next_setting": {
+                        "name": "Sledeći zalazak"
+                    },
+                    "solar_azimuth": {
+                        "name": "Solarni azimut"
+                    },
+                    "solar_elevation": {
+                        "name": "Solarna nadmorska visina"
+                    }
+                }
+            }
+        },
+        "template": {
+            "selector": {
+                "binary_sensor_device_class": {
+                    "options": {
+                        "light": "Светло"
+                    }
+                }
+            }
+        },
+        "tuya": {
+            "entity": {
+                "select": {
+                    "vacuum_cistern": {
+                        "state": {
+                            "closed": "Zatvoren"
+                        }
+                    }
+                }
+            },
+            "platform": {
+                "select": {
+                    "state": {
+                        "tuya__vacuum_cistern": {
+                            "closed": "Zatvoren"
+                        }
+                    }
+                }
+            }
+        },
+        "weather": {
+            "entity_component": {
+                "_": {
+                    "state": {
+                        "clear-night": "Vedra noć",
+                        "cloudy": "Oblačno",
+                        "exceptional": "Izuzetno",
+                        "fog": "Magla",
+                        "hail": "Grad",
+                        "lightning": "Grmljavina",
+                        "lightning-rainy": "Grmljavina sa kišom",
+                        "partlycloudy": "Delimično oblačno",
+                        "pouring": "Pljusak",
+                        "rainy": "Kiša",
+                        "snowy": "Sneg",
+                        "snowy-rainy": "Sneg i kiša",
+                        "sunny": "Sunčano",
+                        "windy": "Vetrovito",
+                        "windy-variant": "Vetrovito"
+                    },
+                    "state_attributes": {
+                        "forecast": {
+                            "name": "Vremenska prognoza"
+                        },
+                        "humidity": {
+                            "name": "Vlažnost"
+                        },
+                        "ozone": {
+                            "name": "Ozon"
+                        },
+                        "precipitation_unit": {
+                            "name": "Jedinica za padavine"
+                        },
+                        "pressure": {
+                            "name": "Vazdušni pritisak"
+                        },
+                        "pressure_unit": {
+                            "name": "Jedinica za pritisak"
+                        },
+                        "temperature": {
+                            "name": "Temperatura"
+                        },
+                        "temperature_unit": {
+                            "name": "Jedinica za temperaturu"
+                        },
+                        "visibility": {
+                            "name": "Vidljivost"
+                        },
+                        "visibility_unit": {
+                            "name": "Jedinica za vidljivost"
+                        },
+                        "wind_bearing": {
+                            "name": "Smer vetra"
+                        },
+                        "wind_speed": {
+                            "name": "Brzina vetra"
+                        },
+                        "wind_speed_unit": {
+                            "name": "Jedinica za brzinu vetra"
+                        }
+                    }
+                }
+            },
+            "title": "Vreme"
+        },
+        "zha": {
+            "config": {
+                "abort": {
+                    "wrong_firmware_installed": "Vaš uređaj koristi pogrešan firmware i ne može se koristiti sa ZHA dok se ne instalira ispravan firmware. [Kreirana je popravka]({repair_url}) sa više informacija i uputstvima kako da rešite ovaj problem."
+                }
+            },
+            "config_panel": {
+                "zha_options": {
+                    "title": "Globalne opcije"
+                }
+            },
+            "device_automation": {
+                "trigger_subtype": {
+                    "open": "Otvoren"
+                }
+            },
+            "options": {
+                "abort": {
+                    "wrong_firmware_installed": "Vaš uređaj koristi pogrešan firmware i ne može se koristiti sa ZHA dok se ne instalira ispravan firmware. [Kreirana je popravka]({repair_url}) sa više informacija i uputstvima kako da rešite ovaj problem."
+                }
+            }
+        }
+    }
+}

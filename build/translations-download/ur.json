@@ -1,0 +1,9 @@
+{
+    "common": {
+        "config_flow": {
+            "abort": {
+                "already_configured_account": "اکاؤنٹ پہلے سے ہی ترتیب دیا گیا ہے۔"
+            }
+        }
+    }
+}

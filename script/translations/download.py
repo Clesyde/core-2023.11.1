@@ -136,9 +136,11 @@ def run():
     """Run the script."""
     DOWNLOAD_DIR.mkdir(parents=True, exist_ok=True)
 
-    run_download_docker()
+    #run_download_docker()
 
     delete_old_translations()
+
+    print(DOWNLOAD_DIR)
 
     write_integration_translations()
 

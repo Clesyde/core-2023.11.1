@@ -1,0 +1,182 @@
+{
+    "common": {
+        "config_flow": {
+            "abort": {
+                "already_configured_account": "ఖాతా ఇప్పటికే కాన్ఫిగర్ చేయబడింది"
+            }
+        },
+        "state": {
+            "closed": "మూసుకుంది",
+            "connected": "కనెక్ట్",
+            "disconnected": "డిస్కనెక్ట్",
+            "home": "ఇంట",
+            "idle": "ఐడిల్",
+            "locked": "మూసి వుండు",
+            "not_home": "బయట",
+            "off": "ఆఫ్",
+            "on": "ఆన్",
+            "open": "తెరిచివుంది",
+            "paused": "ఆపివుంది",
+            "standby": "నిలకడ",
+            "unlocked": "తెరుచి వుండు"
+        }
+    },
+    "component": {
+        "alarm_control_panel": {
+            "title": "అలారం నియంత్రణ ప్యానెల్"
+        },
+        "automation": {
+            "title": "ఆటోమేషన్"
+        },
+        "binary_sensor": {
+            "title": "బైనరీ సెన్సార్"
+        },
+        "calendar": {
+            "title": "క్యాలెండరు"
+        },
+        "camera": {
+            "title": "కెమేరా"
+        },
+        "climate": {
+            "title": "వాతావరణం"
+        },
+        "configurator": {
+            "title": "కాన్ఫిగరేటర్"
+        },
+        "conversation": {
+            "title": "సంభాషణ"
+        },
+        "cover": {
+            "title": "కవర్"
+        },
+        "device_tracker": {
+            "title": "పరికరం ట్రాకర్"
+        },
+        "fan": {
+            "title": "ఫ్యాన్"
+        },
+        "group": {
+            "title": "గ్రూప్"
+        },
+        "homekit": {
+            "options": {
+                "step": {
+                    "advanced": {
+                        "data": {
+                            "devices": "పరికరాలు (ట్రిగ్గర్లు)"
+                        }
+                    }
+                }
+            }
+        },
+        "image_processing": {
+            "title": "ఇమేజ్ ప్రాసెసింగ్"
+        },
+        "input_boolean": {
+            "title": "ఇన్పుట్ బూలియన్"
+        },
+        "input_datetime": {
+            "title": "ఇన్పుట్ తేదీసమయం"
+        },
+        "input_number": {
+            "title": "ఇన్పుట్ సంఖ్య"
+        },
+        "input_select": {
+            "title": "ఇన్పుట్ ఎంచుకో"
+        },
+        "input_text": {
+            "title": "ఇన్పుట్ టెక్స్ట్"
+        },
+        "iotawatt": {
+            "config": {
+                "error": {
+                    "cannot_connect": "కనెక్ట్ అవ్వడం కుదరలేదు",
+                    "invalid_auth": "సరికాని ప్రామాణికం",
+                    "unknown": "అనుకోని లోపం "
+                },
+                "step": {
+                    "auth": {
+                        "data": {
+                            "username": "వినియోగదారుని పేరు "
+                        },
+                        "description": "IoTawatt పరికరానికి ప్రామాణీకరణ అవసరం. దయచేసి వినియోగదారు పేరు మరియు పాస్‌వర్డ్‌ను నమోదు చేసి, సమర్పించు బటన్‌ని క్లిక్ చేయండి."
+                    }
+                }
+            }
+        },
+        "light": {
+            "title": "లైట్"
+        },
+        "lock": {
+            "title": "లాక్"
+        },
+        "mailbox": {
+            "title": "మెయిల్ బాక్స్"
+        },
+        "media_player": {
+            "title": "మీడియా ప్లేయర్"
+        },
+        "nanoleaf": {
+            "config": {
+                "step": {
+                    "link": {
+                        "description": "మీ నానో లీఫ్ లోని LED బటన్లు ఫ్లాషింగ్ ప్రారంభమయ్యే వరకు పవర్ బటన్‌ని 5 సెకన్ల పాటు నొక్కి ఉంచండి, ఆపై 30 సెకన్లలో ** సబ్మిట్ ** క్లిక్ చేయండి.",
+                        "title": "నానోలీఫ్‌ని లింక్ చేయండి"
+                    }
+                }
+            }
+        },
+        "notify": {
+            "title": "తెలియజేయి"
+        },
+        "openuv": {
+            "options": {
+                "step": {
+                    "init": {
+                        "data": {
+                            "from_window": "రక్షణ విండో కోసం UV సూచికను ప్రారంభిస్తోంది",
+                            "to_window": "రక్షణ విండో కొరకు యువి ఇండెక్స్ ని ముగిస్తుంది"
+                        },
+                        "title": "OpenUV ని కాన్ఫిగర్ చేయండి"
+                    }
+                }
+            }
+        },
+        "plant": {
+            "title": "మొక్క"
+        },
+        "proximity": {
+            "title": "సామీప్యత"
+        },
+        "remote": {
+            "title": "రిమోట్"
+        },
+        "renault": {
+            "config": {
+                "abort": {
+                    "reauth_successful": "పునః-ప్రామాణికం విజయవంతమయింది"
+                },
+                "step": {
+                    "reauth_confirm": {
+                        "description": "దయచేసి {username} కోసం మీ పాస్‌వర్డ్‌ని నవీకరించండి"
+                    }
+                }
+            }
+        },
+        "scene": {
+            "title": "దృశ్యం"
+        },
+        "script": {
+            "title": "స్క్రిప్ట్"
+        },
+        "sensor": {
+            "title": "సెన్సర్"
+        },
+        "sun": {
+            "title": "సూర్యుడు"
+        },
+        "switch": {
+            "title": "స్విచ్"
+        }
+    }
+}

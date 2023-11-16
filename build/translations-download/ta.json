@@ -1,0 +1,60 @@
+{
+    "common": {
+        "config_flow": {
+            "abort": {
+                "already_configured_account": "கணக்கு ஏற்கனவே கட்டமைக்கப்பட்டுள்ளது"
+            }
+        },
+        "state": {
+            "closed": "மூடப்பட்டது",
+            "home": "முகப்பு",
+            "idle": "பணியின்றி",
+            "locked": "பூட்டப்பட்டது",
+            "not_home": "தொலைவில்",
+            "off": "ஆஃப்",
+            "on": "ஆன்",
+            "open": "திறக்கப்பட்டுள்ளது",
+            "paused": "இடைநிறுத்தப்பட்டுள்ளது",
+            "standby": "காத்திரு",
+            "unlocked": "திறக்கப்பட்டது"
+        }
+    },
+    "component": {
+        "input_text": {
+            "title": "உரை உள்ளிடு"
+        },
+        "light": {
+            "title": "மின் விளக்கு"
+        },
+        "lock": {
+            "title": "பூட்டு"
+        },
+        "mailbox": {
+            "title": "அஞ்சல் பெட்டி"
+        },
+        "media_player": {
+            "title": "மீடியா பிளேயர்"
+        },
+        "notify": {
+            "title": "தெரிவி"
+        },
+        "remote": {
+            "title": "ரிமோட்"
+        },
+        "scene": {
+            "title": "காட்சி"
+        },
+        "script": {
+            "title": "ஸ்கிரிப்ட்"
+        },
+        "sensor": {
+            "title": "சென்சார்"
+        },
+        "sun": {
+            "title": "சூரியன்"
+        },
+        "switch": {
+            "title": "ஸ்விட்ச்"
+        }
+    }
+}

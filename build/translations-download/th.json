@@ -1,0 +1,775 @@
+{
+    "common": {
+        "config_flow": {
+            "abort": {
+                "already_configured_account": "บัญชีได้รับการกำหนดค่าแล้ว"
+            }
+        },
+        "state": {
+            "active": "ใช้งานอยู่",
+            "closed": "ปิด",
+            "connected": "เชื่อมต่อแล้ว",
+            "disconnected": "ตัดการเชื่อมต่อ",
+            "home": "อยู่บ้าน",
+            "idle": "ไม่ได้ใช้งาน",
+            "locked": "ล็อค",
+            "not_home": "ไม่อยู่",
+            "off": "ปิด",
+            "on": "เปิด",
+            "open": "เปิด",
+            "paused": "หยุดชั่วคราว",
+            "standby": "แสตนด์บาย",
+            "unlocked": "ปลดล็อค"
+        }
+    },
+    "component": {
+        "abode": {
+            "config": {
+                "step": {
+                    "mfa": {
+                        "title": "ป้อนรหัส MFA จาก Abode"
+                    }
+                }
+            }
+        },
+        "alarm_control_panel": {
+            "title": "แผงควบคุมสัญญาณเตือนภัย"
+        },
+        "ambient_station": {
+            "config": {
+                "error": {
+                    "no_devices": "ไม่พบอุปกรณ์ใดๆ ในบัญชีเลย"
+                },
+                "step": {
+                    "user": {
+                        "data": {
+                            "api_key": "คีย์ API",
+                            "app_key": "รหัสแอปพลิเคชัน"
+                        },
+                        "title": "กรอกข้อมูลของคุณ"
+                    }
+                }
+            }
+        },
+        "aurora_abb_powerone": {
+            "config": {
+                "step": {
+                    "user": {
+                        "data": {
+                            "port": "อะแดปเตอร์ พอร์ต RS485 หรือ USB-RS485"
+                        }
+                    }
+                }
+            }
+        },
+        "auth": {
+            "mfa_setup": {
+                "notify": {
+                    "step": {
+                        "setup": {
+                            "title": "ตรวจสอบการติดตั้ง"
+                        }
+                    }
+                }
+            }
+        },
+        "automation": {
+            "title": "การทำงานอัตโนมัติ"
+        },
+        "axis": {
+            "config": {
+                "step": {
+                    "user": {
+                        "data": {
+                            "password": "รหัสผ่าน",
+                            "port": "Port",
+                            "username": "ชื่อผู้ใช้"
+                        }
+                    }
+                }
+            }
+        },
+        "binary_sensor": {
+            "device_class": {
+                "cold": "เย็น",
+                "gas": "แก๊ส",
+                "heat": "ความร้อน",
+                "problem": "ปัญหา",
+                "smoke": "ควัน",
+                "sound": "เสียง",
+                "vibration": "การสั่น"
+            },
+            "title": "เซ็นเซอร์แบบไบนารี"
+        },
+        "button": {
+            "title": "ปุ่ม"
+        },
+        "calendar": {
+            "title": "ปฏิทิน"
+        },
+        "camera": {
+            "title": "กล้อง"
+        },
+        "cast": {
+            "config": {
+                "step": {
+                    "confirm": {
+                        "description": "คุณต้องการตั้งค่า Google Cast หรือไม่?"
+                    }
+                }
+            }
+        },
+        "climate": {
+            "title": "สภาพอากาศ"
+        },
+        "cloud": {
+            "system_health": {
+                "info": {
+                    "remote_server": "เซิร์ฟเวอร์ระยะไกล"
+                }
+            }
+        },
+        "configurator": {
+            "title": "ตัวตั้งค่า"
+        },
+        "conversation": {
+            "title": "การสนทนา"
+        },
+        "cover": {
+            "title": "ม่าน"
+        },
+        "daikin": {
+            "config": {
+                "step": {
+                    "user": {
+                        "data": {
+                            "host": "โฮสต์"
+                        }
+                    }
+                }
+            }
+        },
+        "device_tracker": {
+            "title": "อุปกรณ์ติดตาม"
+        },
+        "devolo_home_network": {
+            "config": {
+                "error": {
+                    "cannot_connect": "การเชื่อมต่อล้มเหลว",
+                    "unknown": "ข้อผิดพลาดที่ไม่คาดคิด"
+                },
+                "step": {
+                    "user": {
+                        "data": {
+                            "ip_address": "IP แอดเดรส"
+                        }
+                    }
+                }
+            }
+        },
+        "discovergy": {
+            "config": {
+                "step": {
+                    "reauth": {
+                        "data": {
+                            "email": "อีเมล",
+                            "password": "รหัสผ่าน"
+                        }
+                    },
+                    "user": {
+                        "data": {
+                            "email": "อีเมล",
+                            "password": "รหัสผ่าน"
+                        }
+                    }
+                }
+            }
+        },
+        "ebusd": {
+            "state": {
+                "day": "วัน",
+                "night": "กลางคืน"
+            }
+        },
+        "emulated_roku": {
+            "config": {
+                "step": {
+                    "user": {
+                        "data": {
+                            "host_ip": "โฮสต์ IP",
+                            "name": "ชื่อ"
+                        }
+                    }
+                }
+            }
+        },
+        "esphome": {
+            "config": {
+                "step": {
+                    "authenticate": {
+                        "data": {
+                            "password": "รหัสผ่าน"
+                        }
+                    }
+                }
+            }
+        },
+        "fan": {
+            "title": "พัดลม"
+        },
+        "glances": {
+            "config": {
+                "step": {
+                    "user": {
+                        "data": {
+                            "username": "ชื่อผู้ใช้"
+                        }
+                    }
+                }
+            }
+        },
+        "group": {
+            "selector": {
+                "type": {
+                    "options": {
+                        "max": "สูงสุด",
+                        "product": "ผลิตภัณฑ์"
+                    }
+                }
+            },
+            "title": "กลุ่ม"
+        },
+        "hassio": {
+            "issues": {
+                "issue_system_docker_config": {
+                    "title": "ต้องการรีสตาร์ท"
+                }
+            }
+        },
+        "homekit": {
+            "options": {
+                "step": {
+                    "advanced": {
+                        "data": {
+                            "devices": "อุปกรณ์ (ทริกเกอร์)"
+                        }
+                    }
+                }
+            }
+        },
+        "homekit_controller": {
+            "config": {
+                "abort": {
+                    "already_configured": "อุปกรณ์เสริมนี้ได้รับการกำหนดค่าด้วยตัวควบคุมนี้แล้ว",
+                    "already_paired": "อุปกรณ์เสริมนี้จับคู่กับอุปกรณ์อื่นแล้ว โปรดรีเซ็ตอุปกรณ์เสริมแล้วลองอีกครั้ง",
+                    "ignored_model": "การสนับสนุนอุปกรณ์ HomeKit รุ่นนี้ถูกปิดกั้นไว้ แต่ก็มีการทำงานบางอย่างที่ใช้งานได้",
+                    "invalid_config_entry": "อุปกรณ์นี้บอกว่ากำลังพร้อมที่จะจับคู่ แต่มันมีการกำหนดค่าที่ขัดแย้งกันอยู่ Home Assistant เลยทำการลบทิ้ง",
+                    "no_devices": "ไม่พบอุปกรณ์ที่จะใช้จับคู่ใดๆ เลย"
+                },
+                "error": {
+                    "authentication_error": "รหัสการจับคู่ HomeKit ไม่ถูกต้อง กรุณาตรวจสอบและลองอีกครั้ง",
+                    "unable_to_pair": "ไม่สามารถจับคู่ได้ โปรดลองอีกครั้ง",
+                    "unknown_error": "อุปกรณ์รายงานข้อผิดพลาดที่ไม่รู้จัก การจับคู่ล้มเหลว"
+                },
+                "step": {
+                    "pair": {
+                        "data": {
+                            "pairing_code": "รหัสการจับคู่"
+                        },
+                        "description": "อุปกรณ์ HomeKit สื่อสารกับ {name} ( {category} ) ผ่านเครือข่ายท้องถิ่นโดยใช้การเชื่อมต่อที่เข้ารหัสอย่างปลอดภัยโดยไม่ต้องใช้ตัวควบคุม HomeKit หรือ iCloud แยกต่างหาก ป้อนรหัสการจับคู่ HomeKit ของคุณ (ในรูปแบบ XXX-XX-XXX) เพื่อใช้อุปกรณ์เสริมนี้ มักจะพบรหัสนี้บนอุปกรณ์หรือบนบรรจุภัณฑ์",
+                        "title": "จับคู่กับอุปกรณ์เสริม HomeKit"
+                    },
+                    "user": {
+                        "data": {
+                            "device": "อุปกรณ์"
+                        },
+                        "description": "เลือกอุปกรณ์ที่คุณต้องการจะจับคู่",
+                        "title": "จับคู่กับอุปกรณ์เสริม HomeKit"
+                    }
+                }
+            },
+            "title": "อุปกรณ์เสริม HomeKit"
+        },
+        "homematicip_cloud": {
+            "config": {
+                "abort": {
+                    "already_configured": "จุดเชื่อมต่อ (AP) ได้ทำการกำหนดค่าแล้ว"
+                },
+                "step": {
+                    "init": {
+                        "data": {
+                            "hapid": "ไอดีจุดเข้าใช้งาน (SGTIN)"
+                        }
+                    }
+                }
+            }
+        },
+        "hue": {
+            "config": {
+                "abort": {
+                    "unknown": "เกิดข้อผิดพลาดที่ไม่ทราบสาเหตุ"
+                },
+                "error": {
+                    "register_failed": "การลงทะเบียนล้มเหลวโปรดลองอีกครั้ง"
+                }
+            }
+        },
+        "image_processing": {
+            "title": "การประมวลผลภาพ"
+        },
+        "input_boolean": {
+            "title": "ป้อนค่าตรรกะ"
+        },
+        "input_datetime": {
+            "title": "ป้อนวันเวลา"
+        },
+        "input_number": {
+            "title": "ป้อนตัวเลข"
+        },
+        "input_select": {
+            "title": "เลือกข้อมูล"
+        },
+        "input_text": {
+            "title": "ป้อนข้อความ"
+        },
+        "iotawatt": {
+            "config": {
+                "error": {
+                    "cannot_connect": "การเชื่อมต่อล้มเหลว",
+                    "invalid_auth": "การตรวจสอบสิทธิ์ที่ไม่ถูกต้อง",
+                    "unknown": "ข้อผิดพลาดที่ไม่คาดคิด"
+                },
+                "step": {
+                    "auth": {
+                        "data": {
+                            "password": "รหัสผ่าน",
+                            "username": "ชื่อผู้ใช้"
+                        },
+                        "description": "อุปกรณ์ IoTawatt ต้องการการรับรองความถูกต้อง กรุณาใส่ชื่อผู้ใช้กับรหัสผ่าน และคลิกปุ่มส่ง"
+                    }
+                }
+            }
+        },
+        "ipma": {
+            "config": {
+                "error": {
+                    "name_exists": "มีชื่อนี้อยู่แล้ว"
+                },
+                "step": {
+                    "user": {
+                        "data": {
+                            "name": "ชื่อ"
+                        },
+                        "title": "ตำแหน่ง"
+                    }
+                }
+            }
+        },
+        "light": {
+            "title": "แสงสว่าง"
+        },
+        "lock": {
+            "title": "ล็อค"
+        },
+        "mailbox": {
+            "title": "กล่องจดหมาย"
+        },
+        "media_player": {
+            "title": "เครื่องเล่นสื่อ"
+        },
+        "moon": {
+            "platform": {
+                "sensor": {
+                    "state": {
+                        "moon__phase": {
+                            "full_moon": "พระจันทร์เต็มดวง"
+                        }
+                    }
+                }
+            }
+        },
+        "mqtt": {
+            "config": {
+                "abort": {
+                    "already_configured": "บริการนี้กำหนดค่าแล้ว"
+                },
+                "step": {
+                    "broker": {
+                        "data": {
+                            "password": "รหัสผ่าน",
+                            "username": "ชื่อผู้ใช้"
+                        }
+                    },
+                    "hassio_confirm": {
+                        "data": {
+                            "discovery": "เปิดใช้การค้นหาอุปกรณ์"
+                        }
+                    }
+                }
+            }
+        },
+        "mystrom": {
+            "config": {
+                "error": {
+                    "cannot_connect": "เชื่อมต่อล้มเหลว"
+                },
+                "step": {
+                    "user": {
+                        "data": {
+                            "name": "ชื่อ"
+                        }
+                    }
+                }
+            }
+        },
+        "nanoleaf": {
+            "config": {
+                "abort": {
+                    "reauth_successful": "การตรวจสอบสิทธิ์อีกครั้งสำเร็จ"
+                },
+                "error": {
+                    "unknown": "ข้อผิดพลาดที่ไม่คาดดิด"
+                },
+                "flow_title": "{name}",
+                "step": {
+                    "link": {
+                        "description": "กดปุ่มเปิด\/ปิดบน Nanoleaf ของคุณค้างไว้ 5 วินาที จนกว่าไฟ LED ของปุ่มเริ่มกะพริบ จากนั้นคลิก **ส่ง** ภายใน 30 วินาที",
+                        "title": "ลิงก์กับ Nanoleaf"
+                    },
+                    "user": {
+                        "data": {
+                            "host": "โฮสต์"
+                        }
+                    }
+                }
+            }
+        },
+        "nest": {
+            "config": {
+                "step": {
+                    "link": {
+                        "data": {
+                            "code": "Pin code"
+                        }
+                    },
+                    "reauth_confirm": {
+                        "title": "ตรวจสอบสิทธิ์การบูรณาการอีกครั้ง"
+                    }
+                }
+            },
+            "device_automation": {
+                "trigger_type": {
+                    "camera_motion": "ตรวจพบการเคลื่อนไหว",
+                    "camera_person": "ตรวจพบบุคคล",
+                    "camera_sound": "ตรวจพบเสียง"
+                }
+            }
+        },
+        "nmap_tracker": {
+            "options": {
+                "step": {
+                    "init": {
+                        "data": {
+                            "consider_home": "โปรดรอสักครู่ จนกว่าอุปกรณ์ติดตาม ทำเครื่องหมายว่าไม่อยู่บ้าน หลังจากที่ไม่มีใครเห็น"
+                        }
+                    }
+                }
+            }
+        },
+        "notify": {
+            "title": "แจ้ง"
+        },
+        "openuv": {
+            "options": {
+                "step": {
+                    "init": {
+                        "data": {
+                            "from_window": "เริ่มดัชนี UV สําหรับหน้าต่างป้องกัน",
+                            "to_window": "สิ้นสุดดัชนี UV สำหรับหน้าต่างป้องกัน"
+                        },
+                        "title": "กำหนดค่า OpenUV"
+                    }
+                }
+            }
+        },
+        "person": {
+            "title": "บุคคล"
+        },
+        "plant": {
+            "title": "พืช"
+        },
+        "proximity": {
+            "title": "ใกล้ชิด"
+        },
+        "ps4": {
+            "config": {
+                "step": {
+                    "link": {
+                        "data": {
+                            "code": "PIN",
+                            "ip_address": "ที่อยู่ IP",
+                            "name": "ชื่อ",
+                            "region": "ภูมิภาค"
+                        }
+                    }
+                }
+            }
+        },
+        "rainmachine": {
+            "config": {
+                "step": {
+                    "user": {
+                        "data": {
+                            "password": "รหัสผ่าน"
+                        }
+                    }
+                }
+            }
+        },
+        "remote": {
+            "title": "รีโมต"
+        },
+        "renault": {
+            "config": {
+                "abort": {
+                    "reauth_successful": "การตรวจสอบสิทธิ์อีกครั้งสำเร็จ"
+                },
+                "step": {
+                    "reauth_confirm": {
+                        "data": {
+                            "password": "รหัสผ่าน"
+                        },
+                        "description": "โปรดอัปเดตรหัสผ่านของคุณสำหรับ {username}"
+                    }
+                }
+            }
+        },
+        "ridwell": {
+            "config": {
+                "abort": {
+                    "already_configured": "อุปกรณ์นี้กำหนดค่าแล้ว"
+                },
+                "error": {
+                    "unknown": "ข้อผิดพลาดที่ไม่คาดคิด"
+                },
+                "step": {
+                    "reauth_confirm": {
+                        "data": {
+                            "password": "รหัสผ่าน"
+                        }
+                    },
+                    "user": {
+                        "data": {
+                            "password": "รหัสผ่าน",
+                            "username": "ชื่อผู้ใช้"
+                        },
+                        "description": "ป้อนชื่อผู้ใช้ และ รหัสผ่าน"
+                    }
+                }
+            }
+        },
+        "roborock": {
+            "entity": {
+                "select": {
+                    "mop_intensity": {
+                        "state": {
+                            "high": "สูง",
+                            "low": "ต่ำ",
+                            "medium": "ปานกลาง"
+                        }
+                    }
+                },
+                "sensor": {
+                    "status": {
+                        "name": "สถานะ",
+                        "state": {
+                            "charging": "กำลังชาร์จ",
+                            "cleaning": "กำลังทำความสะอาด",
+                            "error": "ผิดพลาด",
+                            "paused": "หยุดชั่วคราว",
+                            "shutting_down": "กำลังปิด",
+                            "starting": "กำลังเริ่มต้น",
+                            "updating": "กำลังอัปเดต"
+                        }
+                    }
+                },
+                "switch": {
+                    "dnd_switch": {
+                        "name": "ห้ามรบกวน"
+                    }
+                },
+                "vacuum": {
+                    "roborock": {
+                        "state_attributes": {
+                            "fan_speed": {
+                                "state": {
+                                    "auto": "อัตโนมัติ",
+                                    "balanced": "สมดุล",
+                                    "custom": "กำหนดเอง",
+                                    "gentle": "อ่อนโยน",
+                                    "max": "สูงสุด",
+                                    "medium": "ปานกลาง",
+                                    "off": "ปิด",
+                                    "quiet": "เงียบ",
+                                    "silent": "เงียบ",
+                                    "standard": "มาตรฐาน",
+                                    "turbo": "เทอร์โบ"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "scene": {
+            "title": "ฉาก"
+        },
+        "script": {
+            "title": "สคริปต์"
+        },
+        "season": {
+            "platform": {
+                "sensor": {
+                    "state": {
+                        "season__season__": {
+                            "autumn": "ฤดูใบไม้ร่วง",
+                            "spring": "ฤดูใบไม้ผลิ",
+                            "summer": "ฤดูร้อน",
+                            "winter": "ฤดูหนาว"
+                        }
+                    }
+                }
+            }
+        },
+        "sense": {
+            "config": {
+                "step": {
+                    "user": {
+                        "data": {
+                            "timeout": "หมดเวลา"
+                        }
+                    }
+                }
+            }
+        },
+        "sensor": {
+            "title": "เซนเซอร์"
+        },
+        "smhi": {
+            "config": {
+                "step": {
+                    "user": {
+                        "data": {
+                            "latitude": "ละติจูด",
+                            "longitude": "ลองจิจูด"
+                        }
+                    }
+                }
+            }
+        },
+        "sonos": {
+            "config": {
+                "step": {
+                    "confirm": {
+                        "description": "คุณต้องการตั้งค่า Sonos หรือไม่?"
+                    }
+                }
+            }
+        },
+        "sun": {
+            "title": "ดวงอาทิตย์"
+        },
+        "switch": {
+            "title": "สวิตซ์"
+        },
+        "synology_dsm": {
+            "config": {
+                "abort": {
+                    "reconfigure_successful": "กำหนดค่าใหม่สำเร็จ"
+                }
+            }
+        },
+        "system_health": {
+            "title": "ข้อมูลสถานะของระบบ"
+        },
+        "tellduslive": {
+            "config": {
+                "step": {
+                    "user": {
+                        "data": {
+                            "host": "โฮสต์"
+                        }
+                    }
+                }
+            }
+        },
+        "trafikverket_weatherstation": {
+            "entity": {
+                "sensor": {
+                    "precipitation": {
+                        "state": {
+                            "none": "ไม่มี",
+                            "rain": "ฝน",
+                            "rain_snow_mixed": "ฝนและหิมะผสมกัน",
+                            "snow": "หิมะ"
+                        }
+                    },
+                    "precipitation_amountname": {
+                        "state": {
+                            "error": "ผิดพลาด"
+                        }
+                    }
+                }
+            }
+        },
+        "unifi": {
+            "config": {
+                "step": {
+                    "user": {
+                        "data": {
+                            "host": "โฮสต์",
+                            "password": "รหัสผ่าน"
+                        },
+                        "title": "ตั้งค่า UniFi Controller"
+                    }
+                }
+            }
+        },
+        "vacuum": {
+            "title": "เครื่องดูดฝุ่น"
+        },
+        "yale_smart_alarm": {
+            "entity": {
+                "binary_sensor": {
+                    "battery": {
+                        "name": "แบตเตอรี่"
+                    }
+                }
+            }
+        },
+        "zha": {
+            "config": {
+                "abort": {
+                    "usb_probe_failed": "ตรวจสอบอุปกรณ์ USB ไม่สำเร็จ"
+                }
+            }
+        },
+        "zone": {
+            "config": {
+                "error": {
+                    "name_exists": "มีชื่อนี้อยู่แล้ว"
+                },
+                "step": {
+                    "init": {
+                        "data": {
+                            "latitude": "เส้นรุ้ง",
+                            "longitude": "เส้นแวง",
+                            "name": "ชื่อ"
+                        }
+                    }
+                },
+                "title": "โซน"
+            }
+        }
+    }
+}
